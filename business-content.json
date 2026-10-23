@@ -1,0 +1,991 @@
+{
+  "business_name": "Key Maker & Locksmith | Electronic City",
+  "phone": "+919762306303",
+  "whatsapp": "https://wa.me/919762306303",
+  "address": "Gollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru, Karnataka 560100",
+  "google_maps": "https://www.google.com/maps?cid=6777548479080557010",
+  "opening_date": "2026-10-01",
+  "hours": "24 hours every day",
+  "payments": [
+    "Cash",
+    "UPI",
+    "IMPS",
+    "NEFT"
+  ],
+  "coverage": "On-site service in Electronic City and nearby areas, with call-outs 10 km or more away; confirm availability for the exact address.",
+  "description": "Key Maker & Locksmith provides 24-hour key making and locksmith services on Gollahalli Main Road, Electronic City Phase 1, Bengaluru. We duplicate keys for homes, offices and shops, make car and bike keys, repair and replace door locks, and help with lockouts. We also replace compatible car remote key bodies and covers. Visit our shop or contact us for on-site service in Electronic City and nearby areas, including call-outs 10 km or more away. Cash, UPI and bank transfers are accepted.",
+  "primary_category": "Locksmith",
+  "additional_categories": [
+    "Key Duplication Service"
+  ],
+  "services": [
+    {
+      "name": "Building lockouts",
+      "description": "24-hour lockout assistance for homes, offices and shops. On-site help is available for authorised owners and occupants. Share your location and lock details to confirm availability, call-out charges and the quote.",
+      "google_service_type_id": "job_type_id:building_lockout"
+    },
+    {
+      "name": "Building key copying",
+      "description": "Duplicate keys for supported home, office, shop and cupboard locks. Bring the original key so we can check the correct blank and cutting requirements. Contact us to confirm compatibility and pricing.",
+      "google_service_type_id": "job_type_id:copy_building_key"
+    },
+    {
+      "name": "Car digital and remote key reprogramming",
+      "description": "Programming and reprogramming for compatible car transponder keys and remotes. Share the make, model, year and existing key details to confirm support and the quote. Service availability depends on the vehicle and key system.",
+      "google_service_type_id": "job_type_id:car_key_program"
+    },
+    {
+      "name": "Car key copying",
+      "description": "Spare car keys for supported makes and models. We check the key type, cutting requirements and any chip or remote programming needed. Bring your original key and vehicle details to confirm compatibility and pricing.",
+      "google_service_type_id": "job_type_id:copy_vehicle_key"
+    },
+    {
+      "name": "Car lockouts",
+      "description": "24-hour assistance when keys are locked inside a supported vehicle. Available to authorised owners and users. Call with your location, vehicle make and model so we can confirm access options, availability and charges.",
+      "google_service_type_id": "job_type_id:vehicle_lockout"
+    },
+    {
+      "name": "Door lock and bolt hardware installation",
+      "description": "Installation of compatible door locks, cylinders, handles and bolts for homes, offices and shops. Share door and existing hardware details to confirm suitable parts, fitting requirements and installation charges.",
+      "google_service_type_id": "job_type_id:install_hardware"
+    },
+    {
+      "name": "Lock rekeying",
+      "description": "Rekeying for compatible locks so they work with a different key. Useful when keys are lost or access needs to change. Share the lock type to confirm whether rekeying is suitable and to receive a quote.",
+      "google_service_type_id": "job_type_id:rekey_lock"
+    },
+    {
+      "name": "New key fob creation",
+      "description": "New electronic key fobs for compatible vehicles. Supply the vehicle make, model, year and key details so we can check the correct fob, cutting and programming requirements. Parts and programming are quoted for the specific vehicle.",
+      "google_service_type_id": "job_type_id:new_key_fob"
+    },
+    {
+      "name": "Repair hardware",
+      "description": "Repair assistance for compatible door lock hardware, including cylinders, handles and related fittings. Share photos or details of the fault so we can check repair options, parts availability and the quote.",
+      "google_service_type_id": "job_type_id:repair_hardware"
+    },
+    {
+      "name": "Safe lock install, open and repair",
+      "description": "Safe opening, lock installation and repair for authorised owners. Share the safe type and the problem to confirm service availability, access requirements and pricing. Work depends on the safe and locking system.",
+      "google_service_type_id": "job_type_id:safe_locks"
+    },
+    {
+      "name": "Security door locks",
+      "description": "Supply, installation, repair and replacement of compatible security door locks. We check the existing lock, door type and required fittings before recommending suitable parts and quoting for the work.",
+      "google_service_type_id": "job_type_id:security_door_locks"
+    },
+    {
+      "name": "Window locks",
+      "description": "Repair and replacement of compatible window locks and locking hardware. Share the window and lock type, the fault and your location so we can confirm suitable parts, service availability and pricing.",
+      "google_service_type_id": "job_type_id:window_locks"
+    },
+    {
+      "name": "House key duplication",
+      "description": "Duplicate keys for supported house and door locks. Bring your original key or share the key type so we can confirm compatibility and quote.",
+      "google_category_id": "categories/gcid:key_duplication_service"
+    },
+    {
+      "name": "Lock repair and replacement",
+      "description": "Repair and replacement of compatible door locks, cylinders and handles for homes, offices and shops. Contact us with the lock details and location for parts, installation and call-out pricing.",
+      "google_category_id": "categories/gcid:key_duplication_service"
+    },
+    {
+      "name": "Office and shop key duplication",
+      "description": "Key duplication for supported office, shop and cupboard locks. Contact us with the original key or lock details to confirm the suitable blank and price.",
+      "google_category_id": "categories/gcid:key_duplication_service"
+    },
+    {
+      "name": "Computerised key duplication",
+      "description": "Duplication of compatible computerised, dimple and high-security keys. Bring the original key or share its type to confirm support and the correct key blank.",
+      "google_category_id": "categories/gcid:key_duplication_service"
+    },
+    {
+      "name": "Car remote key body and cover replacement",
+      "description": "Replacement of compatible car remote key bodies, shells and covers. Share your vehicle model and remote type so we can confirm fit, availability and pricing.",
+      "google_category_id": "categories/gcid:key_duplication_service"
+    },
+    {
+      "name": "24-hour key making",
+      "description": "Key making assistance available 24 hours every day. Call with your key type and location to confirm the service, timing and any call-out charges.",
+      "google_category_id": "categories/gcid:key_duplication_service"
+    },
+    {
+      "name": "Home lockout assistance",
+      "description": "24-hour lockout help for authorised home owners and occupants. Contact us with your address and lock details to confirm availability and the applicable quote.",
+      "google_category_id": "categories/gcid:key_duplication_service"
+    },
+    {
+      "name": "Main door lock replacement",
+      "description": "Replacement of compatible main door locks, cylinders and handles. Contact us with the existing lock details to discuss suitable parts and installation charges.",
+      "google_category_id": "categories/gcid:key_duplication_service"
+    },
+    {
+      "name": "Spare key cutting",
+      "description": "Spare keys cut for supported home, office, shop and vehicle key types. Bring the original key or share its details to confirm the suitable blank and price.",
+      "google_category_id": "categories/gcid:key_duplication_service"
+    },
+    {
+      "name": "Padlock key duplication",
+      "description": "Duplicate keys for compatible padlocks. Bring your original key or share the padlock and key details so we can confirm the suitable blank and quote.",
+      "google_category_id": "categories/gcid:key_duplication_service"
+    },
+    {
+      "name": "Grille lock repair",
+      "description": "Repair assistance for compatible grille and gate locks. Share the lock details and location to confirm the available repair, parts and call-out charges.",
+      "google_category_id": "categories/gcid:key_duplication_service"
+    },
+    {
+      "name": "Bike key making",
+      "description": "Bike key making and duplication for supported models. Contact us with your bike model and key details to confirm availability and pricing.",
+      "google_category_id": "categories/gcid:key_duplication_service"
+    },
+    {
+      "name": "Bike key replacement",
+      "description": "Replacement keys for compatible bikes. Share your bike make, model and key or lock details so we can confirm the required service and quote.",
+      "google_category_id": "categories/gcid:key_duplication_service"
+    },
+    {
+      "name": "Door lock repair",
+      "description": "Repair of sticking, faulty or damaged door locks for homes, offices and shops. Contact us with the lock type and location to confirm parts, service and pricing.",
+      "google_category_id": "categories/gcid:key_duplication_service"
+    },
+    {
+      "name": "Car key repair",
+      "description": "Repair assistance for compatible car keys and remote key bodies. Share the vehicle model, key type and problem so we can confirm the available repair and quote.",
+      "google_category_id": "categories/gcid:key_duplication_service"
+    },
+    {
+      "name": "Car key making",
+      "description": "Car key making and duplication for supported makes and models. Share the vehicle make, model, year and key type to confirm compatibility and the applicable quote.",
+      "google_category_id": "categories/gcid:key_duplication_service"
+    },
+    {
+      "name": "Emergency locksmith services",
+      "description": "24-hour locksmith and lockout assistance for authorised owners and occupants. Call with your location and lock details to confirm availability, travel charges and the quote.",
+      "google_category_id": "categories/gcid:key_duplication_service"
+    }
+  ],
+  "post": "Need a spare key or help with a lock? Key Maker & Locksmith on Gollahalli Main Road, Electronic City Phase 1, Bengaluru is available 24 hours for key making, door lock repair and replacement, and lockout assistance. We also make keys for supported cars and bikes and replace compatible car remote key bodies and covers. Visit the shop or contact us for on-site service. Cash, UPI and bank transfers are accepted.",
+  "review_request": "Thank you for choosing Key Maker & Locksmith. Please share an honest review of your experience here: https://g.page/r/CdLplcdusA5eEBM/review. Your feedback helps us improve and helps other customers find our shop.",
+  "unconfirmed": [
+    "Prices from the example shop",
+    "Specific brand product inventory and authorisations"
+  ],
+  "owner_confirmed_facilities": [
+    "Assisted listening devices",
+    "Baby-changing table",
+    "Wheelchair-accessible entrance",
+    "Accessible seating",
+    "Accessible car park",
+    "Free on-site parking"
+  ],
+  "owner_confirmed_specialist_services": [
+    "Car chip and remote programming",
+    "New electronic key fobs",
+    "Safe opening and repair",
+    "Lock rekeying",
+    "Window-lock work"
+  ],
+  "website": "https://keymaker-electronic-city.violetflame16.chatgpt.site/",
+  "review_url": "https://g.page/r/CdLplcdusA5eEBM/review",
+  "google_review_url": "https://g.page/r/CdLplcdusA5eEBM/review",
+  "all_20_service_areas_confirmed": true,
+  "execution_checked_at": "2026-10-21",
+  "execution": {
+    "name": {
+      "status": "Owner-confirmed signboard match",
+      "complete": true,
+      "details": "On 22 October 2026 the owner confirmed the full permanent shop name is Key Maker & Locksmith | Electronic City, matching the public Google name."
+    },
+    "category": {
+      "status": "Saved in Google",
+      "complete": true,
+      "details": "Locksmith is primary; Key Duplication Service is additional."
+    },
+    "description": {
+      "status": "Saved and public",
+      "complete": true,
+      "details": "The corrected 490-character description is saved and visible publicly."
+    },
+    "hours": {
+      "status": "Owner-confirmed and checked",
+      "complete": true,
+      "details": "Google shows 24 hours every day, matching your confirmation."
+    },
+    "attributes": {
+      "status": "Owner-confirmed and checked",
+      "complete": true,
+      "details": "Your confirmed accessibility, parking and facilities were retained."
+    },
+    "booking": {
+      "status": "Checked",
+      "complete": true,
+      "details": "The current editor lists on-site services; the old online-appointments claim is absent."
+    },
+    "contact": {
+      "status": "Awaiting Google review — owner reported",
+      "complete": false,
+      "details": "The phone is saved, but public display remains pending. On 22 October the owner reported that Google review is pending. Wait for Google’s decision and recheck visibility; do not repeatedly resubmit the number."
+    },
+    "services": {
+      "status": "Saved in Google",
+      "complete": true,
+      "details": "All 29 descriptions filled and verified; 12 standard descriptions added and 17 custom descriptions retained."
+    },
+    "website": {
+      "status": "Public and linked",
+      "complete": true,
+      "details": "Customer website is public; Google now shows its Website button."
+    },
+    "areas": {
+      "status": "Owner-confirmed and checked",
+      "complete": true,
+      "details": "You confirmed that you serve all 20 existing areas."
+    },
+    "photos": {
+      "status": "Cover and logo verified",
+      "complete": true,
+      "details": "Google Photos UI visually verified the actual storefront cover and proper gold/black Key Maker Locksmith logo on 22 October 2026."
+    },
+    "payments": {
+      "status": "Confirmed and published",
+      "complete": true,
+      "details": "Cash, UPI, IMPS and NEFT are stated on the website; no cards claimed."
+    },
+    "consistency": {
+      "status": "Owner profiles saved; public verification pending",
+      "complete": false,
+      "details": "Both directory owner profiles have saved information and three gallery photos each. Justdial categories/map and both public URL/address checks remain pending. Sulekha has no exposed street/map editor. Google phone remains under owner-reported review."
+    },
+    "reviews": {
+      "status": "Current audit complete",
+      "complete": true,
+      "details": "All 33 existing reviews have replies. Your real review link and printable QR are ready."
+    },
+    "posts": {
+      "status": "Published",
+      "complete": true,
+      "details": "Shop announcement, FAQ update and two further service Updates are published. The latest two were verified in Google Your posts on 21 October 2026."
+    },
+    "special": {
+      "status": "Current schedule reviewed",
+      "complete": true,
+      "details": "No holiday exceptions were supplied to your confirmed always-24/7 schedule."
+    },
+    "performance": {
+      "status": "Baseline recorded",
+      "complete": true,
+      "details": "September–October 2026: 224 views and 26 interactions."
+    },
+    "products": {
+      "status": "All six products live",
+      "complete": true,
+      "details": "All six products are live. A fresh owner-catalogue reload showed no Pending label on Computerised key, and fresh public Google Search Products displayed the corrected title and all six prices."
+    }
+  },
+  "performance_baseline": {
+    "period": "September 2026–October 2026",
+    "checked_at": "2026-10-21",
+    "partial_current_month": true,
+    "profile_views": 224,
+    "interactions": 26,
+    "direction_requests": 20,
+    "chat_clicks": 6,
+    "call_clicks": 0,
+    "website_clicks": 0,
+    "searches": "fewer than 50; terms unavailable"
+  },
+  "public_phone_visible": false,
+  "public_website_visible": true,
+  "services_saved_and_verified": "2026-10-21: all 29 service descriptions verified by fresh Windsor readback",
+  "product_drafts": [
+    {
+      "name": "Computerised key",
+      "category": "Keys and key blanks",
+      "draft_price_inr": 250,
+      "description": "Computerised/dimple key for compatible locks. Match the key profile with your original key or lock. Indicative price; confirm the exact key type and cutting requirements before ordering. Representative AI-generated illustration; actual key design may differ.",
+      "status": "publicly_visible",
+      "editor_note": "Current product is publicly visible. All six catalogue entries were verified after reload.",
+      "screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-product-photo-required.png",
+      "form_state": "Edit approved; corrected title publicly visible.",
+      "image_asset": "product-images/computerised-key-blank.png",
+      "image_note": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "image_description_paragraph": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "description_with_image_disclosure": "Computerised/dimple key for compatible locks. Match the key profile with your original key or lock. Indicative price; confirm the exact key type and cutting requirements before ordering. Representative AI-generated illustration; actual key design may differ.",
+      "disclosure_publication_status": "exact_corrected_description_publicly_verified",
+      "photo_validation_history": "Earlier photo-required error was resolved by uploading the owner-authorized AI representative image.",
+      "visibility_verified": "Fresh Google owner catalogue and public Search Products confirmed the current name and price on 22 October 2026; no Pending label remains.",
+      "catalogue_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-products-live.png",
+      "manager_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-six-products-manager.png",
+      "previous_public_name": "Computerised key blank",
+      "product_uuid": "8b6e11a4-2174-4d9e-95e7-81612fa0f5fb",
+      "public_product_id": "8210459654379117113",
+      "description_record_note": "Exact corrected description, including representative AI-image disclosure, was verified in the public product detail on 22 October 2026.",
+      "original_model_reference": "Actual uncut key blank and its profile; confirm exact blank type.",
+      "image_available": "product-images/computerised-key-blank.png",
+      "correction_status": "approved_publicly_visible",
+      "correction_note": "The same product was renamed from Computerised key blank to Computerised key. Fresh public Search verified the corrected title; no Pending label remains in the reloaded owner catalogue.",
+      "public_description_verified": true,
+      "public_description_verified_at": "2026-10-22",
+      "public_description_verified_text": "Computerised/dimple key for compatible locks. Match the key profile with your original key or lock. Indicative price; confirm the exact key type and cutting requirements before ordering. Representative AI-generated illustration; actual key design may differ."
+    },
+    {
+      "name": "Car remote key body and shell",
+      "category": "Car key parts",
+      "draft_price_inr": 650,
+      "description": "Replacement outer body or shell for compatible car remote keys. Casing only, not a complete programmed key. Confirm the vehicle model, button layout, included parts and final price before ordering. Indicative price. Representative AI-generated illustration; actual design may differ.",
+      "status": "publicly_visible",
+      "editor_note": "Current product is publicly visible. All six catalogue entries were verified after reload.",
+      "image_asset": "product-images/car-remote-shell.png",
+      "image_note": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "image_description_paragraph": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "description_with_image_disclosure": "Replacement outer body or shell for compatible car remote keys. Casing only, not a complete programmed key. Confirm the vehicle model, button layout, included parts and final price before ordering. Indicative price. Representative AI-generated illustration; actual design may differ.",
+      "disclosure_publication_status": "exact_submitted_description_recorded",
+      "submitted_disclosure": "Representative AI-generated illustration; actual design may differ.",
+      "visibility_verified": "Fresh Google owner catalogue and public Search Products confirmed the current name and price on 22 October 2026; no Pending label remains.",
+      "catalogue_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-products-live.png",
+      "manager_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-six-products-manager.png",
+      "description_record_note": "Exact text entered and submitted through the Google product form. Current name and price are publicly verified. Full public detail body is being checked separately.",
+      "original_model_reference": "Actual replacement shell showing front, back, buttons and included blade if any.",
+      "image_available": "product-images/car-remote-shell.png"
+    },
+    {
+      "name": "Cylinder lock handle",
+      "category": "Door lock hardware",
+      "draft_price_inr": 700,
+      "description": "Replacement handle for compatible cylinder-lock fittings. Check door thickness, fixing positions and existing hardware before purchase. Indicative price; confirm the model, supplied parts and installation charges. Representative AI-generated illustration; actual design may differ.",
+      "status": "publicly_visible",
+      "editor_note": "Current product is publicly visible. All six catalogue entries were verified after reload.",
+      "image_asset": "product-images/cylinder-lock-handle.png",
+      "image_note": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "image_description_paragraph": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "description_with_image_disclosure": "Replacement handle for compatible cylinder-lock fittings. Check door thickness, fixing positions and existing hardware before purchase. Indicative price; confirm the model, supplied parts and installation charges. Representative AI-generated illustration; actual design may differ.",
+      "disclosure_publication_status": "exact_submitted_description_recorded",
+      "submitted_disclosure": "Representative AI-generated illustration; actual design may differ.",
+      "visibility_verified": "Fresh Google owner catalogue and public Search Products confirmed the current name and price on 22 October 2026; no Pending label remains.",
+      "catalogue_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-products-live.png",
+      "manager_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-six-products-manager.png",
+      "description_record_note": "Exact text entered and submitted through the Google product form. Current name and price are publicly verified. Full public detail body is being checked separately.",
+      "original_model_reference": "Actual handle set with package/model and included components.",
+      "image_available": "product-images/cylinder-lock-handle.png"
+    },
+    {
+      "name": "Door lock cylinder",
+      "category": "Door lock hardware",
+      "draft_price_inr": 950,
+      "description": "Replacement cylinder for compatible door locks. Match the cylinder size and fitting type to your existing hardware. Indicative price; confirm the exact model, supplied keys, finish and installation charges before purchase. Representative AI-generated illustration; actual design may differ.",
+      "status": "publicly_visible",
+      "editor_note": "Current product is publicly visible. All six catalogue entries were verified after reload.",
+      "image_asset": "product-images/door-lock-cylinder.png",
+      "image_note": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "image_description_paragraph": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "description_with_image_disclosure": "Replacement cylinder for compatible door locks. Match the cylinder size and fitting type to your existing hardware. Indicative price; confirm the exact model, supplied keys, finish and installation charges before purchase. Representative AI-generated illustration; actual design may differ.",
+      "disclosure_publication_status": "exact_submitted_description_recorded",
+      "submitted_disclosure": "Representative AI-generated illustration; actual design may differ.",
+      "visibility_verified": "Fresh Google owner catalogue and public Search Products confirmed the current name and price on 22 October 2026; no Pending label remains.",
+      "catalogue_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-products-live.png",
+      "manager_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-six-products-manager.png",
+      "description_record_note": "Exact text entered and submitted through the Google product form. Current name and price are publicly verified. Full public detail body is being checked separately.",
+      "original_model_reference": "Actual cylinder with its keys and size/model label.",
+      "image_available": "product-images/door-lock-cylinder.png"
+    },
+    {
+      "name": "Main door lock",
+      "category": "Door locks",
+      "draft_price_inr": 2300,
+      "description": "Main door lock for compatible door sizes and fitting types. Share your existing lock and door details to check suitability. Indicative price; confirm the exact model, supplied components and fitting charges before purchase. Representative AI-generated illustration; actual design may differ.",
+      "status": "publicly_visible",
+      "editor_note": "Current product is publicly visible. All six catalogue entries were verified after reload.",
+      "image_asset": "product-images/main-door-lock.png",
+      "image_note": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "image_description_paragraph": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "description_with_image_disclosure": "Main door lock for compatible door sizes and fitting types. Share your existing lock and door details to check suitability. Indicative price; confirm the exact model, supplied components and fitting charges before purchase. Representative AI-generated illustration; actual design may differ.",
+      "disclosure_publication_status": "exact_submitted_description_recorded",
+      "submitted_disclosure": "Representative AI-generated illustration; actual design may differ.",
+      "visibility_verified": "Fresh Google owner catalogue and public Search Products confirmed the current name and price on 22 October 2026; no Pending label remains.",
+      "catalogue_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-products-live.png",
+      "manager_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-six-products-manager.png",
+      "description_record_note": "Exact text entered and submitted through the Google product form. Current name and price are publicly verified. Full public detail body is being checked separately.",
+      "original_model_reference": "Actual packaged or complete lock showing model and included components.",
+      "image_available": "product-images/main-door-lock.png"
+    },
+    {
+      "name": "Car remote key unit",
+      "category": "Car keys and remotes",
+      "draft_price_inr": 1500,
+      "description": "Remote key unit for supported vehicle models. Electronics and compatibility depend on the vehicle. Indicative price; confirm the exact unit, included blade, cutting and programming charges before ordering. Representative AI-generated illustration; actual design may differ.",
+      "status": "publicly_visible",
+      "editor_note": "Current product is publicly visible. All six catalogue entries were verified after reload.",
+      "image_asset": "product-images/car-remote-key-unit.png",
+      "image_note": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "image_description_paragraph": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "description_with_image_disclosure": "Remote key unit for supported vehicle models. Electronics and compatibility depend on the vehicle. Indicative price; confirm the exact unit, included blade, cutting and programming charges before ordering. Representative AI-generated illustration; actual design may differ.",
+      "disclosure_publication_status": "exact_submitted_description_recorded",
+      "visibility_verified": "Fresh Google owner catalogue and public Search Products confirmed the current name and price on 22 October 2026; no Pending label remains.",
+      "submitted_disclosure": "Representative AI-generated illustration; actual design may differ.",
+      "catalogue_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-products-live.png",
+      "manager_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-six-products-manager.png",
+      "description_record_note": "Exact text entered and submitted through the Google product form. Current name and price are publicly verified. Full public detail body is being checked separately.",
+      "original_model_reference": "Actual compatible remote unit, button layout and model details.",
+      "image_available": "product-images/car-remote-key-unit.png"
+    }
+  ],
+  "products_published": true,
+  "products_pending_reason": null,
+  "windsor_connection": "Connected to locations/15540039722934592193; service update action succeeded after exact user approval.",
+  "faqs": [
+    {
+      "question": "Where is your shop?",
+      "answer": "We are on Gollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru, Karnataka 560100. Customers can visit the shop for key making and locksmith services."
+    },
+    {
+      "question": "Are you open 24 hours?",
+      "answer": "Yes. We are available 24 hours a day, seven days a week. Call or WhatsApp us to discuss the service you need."
+    },
+    {
+      "question": "Do you visit customers?",
+      "answer": "Yes. We provide on-site services across all 20 areas listed on our profile, including locations 10 km or more from the shop. Share your exact address to confirm availability and travel charges."
+    },
+    {
+      "question": "Which keys can you duplicate?",
+      "answer": "We duplicate supported house, office, shop and cupboard keys, and make keys for compatible cars and bikes. Bring your original key where available so we can check the correct blank and cutting requirements."
+    },
+    {
+      "question": "Do you program car keys and key fobs?",
+      "answer": "Yes, for compatible vehicle models. Share the make, model, year and existing key details so we can confirm the suitable key or fob, programming requirements and quote."
+    },
+    {
+      "question": "Can you help with lockouts or damaged locks?",
+      "answer": "Yes. We offer lockout assistance for authorised owners and occupants, plus repair and replacement of compatible locks. Call with your location and details of the problem so we can assess the job."
+    },
+    {
+      "question": "How much do services cost?",
+      "answer": "Prices depend on the key or lock type, vehicle compatibility, required parts, programming, and any travel or installation. Contact us with the job details for a quote before work begins."
+    },
+    {
+      "question": "Which payments do you accept?",
+      "answer": "We accept cash, UPI and bank transfers through IMPS or NEFT. We do not currently accept card payments."
+    }
+  ],
+  "faq_publication": {
+    "status": "LIVE",
+    "published_as": "Google Business Profile update post, not dedicated Q&A entries",
+    "post_id": "accounts/111962817784782155754/locations/15540039722934592193/localPosts/4833567883874943823",
+    "post_url": "https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEI3YwJPr77uwjAE",
+    "verified_at": "2026-10-21T15:59:06Z"
+  },
+  "additional_update_drafts": [
+    {
+      "id": "car-remote-care",
+      "title": "Car remote shell or a new key?",
+      "text": "Car remote shell or a new key? A cracked casing may need a replacement shell. We replace compatible car remote bodies and make or program keys and fobs for supported vehicles. Share the make, model, year and issue so we can confirm compatibility and a quote. Visit our shop on Gollahalli Main Road, Electronic City Phase 1.",
+      "status": "published",
+      "cta_type": "NONE",
+      "cta_url": "",
+      "post_id": "7837872470251824866",
+      "verified_at_local": "2026-10-21 approximately 22:44 IST",
+      "verification": "Google Your posts explicitly displayed Published",
+      "screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-new-updates-published.png"
+    },
+    {
+      "id": "door-lock-help",
+      "title": "Sticking key or faulty door lock?",
+      "text": "Sticking key or faulty door lock?\n\nIf your key is difficult to turn, avoid forcing it. We assess compatible door locks, cylinders, handles and bolts, and offer repair, replacement and installation for homes, offices and shops.\n\nShop visits and on-site service are available around Electronic City and our listed areas. We are open 24 hours. Contact us with the lock details and location to confirm suitable parts, availability and the quote, including any travel or installation charges.",
+      "status": "published",
+      "cta_type": "NONE",
+      "cta_url": "",
+      "post_id": "6937526443622698449",
+      "verified_at_local": "2026-10-21 approximately 22:44 IST",
+      "verification": "Google Your posts explicitly displayed Published",
+      "screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-new-updates-published.png"
+    }
+  ],
+  "approved_offer": {
+    "status": "published",
+    "title": "10% off standard house-key duplication",
+    "start_date": "2026-10-22",
+    "start_time": "00:00",
+    "end_date": "2026-10-31",
+    "end_time": "23:59",
+    "timezone": "Asia/Kolkata",
+    "code": "SPARE10",
+    "description": "Save 10% on eligible standard house-key duplication at our Electronic City Phase 1 shop, with a maximum discount of ₹100 per order. Bring a compatible original key and show this Google offer or mention SPARE10 before placing your order.",
+    "terms": "Valid 22–31 October 2026, 00:00 on 22 October to 23:59 on 31 October, India time. Applies to ordinary mechanical edge-cut house-key duplication performed in the shop. Discount is 10% of the usual selling price for eligible key duplication, capped at ₹100 per order. Excludes car and bike keys, computerised/dimple/high-security keys, lock parts, programming, installation, call-out and travel fees. Cannot be combined with another offer. Bring a compatible original key; confirm eligibility and the final price before placing the order.",
+    "link": "",
+    "owner_approval": "The owner approved and confirmed honouring these exact terms on 21 October 2026.",
+    "post_id": "8812472286834001751",
+    "verified_at_local": "2026-10-21",
+    "verification": "Google Your posts explicitly displayed Published 27 seconds ago",
+    "screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-offer-published.png",
+    "expiry_control_note": "The approved terms explicitly end at 23:59 India time on 31 October 2026. The editor readback shows 11:59 without AM/PM despite attempts to save 23:59; the exact persisted expiry time is unresolved and needs a manual UI check. Do not claim the end-time control is verified."
+  },
+  "updates_offer_publication_blocker": null,
+  "opening_event_draft": {
+    "title": "Shop opening — 1 October 2026",
+    "start_date": "2026-10-01",
+    "end_date": "2026-10-01",
+    "all_day": true,
+    "timezone": "Asia/Kolkata",
+    "description": "Key Maker & Locksmith opened on 1 October 2026 on Gollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru. We provide key duplication, keys for compatible cars and bikes, lock repair and replacement, and lockout assistance. The shop is open 24 hours, with on-site service across our listed areas. Visit us or contact us to confirm your key or lock requirements and a quote.",
+    "cta_type": "LEARN_MORE",
+    "cta_url": "https://keymaker-electronic-city.violetflame16.chatgpt.site/",
+    "status": "event_unavailable_past_date",
+    "date_note": "The shop opening date remains 1 October 2026. Google’s end-date calendar disabled dates before 22 October 2026, so the one-day past Event could not be created. No future opening date was invented.",
+    "fallback_opening_update": {
+      "post_id": "6401196171407182369",
+      "status": "published",
+      "verified_at_local": "2026-10-22",
+      "verification": "Fresh Google Your posts view displayed Published 13 minutes ago",
+      "text": "Key Maker & Locksmith opened on 1 October 2026 on Gollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru. We provide key duplication, keys for compatible cars and bikes, lock repair and replacement, and lockout assistance. The shop is open 24 hours, with on-site service across our listed areas. Visit us or contact us to confirm your key or lock requirements and a quote.",
+      "cta_type": "NONE",
+      "cta_url": "",
+      "screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-all-new-posts-published.png"
+    }
+  },
+  "publishing_queue": {
+    "file": "PUBLISHING-QUEUE.json",
+    "status": "in_progress_two_updates_and_offer_published",
+    "blocker": null,
+    "products": 6,
+    "new_updates": 2,
+    "approved_offers": 1,
+    "opening_events": 1,
+    "published_new_updates": 2,
+    "published_approved_offers": 1,
+    "opening_event_status": "event_unavailable_past_date",
+    "opening_update_status": "published",
+    "products_status": "publicly_visible",
+    "products_published_count": 6,
+    "products_submitted_count": 6,
+    "products_publicly_visible_verified_count": 6,
+    "products_previously_public_pending_edit_count": 0
+  },
+  "products_status": "publicly_visible",
+  "products_published_count": 6,
+  "product_photo_validation": {
+    "checked_at_local": "2026-10-22",
+    "required": true,
+    "error": "Add a product photo",
+    "first_product_status": "attempted_unsaved_photo_required",
+    "other_products_status": "prepared_not_submitted",
+    "screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-product-photo-required.png",
+    "actual_product_images_in_workspace": false,
+    "current_state": "resolved_with_owner_authorized_AI_representative_assets",
+    "historical_error": "Add a product photo",
+    "representative_AI_images_available": true
+  },
+  "product_image_assets": {
+    "manifest": "product-images/manifest.json",
+    "count": 6,
+    "type": "AI-generated generic representative illustrations, not actual stock photographs",
+    "owner_authorized": true,
+    "description_disclosure": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase."
+  },
+  "products_submitted_count": 6,
+  "products_publicly_visible_verified_count": 6,
+  "products_previously_public_pending_edit_count": 0,
+  "initial_public_catalogue_verified_count": 6,
+  "products_checked_at": "2026-10-22",
+  "owner_signboard_confirmation": {
+    "confirmed_at": "2026-10-22",
+    "full_name": "Key Maker & Locksmith | Electronic City",
+    "matches_full_google_name": true
+  },
+  "phone_review_status": {
+    "status": "awaiting_google_review",
+    "source": "owner report",
+    "reported_at": "2026-10-22",
+    "public_visibility_still_pending": true
+  },
+  "cover_photo_status": {
+    "status": "set_visually_verified",
+    "verified_at": "2026-10-22",
+    "source": "Google Photos UI visual verification",
+    "logo_verified": true,
+    "logo_description": "Proper gold/black Key Maker Locksmith logo",
+    "screenshot": "C:/Users/kbose/OneDrive/Desktop/keymaker/gbp-cover-logo-verified.png"
+  },
+  "directory_listings": {
+    "status": "registered_public_verification_pending",
+    "draft_status": "submitted_registered",
+    "owner_reports_no_existing_listings": true,
+    "authorized_platforms": [
+      "Justdial",
+      "Sulekha"
+    ],
+    "free_only": true,
+    "draft_file": "DIRECTORY-LISTING-DRAFTS.json",
+    "platforms": {
+      "Justdial": {
+        "status": "registered_owner_profile_saved_public_verification_pending",
+        "draft_status": "submitted_registered",
+        "listing_url": null,
+        "account_created": null,
+        "submitted": true,
+        "paid_plan_authorized": false,
+        "notes": "Registration and saved owner details verified. Gallery now contains bike-key work, storefront and logo, three images verified in the owner profile. Categories remain Pending, map info remains incomplete, and the generated share URL has not been verified as public.",
+        "phone_verification": "verified",
+        "terms_acceptance_authorized_by_owner": true,
+        "registration_completed": true,
+        "public_listing_verified": false,
+        "owner_profile_url": "https://www.justdial.com/jd-business?source=77&wap=77&docid=080PXX80.XX80.261022141617.S7S5&module=free_listing&ep=profile_score",
+        "docid": "080PXX80.XX80.261022141617.S7S5",
+        "registered_name": "Key Maker & Locksmith Electronic City",
+        "business_name_format_note": "The pipe character was rejected with Company Name Contains Special Characters, so only the pipe was removed. No keywords or unrelated name were added.",
+        "registered_address": {
+          "street": "Gollahalli Main Road",
+          "colony": "Siraj Layout",
+          "area": "Electronic City Phase 1",
+          "postcode": "560100",
+          "city": "Bangalore",
+          "state": "Karnataka"
+        },
+        "registered_phone": "9762306303",
+        "registered_whatsapp": "9762306303",
+        "hours": "Open 24 hours, all days",
+        "selected_categories": [
+          "Duplicate Key Makers",
+          "24 Hours Duplicate Key Makers",
+          "Duplicate Key Makers For Car",
+          "Computerised Duplicate Key Makers",
+          "Duplicate Key Makers For Motorcycle"
+        ],
+        "email_provided": false,
+        "contact_person_name_provided": false,
+        "optional_email_skipped": true,
+        "optional_photos_skipped": false,
+        "paid_premium_selected": false,
+        "screenshot": "C:/Users/kbose/OneDrive/Desktop/keymaker/justdial-registered-confirmation.png",
+        "confirmation_text": "Congratulations - Your business is now registered with Justdial",
+        "registration_created": true,
+        "public_url": null,
+        "account_note": "Business registration confirmed. Separate new account-creation event is not independently verified; account_created is unknown, not false.",
+        "website": "https://keymaker-electronic-city.violetflame16.chatgpt.site/",
+        "website_saved_verified": true,
+        "website_verification": {
+          "source": "Rendered Justdial Business Profile DOM",
+          "value": "https://keymaker-electronic-city.violetflame16.chatgpt.site/",
+          "verified_at": "2026-10-22",
+          "screenshot": "C:/Users/kbose/OneDrive/Desktop/keymaker/justdial-profile-details-saved.png"
+        },
+        "established_month": 10,
+        "established_year": 2026,
+        "establishment_saved_verified": true,
+        "establishment_readback": "Oct - 2026",
+        "establishment_verification": {
+          "source": "Rendered Justdial Business Profile readback",
+          "verified_at": "2026-10-22",
+          "screenshot": "C:/Users/kbose/OneDrive/Desktop/keymaker/justdial-profile-details-saved.png"
+        },
+        "on_site_services": {
+          "selected": true,
+          "save_clicked": true,
+          "readback_verified": true,
+          "status": "saved_verified",
+          "verification_sources": [
+            "Additional Business Info",
+            "Owner profile"
+          ]
+        },
+        "profile_details_screenshot": "C:/Users/kbose/OneDrive/Desktop/keymaker/justdial-profile-details-saved.png",
+        "owner_editor_url": "https://wap.justdial.com/el?source=77&user_type=&docid=080PXX80.XX80.261022141617.S7S5",
+        "generated_share_url": "https://jsdl.in/DT-15BJU2Y7LMU",
+        "share_url_verification": {
+          "source": "Share Business Card rendered text",
+          "status": "generated_not_publicly_verified",
+          "observed_resolution": "Opening it redirected to the same authenticated owner editor; this is not proof of a public listing destination."
+        },
+        "payment_modes": {
+          "status": "saved_verified",
+          "readback": "Cash, UPI, Net Banking",
+          "values": [
+            "Cash",
+            "UPI",
+            "Net Banking"
+          ],
+          "cards_claimed": false,
+          "wallets_claimed": false
+        },
+        "tagline": {
+          "status": "saved_verified",
+          "value": "24-hour key making and lock repair",
+          "characters": 34,
+          "limit": 40
+        },
+        "categories_status": "saved_pending_review",
+        "pending_category_count": 5,
+        "category_verification_note": "All five selected category names displayed in owner editor with the status 5 Pending. Public/live approval is not verified.",
+        "map_location": {
+          "status": "missing_info_unverified_pin_not_saved",
+          "owner_editor_label": "Missing Info",
+          "observed_default_latitude": 12.843226,
+          "observed_default_longitude": 77.65651,
+          "coordinates_confirmed": false,
+          "pin_saved": false,
+          "note": "Default coordinates were observed only; the actual shop pin was not confirmed and was not saved."
+        },
+        "owner_profile_screenshot": "C:/Users/kbose/OneDrive/Desktop/keymaker/justdial-owner-profile-saved.png",
+        "paid_plan_selected": false,
+        "outbound_messages_sent": false,
+        "optional_photos_skipped_initial_registration": true,
+        "gallery_photo_count": 3,
+        "gallery_saved_verified": true,
+        "gallery_upload_count": 3,
+        "gallery_verification": "Save & Proceed then Proceed with 3 Photos succeeded; owner profile visually showed three saved images.",
+        "gallery_assets": [
+          {
+            "role": "Bike-key work",
+            "path": "business-images/google-bike-key-work-original.jpg",
+            "width": 2304,
+            "height": 4096
+          },
+          {
+            "role": "Storefront",
+            "path": "business-images/google-cover-storefront-original.jpg",
+            "width": 1600,
+            "height": 900
+          },
+          {
+            "role": "Logo",
+            "path": "business-images/google-business-logo-original.jpg",
+            "width": 1254,
+            "height": 1254
+          }
+        ],
+        "gallery_screenshot": "C:/Users/kbose/OneDrive/Desktop/keymaker/justdial-gallery-added.png",
+        "profile_completeness_percent": 44,
+        "profile_score_note": "Justdial UI profile-completeness measure only; not a Google ranking or SEO score."
+      },
+      "Sulekha": {
+        "status": "owner_profile_saved_public_verification_pending",
+        "draft_status": "submitted_registered",
+        "listing_url": null,
+        "account_created": null,
+        "submitted": true,
+        "paid_plan_authorized": false,
+        "notes": "Owner dashboard is accessible. About, website, payments, all seven 24-hour days, Sole Proprietorship, 2026, one mapped service, cover, logo and three persisted gallery photos were verified after reload. Public URL remains unknown; structured street/map and additional service attributes are unavailable in the observed editor.",
+        "phone_verification": "verified",
+        "selected_category": "Key Maker & Locksmiths",
+        "business_name": "Key Maker & Locksmith | Electronic City",
+        "selected_city": "Bangalore",
+        "captcha_authorized_by_owner": true,
+        "registration_completed": true,
+        "public_listing_verified": false,
+        "profile_status": "preparing_link_to_be_sent_by_SMS",
+        "selected_area": "Electronic City Phase I",
+        "screenshot": "C:/Users/kbose/OneDrive/Desktop/keymaker/sulekha-registered-confirmation.png",
+        "confirmation_page": "https://www.sulekha.com/list-your-business#thankyou",
+        "confirmation_text": "Your business is registered. Your profile page is being prepared; the link will be sent by text shortly.",
+        "sms_profile_link_received": false,
+        "registration_created": true,
+        "public_url": null,
+        "account_note": "Business registration confirmed. Separate new account-creation event is not independently verified; account_created is unknown, not false.",
+        "signin_status": "authenticated_dashboard_accessible",
+        "owner_action": null,
+        "owner_profile_url": "https://www.sulekha.com/business/profile",
+        "website": "https://keymaker-electronic-city.violetflame16.chatgpt.site/",
+        "website_saved_verified": true,
+        "about_description": "Key Maker & Locksmith | Electronic City is a 24-hour key making and locksmith shop on Gollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru. We duplicate keys for homes, offices and shops, make keys for compatible cars and bikes, and provide lock repair, lock replacement and lockout assistance. We also offer compatible car chip and remote programming, key fobs, remote shell replacement, rekeying, safe opening and window-lock work. Visit the shop or ask about on-site service across our listed areas. Contact us with your key, lock or vehicle details and exact location to confirm compatibility, availability and a quote. Cash, UPI, IMPS and NEFT are accepted.",
+        "about_saved_verified": true,
+        "payment_modes": {
+          "status": "saved_verified",
+          "values": [
+            "Cash",
+            "Net Banking",
+            "UPI"
+          ],
+          "readback_verified_after_reload": true
+        },
+        "hours_by_day": {
+          "Monday": "Open 24 hours",
+          "Tuesday": "Open 24 hours",
+          "Wednesday": "Open 24 hours",
+          "Thursday": "Open 24 hours",
+          "Friday": "Open 24 hours",
+          "Saturday": "Open 24 hours",
+          "Sunday": "Open 24 hours"
+        },
+        "hours_saved_verified": true,
+        "company_type": {
+          "value": "Freelance - GST Unregistered",
+          "owner_confirmed": true,
+          "confirmed_at": "2026-10-22",
+          "source": "Owner confirmed current Sulekha UI values",
+          "supersedes": "Earlier Sole Proprietorship confirmation",
+          "agent_changed_current_value": false
+        },
+        "established_year": {
+          "value": 2026,
+          "saved_readback_verified": true
+        },
+        "mapped_services": [
+          "Key Maker & Locksmiths"
+        ],
+        "service_count": 1,
+        "services_saved_verified": true,
+        "cover_photo_saved_verified": true,
+        "logo_saved_verified": true,
+        "gallery_photo_count": 3,
+        "gallery_persisted_after_reload": true,
+        "profile_completeness_percent": 39,
+        "profile_score_note": "Sulekha UI profile completeness only; not a Google ranking, SEO score or guarantee.",
+        "share_button_result": "Share button did not expose a public profile URL.",
+        "structured_address": {
+          "area": "Electronic City Phase I",
+          "city": "Bangalore",
+          "street_address": null,
+          "map_pin": null
+        },
+        "full_confirmed_address_in_about": true,
+        "address_editing_limitation": "Only Electronic City Phase I is available as the structured area. Full confirmed street address is in About; no street-address or map editor was exposed.",
+        "service_details_limitation": "Selected Key Maker & Locksmiths category details showed No needs available for this service.",
+        "attributes_limitation": "Attribute editor still showed Add services first despite the saved one-service mapping. No additional attribute fields were exposed.",
+        "verification_source": "Rendered owner profile and gallery checked again after browser reload",
+        "profile_screenshot": "C:/Users/kbose/OneDrive/Desktop/keymaker/sulekha-profile-completed-fields.png",
+        "gallery_screenshot": "C:/Users/kbose/OneDrive/Desktop/keymaker/sulekha-gallery-saved.png",
+        "reused_business_image_assets": [
+          "business-images/google-cover-storefront.jpg",
+          "business-images/google-business-logo.jpg",
+          "business-images/google-door-lock-work.jpg",
+          "business-images/google-bike-key-work.jpg"
+        ],
+        "image_source_note": "Actual owner-chosen Google Business Profile storefront, logo and work images were reused. These are not newly generated illustrations.",
+        "private_email_invented": false,
+        "employee_count_invented": false,
+        "paid_plan_selected": false,
+        "outbound_messages_sent": true,
+        "agent_kyc_or_bank_fields_submitted": false,
+        "employee_range": {
+          "value": "11-25",
+          "owner_confirmed": true,
+          "confirmed_at": "2026-10-22",
+          "source": "Owner confirmed current Sulekha UI values",
+          "agent_invented_or_changed": false
+        },
+        "current_verification_summary": {
+          "verified_items": 1,
+          "total_items": 3,
+          "bank_verification": "pending",
+          "business_verification": "pending",
+          "source": "Current Sulekha UI / owner observation",
+          "observed_at": "2026-10-22",
+          "agent_submitted_verification_documents_or_bank_details": false,
+          "note": "Only the minimal status is recorded; no document or bank information is copied."
+        },
+        "support_issue_draft": {
+          "file": "SULEKHA-SUPPORT-DRAFT.md",
+          "text_file": "SULEKHA-SUPPORT-EMAIL.txt",
+          "email_file": "SULEKHA-SUPPORT-EMAIL.eml",
+          "status": "sent",
+          "recipient": "care@sulekha.com",
+          "subject": "Sulekha profile help: locksmith services, attributes and public page",
+          "body_word_count": 201,
+          "owner_authorized_purpose": "Owner requested Sulekha profile support by email instead of WhatsApp",
+          "email_sent": true,
+          "whatsapp_sent": false,
+          "sent_at_date": "2026-10-22",
+          "date_timezone": "Asia/Calcutta",
+          "gmail_message_id": "redacted-private-message-id",
+          "gmail_thread_id": "redacted-private-message-id",
+          "gmail_internal_date_ms": 1792685113000,
+          "verification": {
+            "method": "Separate read_email metadata readback",
+            "gmail_label": "SENT",
+            "recipient_verified": true,
+            "subject_verified": true
+          },
+          "sender_private_details_persisted": false,
+          "note": "Do not send again or create an automation. Sender name/address are deliberately not copied into business records."
+        },
+        "support_email_sent": true,
+        "whatsapp_sent": false,
+        "customer_contact_messages_sent": false,
+        "outbound_message_note": "Only the explicitly owner-authorized support email to care@sulekha.com was sent. No WhatsApp or customer-contact message was sent."
+      }
+    },
+    "public_verification_complete": false
+  },
+  "company_type": {
+    "value": "Freelance - GST Unregistered",
+    "owner_confirmed": true,
+    "confirmed_at": "2026-10-22",
+    "source": "Owner confirmed current Sulekha UI values",
+    "supersedes": "Earlier Sole Proprietorship confirmation",
+    "agent_changed_current_value": false
+  },
+  "reused_business_image_assets": {
+    "source": "Existing owner-chosen Google Business Profile cover, logo and work images",
+    "assets": [
+      "business-images/google-cover-storefront.jpg",
+      "business-images/google-business-logo.jpg",
+      "business-images/google-door-lock-work.jpg",
+      "business-images/google-bike-key-work.jpg"
+    ],
+    "originals": [
+      {
+        "path": "business-images/google-cover-storefront-original.jpg",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "business-images/google-door-lock-work-original.jpg",
+        "width": 1200,
+        "height": 1600
+      }
+    ],
+    "not_new_AI": true,
+    "manifest": "business-images/manifest.json",
+    "Justdial_final_gallery": [
+      {
+        "role": "Bike-key work",
+        "path": "business-images/google-bike-key-work-original.jpg",
+        "width": 2304,
+        "height": 4096
+      },
+      {
+        "role": "Storefront",
+        "path": "business-images/google-cover-storefront-original.jpg",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "role": "Logo",
+        "path": "business-images/google-business-logo-original.jpg",
+        "width": 1254,
+        "height": 1254
+      }
+    ]
+  },
+  "employee_range": {
+    "value": "11-25",
+    "owner_confirmed": true,
+    "confirmed_at": "2026-10-22",
+    "source": "Owner confirmed current Sulekha UI values",
+    "agent_invented_or_changed": false
+  },
+  "support_issue_draft": {
+    "file": "SULEKHA-SUPPORT-DRAFT.md",
+    "text_file": "SULEKHA-SUPPORT-EMAIL.txt",
+    "email_file": "SULEKHA-SUPPORT-EMAIL.eml",
+    "status": "sent",
+    "recipient": "care@sulekha.com",
+    "subject": "Sulekha profile help: locksmith services, attributes and public page",
+    "body_word_count": 201,
+    "owner_authorized_purpose": "Owner requested Sulekha profile support by email instead of WhatsApp",
+    "email_sent": true,
+    "whatsapp_sent": false,
+    "sent_at_date": "2026-10-22",
+    "date_timezone": "Asia/Calcutta",
+    "gmail_message_id": "redacted-private-message-id",
+    "gmail_thread_id": "redacted-private-message-id",
+    "gmail_internal_date_ms": 1792685113000,
+    "verification": {
+      "method": "Separate read_email metadata readback",
+      "gmail_label": "SENT",
+      "recipient_verified": true,
+      "subject_verified": true
+    },
+    "sender_private_details_persisted": false,
+    "note": "Do not send again or create an automation. Sender name/address are deliberately not copied into business records."
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "recorded_at": "2026-10-22",
+  "provenance": "Unchanged downloaded owner Google Business Profile storefront, logo and work media. These are separate from generated product illustrations.",
+  "image_generation_used_for_business_media": false,
+  "image_editing_used_for_business_media": false,
+  "google_maps_cid": "6777548479080557010",
+  "assets": [
+    {
+      "path": "business-images/google-bike-key-work-original.jpg",
+      "role": "Bike-key work",
+      "width": 2304,
+      "height": 4096,
+      "bytes": 2297505,
+      "sha256": "eb4d7572f65f7ed4f6e01312f402e0c8c22c129bc6ce4cb7a3299fdd473aebcb",
+      "source": "Existing owner-chosen Google Business Profile media, downloaded using browser",
+      "original_resolution_variant": true,
+      "new_AI_generated": false,
+      "agent_image_editing_used": false,
+      "used_in_final_Justdial_gallery": true
+    },
+    {
+      "path": "business-images/google-bike-key-work.jpg",
+      "role": "Bike-key work",
+      "width": 202,
+      "height": 360,
+      "bytes": 23619,
+      "sha256": "f534b61be4984eec3a977a17e1421c7f19a9ee231bc9c556a98290e5e35e5875",
+      "source": "Existing owner-chosen Google Business Profile media, downloaded using browser",
+      "original_resolution_variant": false,
+      "new_AI_generated": false,
+      "agent_image_editing_used": false,
+      "used_in_final_Justdial_gallery": false
+    },
+    {
+      "path": "business-images/google-business-logo-original.jpg",
+      "role": "Business logo",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 162840,
+      "sha256": "61a8bea64741ed0eeda06ac00dd2c286340fbe4c4b739af65bd082c9d170ea51",
+      "source": "Existing owner-chosen Google Business Profile media, downloaded using browser",
+      "original_resolution_variant": true,
+      "new_AI_generated": false,
+      "agent_image_editing_used": false,
+      "used_in_final_Justdial_gallery": true
+    },
+    {
+      "path": "business-images/google-business-logo.jpg",
+      "role": "Business logo",
+      "width": 734,
+      "height": 734,
+      "bytes": 129004,
+      "sha256": "a6c6a2fce97c9d0ee1ec20326f87aa6d3b31f8ed8da5bb198015637271d02cdd",
+      "source": "Existing owner-chosen Google Business Profile media, downloaded using browser",
+      "original_resolution_variant": false,
+      "new_AI_generated": false,
+      "agent_image_editing_used": false,
+      "used_in_final_Justdial_gallery": false
+    },
+    {
+      "path": "business-images/google-cover-storefront-original.jpg",
+      "role": "Storefront cover",
+      "width": 1600,
+      "height": 900,
+      "bytes": 505580,
+      "sha256": "e622977f39e026c505a625a84893bf29ab71490abdb225f12afdf7bff05b9e29",
+      "source": "Existing owner-chosen Google Business Profile media, downloaded using browser",
+      "original_resolution_variant": true,
+      "new_AI_generated": false,
+      "agent_image_editing_used": false,
+      "used_in_final_Justdial_gallery": true
+    },
+    {
+      "path": "business-images/google-cover-storefront.jpg",
+      "role": "Storefront cover",
+      "width": 734,
+      "height": 413,
+      "bytes": 137752,
+      "sha256": "a0667ef68da5729237bb1e0df84d5ec9d078a2ffeec5474b04efa74ff3ab13cd",
+      "source": "Existing owner-chosen Google Business Profile media, downloaded using browser",
+      "original_resolution_variant": false,
+      "new_AI_generated": false,
+      "agent_image_editing_used": false,
+      "used_in_final_Justdial_gallery": false
+    },
+    {
+      "path": "business-images/google-door-lock-work-original.jpg",
+      "role": "Door-lock work",
+      "width": 1200,
+      "height": 1600,
+      "bytes": 96612,
+      "sha256": "50344a0878e1a45bb0691f2ee3a344843f85f1091617d1cf139bcac0779066af",
+      "source": "Existing owner-chosen Google Business Profile media, downloaded using browser",
+      "original_resolution_variant": true,
+      "new_AI_generated": false,
+      "agent_image_editing_used": false,
+      "used_in_final_Justdial_gallery": false
+    },
+    {
+      "path": "business-images/google-door-lock-work.jpg",
+      "role": "Door-lock work",
+      "width": 270,
+      "height": 360,
+      "bytes": 19873,
+      "sha256": "42ca6d26b603dd18b67e8937731be2adb7be25eb81b2d4bbb26f447fca4d4f43",
+      "source": "Existing owner-chosen Google Business Profile media, downloaded using browser",
+      "original_resolution_variant": false,
+      "new_AI_generated": false,
+      "agent_image_editing_used": false,
+      "used_in_final_Justdial_gallery": false
+    }
+  ],
+  "Justdial_final_gallery": [
+    {
+      "role": "Bike-key work",
+      "path": "business-images/google-bike-key-work-original.jpg",
+      "width": 2304,
+      "height": 4096
+    },
+    {
+      "role": "Storefront",
+      "path": "business-images/google-cover-storefront-original.jpg",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "role": "Logo",
+      "path": "business-images/google-business-logo-original.jpg",
+      "width": 1254,
+      "height": 1254
+    }
+  ],
+  "Justdial_gallery_verified_count": 3,
+  "Justdial_gallery_screenshot": "C:/Users/kbose/OneDrive/Desktop/keymaker/justdial-gallery-added.png",
+  "Sulekha_verified_media": {
+    "cover_saved": true,
+    "logo_saved": true,
+    "gallery_saved_count": 3,
+    "owner_profile_verified_after_reload": true,
+    "note": "Exact per-file mapping of the three Sulekha gallery entries is not asserted here."
+  },
+  "separate_AI_product_assets": {
+    "manifest": "../product-images/manifest.json",
+    "note": "Six owner-authorized generic product illustrations were generated earlier. They are not the reused storefront/logo/work media in this folder."
+  }
+}

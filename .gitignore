@@ -1,0 +1,22 @@
+# Local version-control and synchronization state
+.repo-sync/
+.git/
+
+# Dependencies, caches and machine-generated logs
+node_modules/
+__pycache__/
+.pytest_cache/
+.cache/
+.wrangler/
+debug.log
+.DS_Store
+Thumbs.db
+
+# Local secrets (public verification files and static builds are intentional)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+service-account*.json

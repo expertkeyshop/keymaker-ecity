@@ -1,0 +1,333 @@
+{
+  "checked_at": "2026-10-21",
+  "account": "locations/15540039722934592193",
+  "service_count": 29,
+  "new_descriptions": 12,
+  "preserved_custom_descriptions": 17,
+  "items": [
+    {
+      "service_type_id": "job_type_id:building_lockout",
+      "description": "24-hour lockout assistance for homes, offices and shops. On-site help is available for authorised owners and occupants. Share your location and lock details to confirm availability, call-out charges and the quote.",
+      "name": "Building lockouts"
+    },
+    {
+      "service_type_id": "job_type_id:copy_building_key",
+      "description": "Duplicate keys for supported home, office, shop and cupboard locks. Bring the original key so we can check the correct blank and cutting requirements. Contact us to confirm compatibility and pricing.",
+      "name": "Building key copying"
+    },
+    {
+      "service_type_id": "job_type_id:car_key_program",
+      "description": "Programming and reprogramming for compatible car transponder keys and remotes. Share the make, model, year and existing key details to confirm support and the quote. Service availability depends on the vehicle and key system.",
+      "name": "Car digital and remote key reprogramming"
+    },
+    {
+      "service_type_id": "job_type_id:copy_vehicle_key",
+      "description": "Spare car keys for supported makes and models. We check the key type, cutting requirements and any chip or remote programming needed. Bring your original key and vehicle details to confirm compatibility and pricing.",
+      "name": "Car key copying"
+    },
+    {
+      "service_type_id": "job_type_id:vehicle_lockout",
+      "description": "24-hour assistance when keys are locked inside a supported vehicle. Available to authorised owners and users. Call with your location, vehicle make and model so we can confirm access options, availability and charges.",
+      "name": "Car lockouts"
+    },
+    {
+      "service_type_id": "job_type_id:install_hardware",
+      "description": "Installation of compatible door locks, cylinders, handles and bolts for homes, offices and shops. Share door and existing hardware details to confirm suitable parts, fitting requirements and installation charges.",
+      "name": "Door lock and bolt hardware installation"
+    },
+    {
+      "service_type_id": "job_type_id:rekey_lock",
+      "description": "Rekeying for compatible locks so they work with a different key. Useful when keys are lost or access needs to change. Share the lock type to confirm whether rekeying is suitable and to receive a quote.",
+      "name": "Lock rekeying"
+    },
+    {
+      "service_type_id": "job_type_id:new_key_fob",
+      "description": "New electronic key fobs for compatible vehicles. Supply the vehicle make, model, year and key details so we can check the correct fob, cutting and programming requirements. Parts and programming are quoted for the specific vehicle.",
+      "name": "New key fob creation"
+    },
+    {
+      "service_type_id": "job_type_id:repair_hardware",
+      "description": "Repair assistance for compatible door lock hardware, including cylinders, handles and related fittings. Share photos or details of the fault so we can check repair options, parts availability and the quote.",
+      "name": "Repair hardware"
+    },
+    {
+      "service_type_id": "job_type_id:safe_locks",
+      "description": "Safe opening, lock installation and repair for authorised owners. Share the safe type and the problem to confirm service availability, access requirements and pricing. Work depends on the safe and locking system.",
+      "name": "Safe lock install, open and repair"
+    },
+    {
+      "service_type_id": "job_type_id:security_door_locks",
+      "description": "Supply, installation, repair and replacement of compatible security door locks. We check the existing lock, door type and required fittings before recommending suitable parts and quoting for the work.",
+      "name": "Security door locks"
+    },
+    {
+      "service_type_id": "job_type_id:window_locks",
+      "description": "Repair and replacement of compatible window locks and locking hardware. Share the window and lock type, the fault and your location so we can confirm suitable parts, service availability and pricing.",
+      "name": "Window locks"
+    },
+    {
+      "category_id": "categories/gcid:key_duplication_service",
+      "display_name": "House key duplication",
+      "description": "Duplicate keys for supported house and door locks. Bring your original key or share the key type so we can confirm compatibility and quote.",
+      "name": "House key duplication"
+    },
+    {
+      "category_id": "categories/gcid:key_duplication_service",
+      "display_name": "Lock repair and replacement",
+      "description": "Repair and replacement of compatible door locks, cylinders and handles for homes, offices and shops. Contact us with the lock details and location for parts, installation and call-out pricing.",
+      "name": "Lock repair and replacement"
+    },
+    {
+      "category_id": "categories/gcid:key_duplication_service",
+      "display_name": "Office and shop key duplication",
+      "description": "Key duplication for supported office, shop and cupboard locks. Contact us with the original key or lock details to confirm the suitable blank and price.",
+      "name": "Office and shop key duplication"
+    },
+    {
+      "category_id": "categories/gcid:key_duplication_service",
+      "display_name": "Computerised key duplication",
+      "description": "Duplication of compatible computerised, dimple and high-security keys. Bring the original key or share its type to confirm support and the correct key blank.",
+      "name": "Computerised key duplication"
+    },
+    {
+      "category_id": "categories/gcid:key_duplication_service",
+      "display_name": "Car remote key body and cover replacement",
+      "description": "Replacement of compatible car remote key bodies, shells and covers. Share your vehicle model and remote type so we can confirm fit, availability and pricing.",
+      "name": "Car remote key body and cover replacement"
+    },
+    {
+      "category_id": "categories/gcid:key_duplication_service",
+      "display_name": "24-hour key making",
+      "description": "Key making assistance available 24 hours every day. Call with your key type and location to confirm the service, timing and any call-out charges.",
+      "name": "24-hour key making"
+    },
+    {
+      "category_id": "categories/gcid:key_duplication_service",
+      "display_name": "Home lockout assistance",
+      "description": "24-hour lockout help for authorised home owners and occupants. Contact us with your address and lock details to confirm availability and the applicable quote.",
+      "name": "Home lockout assistance"
+    },
+    {
+      "category_id": "categories/gcid:key_duplication_service",
+      "display_name": "Main door lock replacement",
+      "description": "Replacement of compatible main door locks, cylinders and handles. Contact us with the existing lock details to discuss suitable parts and installation charges.",
+      "name": "Main door lock replacement"
+    },
+    {
+      "category_id": "categories/gcid:key_duplication_service",
+      "display_name": "Spare key cutting",
+      "description": "Spare keys cut for supported home, office, shop and vehicle key types. Bring the original key or share its details to confirm the suitable blank and price.",
+      "name": "Spare key cutting"
+    },
+    {
+      "category_id": "categories/gcid:key_duplication_service",
+      "display_name": "Padlock key duplication",
+      "description": "Duplicate keys for compatible padlocks. Bring your original key or share the padlock and key details so we can confirm the suitable blank and quote.",
+      "name": "Padlock key duplication"
+    },
+    {
+      "category_id": "categories/gcid:key_duplication_service",
+      "display_name": "Grille lock repair",
+      "description": "Repair assistance for compatible grille and gate locks. Share the lock details and location to confirm the available repair, parts and call-out charges.",
+      "name": "Grille lock repair"
+    },
+    {
+      "category_id": "categories/gcid:key_duplication_service",
+      "display_name": "Bike key making",
+      "description": "Bike key making and duplication for supported models. Contact us with your bike model and key details to confirm availability and pricing.",
+      "name": "Bike key making"
+    },
+    {
+      "category_id": "categories/gcid:key_duplication_service",
+      "display_name": "Bike key replacement",
+      "description": "Replacement keys for compatible bikes. Share your bike make, model and key or lock details so we can confirm the required service and quote.",
+      "name": "Bike key replacement"
+    },
+    {
+      "category_id": "categories/gcid:key_duplication_service",
+      "display_name": "Door lock repair",
+      "description": "Repair of sticking, faulty or damaged door locks for homes, offices and shops. Contact us with the lock type and location to confirm parts, service and pricing.",
+      "name": "Door lock repair"
+    },
+    {
+      "category_id": "categories/gcid:key_duplication_service",
+      "display_name": "Car key repair",
+      "description": "Repair assistance for compatible car keys and remote key bodies. Share the vehicle model, key type and problem so we can confirm the available repair and quote.",
+      "name": "Car key repair"
+    },
+    {
+      "category_id": "categories/gcid:key_duplication_service",
+      "display_name": "Car key making",
+      "description": "Car key making and duplication for supported makes and models. Share the vehicle make, model, year and key type to confirm compatibility and the applicable quote.",
+      "name": "Car key making"
+    },
+    {
+      "category_id": "categories/gcid:key_duplication_service",
+      "display_name": "Emergency locksmith services",
+      "description": "24-hour locksmith and lockout assistance for authorised owners and occupants. Call with your location and lock details to confirm availability, travel charges and the quote.",
+      "name": "Emergency locksmith services"
+    }
+  ],
+  "products": [
+    {
+      "name": "Computerised key",
+      "category": "Keys and key blanks",
+      "draft_price_inr": 250,
+      "description": "Computerised/dimple key for compatible locks. Match the key profile with your original key or lock. Indicative price; confirm the exact key type and cutting requirements before ordering. Representative AI-generated illustration; actual key design may differ.",
+      "status": "publicly_visible",
+      "editor_note": "Current product is publicly visible. All six catalogue entries were verified after reload.",
+      "screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-product-photo-required.png",
+      "form_state": "Edit approved; corrected title publicly visible.",
+      "image_asset": "product-images/computerised-key-blank.png",
+      "image_note": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "image_description_paragraph": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "description_with_image_disclosure": "Computerised/dimple key for compatible locks. Match the key profile with your original key or lock. Indicative price; confirm the exact key type and cutting requirements before ordering. Representative AI-generated illustration; actual key design may differ.",
+      "disclosure_publication_status": "exact_corrected_description_publicly_verified",
+      "photo_validation_history": "Earlier photo-required error was resolved by uploading the owner-authorized AI representative image.",
+      "visibility_verified": "Fresh Google owner catalogue and public Search Products confirmed the current name and price on 22 October 2026; no Pending label remains.",
+      "catalogue_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-products-live.png",
+      "manager_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-six-products-manager.png",
+      "previous_public_name": "Computerised key blank",
+      "product_uuid": "8b6e11a4-2174-4d9e-95e7-81612fa0f5fb",
+      "public_product_id": "8210459654379117113",
+      "description_record_note": "Exact corrected description, including representative AI-image disclosure, was verified in the public product detail on 22 October 2026.",
+      "original_model_reference": "Actual uncut key blank and its profile; confirm exact blank type.",
+      "image_available": "product-images/computerised-key-blank.png",
+      "correction_status": "approved_publicly_visible",
+      "correction_note": "The same product was renamed from Computerised key blank to Computerised key. Fresh public Search verified the corrected title; no Pending label remains in the reloaded owner catalogue.",
+      "public_description_verified": true,
+      "public_description_verified_at": "2026-10-22",
+      "public_description_verified_text": "Computerised/dimple key for compatible locks. Match the key profile with your original key or lock. Indicative price; confirm the exact key type and cutting requirements before ordering. Representative AI-generated illustration; actual key design may differ."
+    },
+    {
+      "name": "Car remote key body and shell",
+      "category": "Car key parts",
+      "draft_price_inr": 650,
+      "description": "Replacement outer body or shell for compatible car remote keys. Casing only, not a complete programmed key. Confirm the vehicle model, button layout, included parts and final price before ordering. Indicative price. Representative AI-generated illustration; actual design may differ.",
+      "status": "publicly_visible",
+      "editor_note": "Current product is publicly visible. All six catalogue entries were verified after reload.",
+      "image_asset": "product-images/car-remote-shell.png",
+      "image_note": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "image_description_paragraph": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "description_with_image_disclosure": "Replacement outer body or shell for compatible car remote keys. Casing only, not a complete programmed key. Confirm the vehicle model, button layout, included parts and final price before ordering. Indicative price. Representative AI-generated illustration; actual design may differ.",
+      "disclosure_publication_status": "exact_submitted_description_recorded",
+      "submitted_disclosure": "Representative AI-generated illustration; actual design may differ.",
+      "visibility_verified": "Fresh Google owner catalogue and public Search Products confirmed the current name and price on 22 October 2026; no Pending label remains.",
+      "catalogue_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-products-live.png",
+      "manager_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-six-products-manager.png",
+      "description_record_note": "Exact text entered and submitted through the Google product form. Current name and price are publicly verified. Full public detail body is being checked separately.",
+      "original_model_reference": "Actual replacement shell showing front, back, buttons and included blade if any.",
+      "image_available": "product-images/car-remote-shell.png"
+    },
+    {
+      "name": "Cylinder lock handle",
+      "category": "Door lock hardware",
+      "draft_price_inr": 700,
+      "description": "Replacement handle for compatible cylinder-lock fittings. Check door thickness, fixing positions and existing hardware before purchase. Indicative price; confirm the model, supplied parts and installation charges. Representative AI-generated illustration; actual design may differ.",
+      "status": "publicly_visible",
+      "editor_note": "Current product is publicly visible. All six catalogue entries were verified after reload.",
+      "image_asset": "product-images/cylinder-lock-handle.png",
+      "image_note": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "image_description_paragraph": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "description_with_image_disclosure": "Replacement handle for compatible cylinder-lock fittings. Check door thickness, fixing positions and existing hardware before purchase. Indicative price; confirm the model, supplied parts and installation charges. Representative AI-generated illustration; actual design may differ.",
+      "disclosure_publication_status": "exact_submitted_description_recorded",
+      "submitted_disclosure": "Representative AI-generated illustration; actual design may differ.",
+      "visibility_verified": "Fresh Google owner catalogue and public Search Products confirmed the current name and price on 22 October 2026; no Pending label remains.",
+      "catalogue_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-products-live.png",
+      "manager_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-six-products-manager.png",
+      "description_record_note": "Exact text entered and submitted through the Google product form. Current name and price are publicly verified. Full public detail body is being checked separately.",
+      "original_model_reference": "Actual handle set with package/model and included components.",
+      "image_available": "product-images/cylinder-lock-handle.png"
+    },
+    {
+      "name": "Door lock cylinder",
+      "category": "Door lock hardware",
+      "draft_price_inr": 950,
+      "description": "Replacement cylinder for compatible door locks. Match the cylinder size and fitting type to your existing hardware. Indicative price; confirm the exact model, supplied keys, finish and installation charges before purchase. Representative AI-generated illustration; actual design may differ.",
+      "status": "publicly_visible",
+      "editor_note": "Current product is publicly visible. All six catalogue entries were verified after reload.",
+      "image_asset": "product-images/door-lock-cylinder.png",
+      "image_note": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "image_description_paragraph": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "description_with_image_disclosure": "Replacement cylinder for compatible door locks. Match the cylinder size and fitting type to your existing hardware. Indicative price; confirm the exact model, supplied keys, finish and installation charges before purchase. Representative AI-generated illustration; actual design may differ.",
+      "disclosure_publication_status": "exact_submitted_description_recorded",
+      "submitted_disclosure": "Representative AI-generated illustration; actual design may differ.",
+      "visibility_verified": "Fresh Google owner catalogue and public Search Products confirmed the current name and price on 22 October 2026; no Pending label remains.",
+      "catalogue_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-products-live.png",
+      "manager_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-six-products-manager.png",
+      "description_record_note": "Exact text entered and submitted through the Google product form. Current name and price are publicly verified. Full public detail body is being checked separately.",
+      "original_model_reference": "Actual cylinder with its keys and size/model label.",
+      "image_available": "product-images/door-lock-cylinder.png"
+    },
+    {
+      "name": "Main door lock",
+      "category": "Door locks",
+      "draft_price_inr": 2300,
+      "description": "Main door lock for compatible door sizes and fitting types. Share your existing lock and door details to check suitability. Indicative price; confirm the exact model, supplied components and fitting charges before purchase. Representative AI-generated illustration; actual design may differ.",
+      "status": "publicly_visible",
+      "editor_note": "Current product is publicly visible. All six catalogue entries were verified after reload.",
+      "image_asset": "product-images/main-door-lock.png",
+      "image_note": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "image_description_paragraph": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "description_with_image_disclosure": "Main door lock for compatible door sizes and fitting types. Share your existing lock and door details to check suitability. Indicative price; confirm the exact model, supplied components and fitting charges before purchase. Representative AI-generated illustration; actual design may differ.",
+      "disclosure_publication_status": "exact_submitted_description_recorded",
+      "submitted_disclosure": "Representative AI-generated illustration; actual design may differ.",
+      "visibility_verified": "Fresh Google owner catalogue and public Search Products confirmed the current name and price on 22 October 2026; no Pending label remains.",
+      "catalogue_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-products-live.png",
+      "manager_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-six-products-manager.png",
+      "description_record_note": "Exact text entered and submitted through the Google product form. Current name and price are publicly verified. Full public detail body is being checked separately.",
+      "original_model_reference": "Actual packaged or complete lock showing model and included components.",
+      "image_available": "product-images/main-door-lock.png"
+    },
+    {
+      "name": "Car remote key unit",
+      "category": "Car keys and remotes",
+      "draft_price_inr": 1500,
+      "description": "Remote key unit for supported vehicle models. Electronics and compatibility depend on the vehicle. Indicative price; confirm the exact unit, included blade, cutting and programming charges before ordering. Representative AI-generated illustration; actual design may differ.",
+      "status": "publicly_visible",
+      "editor_note": "Current product is publicly visible. All six catalogue entries were verified after reload.",
+      "image_asset": "product-images/car-remote-key-unit.png",
+      "image_note": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "image_description_paragraph": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+      "description_with_image_disclosure": "Remote key unit for supported vehicle models. Electronics and compatibility depend on the vehicle. Indicative price; confirm the exact unit, included blade, cutting and programming charges before ordering. Representative AI-generated illustration; actual design may differ.",
+      "disclosure_publication_status": "exact_submitted_description_recorded",
+      "visibility_verified": "Fresh Google owner catalogue and public Search Products confirmed the current name and price on 22 October 2026; no Pending label remains.",
+      "submitted_disclosure": "Representative AI-generated illustration; actual design may differ.",
+      "catalogue_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-products-live.png",
+      "manager_screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-six-products-manager.png",
+      "description_record_note": "Exact text entered and submitted through the Google product form. Current name and price are publicly verified. Full public detail body is being checked separately.",
+      "original_model_reference": "Actual compatible remote unit, button layout and model details.",
+      "image_available": "product-images/car-remote-key-unit.png"
+    }
+  ],
+  "product_pricing_status": "All six owner-authorized generic prices published and verified: INR250,650,700,950,2300,1500. Corrected key title is publicly visible. Owner will update prices.",
+  "services_status": "Saved and verified by fresh Windsor readback on 21 October 2026",
+  "products_status": "publicly_visible",
+  "readback_verified": true,
+  "products_published_count": 6,
+  "product_photo_validation": {
+    "checked_at_local": "2026-10-22",
+    "required": true,
+    "error": "Add a product photo",
+    "first_product_status": "attempted_unsaved_photo_required",
+    "other_products_status": "prepared_not_submitted",
+    "screenshot": "C:/Users/kbose/.codex/visualizations/2026/10/21/01a15ed4-019d-7e73-811d-563248a44e98/gbp-product-photo-required.png",
+    "actual_product_images_in_workspace": false,
+    "current_state": "resolved_with_owner_authorized_AI_representative_assets",
+    "historical_error": "Add a product photo",
+    "representative_AI_images_available": true
+  },
+  "product_image_assets": {
+    "manifest": "product-images/manifest.json",
+    "count": 6,
+    "type": "AI-generated generic representative illustrations, not actual stock photographs",
+    "owner_authorized": true,
+    "description_disclosure": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase."
+  },
+  "products_submitted_count": 6,
+  "products_pending_reason": null,
+  "products_publicly_visible_verified_count": 6,
+  "products_previously_public_pending_edit_count": 0,
+  "initial_public_catalogue_verified_count": 6,
+  "products_checked_at": "2026-10-22"
+}

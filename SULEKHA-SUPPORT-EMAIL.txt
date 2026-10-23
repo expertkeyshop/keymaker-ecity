@@ -1,0 +1,24 @@
+Status: SENT — verified via a separate Gmail metadata read with the SENT label
+Sent date: 22 October 2026 (user date, Asia/Calcutta)
+Gmail message/thread ID: redacted-private-message-id
+Record of an email already sent. Do not send again.
+To: care@sulekha.com
+Subject: Sulekha profile help: locksmith services, attributes and public page
+
+Hello Sulekha Support,
+
+Please help resolve the service and attribute setup for our existing registered profile and confirm whether its free public listing is live.
+
+Business: Key Maker & Locksmith | Electronic City
+Registered phone: +91 97623 06303
+Shop address: Gollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru, Karnataka 560100.
+
+The Services page lists Key Maker & Locksmiths. Its details show “No needs available for this service”. We selected “Additional info” in the existing service’s Edit screen and submitted it, but after reloading it still says “No information added yet”.
+
+The attributes editor says “Add services first” despite the saved locksmith mapping. It shows 0 of 11 attributes, with 3 required attributes missing. Please check the mapping and make the applicable service details and attributes available.
+
+The structured location currently shows Electronic City Phase I; the full street address is in About. Please identify or enable the street-address and map editor so we can verify the actual shop location.
+
+Please also confirm publication status and provide the working public profile URL; the dashboard’s Share option has not exposed one. Please preserve our existing profile and accurate category without adding unrelated categories, duplicate registrations or a paid package.
+
+Thank you.
