@@ -1,0 +1,365 @@
+{
+  "status": "done",
+  "data": [
+    {
+      "location_id": "locations/15540039722934592193",
+      "location_title": "Key Maker & Locksmith — Electronic City",
+      "location_primary_category_id": "categories/gcid:locksmith",
+      "location_additional_categories": [
+        {
+          "name": "categories/gcid:key_duplication_service",
+          "displayName": "Key Duplication Service",
+          "serviceTypes": [
+            {
+              "serviceTypeId": "job_type_id:building_lockout",
+              "displayName": "Building lockouts"
+            },
+            {
+              "serviceTypeId": "job_type_id:car_key_program",
+              "displayName": "Car digital & remote key reprogramming"
+            },
+            {
+              "serviceTypeId": "job_type_id:copy_building_key",
+              "displayName": "Building key copying"
+            },
+            {
+              "serviceTypeId": "job_type_id:copy_vehicle_key",
+              "displayName": "Car key copying"
+            },
+            {
+              "serviceTypeId": "job_type_id:install_hardware",
+              "displayName": "Door lock & bolt hardware installation"
+            },
+            {
+              "serviceTypeId": "job_type_id:new_key_fob",
+              "displayName": "New key fob creation"
+            },
+            {
+              "serviceTypeId": "job_type_id:rekey_lock",
+              "displayName": "Lock rekeying"
+            },
+            {
+              "serviceTypeId": "job_type_id:repair_hardware",
+              "displayName": "Repair hardware"
+            },
+            {
+              "serviceTypeId": "job_type_id:safe_locks",
+              "displayName": "Safe lock install, open & repair"
+            },
+            {
+              "serviceTypeId": "job_type_id:security_door_locks",
+              "displayName": "Security door locks"
+            },
+            {
+              "serviceTypeId": "job_type_id:vehicle_lockout",
+              "displayName": "Car lockouts"
+            },
+            {
+              "serviceTypeId": "job_type_id:window_locks",
+              "displayName": "Window locks"
+            }
+          ],
+          "moreHoursTypes": [
+            {
+              "hoursTypeId": "ACCESS",
+              "displayName": "Access",
+              "localizedDisplayName": "Access"
+            },
+            {
+              "hoursTypeId": "BREAKFAST",
+              "displayName": "Breakfast",
+              "localizedDisplayName": "Breakfast"
+            },
+            {
+              "hoursTypeId": "BRUNCH",
+              "displayName": "Brunch",
+              "localizedDisplayName": "Brunch"
+            },
+            {
+              "hoursTypeId": "DELIVERY",
+              "displayName": "Delivery",
+              "localizedDisplayName": "Delivery"
+            },
+            {
+              "hoursTypeId": "DINNER",
+              "displayName": "Dinner",
+              "localizedDisplayName": "Dinner"
+            },
+            {
+              "hoursTypeId": "DRIVE_THROUGH",
+              "displayName": "Drive through",
+              "localizedDisplayName": "Drive through"
+            },
+            {
+              "hoursTypeId": "HAPPY_HOUR",
+              "displayName": "Happy hours",
+              "localizedDisplayName": "Happy hours"
+            },
+            {
+              "hoursTypeId": "KITCHEN",
+              "displayName": "Kitchen",
+              "localizedDisplayName": "Kitchen"
+            },
+            {
+              "hoursTypeId": "LUNCH",
+              "displayName": "Lunch",
+              "localizedDisplayName": "Lunch"
+            },
+            {
+              "hoursTypeId": "ONLINE_SERVICE_HOURS",
+              "displayName": "Online service hours",
+              "localizedDisplayName": "Online service hours"
+            },
+            {
+              "hoursTypeId": "PICKUP",
+              "displayName": "Pickup",
+              "localizedDisplayName": "Pickup"
+            },
+            {
+              "hoursTypeId": "TAKEOUT",
+              "displayName": "Takeout",
+              "localizedDisplayName": "Takeout"
+            },
+            {
+              "hoursTypeId": "SENIOR_HOURS",
+              "displayName": "Senior hours",
+              "localizedDisplayName": "Senior hours"
+            }
+          ]
+        }
+      ],
+      "location_website_uri": "http://keymaker-ecity.alishanaver72.workers.dev/",
+      "location_service_items": [
+        {
+          "structuredServiceItem": {
+            "serviceTypeId": "job_type_id:building_lockout",
+            "description": "24-hour lockout assistance for homes, offices and shops. On-site help is available for authorised owners and occupants. Share your location and lock details to confirm availability, call-out charges and the quote."
+          }
+        },
+        {
+          "structuredServiceItem": {
+            "serviceTypeId": "job_type_id:copy_building_key",
+            "description": "Duplicate keys for supported home, office, shop and cupboard locks. Bring the original key so we can check the correct blank and cutting requirements. Contact us to confirm compatibility and pricing."
+          }
+        },
+        {
+          "structuredServiceItem": {
+            "serviceTypeId": "job_type_id:car_key_program",
+            "description": "Programming and reprogramming for compatible car transponder keys and remotes. Share the make, model, year and existing key details to confirm support and the quote. Service availability depends on the vehicle and key system."
+          }
+        },
+        {
+          "structuredServiceItem": {
+            "serviceTypeId": "job_type_id:copy_vehicle_key",
+            "description": "Spare car keys for supported makes and models. We check the key type, cutting requirements and any chip or remote programming needed. Bring your original key and vehicle details to confirm compatibility and pricing."
+          }
+        },
+        {
+          "structuredServiceItem": {
+            "serviceTypeId": "job_type_id:vehicle_lockout",
+            "description": "24-hour assistance when keys are locked inside a supported vehicle. Available to authorised owners and users. Call with your location, vehicle make and model so we can confirm access options, availability and charges."
+          }
+        },
+        {
+          "structuredServiceItem": {
+            "serviceTypeId": "job_type_id:install_hardware",
+            "description": "Installation of compatible door locks, cylinders, handles and bolts for homes, offices and shops. Share door and existing hardware details to confirm suitable parts, fitting requirements and installation charges."
+          }
+        },
+        {
+          "structuredServiceItem": {
+            "serviceTypeId": "job_type_id:rekey_lock",
+            "description": "Rekeying for compatible locks so they work with a different key. Useful when keys are lost or access needs to change. Share the lock type to confirm whether rekeying is suitable and to receive a quote."
+          }
+        },
+        {
+          "structuredServiceItem": {
+            "serviceTypeId": "job_type_id:new_key_fob",
+            "description": "New electronic key fobs for compatible vehicles. Supply the vehicle make, model, year and key details so we can check the correct fob, cutting and programming requirements. Parts and programming are quoted for the specific vehicle."
+          }
+        },
+        {
+          "structuredServiceItem": {
+            "serviceTypeId": "job_type_id:repair_hardware",
+            "description": "Repair assistance for compatible door lock hardware, including cylinders, handles and related fittings. Share photos or details of the fault so we can check repair options, parts availability and the quote."
+          }
+        },
+        {
+          "structuredServiceItem": {
+            "serviceTypeId": "job_type_id:safe_locks",
+            "description": "Safe opening, lock installation and repair for authorised owners. Share the safe type and the problem to confirm service availability, access requirements and pricing. Work depends on the safe and locking system."
+          }
+        },
+        {
+          "structuredServiceItem": {
+            "serviceTypeId": "job_type_id:security_door_locks",
+            "description": "Supply, installation, repair and replacement of compatible security door locks. We check the existing lock, door type and required fittings before recommending suitable parts and quoting for the work."
+          }
+        },
+        {
+          "structuredServiceItem": {
+            "serviceTypeId": "job_type_id:window_locks",
+            "description": "Repair and replacement of compatible window locks and locking hardware. Share the window and lock type, the fault and your location so we can confirm suitable parts, service availability and pricing."
+          }
+        },
+        {
+          "freeFormServiceItem": {
+            "category": "categories/gcid:key_duplication_service",
+            "label": {
+              "displayName": "House key duplication",
+              "description": "Duplicate keys for supported house and door locks. Bring your original key or share the key type so we can confirm compatibility and quote."
+            }
+          }
+        },
+        {
+          "freeFormServiceItem": {
+            "category": "categories/gcid:key_duplication_service",
+            "label": {
+              "displayName": "Lock repair and replacement",
+              "description": "Repair and replacement of compatible door locks, cylinders and handles for homes, offices and shops. Contact us with the lock details and location for parts, installation and call-out pricing."
+            }
+          }
+        },
+        {
+          "freeFormServiceItem": {
+            "category": "categories/gcid:key_duplication_service",
+            "label": {
+              "displayName": "Office and shop key duplication",
+              "description": "Key duplication for supported office, shop and cupboard locks. Contact us with the original key or lock details to confirm the suitable blank and price."
+            }
+          }
+        },
+        {
+          "freeFormServiceItem": {
+            "category": "categories/gcid:key_duplication_service",
+            "label": {
+              "displayName": "Computerised key duplication",
+              "description": "Duplication of compatible computerised, dimple and high-security keys. Bring the original key or share its type to confirm support and the correct key blank."
+            }
+          }
+        },
+        {
+          "freeFormServiceItem": {
+            "category": "categories/gcid:key_duplication_service",
+            "label": {
+              "displayName": "Car remote key body and cover replacement",
+              "description": "Replacement of compatible car remote key bodies, shells and covers. Share your vehicle model and remote type so we can confirm fit, availability and pricing."
+            }
+          }
+        },
+        {
+          "freeFormServiceItem": {
+            "category": "categories/gcid:key_duplication_service",
+            "label": {
+              "displayName": "24-hour key making",
+              "description": "Key making assistance available 24 hours every day. Call with your key type and location to confirm the service, timing and any call-out charges."
+            }
+          }
+        },
+        {
+          "freeFormServiceItem": {
+            "category": "categories/gcid:key_duplication_service",
+            "label": {
+              "displayName": "Home lockout assistance",
+              "description": "24-hour lockout help for authorised home owners and occupants. Contact us with your address and lock details to confirm availability and the applicable quote."
+            }
+          }
+        },
+        {
+          "freeFormServiceItem": {
+            "category": "categories/gcid:key_duplication_service",
+            "label": {
+              "displayName": "Main door lock replacement",
+              "description": "Replacement of compatible main door locks, cylinders and handles. Contact us with the existing lock details to discuss suitable parts and installation charges."
+            }
+          }
+        },
+        {
+          "freeFormServiceItem": {
+            "category": "categories/gcid:key_duplication_service",
+            "label": {
+              "displayName": "Spare key cutting",
+              "description": "Spare keys cut for supported home, office, shop and vehicle key types. Bring the original key or share its details to confirm the suitable blank and price."
+            }
+          }
+        },
+        {
+          "freeFormServiceItem": {
+            "category": "categories/gcid:key_duplication_service",
+            "label": {
+              "displayName": "Padlock key duplication",
+              "description": "Duplicate keys for compatible padlocks. Bring your original key or share the padlock and key details so we can confirm the suitable blank and quote."
+            }
+          }
+        },
+        {
+          "freeFormServiceItem": {
+            "category": "categories/gcid:key_duplication_service",
+            "label": {
+              "displayName": "Grille lock repair",
+              "description": "Repair assistance for compatible grille and gate locks. Share the lock details and location to confirm the available repair, parts and call-out charges."
+            }
+          }
+        },
+        {
+          "freeFormServiceItem": {
+            "category": "categories/gcid:key_duplication_service",
+            "label": {
+              "displayName": "Bike key making",
+              "description": "Bike key making and duplication for supported models. Contact us with your bike model and key details to confirm availability and pricing."
+            }
+          }
+        },
+        {
+          "freeFormServiceItem": {
+            "category": "categories/gcid:key_duplication_service",
+            "label": {
+              "displayName": "Bike key replacement",
+              "description": "Replacement keys for compatible bikes. Share your bike make, model and key or lock details so we can confirm the required service and quote."
+            }
+          }
+        },
+        {
+          "freeFormServiceItem": {
+            "category": "categories/gcid:key_duplication_service",
+            "label": {
+              "displayName": "Door lock repair",
+              "description": "Repair of sticking, faulty or damaged door locks for homes, offices and shops. Contact us with the lock type and location to confirm parts, service and pricing."
+            }
+          }
+        },
+        {
+          "freeFormServiceItem": {
+            "category": "categories/gcid:key_duplication_service",
+            "label": {
+              "displayName": "Car key repair",
+              "description": "Repair assistance for compatible car keys and remote key bodies. Share the vehicle model, key type and problem so we can confirm the available repair and quote."
+            }
+          }
+        },
+        {
+          "freeFormServiceItem": {
+            "category": "categories/gcid:key_duplication_service",
+            "label": {
+              "displayName": "Car key making",
+              "description": "Car key making and duplication for supported makes and models. Share the vehicle make, model, year and key type to confirm compatibility and the applicable quote."
+            }
+          }
+        },
+        {
+          "freeFormServiceItem": {
+            "category": "categories/gcid:key_duplication_service",
+            "label": {
+              "displayName": "Emergency locksmith services",
+              "description": "24-hour locksmith and lockout assistance for authorised owners and occupants. Call with your location and lock details to confirm availability, travel charges and the quote."
+            }
+          }
+        }
+      ],
+      "location_metadata_can_modify_service_list": true,
+      "location_metadata_can_operate_local_post": null,
+      "data_fetched_at": "2026-10-25T10:24:51"
+    }
+  ],
+  "total_rows": 1
+}

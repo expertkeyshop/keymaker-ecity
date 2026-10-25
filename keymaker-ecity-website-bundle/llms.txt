@@ -10,7 +10,7 @@
 
 ## Main sources
 
-[Website](https://keymaker-ecity.alishanaver72.workers.dev/): Services, location, hours, photographs, contact details and FAQs.
+[Website](https://keymaker-ecity.alishanaver72.workers.dev/): Services, products, location, hours, photographs, contact details and FAQs.
 [Business details](https://keymaker-ecity.alishanaver72.workers.dev/business.md): Plain-text business facts and service information.
 [Structured business data](https://keymaker-ecity.alishanaver72.workers.dev/business.json): JSON-LD matching the visible website.
 [Google Maps](https://www.google.com/maps?cid=6777548479080557010): Shop directions and Google Business Profile.
@@ -20,4 +20,4 @@
 [Sitemap](https://keymaker-ecity.alishanaver72.workers.dev/sitemap.xml)
 [Crawler preferences](https://keymaker-ecity.alishanaver72.workers.dev/robots.txt)
 
-Information reviewed: 2026-10-24.
+Information reviewed: 2026-10-25.

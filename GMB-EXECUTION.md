@@ -340,3 +340,16 @@ The owner requested email support instead of WhatsApp. An email to care@sulekha.
 ## Sulekha support email sent and verified — 22 October 2026
 
 The owner-authorized email was sent to care@sulekha.com with subject “Sulekha profile help: locksmith services, attributes and public page”. A separate read_email metadata read confirmed the Gmail SENT label, recipient and exact subject. Message/thread ID `redacted-private-message-id`; internal date1792685113000 milliseconds. Sender private name/address were not copied into business records. The201-word local body is unchanged. No WhatsApp message was sent and no automation was created. Status: sent. Do not send again. Directory public/service/attribute issues remain open; checklist stays16/18.
+
+
+## Approved expansion submitted and browser checks — 25 October 2026
+
+The owner approved the full exact batch. All seven API writes succeeded. The saved service list now has **32 services**, preserving all 29 previous service IDs/names, categories and exact descriptions. The three added descriptions and “No price” values were individually verified in the browser: cupboard/almirah key duplication, cupboard/cabinet lock replacement and door-lock cylinder replacement. No service prices were changed.
+
+All **five additional physical products were submitted**, with new prices blank for quotes and representative-image disclosures preserved. The owner catalogue contains **11 items**, retaining the six previous products. The fresh public View all products catalogue shows **all 11 products**, including brass house key, cupboard/almirah key, mechanical bike spare key, padlock spare key and push-button cupboard lock. Product detail checks and final evidence are linked in the consolidated report.
+
+All **three new update posts are publicly visible** after fresh Google Search reload. Post IDs: new website `2686529589558411563`, spare-key checklist `9098022010005601203`, rekeying after a move `5983619735388074411`. Their three Learn more links and both corrected older post buttons use the approved HTTPS Cloudflare website. The profile website is also public-verified as HTTPS. The initial cached connector readbacks are superseded by these fresh browser checks.
+
+Latest consolidated result: [GMB-PUBLICATION-2026-10-25.md](GMB-PUBLICATION-2026-10-25.md). Exact approved copy: [GMB-EXPANSION-2026-10-25.md](GMB-EXPANSION-2026-10-25.md). API journal: [gbp-api-publication-2026-10-25.json](gbp-api-publication-2026-10-25.json). Exact service readbacks: [gbp-services-browser-readback-2026-10-25.json](gbp-services-browser-readback-2026-10-25.json). Product submissions: [gbp-product-publication-2026-10-25.json](gbp-product-publication-2026-10-25.json).
+
+No other checklist task is marked complete by this publication entry; directory verification and phone visibility are separate matters.

@@ -1,0 +1,1054 @@
+{
+  "date": "2026-10-25",
+  "approved": true,
+  "approval": "User: Approve and publish the full batch",
+  "connector": "google_my_business",
+  "account": "locations/15540039722934592193",
+  "baseline_location": {
+    "status": "done",
+    "data": [
+      {
+        "location_id": "locations/15540039722934592193",
+        "location_title": "Key Maker & Locksmith — Electronic City",
+        "location_service_items": [
+          {
+            "structuredServiceItem": {
+              "serviceTypeId": "job_type_id:building_lockout",
+              "description": "24-hour lockout assistance for homes, offices and shops. On-site help is available for authorised owners and occupants. Share your location and lock details to confirm availability, call-out charges and the quote."
+            }
+          },
+          {
+            "structuredServiceItem": {
+              "serviceTypeId": "job_type_id:copy_building_key",
+              "description": "Duplicate keys for supported home, office, shop and cupboard locks. Bring the original key so we can check the correct blank and cutting requirements. Contact us to confirm compatibility and pricing."
+            }
+          },
+          {
+            "structuredServiceItem": {
+              "serviceTypeId": "job_type_id:car_key_program",
+              "description": "Programming and reprogramming for compatible car transponder keys and remotes. Share the make, model, year and existing key details to confirm support and the quote. Service availability depends on the vehicle and key system."
+            }
+          },
+          {
+            "structuredServiceItem": {
+              "serviceTypeId": "job_type_id:copy_vehicle_key",
+              "description": "Spare car keys for supported makes and models. We check the key type, cutting requirements and any chip or remote programming needed. Bring your original key and vehicle details to confirm compatibility and pricing."
+            }
+          },
+          {
+            "structuredServiceItem": {
+              "serviceTypeId": "job_type_id:vehicle_lockout",
+              "description": "24-hour assistance when keys are locked inside a supported vehicle. Available to authorised owners and users. Call with your location, vehicle make and model so we can confirm access options, availability and charges."
+            }
+          },
+          {
+            "structuredServiceItem": {
+              "serviceTypeId": "job_type_id:install_hardware",
+              "description": "Installation of compatible door locks, cylinders, handles and bolts for homes, offices and shops. Share door and existing hardware details to confirm suitable parts, fitting requirements and installation charges."
+            }
+          },
+          {
+            "structuredServiceItem": {
+              "serviceTypeId": "job_type_id:rekey_lock",
+              "description": "Rekeying for compatible locks so they work with a different key. Useful when keys are lost or access needs to change. Share the lock type to confirm whether rekeying is suitable and to receive a quote."
+            }
+          },
+          {
+            "structuredServiceItem": {
+              "serviceTypeId": "job_type_id:new_key_fob",
+              "description": "New electronic key fobs for compatible vehicles. Supply the vehicle make, model, year and key details so we can check the correct fob, cutting and programming requirements. Parts and programming are quoted for the specific vehicle."
+            }
+          },
+          {
+            "structuredServiceItem": {
+              "serviceTypeId": "job_type_id:repair_hardware",
+              "description": "Repair assistance for compatible door lock hardware, including cylinders, handles and related fittings. Share photos or details of the fault so we can check repair options, parts availability and the quote."
+            }
+          },
+          {
+            "structuredServiceItem": {
+              "serviceTypeId": "job_type_id:safe_locks",
+              "description": "Safe opening, lock installation and repair for authorised owners. Share the safe type and the problem to confirm service availability, access requirements and pricing. Work depends on the safe and locking system."
+            }
+          },
+          {
+            "structuredServiceItem": {
+              "serviceTypeId": "job_type_id:security_door_locks",
+              "description": "Supply, installation, repair and replacement of compatible security door locks. We check the existing lock, door type and required fittings before recommending suitable parts and quoting for the work."
+            }
+          },
+          {
+            "structuredServiceItem": {
+              "serviceTypeId": "job_type_id:window_locks",
+              "description": "Repair and replacement of compatible window locks and locking hardware. Share the window and lock type, the fault and your location so we can confirm suitable parts, service availability and pricing."
+            }
+          },
+          {
+            "freeFormServiceItem": {
+              "category": "categories/gcid:key_duplication_service",
+              "label": {
+                "displayName": "House key duplication",
+                "description": "Duplicate keys for supported house and door locks. Bring your original key or share the key type so we can confirm compatibility and quote."
+              }
+            }
+          },
+          {
+            "freeFormServiceItem": {
+              "category": "categories/gcid:key_duplication_service",
+              "label": {
+                "displayName": "Lock repair and replacement",
+                "description": "Repair and replacement of compatible door locks, cylinders and handles for homes, offices and shops. Contact us with the lock details and location for parts, installation and call-out pricing."
+              }
+            }
+          },
+          {
+            "freeFormServiceItem": {
+              "category": "categories/gcid:key_duplication_service",
+              "label": {
+                "displayName": "Office and shop key duplication",
+                "description": "Key duplication for supported office, shop and cupboard locks. Contact us with the original key or lock details to confirm the suitable blank and price."
+              }
+            }
+          },
+          {
+            "freeFormServiceItem": {
+              "category": "categories/gcid:key_duplication_service",
+              "label": {
+                "displayName": "Computerised key duplication",
+                "description": "Duplication of compatible computerised, dimple and high-security keys. Bring the original key or share its type to confirm support and the correct key blank."
+              }
+            }
+          },
+          {
+            "freeFormServiceItem": {
+              "category": "categories/gcid:key_duplication_service",
+              "label": {
+                "displayName": "Car remote key body and cover replacement",
+                "description": "Replacement of compatible car remote key bodies, shells and covers. Share your vehicle model and remote type so we can confirm fit, availability and pricing."
+              }
+            }
+          },
+          {
+            "freeFormServiceItem": {
+              "category": "categories/gcid:key_duplication_service",
+              "label": {
+                "displayName": "24-hour key making",
+                "description": "Key making assistance available 24 hours every day. Call with your key type and location to confirm the service, timing and any call-out charges."
+              }
+            }
+          },
+          {
+            "freeFormServiceItem": {
+              "category": "categories/gcid:key_duplication_service",
+              "label": {
+                "displayName": "Home lockout assistance",
+                "description": "24-hour lockout help for authorised home owners and occupants. Contact us with your address and lock details to confirm availability and the applicable quote."
+              }
+            }
+          },
+          {
+            "freeFormServiceItem": {
+              "category": "categories/gcid:key_duplication_service",
+              "label": {
+                "displayName": "Main door lock replacement",
+                "description": "Replacement of compatible main door locks, cylinders and handles. Contact us with the existing lock details to discuss suitable parts and installation charges."
+              }
+            }
+          },
+          {
+            "freeFormServiceItem": {
+              "category": "categories/gcid:key_duplication_service",
+              "label": {
+                "displayName": "Spare key cutting",
+                "description": "Spare keys cut for supported home, office, shop and vehicle key types. Bring the original key or share its details to confirm the suitable blank and price."
+              }
+            }
+          },
+          {
+            "freeFormServiceItem": {
+              "category": "categories/gcid:key_duplication_service",
+              "label": {
+                "displayName": "Padlock key duplication",
+                "description": "Duplicate keys for compatible padlocks. Bring your original key or share the padlock and key details so we can confirm the suitable blank and quote."
+              }
+            }
+          },
+          {
+            "freeFormServiceItem": {
+              "category": "categories/gcid:key_duplication_service",
+              "label": {
+                "displayName": "Grille lock repair",
+                "description": "Repair assistance for compatible grille and gate locks. Share the lock details and location to confirm the available repair, parts and call-out charges."
+              }
+            }
+          },
+          {
+            "freeFormServiceItem": {
+              "category": "categories/gcid:key_duplication_service",
+              "label": {
+                "displayName": "Bike key making",
+                "description": "Bike key making and duplication for supported models. Contact us with your bike model and key details to confirm availability and pricing."
+              }
+            }
+          },
+          {
+            "freeFormServiceItem": {
+              "category": "categories/gcid:key_duplication_service",
+              "label": {
+                "displayName": "Bike key replacement",
+                "description": "Replacement keys for compatible bikes. Share your bike make, model and key or lock details so we can confirm the required service and quote."
+              }
+            }
+          },
+          {
+            "freeFormServiceItem": {
+              "category": "categories/gcid:key_duplication_service",
+              "label": {
+                "displayName": "Door lock repair",
+                "description": "Repair of sticking, faulty or damaged door locks for homes, offices and shops. Contact us with the lock type and location to confirm parts, service and pricing."
+              }
+            }
+          },
+          {
+            "freeFormServiceItem": {
+              "category": "categories/gcid:key_duplication_service",
+              "label": {
+                "displayName": "Car key repair",
+                "description": "Repair assistance for compatible car keys and remote key bodies. Share the vehicle model, key type and problem so we can confirm the available repair and quote."
+              }
+            }
+          },
+          {
+            "freeFormServiceItem": {
+              "category": "categories/gcid:key_duplication_service",
+              "label": {
+                "displayName": "Car key making",
+                "description": "Car key making and duplication for supported makes and models. Share the vehicle make, model, year and key type to confirm compatibility and the applicable quote."
+              }
+            }
+          },
+          {
+            "freeFormServiceItem": {
+              "category": "categories/gcid:key_duplication_service",
+              "label": {
+                "displayName": "Emergency locksmith services",
+                "description": "24-hour locksmith and lockout assistance for authorised owners and occupants. Call with your location and lock details to confirm availability, travel charges and the quote."
+              }
+            }
+          }
+        ],
+        "location_website_uri": "http://keymaker-ecity.alishanaver72.workers.dev/",
+        "data_fetched_at": "2026-10-25T10:36:40"
+      }
+    ],
+    "total_rows": 1
+  },
+  "baseline_posts": {
+    "status": "done",
+    "data": [
+      {
+        "post_id": "accounts/111962817784782155754/locations/15540039722934592193/localPosts/2434502988356254046",
+        "post_summary": "Europa four side cutting",
+        "post_state": "LIVE",
+        "post_cta_action_type": null,
+        "post_cta_url": null,
+        "post_search_url": "https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKENDvj7zb5dycsgE",
+        "post_create_time": "2026-10-15T05:28:13.368017Z",
+        "post_update_time": "2026-10-15T05:28:13.368017Z",
+        "data_fetched_at": "2026-10-25T10:36:40"
+      },
+      {
+        "post_id": "accounts/111962817784782155754/locations/15540039722934592193/localPosts/6401196171407182369",
+        "post_summary": "Key Maker & Locksmith opened on 1 October 2026 on Gollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru. We provide key duplication, keys for compatible cars and bikes, lock repair and replacement, and lockout assistance. The shop is open 24 hours, with on-site service across our listed areas. Visit us or contact us to confirm your key or lock requirements and a quote. ",
+        "post_state": "LIVE",
+        "post_cta_action_type": null,
+        "post_cta_url": null,
+        "post_search_url": "https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEL2S9PPv8uvX4QE",
+        "post_create_time": "2026-10-21T20:07:42.098871Z",
+        "post_update_time": "2026-10-21T20:07:42.098871Z",
+        "data_fetched_at": "2026-10-25T10:36:40"
+      },
+      {
+        "post_id": "accounts/111962817784782155754/locations/15540039722934592193/localPosts/8812472286834001751",
+        "post_summary": "Save 10% on eligible standard house-key duplication at our Electronic City Phase 1 shop, with a maximum discount of ₹100 per order. Bring a compatible original key and show this Google offer or mention SPARE10 before placing your order. ",
+        "post_state": "LIVE",
+        "post_cta_action_type": null,
+        "post_cta_url": null,
+        "post_search_url": "https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEPWgw-zhw-SpswE",
+        "post_create_time": "2026-10-21T17:19:32.620375Z",
+        "post_update_time": "2026-10-21T17:19:32.620375Z",
+        "data_fetched_at": "2026-10-25T10:36:40"
+      },
+      {
+        "post_id": "accounts/111962817784782155754/locations/15540039722934592193/localPosts/6937526443622698449",
+        "post_summary": "Sticking key or faulty door lock?\n\nIf your key is difficult to turn, avoid forcing it. We assess compatible door locks, cylinders, handles and bolts, and offer repair, replacement and installation for homes, offices and shops.\n\nShop visits and on-site service are available around Electronic City and our listed areas. We are open 24 hours. Contact us with the lock details and location to confirm suitable parts, availability and the quote, including any travel or installation charges. ",
+        "post_state": "LIVE",
+        "post_cta_action_type": null,
+        "post_cta_url": null,
+        "post_search_url": "https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEJzyg8-9_qb60wE",
+        "post_create_time": "2026-10-21T17:13:31.081665Z",
+        "post_update_time": "2026-10-21T17:13:31.081665Z",
+        "data_fetched_at": "2026-10-25T10:36:40"
+      },
+      {
+        "post_id": "accounts/111962817784782155754/locations/15540039722934592193/localPosts/7837872470251824866",
+        "post_summary": "Car remote shell or a new key? A cracked casing may need a replacement shell. We replace compatible car remote bodies and make or program keys and fobs for supported vehicles. Share the make, model, year and issue so we can confirm compatibility and a quote. Visit our shop on Gollahalli Main Road, Electronic City Phase 1. ",
+        "post_state": "LIVE",
+        "post_cta_action_type": null,
+        "post_cta_url": null,
+        "post_search_url": "https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEKWRiYqpy5uxyQE",
+        "post_create_time": "2026-10-21T17:12:38.515586Z",
+        "post_update_time": "2026-10-21T17:12:38.515586Z",
+        "data_fetched_at": "2026-10-25T10:36:40"
+      },
+      {
+        "post_id": "accounts/111962817784782155754/locations/15540039722934592193/localPosts/4833567883874943823",
+        "post_summary": "Frequently asked questions\n\nWhere are you?\nGollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru 560100.\n\nAre you open at night?\nYes. We are available 24 hours, seven days a week.\n\nDo you visit customers?\nYes. On-site service is available across our 20 listed areas, including locations 10 km or more away. Confirm availability and travel charges for your address.\n\nWhich keys do you make?\nSupported home, office, shop and cupboard keys, plus keys for compatible cars and bikes. Bring the original key if available.\n\nDo you program car keys and fobs?\nYes, for compatible models. Share the vehicle make, model, year and existing key details.\n\nCan you help with lockouts?\nYes, for authorised owners and occupants. We also repair and replace compatible locks.\n\nHow much does it cost?\nThe quote depends on the key or lock, vehicle, parts, programming, travel and installation. Contact us with the job details before work begins.\n\nWhich payments do you accept?\nCash, UPI, IMPS and NEFT. Cards are not currently accepted.\n\nUse Learn more for our services, directions and contact options.",
+        "post_state": "LIVE",
+        "post_cta_action_type": "LEARN_MORE",
+        "post_cta_url": "https://keymaker-electronic-city.violetflame16.chatgpt.site/",
+        "post_search_url": "https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEI3YwJPr77uwjAE",
+        "post_create_time": "2026-10-21T15:58:54.331817Z",
+        "post_update_time": "2026-10-21T15:58:54.331817Z",
+        "data_fetched_at": "2026-10-25T10:36:40"
+      },
+      {
+        "post_id": "accounts/111962817784782155754/locations/15540039722934592193/localPosts/4622446943236705301",
+        "post_summary": "Need a spare key or help with a lock? Key Maker & Locksmith on Gollahalli Main Road, Electronic City Phase 1, Bengaluru is available 24 hours for key making, door lock repair and replacement, and lockout assistance. We also make keys for supported cars and bikes and replace compatible car remote key bodies and covers. Visit the shop or contact us for on-site service. Cash, UPI and bank transfers are accepted.",
+        "post_state": "LIVE",
+        "post_cta_action_type": "LEARN_MORE",
+        "post_cta_url": "https://keymaker-electronic-city.violetflame16.chatgpt.site/",
+        "post_search_url": "https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEMr0ioyPh9DDFw",
+        "post_create_time": "2026-10-21T15:31:32.520618Z",
+        "post_update_time": "2026-10-21T15:31:32.520618Z",
+        "data_fetched_at": "2026-10-25T10:36:40"
+      }
+    ],
+    "total_rows": 7
+  },
+  "actions": [
+    {
+      "at_utc": "2026-10-25T10:37:13.001Z",
+      "action": "update_service_items",
+      "params": {
+        "service_items": [
+          {
+            "service_type_id": "job_type_id:building_lockout",
+            "description": "24-hour lockout assistance for homes, offices and shops. On-site help is available for authorised owners and occupants. Share your location and lock details to confirm availability, call-out charges and the quote."
+          },
+          {
+            "service_type_id": "job_type_id:copy_building_key",
+            "description": "Duplicate keys for supported home, office, shop and cupboard locks. Bring the original key so we can check the correct blank and cutting requirements. Contact us to confirm compatibility and pricing."
+          },
+          {
+            "service_type_id": "job_type_id:car_key_program",
+            "description": "Programming and reprogramming for compatible car transponder keys and remotes. Share the make, model, year and existing key details to confirm support and the quote. Service availability depends on the vehicle and key system."
+          },
+          {
+            "service_type_id": "job_type_id:copy_vehicle_key",
+            "description": "Spare car keys for supported makes and models. We check the key type, cutting requirements and any chip or remote programming needed. Bring your original key and vehicle details to confirm compatibility and pricing."
+          },
+          {
+            "service_type_id": "job_type_id:vehicle_lockout",
+            "description": "24-hour assistance when keys are locked inside a supported vehicle. Available to authorised owners and users. Call with your location, vehicle make and model so we can confirm access options, availability and charges."
+          },
+          {
+            "service_type_id": "job_type_id:install_hardware",
+            "description": "Installation of compatible door locks, cylinders, handles and bolts for homes, offices and shops. Share door and existing hardware details to confirm suitable parts, fitting requirements and installation charges."
+          },
+          {
+            "service_type_id": "job_type_id:rekey_lock",
+            "description": "Rekeying for compatible locks so they work with a different key. Useful when keys are lost or access needs to change. Share the lock type to confirm whether rekeying is suitable and to receive a quote."
+          },
+          {
+            "service_type_id": "job_type_id:new_key_fob",
+            "description": "New electronic key fobs for compatible vehicles. Supply the vehicle make, model, year and key details so we can check the correct fob, cutting and programming requirements. Parts and programming are quoted for the specific vehicle."
+          },
+          {
+            "service_type_id": "job_type_id:repair_hardware",
+            "description": "Repair assistance for compatible door lock hardware, including cylinders, handles and related fittings. Share photos or details of the fault so we can check repair options, parts availability and the quote."
+          },
+          {
+            "service_type_id": "job_type_id:safe_locks",
+            "description": "Safe opening, lock installation and repair for authorised owners. Share the safe type and the problem to confirm service availability, access requirements and pricing. Work depends on the safe and locking system."
+          },
+          {
+            "service_type_id": "job_type_id:security_door_locks",
+            "description": "Supply, installation, repair and replacement of compatible security door locks. We check the existing lock, door type and required fittings before recommending suitable parts and quoting for the work."
+          },
+          {
+            "service_type_id": "job_type_id:window_locks",
+            "description": "Repair and replacement of compatible window locks and locking hardware. Share the window and lock type, the fault and your location so we can confirm suitable parts, service availability and pricing."
+          },
+          {
+            "category_id": "categories/gcid:key_duplication_service",
+            "display_name": "House key duplication",
+            "description": "Duplicate keys for supported house and door locks. Bring your original key or share the key type so we can confirm compatibility and quote."
+          },
+          {
+            "category_id": "categories/gcid:key_duplication_service",
+            "display_name": "Lock repair and replacement",
+            "description": "Repair and replacement of compatible door locks, cylinders and handles for homes, offices and shops. Contact us with the lock details and location for parts, installation and call-out pricing."
+          },
+          {
+            "category_id": "categories/gcid:key_duplication_service",
+            "display_name": "Office and shop key duplication",
+            "description": "Key duplication for supported office, shop and cupboard locks. Contact us with the original key or lock details to confirm the suitable blank and price."
+          },
+          {
+            "category_id": "categories/gcid:key_duplication_service",
+            "display_name": "Computerised key duplication",
+            "description": "Duplication of compatible computerised, dimple and high-security keys. Bring the original key or share its type to confirm support and the correct key blank."
+          },
+          {
+            "category_id": "categories/gcid:key_duplication_service",
+            "display_name": "Car remote key body and cover replacement",
+            "description": "Replacement of compatible car remote key bodies, shells and covers. Share your vehicle model and remote type so we can confirm fit, availability and pricing."
+          },
+          {
+            "category_id": "categories/gcid:key_duplication_service",
+            "display_name": "24-hour key making",
+            "description": "Key making assistance available 24 hours every day. Call with your key type and location to confirm the service, timing and any call-out charges."
+          },
+          {
+            "category_id": "categories/gcid:key_duplication_service",
+            "display_name": "Home lockout assistance",
+            "description": "24-hour lockout help for authorised home owners and occupants. Contact us with your address and lock details to confirm availability and the applicable quote."
+          },
+          {
+            "category_id": "categories/gcid:key_duplication_service",
+            "display_name": "Main door lock replacement",
+            "description": "Replacement of compatible main door locks, cylinders and handles. Contact us with the existing lock details to discuss suitable parts and installation charges."
+          },
+          {
+            "category_id": "categories/gcid:key_duplication_service",
+            "display_name": "Spare key cutting",
+            "description": "Spare keys cut for supported home, office, shop and vehicle key types. Bring the original key or share its details to confirm the suitable blank and price."
+          },
+          {
+            "category_id": "categories/gcid:key_duplication_service",
+            "display_name": "Padlock key duplication",
+            "description": "Duplicate keys for compatible padlocks. Bring your original key or share the padlock and key details so we can confirm the suitable blank and quote."
+          },
+          {
+            "category_id": "categories/gcid:key_duplication_service",
+            "display_name": "Grille lock repair",
+            "description": "Repair assistance for compatible grille and gate locks. Share the lock details and location to confirm the available repair, parts and call-out charges."
+          },
+          {
+            "category_id": "categories/gcid:key_duplication_service",
+            "display_name": "Bike key making",
+            "description": "Bike key making and duplication for supported models. Contact us with your bike model and key details to confirm availability and pricing."
+          },
+          {
+            "category_id": "categories/gcid:key_duplication_service",
+            "display_name": "Bike key replacement",
+            "description": "Replacement keys for compatible bikes. Share your bike make, model and key or lock details so we can confirm the required service and quote."
+          },
+          {
+            "category_id": "categories/gcid:key_duplication_service",
+            "display_name": "Door lock repair",
+            "description": "Repair of sticking, faulty or damaged door locks for homes, offices and shops. Contact us with the lock type and location to confirm parts, service and pricing."
+          },
+          {
+            "category_id": "categories/gcid:key_duplication_service",
+            "display_name": "Car key repair",
+            "description": "Repair assistance for compatible car keys and remote key bodies. Share the vehicle model, key type and problem so we can confirm the available repair and quote."
+          },
+          {
+            "category_id": "categories/gcid:key_duplication_service",
+            "display_name": "Car key making",
+            "description": "Car key making and duplication for supported makes and models. Share the vehicle make, model, year and key type to confirm compatibility and the applicable quote."
+          },
+          {
+            "category_id": "categories/gcid:key_duplication_service",
+            "display_name": "Emergency locksmith services",
+            "description": "24-hour locksmith and lockout assistance for authorised owners and occupants. Call with your location and lock details to confirm availability, travel charges and the quote."
+          },
+          {
+            "display_name": "Cupboard and almirah key duplication",
+            "description": "Duplicate keys for compatible cupboards, almirahs, drawers and cabinets. Bring your original key so we can match the key profile and confirm the correct blank, cutting requirements and quote.",
+            "category_id": "categories/gcid:locksmith",
+            "language_code": "en"
+          },
+          {
+            "display_name": "Cupboard and cabinet lock replacement",
+            "description": "Replacement of compatible cupboard, wardrobe and cabinet locks. Share the existing lock, door or drawer thickness and fitting details so we can check suitable parts and quote for the lock and installation.",
+            "category_id": "categories/gcid:locksmith",
+            "language_code": "en"
+          },
+          {
+            "display_name": "Door lock cylinder replacement",
+            "description": "Replacement cylinders for compatible home, office and shop door locks. We check the cylinder size, fitting and supplied keys before quoting for the part and installation. Shop and on-site service are available.",
+            "category_id": "categories/gcid:locksmith",
+            "language_code": "en"
+          }
+        ]
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Set 32 service item(s) on location locations/15540039722934592193: job_type_id:building_lockout; job_type_id:copy_building_key; job_type_id:car_key_program; job_type_id:copy_vehicle_key; job_type_id:vehicle_lockout; job_type_id:install_hardware; job_type_id:rekey_lock; job_type_id:new_key_fob; job_type_id:repair_hardware; job_type_id:safe_locks; job_type_id:security_door_locks; job_type_id:window_locks; House key duplication; Lock repair and replacement; Office and shop key duplication; Computerised key duplication; Car remote key body and cover replacement; 24-hour key making; Home lockout assistance; Main door lock replacement; Spare key cutting; Padlock key duplication; Grille lock repair; Bike key making; Bike key replacement; Door lock repair; Car key repair; Car key making; Emergency locksmith services; Cupboard and almirah key duplication; Cupboard and cabinet lock replacement; Door lock cylinder replacement. All previous service items were replaced."
+          }
+        ],
+        "structuredContent": {
+          "result": "Set 32 service item(s) on location locations/15540039722934592193: job_type_id:building_lockout; job_type_id:copy_building_key; job_type_id:car_key_program; job_type_id:copy_vehicle_key; job_type_id:vehicle_lockout; job_type_id:install_hardware; job_type_id:rekey_lock; job_type_id:new_key_fob; job_type_id:repair_hardware; job_type_id:safe_locks; job_type_id:security_door_locks; job_type_id:window_locks; House key duplication; Lock repair and replacement; Office and shop key duplication; Computerised key duplication; Car remote key body and cover replacement; 24-hour key making; Home lockout assistance; Main door lock replacement; Spare key cutting; Padlock key duplication; Grille lock repair; Bike key making; Bike key replacement; Door lock repair; Car key repair; Car key making; Emergency locksmith services; Cupboard and almirah key duplication; Cupboard and cabinet lock replacement; Door lock cylinder replacement. All previous service items were replaced."
+        },
+        "isError": false
+      }
+    },
+    {
+      "at_utc": "2026-10-25T10:37:31.973Z",
+      "action": "update_local_post",
+      "params": {
+        "post_id": "accounts/111962817784782155754/locations/15540039722934592193/localPosts/4833567883874943823",
+        "cta_type": "LEARN_MORE",
+        "cta_url": "https://keymaker-ecity.alishanaver72.workers.dev/"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Updated local post accounts/111962817784782155754/locations/15540039722934592193/localPosts/4833567883874943823 on location locations/15540039722934592193 (fields: callToAction). Post name: accounts/111962817784782155754/locations/15540039722934592193/localPosts/4833567883874943823, state: PROCESSING."
+          }
+        ],
+        "structuredContent": {
+          "result": "Updated local post accounts/111962817784782155754/locations/15540039722934592193/localPosts/4833567883874943823 on location locations/15540039722934592193 (fields: callToAction). Post name: accounts/111962817784782155754/locations/15540039722934592193/localPosts/4833567883874943823, state: PROCESSING."
+        },
+        "isError": false
+      }
+    },
+    {
+      "at_utc": "2026-10-25T10:37:59.575Z",
+      "action": "update_local_post",
+      "params": {
+        "post_id": "accounts/111962817784782155754/locations/15540039722934592193/localPosts/4622446943236705301",
+        "cta_type": "LEARN_MORE",
+        "cta_url": "https://keymaker-ecity.alishanaver72.workers.dev/"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Updated local post accounts/111962817784782155754/locations/15540039722934592193/localPosts/4622446943236705301 on location locations/15540039722934592193 (fields: callToAction). Post name: accounts/111962817784782155754/locations/15540039722934592193/localPosts/4622446943236705301, state: PROCESSING."
+          }
+        ],
+        "structuredContent": {
+          "result": "Updated local post accounts/111962817784782155754/locations/15540039722934592193/localPosts/4622446943236705301 on location locations/15540039722934592193 (fields: callToAction). Post name: accounts/111962817784782155754/locations/15540039722934592193/localPosts/4622446943236705301, state: PROCESSING."
+        },
+        "isError": false
+      }
+    },
+    {
+      "at_utc": "2026-10-25T10:38:09.589Z",
+      "action": "update_location",
+      "params": {
+        "website_url": "https://keymaker-ecity.alishanaver72.workers.dev/"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Updated location locations/15540039722934592193: website: https://keymaker-ecity.alishanaver72.workers.dev/."
+          }
+        ],
+        "structuredContent": {
+          "result": "Updated location locations/15540039722934592193: website: https://keymaker-ecity.alishanaver72.workers.dev/."
+        },
+        "isError": false
+      }
+    },
+    {
+      "at_utc": "2026-10-25T10:38:26.667Z",
+      "action": "create_local_post",
+      "key": "new-website",
+      "params": {
+        "summary": "Our new website is live\n\nExplore key duplication and locksmith services from Key Maker & Locksmith in Electronic City Phase 1, Bengaluru. Our website brings together our services, shop and work photos, opening hours, directions and FAQs, with direct call and WhatsApp booking options.\n\nVisit our shop on Gollahalli Main Road, Siraj Layout, or contact us about on-site service in our listed areas. We are open 24 hours every day. Key and lock compatibility, availability, arrival time and the quote are confirmed for your job.\n\nTap Learn more to visit our new website.",
+        "cta_type": "LEARN_MORE",
+        "cta_url": "https://keymaker-ecity.alishanaver72.workers.dev/",
+        "language_code": "en",
+        "photo_url": "https://lh3.googleusercontent.com/4ozkXzdf04hM3aETRRn--_Cne3Cqe6rfOYpUycRRbQlEkbdeA0W1DOHT8H84Rj63gCRZlVPI6NhnhrLI=s0"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Published local post on location locations/15540039722934592193 (summary: 'Our new website is live\\n\\nExplore key duplication and locksmith services from Key Maker & Locksmith in Electronic City Phase 1, Bengaluru. Our website brings together our services, shop and work photos, opening hours, directions and FAQs, with direct call and WhatsApp booking options.\\n\\nVisit our shop on Gollahalli Main Road, Siraj Layout, or contact us about on-site service in our listed areas. We are open 24 hours every day. Key and lock compatibility, availability, arrival time and the quote are confirmed for your job.\\n\\nTap Learn more to visit our new website.', photo: https://lh3.googleusercontent.com/4ozkXzdf04hM3aETRRn--_Cne3Cqe6rfOYpUycRRbQlEkbdeA0W1DOHT8H84Rj63gCRZlVPI6NhnhrLI=s0, call to action: LEARN_MORE). Post name: accounts/111962817784782155754/locations/15540039722934592193/localPosts/2686529589558411563, state: PROCESSING."
+          }
+        ],
+        "structuredContent": {
+          "result": "Published local post on location locations/15540039722934592193 (summary: 'Our new website is live\\n\\nExplore key duplication and locksmith services from Key Maker & Locksmith in Electronic City Phase 1, Bengaluru. Our website brings together our services, shop and work photos, opening hours, directions and FAQs, with direct call and WhatsApp booking options.\\n\\nVisit our shop on Gollahalli Main Road, Siraj Layout, or contact us about on-site service in our listed areas. We are open 24 hours every day. Key and lock compatibility, availability, arrival time and the quote are confirmed for your job.\\n\\nTap Learn more to visit our new website.', photo: https://lh3.googleusercontent.com/4ozkXzdf04hM3aETRRn--_Cne3Cqe6rfOYpUycRRbQlEkbdeA0W1DOHT8H84Rj63gCRZlVPI6NhnhrLI=s0, call to action: LEARN_MORE). Post name: accounts/111962817784782155754/locations/15540039722934592193/localPosts/2686529589558411563, state: PROCESSING."
+        },
+        "isError": false
+      }
+    },
+    {
+      "at_utc": "2026-10-25T10:38:36.842Z",
+      "action": "create_local_post",
+      "key": "spare-key-checklist",
+      "params": {
+        "summary": "Make a spare key before you need it\n\nA working spare can make everyday access easier at home, at work or on the road. Bring your original house, cupboard or padlock key to our Electronic City Phase 1 shop so we can check the profile and suitable blank.\n\nFor a car or bike key, share the make, model, year and existing key details first. Mechanical cutting, transponder chips and remote programming have different requirements, so we check compatibility and confirm the quote before you order.\n\nOpen 24 hours on Gollahalli Main Road, Siraj Layout. Use Learn more for services, directions and WhatsApp booking.",
+        "cta_type": "LEARN_MORE",
+        "cta_url": "https://keymaker-ecity.alishanaver72.workers.dev/#key-duplication",
+        "language_code": "en"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Published local post on location locations/15540039722934592193 (summary: 'Make a spare key before you need it\\n\\nA working spare can make everyday access easier at home, at work or on the road. Bring your original house, cupboard or padlock key to our Electronic City Phase 1 shop so we can check the profile and suitable blank.\\n\\nFor a car or bike key, share the make, model, year and existing key details first. Mechanical cutting, transponder chips and remote programming have different requirements, so we check compatibility and confirm the quote before you order.\\n\\nOpen 24 hours on Gollahalli Main Road, Siraj Layout. Use Learn more for services, directions and WhatsApp booking.', call to action: LEARN_MORE). Post name: accounts/111962817784782155754/locations/15540039722934592193/localPosts/9098022010005601203, state: PROCESSING."
+          }
+        ],
+        "structuredContent": {
+          "result": "Published local post on location locations/15540039722934592193 (summary: 'Make a spare key before you need it\\n\\nA working spare can make everyday access easier at home, at work or on the road. Bring your original house, cupboard or padlock key to our Electronic City Phase 1 shop so we can check the profile and suitable blank.\\n\\nFor a car or bike key, share the make, model, year and existing key details first. Mechanical cutting, transponder chips and remote programming have different requirements, so we check compatibility and confirm the quote before you order.\\n\\nOpen 24 hours on Gollahalli Main Road, Siraj Layout. Use Learn more for services, directions and WhatsApp booking.', call to action: LEARN_MORE). Post name: accounts/111962817784782155754/locations/15540039722934592193/localPosts/9098022010005601203, state: PROCESSING."
+        },
+        "isError": false
+      }
+    },
+    {
+      "at_utc": "2026-10-25T10:38:46.365Z",
+      "action": "create_local_post",
+      "key": "rekey-after-move",
+      "params": {
+        "summary": "Moving in or changing access to your property?\n\nIf a key is missing or access needs to change, ask whether your existing lock can be rekeyed. For suitable locks, rekeying changes the key that operates the lock. Where rekeying is unsuitable, we can assess compatible replacement cylinders or locks.\n\nKey Maker & Locksmith provides lock rekeying, repair and replacement for homes, offices and shops. Shop visits and on-site service are available around Electronic City and our listed areas, 24 hours a day.\n\nShare the lock type and location so we can confirm parts, availability, arrival time and any fitting or travel charges. Work is for authorised owners and occupants. Tap Learn more for contact options.",
+        "cta_type": "LEARN_MORE",
+        "cta_url": "https://keymaker-ecity.alishanaver72.workers.dev/#rekeying-window-locks",
+        "language_code": "en"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Published local post on location locations/15540039722934592193 (summary: 'Moving in or changing access to your property?\\n\\nIf a key is missing or access needs to change, ask whether your existing lock can be rekeyed. For suitable locks, rekeying changes the key that operates the lock. Where rekeying is unsuitable, we can assess compatible replacement cylinders or locks.\\n\\nKey Maker & Locksmith provides lock rekeying, repair and replacement for homes, offices and shops. Shop visits and on-site service are available around Electronic City and our listed areas, 24 hours a day.\\n\\nShare the lock type and location so we can confirm parts, availability, arrival time and any fitting or travel charges. Work is for authorised owners and occupants. Tap Learn more for contact options.', call to action: LEARN_MORE). Post name: accounts/111962817784782155754/locations/15540039722934592193/localPosts/5983619735388074411, state: PROCESSING."
+          }
+        ],
+        "structuredContent": {
+          "result": "Published local post on location locations/15540039722934592193 (summary: 'Moving in or changing access to your property?\\n\\nIf a key is missing or access needs to change, ask whether your existing lock can be rekeyed. For suitable locks, rekeying changes the key that operates the lock. Where rekeying is unsuitable, we can assess compatible replacement cylinders or locks.\\n\\nKey Maker & Locksmith provides lock rekeying, repair and replacement for homes, offices and shops. Shop visits and on-site service are available around Electronic City and our listed areas, 24 hours a day.\\n\\nShare the lock type and location so we can confirm parts, availability, arrival time and any fitting or travel charges. Work is for authorised owners and occupants. Tap Learn more for contact options.', call to action: LEARN_MORE). Post name: accounts/111962817784782155754/locations/15540039722934592193/localPosts/5983619735388074411, state: PROCESSING."
+        },
+        "isError": false
+      }
+    }
+  ],
+  "readbacks": [
+    {
+      "kind": "location",
+      "status": "fulfilled",
+      "readback": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":\"done\",\"data\":[{\"location_id\":\"locations/15540039722934592193\",\"location_title\":\"Key Maker & Locksmith — Electronic City\",\"location_service_items\":[{\"structuredServiceItem\":{\"serviceTypeId\":\"job_type_id:building_lockout\",\"description\":\"24-hour lockout assistance for homes, offices and shops. On-site help is available for authorised owners and occupants. Share your location and lock details to confirm availability, call-out charges and the quote.\"}},{\"structuredServiceItem\":{\"serviceTypeId\":\"job_type_id:copy_building_key\",\"description\":\"Duplicate keys for supported home, office, shop and cupboard locks. Bring the original key so we can check the correct blank and cutting requirements. Contact us to confirm compatibility and pricing.\"}},{\"structuredServiceItem\":{\"serviceTypeId\":\"job_type_id:car_key_program\",\"description\":\"Programming and reprogramming for compatible car transponder keys and remotes. Share the make, model, year and existing key details to confirm support and the quote. Service availability depends on the vehicle and key system.\"}},{\"structuredServiceItem\":{\"serviceTypeId\":\"job_type_id:copy_vehicle_key\",\"description\":\"Spare car keys for supported makes and models. We check the key type, cutting requirements and any chip or remote programming needed. Bring your original key and vehicle details to confirm compatibility and pricing.\"}},{\"structuredServiceItem\":{\"serviceTypeId\":\"job_type_id:vehicle_lockout\",\"description\":\"24-hour assistance when keys are locked inside a supported vehicle. Available to authorised owners and users. Call with your location, vehicle make and model so we can confirm access options, availability and charges.\"}},{\"structuredServiceItem\":{\"serviceTypeId\":\"job_type_id:install_hardware\",\"description\":\"Installation of compatible door locks, cylinders, handles and bolts for homes, offices and shops. Share door and existing hardware details to confirm suitable parts, fitting requirements and installation charges.\"}},{\"structuredServiceItem\":{\"serviceTypeId\":\"job_type_id:rekey_lock\",\"description\":\"Rekeying for compatible locks so they work with a different key. Useful when keys are lost or access needs to change. Share the lock type to confirm whether rekeying is suitable and to receive a quote.\"}},{\"structuredServiceItem\":{\"serviceTypeId\":\"job_type_id:new_key_fob\",\"description\":\"New electronic key fobs for compatible vehicles. Supply the vehicle make, model, year and key details so we can check the correct fob, cutting and programming requirements. Parts and programming are quoted for the specific vehicle.\"}},{\"structuredServiceItem\":{\"serviceTypeId\":\"job_type_id:repair_hardware\",\"description\":\"Repair assistance for compatible door lock hardware, including cylinders, handles and related fittings. Share photos or details of the fault so we can check repair options, parts availability and the quote.\"}},{\"structuredServiceItem\":{\"serviceTypeId\":\"job_type_id:safe_locks\",\"description\":\"Safe opening, lock installation and repair for authorised owners. Share the safe type and the problem to confirm service availability, access requirements and pricing. Work depends on the safe and locking system.\"}},{\"structuredServiceItem\":{\"serviceTypeId\":\"job_type_id:security_door_locks\",\"description\":\"Supply, installation, repair and replacement of compatible security door locks. We check the existing lock, door type and required fittings before recommending suitable parts and quoting for the work.\"}},{\"structuredServiceItem\":{\"serviceTypeId\":\"job_type_id:window_locks\",\"description\":\"Repair and replacement of compatible window locks and locking hardware. Share the window and lock type, the fault and your location so we can confirm suitable parts, service availability and pricing.\"}},{\"freeFormServiceItem\":{\"category\":\"categories/gcid:key_duplication_service\",\"label\":{\"displayName\":\"House key duplication\",\"description\":\"Duplicate keys for supported house and door locks. Bring your original key or share the key type so we can confirm compatibility and quote.\"}}},{\"freeFormServiceItem\":{\"category\":\"categories/gcid:key_duplication_service\",\"label\":{\"displayName\":\"Lock repair and replacement\",\"description\":\"Repair and replacement of compatible door locks, cylinders and handles for homes, offices and shops. Contact us with the lock details and location for parts, installation and call-out pricing.\"}}},{\"freeFormServiceItem\":{\"category\":\"categories/gcid:key_duplication_service\",\"label\":{\"displayName\":\"Office and shop key duplication\",\"description\":\"Key duplication for supported office, shop and cupboard locks. Contact us with the original key or lock details to confirm the suitable blank and price.\"}}},{\"freeFormServiceItem\":{\"category\":\"categories/gcid:key_duplication_service\",\"label\":{\"displayName\":\"Computerised key duplication\",\"description\":\"Duplication of compatible computerised, dimple and high-security keys. Bring the original key or share its type to confirm support and the correct key blank.\"}}},{\"freeFormServiceItem\":{\"category\":\"categories/gcid:key_duplication_service\",\"label\":{\"displayName\":\"Car remote key body and cover replacement\",\"description\":\"Replacement of compatible car remote key bodies, shells and covers. Share your vehicle model and remote type so we can confirm fit, availability and pricing.\"}}},{\"freeFormServiceItem\":{\"category\":\"categories/gcid:key_duplication_service\",\"label\":{\"displayName\":\"24-hour key making\",\"description\":\"Key making assistance available 24 hours every day. Call with your key type and location to confirm the service, timing and any call-out charges.\"}}},{\"freeFormServiceItem\":{\"category\":\"categories/gcid:key_duplication_service\",\"label\":{\"displayName\":\"Home lockout assistance\",\"description\":\"24-hour lockout help for authorised home owners and occupants. Contact us with your address and lock details to confirm availability and the applicable quote.\"}}},{\"freeFormServiceItem\":{\"category\":\"categories/gcid:key_duplication_service\",\"label\":{\"displayName\":\"Main door lock replacement\",\"description\":\"Replacement of compatible main door locks, cylinders and handles. Contact us with the existing lock details to discuss suitable parts and installation charges.\"}}},{\"freeFormServiceItem\":{\"category\":\"categories/gcid:key_duplication_service\",\"label\":{\"displayName\":\"Spare key cutting\",\"description\":\"Spare keys cut for supported home, office, shop and vehicle key types. Bring the original key or share its details to confirm the suitable blank and price.\"}}},{\"freeFormServiceItem\":{\"category\":\"categories/gcid:key_duplication_service\",\"label\":{\"displayName\":\"Padlock key duplication\",\"description\":\"Duplicate keys for compatible padlocks. Bring your original key or share the padlock and key details so we can confirm the suitable blank and quote.\"}}},{\"freeFormServiceItem\":{\"category\":\"categories/gcid:key_duplication_service\",\"label\":{\"displayName\":\"Grille lock repair\",\"description\":\"Repair assistance for compatible grille and gate locks. Share the lock details and location to confirm the available repair, parts and call-out charges.\"}}},{\"freeFormServiceItem\":{\"category\":\"categories/gcid:key_duplication_service\",\"label\":{\"displayName\":\"Bike key making\",\"description\":\"Bike key making and duplication for supported models. Contact us with your bike model and key details to confirm availability and pricing.\"}}},{\"freeFormServiceItem\":{\"category\":\"categories/gcid:key_duplication_service\",\"label\":{\"displayName\":\"Bike key replacement\",\"description\":\"Replacement keys for compatible bikes. Share your bike make, model and key or lock details so we can confirm the required service and quote.\"}}},{\"freeFormServiceItem\":{\"category\":\"categories/gcid:key_duplication_service\",\"label\":{\"displayName\":\"Door lock repair\",\"description\":\"Repair of sticking, faulty or damaged door locks for homes, offices and shops. Contact us with the lock type and location to confirm parts, service and pricing.\"}}},{\"freeFormServiceItem\":{\"category\":\"categories/gcid:key_duplication_service\",\"label\":{\"displayName\":\"Car key repair\",\"description\":\"Repair assistance for compatible car keys and remote key bodies. Share the vehicle model, key type and problem so we can confirm the available repair and quote.\"}}},{\"freeFormServiceItem\":{\"category\":\"categories/gcid:key_duplication_service\",\"label\":{\"displayName\":\"Car key making\",\"description\":\"Car key making and duplication for supported makes and models. Share the vehicle make, model, year and key type to confirm compatibility and the applicable quote.\"}}},{\"freeFormServiceItem\":{\"category\":\"categories/gcid:key_duplication_service\",\"label\":{\"displayName\":\"Emergency locksmith services\",\"description\":\"24-hour locksmith and lockout assistance for authorised owners and occupants. Call with your location and lock details to confirm availability, travel charges and the quote.\"}}}],\"location_website_uri\":\"http://keymaker-ecity.alishanaver72.workers.dev/\",\"data_fetched_at\":\"2026-10-25T10:36:40\"}],\"total_rows\":1}"
+          }
+        ],
+        "structuredContent": {
+          "status": "done",
+          "data": [
+            {
+              "location_id": "locations/15540039722934592193",
+              "location_title": "Key Maker & Locksmith — Electronic City",
+              "location_service_items": [
+                {
+                  "structuredServiceItem": {
+                    "serviceTypeId": "job_type_id:building_lockout",
+                    "description": "24-hour lockout assistance for homes, offices and shops. On-site help is available for authorised owners and occupants. Share your location and lock details to confirm availability, call-out charges and the quote."
+                  }
+                },
+                {
+                  "structuredServiceItem": {
+                    "serviceTypeId": "job_type_id:copy_building_key",
+                    "description": "Duplicate keys for supported home, office, shop and cupboard locks. Bring the original key so we can check the correct blank and cutting requirements. Contact us to confirm compatibility and pricing."
+                  }
+                },
+                {
+                  "structuredServiceItem": {
+                    "serviceTypeId": "job_type_id:car_key_program",
+                    "description": "Programming and reprogramming for compatible car transponder keys and remotes. Share the make, model, year and existing key details to confirm support and the quote. Service availability depends on the vehicle and key system."
+                  }
+                },
+                {
+                  "structuredServiceItem": {
+                    "serviceTypeId": "job_type_id:copy_vehicle_key",
+                    "description": "Spare car keys for supported makes and models. We check the key type, cutting requirements and any chip or remote programming needed. Bring your original key and vehicle details to confirm compatibility and pricing."
+                  }
+                },
+                {
+                  "structuredServiceItem": {
+                    "serviceTypeId": "job_type_id:vehicle_lockout",
+                    "description": "24-hour assistance when keys are locked inside a supported vehicle. Available to authorised owners and users. Call with your location, vehicle make and model so we can confirm access options, availability and charges."
+                  }
+                },
+                {
+                  "structuredServiceItem": {
+                    "serviceTypeId": "job_type_id:install_hardware",
+                    "description": "Installation of compatible door locks, cylinders, handles and bolts for homes, offices and shops. Share door and existing hardware details to confirm suitable parts, fitting requirements and installation charges."
+                  }
+                },
+                {
+                  "structuredServiceItem": {
+                    "serviceTypeId": "job_type_id:rekey_lock",
+                    "description": "Rekeying for compatible locks so they work with a different key. Useful when keys are lost or access needs to change. Share the lock type to confirm whether rekeying is suitable and to receive a quote."
+                  }
+                },
+                {
+                  "structuredServiceItem": {
+                    "serviceTypeId": "job_type_id:new_key_fob",
+                    "description": "New electronic key fobs for compatible vehicles. Supply the vehicle make, model, year and key details so we can check the correct fob, cutting and programming requirements. Parts and programming are quoted for the specific vehicle."
+                  }
+                },
+                {
+                  "structuredServiceItem": {
+                    "serviceTypeId": "job_type_id:repair_hardware",
+                    "description": "Repair assistance for compatible door lock hardware, including cylinders, handles and related fittings. Share photos or details of the fault so we can check repair options, parts availability and the quote."
+                  }
+                },
+                {
+                  "structuredServiceItem": {
+                    "serviceTypeId": "job_type_id:safe_locks",
+                    "description": "Safe opening, lock installation and repair for authorised owners. Share the safe type and the problem to confirm service availability, access requirements and pricing. Work depends on the safe and locking system."
+                  }
+                },
+                {
+                  "structuredServiceItem": {
+                    "serviceTypeId": "job_type_id:security_door_locks",
+                    "description": "Supply, installation, repair and replacement of compatible security door locks. We check the existing lock, door type and required fittings before recommending suitable parts and quoting for the work."
+                  }
+                },
+                {
+                  "structuredServiceItem": {
+                    "serviceTypeId": "job_type_id:window_locks",
+                    "description": "Repair and replacement of compatible window locks and locking hardware. Share the window and lock type, the fault and your location so we can confirm suitable parts, service availability and pricing."
+                  }
+                },
+                {
+                  "freeFormServiceItem": {
+                    "category": "categories/gcid:key_duplication_service",
+                    "label": {
+                      "displayName": "House key duplication",
+                      "description": "Duplicate keys for supported house and door locks. Bring your original key or share the key type so we can confirm compatibility and quote."
+                    }
+                  }
+                },
+                {
+                  "freeFormServiceItem": {
+                    "category": "categories/gcid:key_duplication_service",
+                    "label": {
+                      "displayName": "Lock repair and replacement",
+                      "description": "Repair and replacement of compatible door locks, cylinders and handles for homes, offices and shops. Contact us with the lock details and location for parts, installation and call-out pricing."
+                    }
+                  }
+                },
+                {
+                  "freeFormServiceItem": {
+                    "category": "categories/gcid:key_duplication_service",
+                    "label": {
+                      "displayName": "Office and shop key duplication",
+                      "description": "Key duplication for supported office, shop and cupboard locks. Contact us with the original key or lock details to confirm the suitable blank and price."
+                    }
+                  }
+                },
+                {
+                  "freeFormServiceItem": {
+                    "category": "categories/gcid:key_duplication_service",
+                    "label": {
+                      "displayName": "Computerised key duplication",
+                      "description": "Duplication of compatible computerised, dimple and high-security keys. Bring the original key or share its type to confirm support and the correct key blank."
+                    }
+                  }
+                },
+                {
+                  "freeFormServiceItem": {
+                    "category": "categories/gcid:key_duplication_service",
+                    "label": {
+                      "displayName": "Car remote key body and cover replacement",
+                      "description": "Replacement of compatible car remote key bodies, shells and covers. Share your vehicle model and remote type so we can confirm fit, availability and pricing."
+                    }
+                  }
+                },
+                {
+                  "freeFormServiceItem": {
+                    "category": "categories/gcid:key_duplication_service",
+                    "label": {
+                      "displayName": "24-hour key making",
+                      "description": "Key making assistance available 24 hours every day. Call with your key type and location to confirm the service, timing and any call-out charges."
+                    }
+                  }
+                },
+                {
+                  "freeFormServiceItem": {
+                    "category": "categories/gcid:key_duplication_service",
+                    "label": {
+                      "displayName": "Home lockout assistance",
+                      "description": "24-hour lockout help for authorised home owners and occupants. Contact us with your address and lock details to confirm availability and the applicable quote."
+                    }
+                  }
+                },
+                {
+                  "freeFormServiceItem": {
+                    "category": "categories/gcid:key_duplication_service",
+                    "label": {
+                      "displayName": "Main door lock replacement",
+                      "description": "Replacement of compatible main door locks, cylinders and handles. Contact us with the existing lock details to discuss suitable parts and installation charges."
+                    }
+                  }
+                },
+                {
+                  "freeFormServiceItem": {
+                    "category": "categories/gcid:key_duplication_service",
+                    "label": {
+                      "displayName": "Spare key cutting",
+                      "description": "Spare keys cut for supported home, office, shop and vehicle key types. Bring the original key or share its details to confirm the suitable blank and price."
+                    }
+                  }
+                },
+                {
+                  "freeFormServiceItem": {
+                    "category": "categories/gcid:key_duplication_service",
+                    "label": {
+                      "displayName": "Padlock key duplication",
+                      "description": "Duplicate keys for compatible padlocks. Bring your original key or share the padlock and key details so we can confirm the suitable blank and quote."
+                    }
+                  }
+                },
+                {
+                  "freeFormServiceItem": {
+                    "category": "categories/gcid:key_duplication_service",
+                    "label": {
+                      "displayName": "Grille lock repair",
+                      "description": "Repair assistance for compatible grille and gate locks. Share the lock details and location to confirm the available repair, parts and call-out charges."
+                    }
+                  }
+                },
+                {
+                  "freeFormServiceItem": {
+                    "category": "categories/gcid:key_duplication_service",
+                    "label": {
+                      "displayName": "Bike key making",
+                      "description": "Bike key making and duplication for supported models. Contact us with your bike model and key details to confirm availability and pricing."
+                    }
+                  }
+                },
+                {
+                  "freeFormServiceItem": {
+                    "category": "categories/gcid:key_duplication_service",
+                    "label": {
+                      "displayName": "Bike key replacement",
+                      "description": "Replacement keys for compatible bikes. Share your bike make, model and key or lock details so we can confirm the required service and quote."
+                    }
+                  }
+                },
+                {
+                  "freeFormServiceItem": {
+                    "category": "categories/gcid:key_duplication_service",
+                    "label": {
+                      "displayName": "Door lock repair",
+                      "description": "Repair of sticking, faulty or damaged door locks for homes, offices and shops. Contact us with the lock type and location to confirm parts, service and pricing."
+                    }
+                  }
+                },
+                {
+                  "freeFormServiceItem": {
+                    "category": "categories/gcid:key_duplication_service",
+                    "label": {
+                      "displayName": "Car key repair",
+                      "description": "Repair assistance for compatible car keys and remote key bodies. Share the vehicle model, key type and problem so we can confirm the available repair and quote."
+                    }
+                  }
+                },
+                {
+                  "freeFormServiceItem": {
+                    "category": "categories/gcid:key_duplication_service",
+                    "label": {
+                      "displayName": "Car key making",
+                      "description": "Car key making and duplication for supported makes and models. Share the vehicle make, model, year and key type to confirm compatibility and the applicable quote."
+                    }
+                  }
+                },
+                {
+                  "freeFormServiceItem": {
+                    "category": "categories/gcid:key_duplication_service",
+                    "label": {
+                      "displayName": "Emergency locksmith services",
+                      "description": "24-hour locksmith and lockout assistance for authorised owners and occupants. Call with your location and lock details to confirm availability, travel charges and the quote."
+                    }
+                  }
+                }
+              ],
+              "location_website_uri": "http://keymaker-ecity.alishanaver72.workers.dev/",
+              "data_fetched_at": "2026-10-25T10:36:40"
+            }
+          ],
+          "total_rows": 1
+        },
+        "isError": false
+      },
+      "cache_assessment": "Cached pre-write snapshot: data_fetched_at remained 2026-10-25T10:36:40, before these writes. This does not verify the post-write public state."
+    },
+    {
+      "kind": "posts",
+      "status": "fulfilled",
+      "readback": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"status\":\"done\",\"data\":[{\"post_id\":\"accounts/111962817784782155754/locations/15540039722934592193/localPosts/2434502988356254046\",\"post_summary\":\"Europa four side cutting\",\"post_state\":\"LIVE\",\"post_cta_action_type\":null,\"post_cta_url\":null,\"post_search_url\":\"https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKENDvj7zb5dycsgE\",\"post_create_time\":\"2026-10-15T05:28:13.368017Z\",\"post_update_time\":\"2026-10-15T05:28:13.368017Z\",\"data_fetched_at\":\"2026-10-25T10:36:40\"},{\"post_id\":\"accounts/111962817784782155754/locations/15540039722934592193/localPosts/6401196171407182369\",\"post_summary\":\"Key Maker & Locksmith opened on 1 October 2026 on Gollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru. We provide key duplication, keys for compatible cars and bikes, lock repair and replacement, and lockout assistance. The shop is open 24 hours, with on-site service across our listed areas. Visit us or contact us to confirm your key or lock requirements and a quote. \",\"post_state\":\"LIVE\",\"post_cta_action_type\":null,\"post_cta_url\":null,\"post_search_url\":\"https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEL2S9PPv8uvX4QE\",\"post_create_time\":\"2026-10-21T20:07:42.098871Z\",\"post_update_time\":\"2026-10-21T20:07:42.098871Z\",\"data_fetched_at\":\"2026-10-25T10:36:40\"},{\"post_id\":\"accounts/111962817784782155754/locations/15540039722934592193/localPosts/8812472286834001751\",\"post_summary\":\"Save 10% on eligible standard house-key duplication at our Electronic City Phase 1 shop, with a maximum discount of ₹100 per order. Bring a compatible original key and show this Google offer or mention SPARE10 before placing your order. \",\"post_state\":\"LIVE\",\"post_cta_action_type\":null,\"post_cta_url\":null,\"post_search_url\":\"https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEPWgw-zhw-SpswE\",\"post_create_time\":\"2026-10-21T17:19:32.620375Z\",\"post_update_time\":\"2026-10-21T17:19:32.620375Z\",\"data_fetched_at\":\"2026-10-25T10:36:40\"},{\"post_id\":\"accounts/111962817784782155754/locations/15540039722934592193/localPosts/6937526443622698449\",\"post_summary\":\"Sticking key or faulty door lock?\\n\\nIf your key is difficult to turn, avoid forcing it. We assess compatible door locks, cylinders, handles and bolts, and offer repair, replacement and installation for homes, offices and shops.\\n\\nShop visits and on-site service are available around Electronic City and our listed areas. We are open 24 hours. Contact us with the lock details and location to confirm suitable parts, availability and the quote, including any travel or installation charges. \",\"post_state\":\"LIVE\",\"post_cta_action_type\":null,\"post_cta_url\":null,\"post_search_url\":\"https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEJzyg8-9_qb60wE\",\"post_create_time\":\"2026-10-21T17:13:31.081665Z\",\"post_update_time\":\"2026-10-21T17:13:31.081665Z\",\"data_fetched_at\":\"2026-10-25T10:36:40\"},{\"post_id\":\"accounts/111962817784782155754/locations/15540039722934592193/localPosts/7837872470251824866\",\"post_summary\":\"Car remote shell or a new key? A cracked casing may need a replacement shell. We replace compatible car remote bodies and make or program keys and fobs for supported vehicles. Share the make, model, year and issue so we can confirm compatibility and a quote. Visit our shop on Gollahalli Main Road, Electronic City Phase 1. \",\"post_state\":\"LIVE\",\"post_cta_action_type\":null,\"post_cta_url\":null,\"post_search_url\":\"https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEKWRiYqpy5uxyQE\",\"post_create_time\":\"2026-10-21T17:12:38.515586Z\",\"post_update_time\":\"2026-10-21T17:12:38.515586Z\",\"data_fetched_at\":\"2026-10-25T10:36:40\"},{\"post_id\":\"accounts/111962817784782155754/locations/15540039722934592193/localPosts/4833567883874943823\",\"post_summary\":\"Frequently asked questions\\n\\nWhere are you?\\nGollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru 560100.\\n\\nAre you open at night?\\nYes. We are available 24 hours, seven days a week.\\n\\nDo you visit customers?\\nYes. On-site service is available across our 20 listed areas, including locations 10 km or more away. Confirm availability and travel charges for your address.\\n\\nWhich keys do you make?\\nSupported home, office, shop and cupboard keys, plus keys for compatible cars and bikes. Bring the original key if available.\\n\\nDo you program car keys and fobs?\\nYes, for compatible models. Share the vehicle make, model, year and existing key details.\\n\\nCan you help with lockouts?\\nYes, for authorised owners and occupants. We also repair and replace compatible locks.\\n\\nHow much does it cost?\\nThe quote depends on the key or lock, vehicle, parts, programming, travel and installation. Contact us with the job details before work begins.\\n\\nWhich payments do you accept?\\nCash, UPI, IMPS and NEFT. Cards are not currently accepted.\\n\\nUse Learn more for our services, directions and contact options.\",\"post_state\":\"LIVE\",\"post_cta_action_type\":\"LEARN_MORE\",\"post_cta_url\":\"https://keymaker-electronic-city.violetflame16.chatgpt.site/\",\"post_search_url\":\"https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEI3YwJPr77uwjAE\",\"post_create_time\":\"2026-10-21T15:58:54.331817Z\",\"post_update_time\":\"2026-10-21T15:58:54.331817Z\",\"data_fetched_at\":\"2026-10-25T10:36:40\"},{\"post_id\":\"accounts/111962817784782155754/locations/15540039722934592193/localPosts/4622446943236705301\",\"post_summary\":\"Need a spare key or help with a lock? Key Maker & Locksmith on Gollahalli Main Road, Electronic City Phase 1, Bengaluru is available 24 hours for key making, door lock repair and replacement, and lockout assistance. We also make keys for supported cars and bikes and replace compatible car remote key bodies and covers. Visit the shop or contact us for on-site service. Cash, UPI and bank transfers are accepted.\",\"post_state\":\"LIVE\",\"post_cta_action_type\":\"LEARN_MORE\",\"post_cta_url\":\"https://keymaker-electronic-city.violetflame16.chatgpt.site/\",\"post_search_url\":\"https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEMr0ioyPh9DDFw\",\"post_create_time\":\"2026-10-21T15:31:32.520618Z\",\"post_update_time\":\"2026-10-21T15:31:32.520618Z\",\"data_fetched_at\":\"2026-10-25T10:36:40\"}],\"total_rows\":7}"
+          }
+        ],
+        "structuredContent": {
+          "status": "done",
+          "data": [
+            {
+              "post_id": "accounts/111962817784782155754/locations/15540039722934592193/localPosts/2434502988356254046",
+              "post_summary": "Europa four side cutting",
+              "post_state": "LIVE",
+              "post_cta_action_type": null,
+              "post_cta_url": null,
+              "post_search_url": "https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKENDvj7zb5dycsgE",
+              "post_create_time": "2026-10-15T05:28:13.368017Z",
+              "post_update_time": "2026-10-15T05:28:13.368017Z",
+              "data_fetched_at": "2026-10-25T10:36:40"
+            },
+            {
+              "post_id": "accounts/111962817784782155754/locations/15540039722934592193/localPosts/6401196171407182369",
+              "post_summary": "Key Maker & Locksmith opened on 1 October 2026 on Gollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru. We provide key duplication, keys for compatible cars and bikes, lock repair and replacement, and lockout assistance. The shop is open 24 hours, with on-site service across our listed areas. Visit us or contact us to confirm your key or lock requirements and a quote. ",
+              "post_state": "LIVE",
+              "post_cta_action_type": null,
+              "post_cta_url": null,
+              "post_search_url": "https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEL2S9PPv8uvX4QE",
+              "post_create_time": "2026-10-21T20:07:42.098871Z",
+              "post_update_time": "2026-10-21T20:07:42.098871Z",
+              "data_fetched_at": "2026-10-25T10:36:40"
+            },
+            {
+              "post_id": "accounts/111962817784782155754/locations/15540039722934592193/localPosts/8812472286834001751",
+              "post_summary": "Save 10% on eligible standard house-key duplication at our Electronic City Phase 1 shop, with a maximum discount of ₹100 per order. Bring a compatible original key and show this Google offer or mention SPARE10 before placing your order. ",
+              "post_state": "LIVE",
+              "post_cta_action_type": null,
+              "post_cta_url": null,
+              "post_search_url": "https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEPWgw-zhw-SpswE",
+              "post_create_time": "2026-10-21T17:19:32.620375Z",
+              "post_update_time": "2026-10-21T17:19:32.620375Z",
+              "data_fetched_at": "2026-10-25T10:36:40"
+            },
+            {
+              "post_id": "accounts/111962817784782155754/locations/15540039722934592193/localPosts/6937526443622698449",
+              "post_summary": "Sticking key or faulty door lock?\n\nIf your key is difficult to turn, avoid forcing it. We assess compatible door locks, cylinders, handles and bolts, and offer repair, replacement and installation for homes, offices and shops.\n\nShop visits and on-site service are available around Electronic City and our listed areas. We are open 24 hours. Contact us with the lock details and location to confirm suitable parts, availability and the quote, including any travel or installation charges. ",
+              "post_state": "LIVE",
+              "post_cta_action_type": null,
+              "post_cta_url": null,
+              "post_search_url": "https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEJzyg8-9_qb60wE",
+              "post_create_time": "2026-10-21T17:13:31.081665Z",
+              "post_update_time": "2026-10-21T17:13:31.081665Z",
+              "data_fetched_at": "2026-10-25T10:36:40"
+            },
+            {
+              "post_id": "accounts/111962817784782155754/locations/15540039722934592193/localPosts/7837872470251824866",
+              "post_summary": "Car remote shell or a new key? A cracked casing may need a replacement shell. We replace compatible car remote bodies and make or program keys and fobs for supported vehicles. Share the make, model, year and issue so we can confirm compatibility and a quote. Visit our shop on Gollahalli Main Road, Electronic City Phase 1. ",
+              "post_state": "LIVE",
+              "post_cta_action_type": null,
+              "post_cta_url": null,
+              "post_search_url": "https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEKWRiYqpy5uxyQE",
+              "post_create_time": "2026-10-21T17:12:38.515586Z",
+              "post_update_time": "2026-10-21T17:12:38.515586Z",
+              "data_fetched_at": "2026-10-25T10:36:40"
+            },
+            {
+              "post_id": "accounts/111962817784782155754/locations/15540039722934592193/localPosts/4833567883874943823",
+              "post_summary": "Frequently asked questions\n\nWhere are you?\nGollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru 560100.\n\nAre you open at night?\nYes. We are available 24 hours, seven days a week.\n\nDo you visit customers?\nYes. On-site service is available across our 20 listed areas, including locations 10 km or more away. Confirm availability and travel charges for your address.\n\nWhich keys do you make?\nSupported home, office, shop and cupboard keys, plus keys for compatible cars and bikes. Bring the original key if available.\n\nDo you program car keys and fobs?\nYes, for compatible models. Share the vehicle make, model, year and existing key details.\n\nCan you help with lockouts?\nYes, for authorised owners and occupants. We also repair and replace compatible locks.\n\nHow much does it cost?\nThe quote depends on the key or lock, vehicle, parts, programming, travel and installation. Contact us with the job details before work begins.\n\nWhich payments do you accept?\nCash, UPI, IMPS and NEFT. Cards are not currently accepted.\n\nUse Learn more for our services, directions and contact options.",
+              "post_state": "LIVE",
+              "post_cta_action_type": "LEARN_MORE",
+              "post_cta_url": "https://keymaker-electronic-city.violetflame16.chatgpt.site/",
+              "post_search_url": "https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEI3YwJPr77uwjAE",
+              "post_create_time": "2026-10-21T15:58:54.331817Z",
+              "post_update_time": "2026-10-21T15:58:54.331817Z",
+              "data_fetched_at": "2026-10-25T10:36:40"
+            },
+            {
+              "post_id": "accounts/111962817784782155754/locations/15540039722934592193/localPosts/4622446943236705301",
+              "post_summary": "Need a spare key or help with a lock? Key Maker & Locksmith on Gollahalli Main Road, Electronic City Phase 1, Bengaluru is available 24 hours for key making, door lock repair and replacement, and lockout assistance. We also make keys for supported cars and bikes and replace compatible car remote key bodies and covers. Visit the shop or contact us for on-site service. Cash, UPI and bank transfers are accepted.",
+              "post_state": "LIVE",
+              "post_cta_action_type": "LEARN_MORE",
+              "post_cta_url": "https://keymaker-electronic-city.violetflame16.chatgpt.site/",
+              "post_search_url": "https://local.google.com/place?id=6777548479080557010&use=posts&lpsid=CIHM0ogKEMr0ioyPh9DDFw",
+              "post_create_time": "2026-10-21T15:31:32.520618Z",
+              "post_update_time": "2026-10-21T15:31:32.520618Z",
+              "data_fetched_at": "2026-10-25T10:36:40"
+            }
+          ],
+          "total_rows": 7
+        },
+        "isError": false
+      },
+      "cache_assessment": "Cached pre-write snapshot: data_fetched_at remained 2026-10-25T10:36:40, before these writes. This does not verify the post-write public state."
+    }
+  ],
+  "notes": [
+    "Only the approved API actions are covered here. Product publication is recorded separately.",
+    "Baseline was freshly fetched at 2026-10-25T10:36:40 UTC. Readbacks may be cached and are labelled accordingly.",
+    "Later fresh browser checks supersede the cached connector readbacks for current services, posts and HTTPS links. Raw API inputs, initial PROCESSING responses and cached snapshots are preserved as historical evidence."
+  ],
+  "latest_status": "all_seven_api_writes_succeeded_services_posts_and_https_browser_verified_all_eleven_products_public",
+  "browser_verification": {
+    "date": "2026-10-25",
+    "source": "Fresh Google Search and Google Business Profile browser readback after successful API writes; reported by parent agent",
+    "services": {
+      "saved_count": 32,
+      "existing_count_preserved": 29,
+      "new_count": 3,
+      "new_descriptions_exact_match": true,
+      "prices_unchanged": true,
+      "readback_file": "gbp-services-browser-readback-2026-10-25.json"
+    },
+    "new_posts": [
+      {
+        "key": "new-website",
+        "post_id": "2686529589558411563",
+        "state": "public_display_verified",
+        "cta_https_verified": true
+      },
+      {
+        "key": "spare-key-checklist",
+        "post_id": "9098022010005601203",
+        "state": "public_display_verified",
+        "cta_https_verified": true
+      },
+      {
+        "key": "rekey-after-move",
+        "post_id": "5983619735388074411",
+        "state": "public_display_verified",
+        "cta_https_verified": true
+      }
+    ],
+    "older_post_buttons": {
+      "post_ids": [
+        "4833567883874943823",
+        "4622446943236705301"
+      ],
+      "https_links_verified": true,
+      "existing_text_preserved": true
+    },
+    "profile_website": {
+      "url": "https://keymaker-ecity.alishanaver72.workers.dev/",
+      "public_https_verified": true
+    },
+    "products": {
+      "submitted_new_count": 5,
+      "owner_catalogue_count": 11,
+      "existing_count_preserved": 6,
+      "new_prices_blank": true,
+      "public_display_verified_names": [
+        "Brass house key",
+        "Cupboard and almirah key",
+        "Mechanical bike spare key",
+        "Push-button cupboard lock",
+        "Padlock spare key"
+      ],
+      "public_display_still_being_checked": [],
+      "publication_file": "gbp-product-publication-2026-10-25.json",
+      "public_catalogue_count": 11,
+      "all_eleven_public_verified": true,
+      "verification_surface": "Fresh Google Search View all products catalogue iframe"
+    },
+    "latest_summary": "GMB-PUBLICATION-2026-10-25.md"
+  }
+}

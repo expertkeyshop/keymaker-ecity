@@ -1,0 +1,283 @@
+Key Maker & Locksmith — Complete Website Build Plan
+Design direction locked
+Version 1.0
+Pre-development
+
+Project: ecitykeys
+Business: Key Maker & Locksmith, Electronic City Phase 1, Bengaluru
+Website type: Single-page, mobile-first, local business website
+Hosting: Cloudflare Pages Free
+Primary objective: Turn visitors into phone calls and WhatsApp enquiries.
+
+Our guiding principle:
+A customer should understand what we offer, trust the business, and be able to contact us within 5 seconds of opening the website.
+
+1. Locked decisions
+Component	Final plan
+Design reference	Homlane-style locksmith website you selected
+Design language	Editorial photography, overlapping imagery, oversized technician visuals
+Color approach	Premium and professional; secondary to imagery and composition
+Architecture	One scrolling page
+Calls	Primary CTA
+WhatsApp	Equally prominent CTA
+Service availability	24/7
+Doorstep service	Up to 10 km
+Product prices	₹399* onwards / ₹999* onwards, where applicable
+Contact forms	None
+Shopping cart / checkout	None
+Hosting	Cloudflare Pages Free
+Google Ads	₹200/day initial testing budget
+SEO focus	Electronic City and nearby eligible areas
+
+2. The visual design we're building
+The most important part of your chosen reference is the use of locksmiths performing actual work.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9
+
+
+
+
+
+
+
+
+
+
+Visual direction examples. Final website imagery will prioritize your real business photographs.
+Design rules
+- Large photographs integrated directly into the page layout, not just rectangular stock images.
+- A technician working on a door dominates the hero.
+- Alternating full-width image sections, small supporting photos and editorial typography.
+- Service cards use close-up photographs of actual work.
+- Product cards use consistent, high-quality product photography.
+- Subtle scroll animations and image reveals, with reduced-motion support.
+- Strong Call and WhatsApp buttons without excessive promotional clutter.
+We can reproduce the reference's design principles without making an exact copy.
+3. Website architecture
+SINGLE-PAGE SCROLL ORDER
+1. Hero
+
+   Large working-locksmith visual, business headline, 24/7 availability, 10 km promise, Call and WhatsApp.
+2. Trust & quick benefits
+
+   Genuine Google rating, location, real shop, and service highlights.
+3. About our locksmith shop
+
+   Real shopfront photo, short introduction and direct contact.
+4. Our services
+
+   Six service categories with authentic photography and contact links.
+5. 24/7 emergency doorstep assistance
+
+   Large photographic feature section emphasizing service radius.
+6. Products & starting prices
+
+   Compact catalogue with ₹399* / ₹999* onwards labels.
+7. Why choose us + how it works
+
+   Three simple steps and genuine business trust factors.
+8. Our work gallery + customer reviews
+
+   Real jobs, real Google review excerpts and shop imagery.
+9. FAQs, address and final CTA
+
+   Helpful answers, location, directions, contacts and footer.
+
+Everything stays under one website URL. Navigation simply scrolls to these sections.
+4. Hero — exact content direction
+KEY MAKER & LOCKSMITH
+
+
+
+
+
+
+
+
+artisanbenoit.fr
+
+
+24/7 LOCKSMITH SERVICE · ELECTRONIC CITY
+Locked Out? Need a Duplicate Key?
+Professional key making, lock repairs and emergency locksmith assistance. Doorstep service available within 10 km.
+ Call Now
+ WhatsApp
+
+ 24/7 Service
+
+ Within 10 km
+
+ Physical Shop
+
+
+This is a content and layout sketch. The production hero will have the more dramatic cutout and layered composition of your preferred reference, with a different arrangement for desktop and mobile.5. Service catalogue
+
+
+
+
+
+
+
+
+
+House & Office Keys
+
+Duplicate keys for homes, shops and offices.
+
+
+
+
+
+
+
+
+
+
+Car Key Services
+
+Car keys, replacements and supported remote keys.
+
+
+
+
+
+
+
+
+
+
+Bike Key Services
+
+Duplicate and replacement two-wheeler keys.
+
+
+
+
+
+
+
+
+
+
+Lock Repair & Replacement
+
+Repair and replacement for supported door locks.
+
+
+
+
+
+
+
+
+
+
+Emergency Unlocking
+
+Assistance with lost keys and lockouts.
+
+
+
+
+
+
+
+
+
+
+Doorstep Locksmith
+
+Available within our 10 km service coverage.
+
+
+Each service card will have Call and WhatsApp actions. Where the customer taps WhatsApp, a prefilled message will identify the exact service.
+6. Products & pricing
+A carefully presented catalogue, not a conventional online store.
+Product category	Display
+House key products	Relevant starting tier, once confirmed
+Car keys and key shells	Relevant starting tier
+Bike key products	Relevant starting tier
+Remote key products	Relevant starting tier
+Lock cylinders and locks	Relevant starting tier
+Batteries and accessories	Relevant starting tier
+
+Every product tile will feature an actual product image, short title, a starting price such as ₹399 onwards* or ₹999 onwards*, and direct enquiry CTAs.
+
+We will not assign ₹399 or ₹999 to a product unless that price is genuinely available for an option in that product category. That avoids customers being misled by starting prices.
+
+The price disclaimer will explain that the actual charge depends on the item, parts, required work, and any doorstep or emergency charges.
+7. Conversion design
+How website visitors become leads
+Visitor chooses service
+
+
+Calls or messages
+
+
+You confirm the job
+
+
+
+
+Mobile sticky CTA preview
+ Call Now
+ WhatsApp
+
+The sticky bar remains visible while scrolling on mobile, with enough space to avoid obstructing content.
+We will use the primary phone number 9762306303 for Call and WhatsApp, with 8171725959 as the secondary contact.
+
+No extra CTAs such as Sign Up, Register, Shop Now or Book Appointment.
+8. Google SEO and Google Ads integration
+The same page will serve both organic Google visitors and customers clicking your planned search ads.
+
+Local SEO setup
+- SEO title: 24/7 Key Maker & Locksmith in Electronic City, Bengaluru
+- One clear H1 and logical section headings.
+- Descriptive page metadata and social sharing image.
+- Locksmith / LocalBusiness structured data using accurate business details.
+- Consistent name, address and contact details matching GMB.
+- A crawlable HTML page, sitemap, robots.txt and canonical URL.
+- Google Search Console verification and indexing request.
+- Relevant descriptions for real images.
+Google documents LocalBusiness structured data for communicating business information to Search.
+
+developers.google.com
+
+
+
+
+Google Ads and GA4 measurement
+Event	Purpose
+click_call	Track website phone-button clicks
+click_whatsapp	Track WhatsApp-button clicks
+click_directions	Track requests for shop directions
+Ads call conversions	Measure eligible actual calls from ads
+Qualified jobs	Record actual paying customers separately
+
+Call clicks are not equivalent to completed calls; Google supports separate call-tracking mechanisms.
+
+developers.google.com
+
+
+
+
+We will also configure the site so Google Ads traffic can land on the hero or scroll to a relevant service section without building unnecessary separate pages.

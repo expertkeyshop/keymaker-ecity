@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-10-25",
+  "generator": "OpenAI built-in image_gen.imagegen",
+  "mode": "built-in generation",
+  "intended_use": "Draft Google Business Profile product catalogue representative illustrations; no external publishing performed.",
+  "disclosure": "AI-generated representative product illustrations, not photographs of the shop's actual stock. Actual model, finish, compatibility and availability must be confirmed with the shop before ordering.",
+  "pricing": "No new prices assigned; quote required because actual model and stock are unverified.",
+  "requested_dimensions": {
+    "width": 1024,
+    "height": 1024
+  },
+  "actual_dimensions_note": "The built-in tool returned 1254 x 1254 PNG images. Original generated pixels were preserved; no edits or resampling applied.",
+  "assets": [
+    {
+      "filename": "brass-house-key-20261025.png",
+      "product_name": "Brass house key",
+      "source_type": "AI-generated representative illustration",
+      "source_path": "C:\\Users\\kbose\\.codex\\generated_images\\01a17299-5c15-7b20-9b3c-bca2d5b2d894\\exec-81f51236-9800-431d-8edf-9cb06fdfba2f.png",
+      "saved_path": "C:\\Users\\kbose\\OneDrive\\Desktop\\keymaker\\product-images\\brass-house-key-20261025.png",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "format": "PNG",
+      "transparent_background": false,
+      "prompt": "Use case: product-mockup. Asset type: Google Business Profile product catalogue representative AI illustration, not a photograph of the shop's actual stock. Style: realistic clean 3D catalogue illustration. Format: 1024 x 1024 square. Pure white seamless background; centered product with generous margins; soft studio lighting and subtle soft shadow; metal looks clean and plausible. No brand, lettering, numbers, labels, text, logos, prices, watermarks, shop setting or hands. Single product type only. No unsupported technology or extra accessories. Subject: exactly one ordinary brass house-key blank with a round metal bow, round hole in the bow, and standard flat edge-cut blade. Warm brushed brass, diagonal arrangement, full key visible. It must look like a basic mechanical edge-cut house key; no dimple cuts, no remote, no electronics.",
+      "disclosure": "AI-generated representative illustration; actual product may vary. Confirm compatibility and availability with the shop.",
+      "visual_review": {
+        "status": "passed",
+        "checks": [
+          "Viewed final saved image with view_image",
+          "White seamless background and single generic product type",
+          "No visible brand, logo, text, price or watermark",
+          "No electronic features implied for mechanical products"
+        ]
+      },
+      "published": false
+    },
+    {
+      "filename": "cupboard-almirah-key-20261025.png",
+      "product_name": "Cupboard / almirah key",
+      "source_type": "AI-generated representative illustration",
+      "source_path": "C:\\Users\\kbose\\.codex\\generated_images\\01a17299-5c15-7b20-9b3c-bca2d5b2d894\\exec-0f865b31-7212-44b4-8b87-3213fd684c1a.png",
+      "saved_path": "C:\\Users\\kbose\\OneDrive\\Desktop\\keymaker\\product-images\\cupboard-almirah-key-20261025.png",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "format": "PNG",
+      "transparent_background": false,
+      "prompt": "Use case: product-mockup. Asset type: Google Business Profile product catalogue representative AI illustration, not a photograph of the shop's actual stock. Style: realistic clean 3D catalogue illustration. Format: 1024 x 1024 square. Pure white seamless background; centered product with generous margins; soft studio lighting and subtle soft shadow; metal looks clean and plausible. No brand, lettering, numbers, labels, text, logos, prices, watermarks, shop setting or hands. Single product type only. No unsupported technology or extra accessories. Subject: exactly one simple small mechanical cupboard or almirah cabinet key. Plain modest rounded silver metal bow with a hole and short flat edge-cut blade, visibly smaller cabinet-key proportions. Diagonal arrangement, full key visible. No electronics, no dimple technology.",
+      "disclosure": "AI-generated representative illustration; actual product may vary. Confirm compatibility and availability with the shop.",
+      "visual_review": {
+        "status": "passed",
+        "checks": [
+          "Viewed final saved image with view_image",
+          "White seamless background and single generic product type",
+          "No visible brand, logo, text, price or watermark",
+          "No electronic features implied for mechanical products"
+        ]
+      },
+      "published": false
+    },
+    {
+      "filename": "mechanical-bike-key-20261025.png",
+      "product_name": "Mechanical bike key",
+      "source_type": "AI-generated representative illustration",
+      "source_path": "C:\\Users\\kbose\\.codex\\generated_images\\01a17299-5c15-7b20-9b3c-bca2d5b2d894\\exec-8ee19358-3c09-4429-8e26-2bfb2fb7e043.png",
+      "saved_path": "C:\\Users\\kbose\\OneDrive\\Desktop\\keymaker\\product-images\\mechanical-bike-key-20261025.png",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "format": "PNG",
+      "transparent_background": false,
+      "prompt": "Use case: product-mockup. Asset type: Google Business Profile product catalogue representative AI illustration, not a photograph of the shop's actual stock. Style: realistic clean 3D catalogue illustration. Format: 1024 x 1024 square. Pure white seamless background; centered product with generous margins; soft studio lighting and subtle soft shadow; metal looks clean and plausible. No brand, lettering, numbers, labels, text, logos, prices, watermarks, shop setting or hands. Single product type only. No unsupported technology or extra accessories. Subject: exactly one generic basic mechanical motorcycle or scooter key. Simple unbranded matte black molded plastic oval bow, small key-ring hole and a plain silver metal edge-cut blade. Diagonal arrangement, full key visible. Clearly mechanical only: no remote buttons, no transponder claims, no electronic fob, no logos.",
+      "disclosure": "AI-generated representative illustration; actual product may vary. Confirm compatibility and availability with the shop.",
+      "visual_review": {
+        "status": "passed",
+        "checks": [
+          "Viewed final saved image with view_image",
+          "White seamless background and single generic product type",
+          "No visible brand, logo, text, price or watermark",
+          "No electronic features implied for mechanical products"
+        ]
+      },
+      "published": false
+    },
+    {
+      "filename": "padlock-spare-key-20261025.png",
+      "product_name": "Padlock spare key",
+      "source_type": "AI-generated representative illustration",
+      "source_path": "C:\\Users\\kbose\\.codex\\generated_images\\01a17299-5c15-7b20-9b3c-bca2d5b2d894\\exec-7048f30c-bc58-47f6-a34e-9a692a72e290.png",
+      "saved_path": "C:\\Users\\kbose\\OneDrive\\Desktop\\keymaker\\product-images\\padlock-spare-key-20261025.png",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "format": "PNG",
+      "transparent_background": false,
+      "prompt": "Use case: product-mockup. Asset type: Google Business Profile product catalogue representative AI illustration, not a photograph of the shop's actual stock. Style: realistic clean 3D catalogue illustration. Format: 1024 x 1024 square. Pure white seamless background; centered product with generous margins; soft studio lighting and subtle soft shadow; metal looks clean and plausible. No brand, lettering, numbers, labels, text, logos, prices, watermarks, shop setting or hands. Single product type only. No unsupported technology or extra accessories. Subject: exactly one ordinary small brass padlock spare key with a compact rectangular rounded metal bow, small round hole, and short narrow edge-cut blade. It is a key only, no padlock. Diagonal arrangement, full key visible. Distinct compact short-key proportions; no electronics.",
+      "disclosure": "AI-generated representative illustration; actual product may vary. Confirm compatibility and availability with the shop.",
+      "visual_review": {
+        "status": "passed",
+        "checks": [
+          "Viewed final saved image with view_image",
+          "White seamless background and single generic product type",
+          "No visible brand, logo, text, price or watermark",
+          "No electronic features implied for mechanical products"
+        ]
+      },
+      "published": false
+    },
+    {
+      "filename": "push-button-door-lock-20261025.png",
+      "product_name": "Push-button cupboard lock",
+      "source_type": "AI-generated representative illustration",
+      "source_path": "C:\\Users\\kbose\\.codex\\generated_images\\01a17299-5c15-7b20-9b3c-bca2d5b2d894\\exec-dc817d82-d79c-4408-b408-8d3f81cdeaaf.png",
+      "saved_path": "C:\\Users\\kbose\\OneDrive\\Desktop\\keymaker\\product-images\\push-button-door-lock-20261025.png",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "format": "PNG",
+      "transparent_background": false,
+      "prompt": "Use case: product-mockup. Asset type: Google Business Profile product catalogue representative AI illustration, not a photograph of the shop's actual stock. Style: realistic clean 3D catalogue illustration. Format: 1024 x 1024 square. Pure white seamless background; centered product with generous margins; soft studio lighting and subtle soft shadow; metal looks clean and plausible. No brand, lettering, numbers, labels, text, logos, prices, watermarks, shop setting or hands. Single product type only. No unsupported technology or extra accessories. Subject: one generic compact mechanical keyed push-button cupboard or wardrobe lock assembly. Show a round silver push-button cylinder projecting from a small brass rectangular mounting body in a plausible three-quarter catalogue view; keyhole on round button face. Exactly two matching simple small silver mechanical keys alongside for scale. This is a mechanical cabinet/cupboard push-button lock, NOT a digital keypad, NOT a smart lock, NOT a large entry door handle. No keypad, no screen, no numerical code, no brand, no lettering.",
+      "disclosure": "AI-generated representative illustration; actual product may vary. Confirm compatibility and availability with the shop.",
+      "visual_review": {
+        "status": "passed",
+        "checks": [
+          "Viewed final saved image with view_image",
+          "White seamless background and single generic product type",
+          "No visible brand, logo, text, price or watermark",
+          "No electronic features implied for mechanical products"
+        ]
+      },
+      "published": false
+    }
+  ]
+}

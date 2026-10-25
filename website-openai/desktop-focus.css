@@ -1,0 +1,114 @@
+/* Desktop/tablet refinement. The approved phone layout is owned by mobile-focus.css. */
+@media screen and (min-width:701px){
+  main .section{padding-block:64px}
+  main h2,main .coverage-grid h2{font-size:clamp(32px,3.1vw,40px);line-height:1.15;letter-spacing:-1.2px}
+  main .eyebrow{margin-bottom:12px}
+  .section-heading{gap:40px;margin-bottom:24px}
+  .section-heading>p{font-size:14px;line-height:1.55;max-width:440px}
+
+  /* Service selection takes priority over repeated brand/promotion sections. */
+  .emergency-section,.process-section,.final-cta{display:none}
+  .trust-grid{padding-block:18px}
+  .trust-grid p>strong{font-size:26px}
+  .trust-grid p>.icon{width:25px;height:25px}
+  .services-grid,.product-catalogue{gap:18px}
+  .service-card,.product-card{min-width:0}
+  .service-image img{height:155px;object-fit:cover}
+  .service-body{padding:17px 18px 10px}
+  .service-body .card-kicker,.service-image .image-index{display:none}
+  .service-body h3,.product-body h3{font-size:19px;line-height:1.25;letter-spacing:-.35px}
+  .service-body>p.card-description,.product-body>p.card-description{font-size:14px;line-height:1.5;margin:8px 0 12px}
+  .card-actions{gap:8px 20px;padding-top:5px;margin-top:auto}
+  .card-actions .button-text{font-size:13px;min-height:44px;padding-block:8px;gap:6px}
+  .card-actions .icon{width:16px;height:16px}
+  .specialist-notes{gap:24px;margin-top:24px;padding-top:20px}
+  .specialist-notes p{font-size:13px;line-height:1.5}
+  .specialist-notes strong{font-size:14px;margin-bottom:5px}
+
+  .product-image{height:150px}
+  .product-image img{width:100%;height:100%;aspect-ratio:auto;object-fit:contain;padding:8px 20px}
+  .product-image>span,.product-body .quote-label{display:none}
+  .product-body{padding:16px 18px 10px}
+  .product-card .card-actions{padding-top:5px}
+  .catalogue-note{font-size:12px;line-height:1.5;margin-top:16px;max-width:940px}
+
+  /* Keep the actual shop and practical visit details visible, with less repetition. */
+  .visit-section{padding-block:56px}
+  .visit-grid{gap:56px}
+  .visit-copy address{font-size:14px;line-height:1.6;margin-block:18px}
+  .visit-copy address strong{font-size:15px}
+  .visit-facts{gap:20px 30px;flex-wrap:wrap;margin-bottom:20px}
+  .visit-photo img{aspect-ratio:1.7}
+  .visit-photo>div{padding:12px 15px;left:14px;right:14px;bottom:14px;font-size:13px}
+  .work-grid{gap:18px}
+  .work-grid img{height:220px}
+  .work-grid figcaption{padding-top:10px}
+  .review-link-panel{padding:20px 24px;margin-top:24px;gap:24px}
+  .review-link-panel h3{font-size:19px;line-height:1.3}
+  .review-link-panel p{line-height:1.5}
+
+  /* About complements the genuine shop photos immediately above it. */
+  .about-grid{display:block;border-top:1px solid var(--line)}
+  .shop-collage{display:none}
+  .about-copy{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;align-items:start}
+  .about-copy>.eyebrow{grid-column:1;grid-row:1}
+  .about-copy>h2{grid-column:1;grid-row:2}
+  .about-copy>p:nth-of-type(2){display:none}
+  .about-copy>p:nth-of-type(3){grid-column:1;grid-row:3;font-size:14px;line-height:1.55;margin-top:14px;max-width:490px}
+  .about-copy>.check-list{grid-column:2;grid-row:1 / span 3;margin:0}
+  .about-copy>.text-link{grid-column:2;grid-row:4;margin-top:12px}
+  .check-list li{font-size:13px;line-height:1.5;padding-block:12px}
+
+  .coverage-grid,.faq-section{gap:56px}
+  .coverage-grid>div>p:not(.eyebrow){font-size:14px;line-height:1.55;margin-top:18px;margin-bottom:20px}
+  .area-list li{font-size:13px;line-height:1.5;padding-block:8px}
+  .faq-intro>p:not(.eyebrow){line-height:1.55;margin-block:16px 8px}
+  .faq-list summary{font-size:14px;line-height:1.5;padding-block:17px}
+  .faq-list summary::after{top:12px}
+  .faq-list details p{font-size:14px;line-height:1.55;padding-bottom:18px}
+  .site-footer{padding-top:32px}
+  .footer-top{padding-bottom:22px}
+}
+
+@media screen and (min-width:901px){
+  .hero-grid{min-height:530px;gap:24px}
+  .hero-copy{padding-block:44px}
+  .hero h1{font-size:clamp(45px,4.7vw,65px);letter-spacing:-2.5px}
+  .hero-intro{font-size:15px;line-height:1.6;margin-top:18px}
+  .hero-buttons{margin-top:22px}
+  .hero-qualities{margin-top:23px}
+  .hero-visual{min-height:530px;padding-top:20px}
+  .hero-roundel{bottom:42px;left:-20px;padding:15px 18px}
+}
+
+@media screen and (min-width:701px) and (max-width:1100px){
+  .services-grid,.product-catalogue{grid-template-columns:repeat(2,minmax(0,1fr))}
+  main .section{padding-block:48px}
+  .section-heading{gap:24px}
+  .visit-grid,.coverage-grid,.faq-section{gap:32px}
+  .review-link-panel{gap:18px;padding:20px}
+  .review-link-panel>.button{font-size:12px;padding-inline:13px}
+}
+
+@media screen and (min-width:701px) and (max-width:900px){
+  .hero-grid{grid-template-columns:1.05fr 1fr;gap:20px;min-height:460px}
+  .hero-copy{padding:32px 0}
+  .hero h1{font-size:38px;line-height:1.08;letter-spacing:-1.4px}
+  .hero h1 em{white-space:normal}
+  .hero-intro{font-size:14px;line-height:1.55;margin-top:16px}
+  .hero-buttons{gap:8px;margin-top:18px}
+  .hero-buttons .button{font-size:12px;padding:11px 12px;min-height:44px}
+  .hero-qualities{display:none}
+  .hero-visual{height:100%;min-height:460px;margin:0;padding-top:0}
+  .hero-technician{height:94%;object-position:72% center}
+  .hero-roundel{left:5px;bottom:35px;padding:12px;gap:8px}
+  .hero-roundel>.icon{width:24px;height:24px}
+  .hero-roundel span,.hero-roundel strong{font-size:12px}
+  .hero-arch{right:-12px}
+  .about-copy{column-gap:28px}
+  .visit-copy .button-row{gap:8px}
+  .visit-copy .button{font-size:12px;padding-inline:12px}
+  .visit-photo img{aspect-ratio:1.15}
+  .work-grid{gap:14px}
+  .work-grid img{height:185px}
+}

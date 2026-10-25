@@ -163,6 +163,18 @@
       "name": "Emergency locksmith services",
       "description": "24-hour locksmith and lockout assistance for authorised owners and occupants. Call with your location and lock details to confirm availability, travel charges and the quote.",
       "google_category_id": "categories/gcid:key_duplication_service"
+    },
+    {
+      "name": "Cupboard and almirah key duplication",
+      "description": "Duplicate keys for compatible cupboards, almirahs, drawers and cabinets. Bring your original key so we can match the key profile and confirm the correct blank, cutting requirements and quote."
+    },
+    {
+      "name": "Cupboard and cabinet lock replacement",
+      "description": "Replacement of compatible cupboard, wardrobe and cabinet locks. Share the existing lock, door or drawer thickness and fitting details so we can check suitable parts and quote for the lock and installation."
+    },
+    {
+      "name": "Door lock cylinder replacement",
+      "description": "Replacement cylinders for compatible home, office and shop door locks. We check the cylinder size, fitting and supplied keys before quoting for the part and installation. Shop and on-site service are available."
     }
   ],
   "post": "Need a spare key or help with a lock? Key Maker & Locksmith on Gollahalli Main Road, Electronic City Phase 1, Bengaluru is available 24 hours for key making, door lock repair and replacement, and lockout assistance. We also make keys for supported cars and bikes and replace compatible car remote key bodies and covers. Visit the shop or contact us for on-site service. Cash, UPI and bank transfers are accepted.",
@@ -186,7 +198,7 @@
     "Lock rekeying",
     "Window-lock work"
   ],
-  "website": "https://keymaker-electronic-city.violetflame16.chatgpt.site/",
+  "website": "https://keymaker-ecity.alishanaver72.workers.dev/",
   "review_url": "https://g.page/r/CdLplcdusA5eEBM/review",
   "google_review_url": "https://g.page/r/CdLplcdusA5eEBM/review",
   "all_20_service_areas_confirmed": true,
@@ -220,7 +232,7 @@
     "booking": {
       "status": "Checked",
       "complete": true,
-      "details": "The current editor lists on-site services; the old online-appointments claim is absent."
+      "details": "The approved English WhatsApp prefilled URL is visible in the Google Contact appointment link on 25 October. The trilingual URL is not claimed as saved."
     },
     "contact": {
       "status": "Awaiting Google review — owner reported",
@@ -228,14 +240,14 @@
       "details": "The phone is saved, but public display remains pending. On 22 October the owner reported that Google review is pending. Wait for Google’s decision and recheck visibility; do not repeatedly resubmit the number."
     },
     "services": {
-      "status": "Saved in Google",
+      "status": "32 services saved and checked",
       "complete": true,
-      "details": "All 29 descriptions filled and verified; 12 standard descriptions added and 17 custom descriptions retained."
+      "details": "2026-10-25: 32 services saved; 29 previous entries preserved; three added descriptions checked exactly in Google editor."
     },
     "website": {
-      "status": "Public and linked",
+      "status": "New HTTPS website publicly linked",
       "complete": true,
-      "details": "Customer website is public; Google now shows its Website button."
+      "details": "Google Website button now points to https://keymaker-ecity.alishanaver72.workers.dev/. New post/product links use the same origin."
     },
     "areas": {
       "status": "Owner-confirmed and checked",
@@ -263,9 +275,9 @@
       "details": "All 33 existing reviews have replies. Your real review link and printable QR are ready."
     },
     "posts": {
-      "status": "Published",
+      "status": "Three new updates published",
       "complete": true,
-      "details": "Shop announcement, FAQ update and two further service Updates are published. The latest two were verified in Google Your posts on 21 October 2026."
+      "details": "Website announcement, spare-key guidance and rekeying update show Published in Google. Both older post buttons now use the new HTTPS website; existing content retained."
     },
     "special": {
       "status": "Current schedule reviewed",
@@ -278,9 +290,9 @@
       "details": "September–October 2026: 224 views and 26 interactions."
     },
     "products": {
-      "status": "All six products live",
+      "status": "All 11 products publicly visible",
       "complete": true,
-      "details": "All six products are live. A fresh owner-catalogue reload showed no Pending label on Computerised key, and fresh public Google Search Products displayed the corrected title and all six prices."
+      "details": "Five approved products added and publicly checked with exact descriptions and correct website links. Existing six prices preserved; all five new prices omitted for quotes. Representative AI images disclosed."
     }
   },
   "performance_baseline": {
@@ -297,7 +309,7 @@
   },
   "public_phone_visible": false,
   "public_website_visible": true,
-  "services_saved_and_verified": "2026-10-21: all 29 service descriptions verified by fresh Windsor readback",
+  "services_saved_and_verified": "2026-10-25: 32 services saved; 29 previous entries preserved; three added descriptions checked exactly in Google editor.",
   "product_drafts": [
     {
       "name": "Computerised key",
@@ -428,6 +440,71 @@
       "description_record_note": "Exact text entered and submitted through the Google product form. Current name and price are publicly verified. Full public detail body is being checked separately.",
       "original_model_reference": "Actual compatible remote unit, button layout and model details.",
       "image_available": "product-images/car-remote-key-unit.png"
+    },
+    {
+      "name": "Brass house key",
+      "category": "Keys and key blanks",
+      "draft_price_inr": null,
+      "description": "Brass spare key for compatible house and door locks. Bring your original key so we can match the profile and confirm the correct blank and cutting requirements. Contact us for the final price before ordering. Representative AI-generated illustration; actual design may differ.",
+      "status": "publicly_visible",
+      "image_asset": "product-images/brass-house-key-20261025.png",
+      "landing_page": "https://keymaker-ecity.alishanaver72.workers.dev/#key-duplication",
+      "public_description_verified": true,
+      "public_website_link_verified": true,
+      "price_note": "No price displayed; contact shop for quote.",
+      "publication_record": "gbp-product-publication-2026-10-25.json"
+    },
+    {
+      "name": "Cupboard and almirah key",
+      "category": "Keys and key blanks",
+      "draft_price_inr": null,
+      "description": "Spare key for compatible cupboards, almirahs, drawers and cabinets. Bring your original key or lock details to check the correct key profile and blank. Confirm compatibility, cutting requirements and the final price before purchase. Representative AI-generated illustration; actual design may differ.",
+      "status": "publicly_visible",
+      "image_asset": "product-images/cupboard-almirah-key-20261025.png",
+      "landing_page": "https://keymaker-ecity.alishanaver72.workers.dev/#key-duplication",
+      "public_description_verified": true,
+      "public_website_link_verified": true,
+      "price_note": "No price displayed; contact shop for quote.",
+      "publication_record": "gbp-product-publication-2026-10-25.json"
+    },
+    {
+      "name": "Mechanical bike spare key",
+      "category": "Car keys and remotes",
+      "draft_price_inr": null,
+      "description": "Mechanical spare key for compatible motorcycles and scooters. Share the make, model and original key details to confirm the correct blank and cutting. This item is a mechanical key; chip keys and programming are quoted separately where supported. Confirm the final price. Representative AI-generated illustration; actual design may differ.",
+      "status": "publicly_visible",
+      "image_asset": "product-images/mechanical-bike-key-20261025.png",
+      "landing_page": "https://keymaker-ecity.alishanaver72.workers.dev/#car-bike-keys",
+      "public_description_verified": true,
+      "public_website_link_verified": true,
+      "price_note": "No price displayed; contact shop for quote.",
+      "publication_record": "gbp-product-publication-2026-10-25.json"
+    },
+    {
+      "name": "Padlock spare key",
+      "category": "Keys and key blanks",
+      "draft_price_inr": null,
+      "description": "Replacement or spare key for compatible padlocks. Bring the original key so we can match the key profile and confirm the correct blank and cutting requirements. Compatibility and the final price are checked before ordering. Representative AI-generated illustration; actual design may differ.",
+      "status": "publicly_visible",
+      "image_asset": "product-images/padlock-spare-key-20261025.png",
+      "landing_page": "https://keymaker-ecity.alishanaver72.workers.dev/#key-duplication",
+      "public_description_verified": true,
+      "public_website_link_verified": true,
+      "price_note": "No price displayed; contact shop for quote.",
+      "publication_record": "gbp-product-publication-2026-10-25.json"
+    },
+    {
+      "name": "Push-button cupboard lock",
+      "category": "Door locks",
+      "draft_price_inr": null,
+      "description": "Mechanical push-button lock for compatible cupboards, cabinets and wardrobe doors. Share the existing lock, panel thickness and fixing details to check the correct fitting. Confirm the exact model, included keys, final price and installation charges before ordering. Representative AI-generated illustration; actual design may differ.",
+      "status": "publicly_visible",
+      "image_asset": "product-images/push-button-door-lock-20261025.png",
+      "landing_page": "https://keymaker-ecity.alishanaver72.workers.dev/#door-lock-repair",
+      "public_description_verified": true,
+      "public_website_link_verified": true,
+      "price_note": "No price displayed; contact shop for quote.",
+      "publication_record": "gbp-product-publication-2026-10-25.json"
     }
   ],
   "products_published": true,
@@ -561,7 +638,7 @@
     "products_previously_public_pending_edit_count": 0
   },
   "products_status": "publicly_visible",
-  "products_published_count": 6,
+  "products_published_count": 11,
   "product_photo_validation": {
     "checked_at_local": "2026-10-22",
     "required": true,
@@ -576,16 +653,17 @@
   },
   "product_image_assets": {
     "manifest": "product-images/manifest.json",
-    "count": 6,
+    "count": 11,
     "type": "AI-generated generic representative illustrations, not actual stock photographs",
     "owner_authorized": true,
-    "description_disclosure": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase."
+    "description_disclosure": "AI-generated representative illustration, not a photo of actual shop stock. Exact design, supplied parts and compatibility vary; confirm the item and price before purchase.",
+    "additional_manifest": "product-images/manifest-catalogue-2026-10-25.json"
   },
-  "products_submitted_count": 6,
-  "products_publicly_visible_verified_count": 6,
+  "products_submitted_count": 11,
+  "products_publicly_visible_verified_count": 11,
   "products_previously_public_pending_edit_count": 0,
   "initial_public_catalogue_verified_count": 6,
-  "products_checked_at": "2026-10-22",
+  "products_checked_at": "2026-10-25",
   "owner_signboard_confirmation": {
     "confirmed_at": "2026-10-22",
     "full_name": "Key Maker & Locksmith | Electronic City",
@@ -987,5 +1065,17 @@
     },
     "sender_private_details_persisted": false,
     "note": "Do not send again or create an automation. Sender name/address are deliberately not copied into business records."
+  },
+  "services_verified_count": 32,
+  "latest_publication": {
+    "date": "2026-10-25",
+    "report": "GMB-PUBLICATION-2026-10-25.md",
+    "added_products": 5,
+    "added_services": 3,
+    "new_published_posts": 3,
+    "public_catalogue_count": 11,
+    "profile_service_count": 32,
+    "old_post_website_links_corrected": 2,
+    "profile_https_website_verified": true
   }
 }

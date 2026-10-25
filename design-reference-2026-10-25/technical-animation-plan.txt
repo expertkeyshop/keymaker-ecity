@@ -1,0 +1,237 @@
+# Key Maker & Locksmith — Updated Technical & Animation Plan
+
+Tech stack locked
+
+Cloudflare Pages Free
+
+ZIP deployment
+
+We will keep your existing website and technology, but upgrade the visual experience to look like the premium locksmith reference you selected.
+
+The biggest priorities are:
+
+1. Beautiful, image-driven design with smooth animations.
+2. Highly visible Call Now and WhatsApp buttons throughout the page.
+3. Excellent mobile performance.
+4. A single-page website with no unnecessary features.
+5. Simple ZIP deployments directly to Cloudflare Pages.
+
+## 1. Final technology stack
+
+| Technology            | Purpose                                  | Decision |
+| --------------------- | ---------------------------------------- | -------- |
+| HTML5                 | Website structure                        | Keep     |
+| CSS3                  | Styling, responsiveness, transitions     | Keep     |
+| Vanilla JavaScript    | Interactions, animations, CTA tracking   | Keep     |
+| Node.js               | Local static build                       | Keep     |
+| CSS animations        | Lightweight visual effects               | Add      |
+| Intersection Observer | Scroll-triggered animations              | Add      |
+| GSAP                  | Advanced image and text animations       | Optional |
+| Google Analytics 4    | Website analytics                        | Existing |
+| Google Ads tracking   | Call and WhatsApp conversion measurement | Add      |
+| Cloudflare Pages      | Static hosting                           | Locked   |
+| ZIP Direct Upload     | Manual deployment                        | Locked   |
+
+We do not need React, Next.js, Astro, a database or a backend.
+
+Node.js is only needed to produce the finished static files on your computer. It doesn't need to run on Cloudflare Pages.
+
+## 2. Animation system
+
+Our animations should feel like the reference: premium and smooth, rather than flashy or distracting.
+
+[Artisan Benoît – Serrurerie · Vitrage · Sécurité | 24h/24 – 7j/7](https://images.openai.com/static-rsc-4/quNF6GHArFVCsFHL8vlh86JbiyeVDhYuJKGqF7vr_uy_NOM6nka30iNNEh-uq-iVgw9rCWTQ1qQ3gD2fLMi3uQJj6qYN9Kw9GSIeRPuEXa9T7JvzmTYQ7xeSSsGTUSIZ_CGypOfbZp6jgd95fyGFTcQBJoneGUr2d4PMoY9cqNo?purpose=inline)
+
+Hero entrance animation
+
+Headline reveals smoothly, main locksmith image enters with subtle movement, and the CTA buttons appear immediately. No long intro that delays calling.
+
+Duration: approximately 400–700 ms
+
+[Round Rock Locksmith TX - 50% OFF On 2nd Key](https://images.openai.com/static-rsc-4/Azi8-L1CcokM_ogAzxDbcl9M-LKQJqBjtopvOyluNdyf06w-3wpIrFUB3JcCnyafAKpPfmSbCphVXrMjsGinrOi0QEnNc3Jh52bLwJmUA9udVg6CWNNlqLE7RulSYr9vCutZbVPoJI940S885qJJkJmRNa1f8LJzuX7sg32baoU?purpose=inline)
+
+Scroll-triggered image reveals
+
+Service images gently move into place as the customer scrolls, with subtle scale and fade effects.
+
+Duration: approximately 400–600 ms
+
+[Bunch of keys](https://images.openai.com/static-rsc-4/4IAd2VSgjyPOuHMfg33nULlJl7hA2E5GeinOC-FCwpaeJNZ3OABgt-xCgds1suuNpXMQh4z1OyEoHdSmzLtbay3xcclboBMrPd-I2MLYBB2EDNkUs194rQZkamMM4PBgDxNeVSFVVkjWaE-UKlqYl6Vq90ffoQZ0mONk173VHm-0NYQS6EqYSzcMuvLA5gNR?purpose=inline)
+
+Product card interactions
+
+Small image zoom on hover, refined border changes and immediate contact actions. On mobile, the full card remains usable without hovering.
+
+Duration: approximately 150–250 ms
+
+Additional effects: subtle staggered service-card entrances, smooth FAQ expansion, restrained image layering and responsive navigation.
+
+Important: No animation should delay a CTA, block scrolling or repeatedly distract customers. We will respect reduced-motion preferences.
+
+## 3. CTA system — highest priority
+
+Call and WhatsApp should be the strongest visual elements after the main headline and working-locksmith photograph.
+
+Mobile sticky CTA preview
+
+Need a locksmith?
+
+24/7 · Within 10 km
+
+&#x20;Call Now
+
+&#x20;WhatsApp
+
+The production bar will remain fixed at the bottom on mobile with safe-area spacing.
+
+### CTA placement
+
+| Section                | Contact behavior                 |
+| ---------------------- | -------------------------------- |
+| Header                 | Call button                      |
+| Hero                   | Large Call + WhatsApp buttons    |
+| Every service card     | Call + service-specific WhatsApp |
+| Every product card     | Call + product-specific WhatsApp |
+| 24/7 emergency section | Prominent Call Now               |
+| Reviews section        | Contact CTA after trust content  |
+| Footer                 | Both contact actions             |
+| Mobile sticky bar      | Both actions, always accessible  |
+
+WhatsApp messages will be automatically prepared with the selected service or product name.
+
+For example, someone selecting a car key will get:
+
+> Hi, I need help with a car key. Please share availability and starting price. My car model is \_\_\_\_\_\_.
+
+We should track `click_call` and `click_whatsapp` in GA4, with the section and service/product name as event parameters. The same click should not be accidentally recorded twice.
+
+## 4. Cloudflare ZIP deployment
+
+Cloudflare officially supports ZIP file uploads through its Pages dashboard. No GitHub connection is required.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://developers.cloudflare.com\&sz=32)
+
+Cloudflare Pages docs
+
+
+
+DEPLOYMENT WORKFLOW
+
+Edit existing site
+
+Build static files
+
+Create ZIP
+
+Deploy
+
+### ZIP file structure
+
+Upload the built website, not the source code and `node_modules`.
+
+Your ZIP should contain the website files at its root:
+
+```
+ecitykeys-deploy.zip
+├── index.html
+├── assets/
+│   ├── style.css
+│   ├── script.js
+│   └── images/
+├── favicon.svg
+├── robots.txt
+└── sitemap.xml
+```
+
+That's an example structure; we'll preserve your existing file paths and build output.
+
+### Deployment steps
+
+1. Run your existing Node.js build script locally, if required.
+2. Confirm the generated output contains `index.html` at its root.
+3. ZIP the contents of that output folder.
+4. Open [Cloudflare Dashboard](https://dash.cloudflare.com/?utm_source=chatgpt.com).
+5. Go to Workers & Pages → Create application → Drag and drop your files.
+6. Upload the ZIP and deploy.
+
+Later, every new version can be uploaded through Create a new deployment.
+
+Cloudflare's dashboard drag-and-drop method currently supports up to 1,000 files, with a maximum individual asset size of 25 MiB.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://developers.cloudflare.com\&sz=32)
+
+Cloudflare Pages docs
+
++1
+
+
+
+One important limitation: A Direct Upload Pages project cannot later be converted in place to Git-integrated automatic deployment. You would need a new project for that. Manual uploads or Wrangler CLI deployments remain possible.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://developers.cloudflare.com\&sz=32)
+
+Cloudflare Pages docs
+
+
+
+Also, your existing `workers.dev` website is a Workers deployment. The new Pages project will have a separate `pages.dev` URL unless you connect a custom domain.
+
+## 5. Updated implementation priorities
+
+Website upgrade checklist
+
+17/19
+
+Stage 1 — Visual improvements
+
+Preserve the existing site and identify current assets
+
+Upgrade the hero to the chosen image-led design
+
+Refine typography, spacing and mobile layouts
+
+Improve service and product photography
+
+Stage 2 — Animations & contact experience
+
+Add smooth hero entrance animations
+
+Add lightweight scroll-triggered image reveals
+
+Add product-card hover and touch interactions
+
+Implement sticky mobile Call/WhatsApp bar
+
+Add service-specific WhatsApp messages
+
+Stage 3 — Performance & SEO
+
+Optimize and resize website images
+
+Verify existing GA4 and add CTA events
+
+Preserve existing SEO metadata and add missing local business details
+
+Test all phone, WhatsApp and navigation links
+
+Check accessibility and reduced-motion behavior
+
+Stage 4 — Deployment
+
+Run existing local build process
+
+Create production-ready ZIP
+
+Upload to Cloudflare Pages Free
+
+Test live mobile and desktop website
+
+Confirm domain and Google Ads landing-page readiness
+
+## Final recommendation
+
+Keep the website lightweight but make it visually sophisticated. Excellent photography, layered layouts, carefully timed motion, and prominent contact buttons will do far more for this business than switching frameworks or adding heavy libraries.
+
+I couldn't inspect the live `workers.dev` page directly, so this plan is based on the stack you provided rather than a full code audit.
+
+Next step: Upload your existing website's source ZIP here. I can then review the actual HTML, CSS, JavaScript and build script, preserve what's working, and make the animation and CTA improvements in the existing codebase before preparing a Cloudflare Pages-ready deployment ZIP.

@@ -1,0 +1,23 @@
+# Key Maker & Locksmith | Electronic City
+
+> 24-hour key duplication and locksmith services in Electronic City Phase 1, Bengaluru. House, office, shop, car and bike keys; compatible remote programming; lock repairs, replacement and on-site lockout assistance.
+
+## Business summary
+
+- Shop: Gollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru, Karnataka 560100, India.
+- Phone: +919762306303. Open 24 hours every day.
+- Shop visits and on-site service. Confirm compatibility, arrival time and charges directly.
+
+## Main sources
+
+[Website](https://keymaker-ecity.alishanaver72.workers.dev/): Services, location, hours, photographs, contact details and FAQs.
+[Business details](https://keymaker-ecity.alishanaver72.workers.dev/business.md): Plain-text business facts and service information.
+[Structured business data](https://keymaker-ecity.alishanaver72.workers.dev/business.json): JSON-LD matching the visible website.
+[Google Maps](https://www.google.com/maps?cid=6777548479080557010): Shop directions and Google Business Profile.
+
+## Discovery
+
+[Sitemap](https://keymaker-ecity.alishanaver72.workers.dev/sitemap.xml)
+[Crawler preferences](https://keymaker-ecity.alishanaver72.workers.dev/robots.txt)
+
+Information reviewed: 2026-10-24.

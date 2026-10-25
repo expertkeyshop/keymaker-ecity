@@ -1,53 +1,66 @@
 # Keymaker Ecity website
 
-Prepared on 24 October 2026 for **Key Maker & Locksmith | Electronic City**.
+Single-page website for **Key Maker &amp; Locksmith | Electronic City**, redesigned on **25 October 2026** around the owner's locksmith and home-service references. A separate privacy and cookie page is included.
 
-## Current state
+## Source and build
 
-The owner reports deploying the redesign on Cloudflare at **https://keymaker-ecity.alishanaver72.workers.dev/**. This is the origin for the current bundle's canonical, social, structured-data and sitemap URLs. The owner's deployment report is not an independent verification of the latest live build.
+The stack stays HTML, CSS and vanilla JavaScript. The build uses Node's built-in modules; there are no npm dependencies, framework runtime, database, checkout or contact-form backend.
 
-All five WhatsApp links now contain the owner's exact **English WhatsApp booking URL**, directly in the HTML. The old three-language JavaScript override has been removed. This corrected bundle is rebuilt and checked, ready for the owner to redeploy; the latest correction is **not yet published or verified live**. No agent deployment to Cloudflare is claimed.
+From the parent `keymaker` folder:
 
-The former Sites project ID remains unchanged in `.openai/hosting.json` as historical metadata. The Sites connector returned `project_not_found` and an empty owned/editable inventory. That legacy access issue affects management of the old Sites project; it does **not** prevent the owner from redeploying the static bundle on Cloudflare. The Google Business Profile website field was last verified with the old URL and has not been changed by this documentation update.
+```powershell
+node website-openai/build.mjs
+node website-openai/preview.mjs
+```
 
-## Local use
+The preview is served at `http://127.0.0.1:8126/`. Upload or package the **contents of `website-openai/dist/`**, with `index.html` at the archive root. The parent folder's `index.html` is the owner's profile checklist, not this customer website.
 
-- Run `node build.mjs` to copy the HTML, CSS and JS to `dist` and regenerate robots/sitemap from the canonical URL.
-- Run `node preview.mjs` to serve `dist` at `http://127.0.0.1:8126/`.
-- Open `dist/index.html` directly for a portable local preview. All display assets are included and relative.
-- Serve/package **dist**, not the source directory. The updated upload ZIP is `../keymaker-ecity-website-bundle.zip`; `../keymaker-ecity-website-preview.zip` contains the same files.
+The build copies HTML, CSS, JavaScript, the privacy page, static security headers, final image assets and the byte-exact Google verification file. It regenerates `robots.txt`, `sitemap.xml`, `business.json`, `business.md` and `llms.txt` from the homepage's canonical URL, visible FAQs and linked business data. Source `assets/` is the asset source of truth. Working originals named `*-original.png` (or JPG, WebP, AVIF) and `image-manifest*.json` are kept locally and excluded from copying into the public output. Do not place credentials or internal documents in `dist/`.
 
-## Included
+## Production URL
 
-- Owner logo, storefront cover and two work photos, compressed to responsive WebP variants; originals untouched.
-- Clear local service copy, six service groups, 20 confirmed service areas and eight FAQs.
-- Accurate address, phone, 24/7 hours, payments, Maps directions and review link.
-- Desktop and mobile layouts, accessible menu and FAQs, call links, and the owner's requested English WhatsApp booking message in the latest bundle update.
-- Title, description, canonical URL, Open Graph/Twitter metadata, favicon, WebSite/Locksmith JSON-LD, robots.txt and sitemap.xml.
-- Linked WebPage and Service entities matching the visible content; explicit search-crawler allowances; an image sitemap; generated `business.md`, `business.json` and supplemental `llms.txt` business summaries.
-- Cloudflare static-asset `_headers` for indexable content and correct plain-text, Markdown, JSON-LD and XML content types. Dashboard-level bot rules still need separate verification.
-- System fonts, deferred small JavaScript, image dimensions, prioritised hero image and lazy loading of lower-page photos.
+The default canonical origin is the existing owner-supplied website:
 
-The owner-supplied Google Analytics 4 tag **G-Q2CM2F0JB8** is included once immediately after the homepage's `<head>`. The Google verification file remains unchanged. No additional manual page-view or custom-event tracking was added. Analytics collection is not verified live until this bundle is redeployed and tested in the owner's Analytics account.
+**https://keymaker-ecity.alishanaver72.workers.dev/**
 
-No unverified testimonials, coordinates, review-rating markup, card payments or blanket vehicle compatibility were invented. FAQs are visitor information; no FAQ rich-result outcome is promised. Arrival is confirmed by phone for the actual location.
+Building locally does not deploy to that URL. This folder also remains suitable for a Cloudflare Pages Direct Upload project. A new Pages project receives its own `pages.dev` URL; it does not rename the existing Workers website.
 
-## Verification
+Once a different final production origin is known, rebuild before uploading:
 
-The redesign's earlier browser checks passed for desktop/mobile display, menu toggling and link dismissal, FAQ expansion, contact destinations and image loading. Overflow checks passed at 320, 390, 820 and 1280 CSS pixels. For the latest update, the static build and JavaScript syntax checks pass, every WhatsApp anchor matches the exact supplied URL, the old script override is absent, and canonical/social/schema/robots/sitemap URLs use the Workers origin. The packaged files are checked against the current build. These local checks do not verify that the updated bundle is deployed on Cloudflare. No published Lighthouse score or field Core Web Vitals measurement is claimed.
+```powershell
+node website-openai/build.mjs --origin https://your-final-domain/
+```
 
-## Update the Cloudflare deployment
+Use the actual assigned Pages URL or connected custom domain. The option requires an HTTPS origin without a path, query or fragment. It updates absolute URLs in the generated HTML, linked business data and discovery files without altering the source homepage. Supply the option again on later builds for that domain, or deliberately update the source canonical and all source absolute URLs. Keep one consistent final canonical URL.
 
-The owner-supplied Google HTML verification file `googlea8f5575206e3c038.html` is retained unchanged in `verification/` and copied to the root of `dist` on every build. Both ZIPs include it at their root. Keep it in later deployments so Search Console can recheck ownership. A public request before uploading this updated bundle returned 404 for the verification path; ownership is not yet verified.
+## Design and contact behavior
 
-Keep every absolute site URL on `https://keymaker-ecity.alishanaver72.workers.dev/`. Rebuild the current source with `node build.mjs`, check the exact English WhatsApp destination/message, and package the **contents of dist** with its assets. The owner then redeploys the latest bundle using their existing Cloudflare workflow. Do not upload an older ZIP or treat local rebuilding as publication. After redeployment, check the live pages, images and WhatsApp link at the Workers URL.
+The redesigned page uses a large locksmith visual, the owner's real shop/work photos and logo, service and product catalogues, prominent Call/WhatsApp actions, local contact information and FAQs. Generated imagery is representative visual material; it must not be described as an actual employee or completed customer job. Original business photography remains the source for business-image metadata.
 
-Search Console verification, sitemap submission, inspection/indexing and updating the Google Business Profile/owned directory website links remain follow-up work once the final URL and latest live build are verified. `../WEBSITE-RENAME-PLAN.md` describes the earlier Sites route and is historical for this Cloudflare workflow.
+The static page contains the business content and contact links before JavaScript loads. Navigation, section reveals, analytics consent and CTA measurement progressively enhance it. Reduced-motion preferences and keyboard access are supported. Service/product WhatsApp messages identify the selected enquiry; visitors still confirm availability, compatibility, arrival time and the quote directly with the shop.
 
-## AI and search discovery
+At 700px and below, `mobile-focus.css` provides a compact customer journey: services, products, then shop details. Cards use short summaries and small thumbnails. Three more products, specialist details, FAQs, service areas, the shop introduction and photos remain available in native disclosures. Decorative hero imagery and repeated promotional sections are hidden on phones. The disclosure script opens deep-linked sections and preserves mobile choices across resizing; the source disclosures stay open without JavaScript. Keep `mobile-focus.css` in the deployable bundle.
 
-The complete shop information and FAQ answers are in the initial HTML, with no login or JavaScript required to read them. `robots.txt` allows search crawlers, including OAI-SearchBot and PerplexityBot; model training and search discovery are separate concerns. The previous wildcard policy is preserved. Supplemental `llms.txt` is an optional content index, not a required search protocol or a promise of inclusion. The plain-text and JSON files are generated from the same HTML/business graph to avoid conflicting phone, hours, services or addresses.
+Above 700px, `desktop-focus.css` keeps all six services and products visible with smaller images, tighter card spacing and reduced section padding. Services, products and shop details precede the supporting shop story, gallery, coverage and FAQs. Repeated promotional blocks are hidden. The new stylesheet is guarded by both its link media attribute and CSS media queries; the approved mobile CSS and JavaScript are unchanged. Keep both focus stylesheets in the build.
 
-On 24 October 2026, direct public HTTP checks of the deployed Workers homepage, robots.txt and sitemap returned 200 with no X-Robots-Tag restriction. However, that live build still used the old ChatGPT origin in its canonical and sitemap. The current ZIP corrects that. These checks do not prove access from actual verified crawler IPs, indexing or AI recommendations. Cloudflare AI Crawl Control/WAF and any managed robots policies were not changed. Browser verification was unavailable for this incremental update because local browser use was disabled.
+Catalogue prices are quote-based unless the owner has confirmed an actual starting price for that product. Do not turn suggested ₹399/₹999 tiers, reference-site statistics, stock faces, example testimonials or sample licences into business claims.
 
-After uploading the new ZIP, check the actual served files, canonical URLs and headers; then verify the Workers URL-prefix property in Google Search Console, submit its sitemap, and update owned profile/directory website links. Search engines and AI services choose their own indexing, citations and recommendations. Read `../AI-DISCOVERY.md` for the verification checklist and official references.
+## Analytics and verification
+
+### Analytics and consent
+
+The GA4 property **G-Q2CM2F0JB8** is configured but **does not load until a visitor accepts analytics**. The choice is stored in local storage under `km-analytics-consent`; declining keeps Google Analytics unloaded and clears existing `_ga*` cookies where the browser permits. Visitors can reopen the choice from the footer or the privacy page. The privacy page explains analytics, cookies, retention and contact details.
+
+Once consent is granted, CTA events are `click_call`, `click_whatsapp` and `click_directions`. They measure link interactions, not completed calls, confirmed bookings or paying customers. The tracking code does not configure a Google Ads account, launch an advertising budget or establish Ads call-conversion measurement. Check events in GA4 Realtime/DebugView after deployment and configure reporting/key events in the account when appropriate.
+
+### Search Console verification
+
+`verification/googlea8f5575206e3c038.html` is copied unchanged to the public root on every build. Keep it available for Search Console ownership rechecks. A separate URL-prefix property is needed if the production hostname changes.
+
+## Search and AI discovery
+
+Canonical/social metadata, Locksmith/WebSite/WebPage/Service structured data, descriptive images, sitemap and robots directives describe the same public business information as the visible page. The complete content is crawlable without JavaScript. Supplemental Markdown, JSON-LD and `llms.txt` files provide matching business facts; their presence cannot guarantee indexing, rankings or AI recommendations. Cloudflare account-level bot restrictions require separate live checking.
+
+## Deployment and final checks
+
+The build output in `website-openai/dist/` is the deployable bundle. Verify the canonical origin, privacy page, consent behavior, responsive layout and security headers on the preview before uploading. A prepared bundle is not evidence of a completed Cloudflare deployment or a live performance score. The legacy `.openai/hosting.json` identifies the earlier Sites project and is not needed for the Cloudflare static upload.

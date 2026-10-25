@@ -1,0 +1,107 @@
+{
+  "created_at": "2026-10-25",
+  "generator": "OpenAI built-in image_gen.imagegen",
+  "mode": "built-in",
+  "scope": "Website decorative illustration assets only",
+  "disclosure": "AI-generated illustrative images. People, workshop equipment and product still life are illustrative; not photographs of the business staff, exact shop equipment, or exact stock.",
+  "editing": "Original generated PNGs preserved. WebP variants resize and compress only with Pillow, no crop, no retouching, no upscaling.",
+  "images": [
+    {
+      "id": "hero-locksmith",
+      "source": "C:/Users/kbose/.codex/generated_images/01a172d0-e32c-7af1-81b0-9481b319697e/exec-5bbbf328-44a7-45a8-b861-b0e45b7d9934.png",
+      "original": "hero-locksmith-original.png",
+      "widths": [
+        640,
+        1000,
+        1400
+      ],
+      "prompt": "Create an editorial lifestyle photograph for an Indian home services website. A South Asian male tradesperson, age around thirty, in a simple dark sage work shirt and warm beige trousers stands beside an open matte cream residential door, carrying a plain small canvas tool bag at his side. Friendly calm professional stance, side profile with face mostly turned toward the doorway, no work being performed and no tools in hands. Warm stone wall at left with generous clean negative space, full body portrait toward right of frame, door on far right. Landscape 3:2 composition, warm natural daylight, realistic materials and anatomy, quiet premium candid photography, restrained cream and forest sage colors. No text, no logos, no watermark. Clearly an illustrative image rather than a real company employee.",
+      "alt": "Illustrative tradesperson with a tool bag beside a cream residential doorway",
+      "original_dimensions": [
+        1536,
+        1024
+      ],
+      "original_bytes": 2380605,
+      "variants": [
+        {
+          "path": "hero-locksmith-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 33956
+        },
+        {
+          "path": "hero-locksmith-1000.webp",
+          "width": 1000,
+          "height": 667,
+          "bytes": 68080
+        },
+        {
+          "path": "hero-locksmith-1400.webp",
+          "width": 1400,
+          "height": 933,
+          "bytes": 109244
+        }
+      ]
+    },
+    {
+      "id": "key-cutting",
+      "source": "C:/Users/kbose/.codex/generated_images/01a172d0-e32c-7af1-81b0-9481b319697e/exec-9728e7f6-d284-4b32-9c54-bce75231d5b7.png",
+      "original": "key-cutting-original.png",
+      "widths": [
+        480,
+        800
+      ],
+      "prompt": "Create a premium still life editorial photograph for a neighborhood hardware shop website. A small brass house key with a round bow lies on a warm wooden workbench beside an unbranded heavy brushed metal workshop machine, gently out of focus. A few simple spare metal blanks are neatly arranged to one side. No people and no hands, no action. Beautiful tactile brass, aged wood, warm cream daylight, dark sage details, shallow depth of field, landscape 3:2 composition. No text, labels, logos, codes, watermarks or diagrams. It is decorative illustrative product photography.",
+      "alt": "Illustrative brass spare keys on a workshop bench",
+      "original_dimensions": [
+        1536,
+        1024
+      ],
+      "original_bytes": 2287320,
+      "variants": [
+        {
+          "path": "key-cutting-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 22784
+        },
+        {
+          "path": "key-cutting-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 50880
+        }
+      ]
+    },
+    {
+      "id": "automotive-key",
+      "source": "C:/Users/kbose/.codex/generated_images/01a172d0-e32c-7af1-81b0-9481b319697e/exec-437ef657-f768-4400-97fb-7002b3dc3837.png",
+      "original": "automotive-key-original.png",
+      "widths": [
+        480,
+        800
+      ],
+      "prompt": "Create a premium still life editorial product photograph for a local key shop website. An unbranded black plastic car key remote shell with three simple rounded buttons sits on a warm wooden workbench next to a plain mechanical key. A soft dark sage fabric in one corner, calm warm cream background, natural morning daylight, crisp tactile plastic and metal, shallow depth of field, landscape 3:2 composition. No people, no vehicle, no demonstration or diagrams, no text, no visible brand emblems, no watermark. Pure decorative product photography.",
+      "alt": "Illustrative unbranded car remote shell and mechanical spare key",
+      "original_dimensions": [
+        1536,
+        1024
+      ],
+      "original_bytes": 2485214,
+      "variants": [
+        {
+          "path": "automotive-key-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 24052
+        },
+        {
+          "path": "automotive-key-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 56232
+        }
+      ]
+    }
+  ]
+}

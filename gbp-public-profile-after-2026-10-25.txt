@@ -1,0 +1,531 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en-IN
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com/webhp?hl=en&ictx=0&sa=X&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQpYkNegQIBhAG
+    - img "Go to Google Home"
+  - combobox "Search": Key Maker & Locksmith Key Maker & Locksmith
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+- button "Share":
+- button "Google apps":
+- 'button "Google Account: Katabathuni Bose (kbose0007@gmail.com), Google membership"':
+- navigation:
+  - list:
+    - link "AI Mode":
+      - /url: /search?q=Key+Maker+%26+Locksmith&num=10&sca_esv=fe67424cf497eb5a&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1SzE3TDOzSE61SDW2MqgwTTVITTIwS002tzRNtUwxWsQq6p1aqeCbmJ1apKCm4JOfnF2cm1mSAQC9RKw-QQAAAA&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn--wavS8TcVVggSf-u7aBQohRTVIyuhFYHUAcG-lXQ1_3Ck2_i1gFMl-3O_4t7gg-7bxUFiVMmyqZMfIVlJyoZu8dpaNZFp6dHcc4RAAiySxxAZ7ZFc-ajc5RcWf2Luzg-XHf5jobu9uxDIQxbbmqHF_CEbg&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ2J8OegQIDRAD
+      - generic: AI Mode
+    - link "All" [disabled]:
+      - generic: All
+    - link "Shopping":
+      - /url: /search?num=10&sca_esv=fe67424cf497eb5a&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1SzE3TDOzSE61SDW2MqgwTTVITTIwS002tzRNtUwxWsQq6p1aqeCbmJ1apKCm4JOfnF2cm1mSAQC9RKw-QQAAAA&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn--wavS8TcVVggSf-u7aBQohRTVIyuhFYHUAcG-lXQ1_3Ck2_i1gFMl-3O_4t7gg-7bxUFiVMmyqZMfIVlJyoZu8dpaNZFp6dHcc4RAAiySxxAZ7ZFc-ajc5RcWf2Luzg-XHf5jobu9uxDIQxbbmqHF_CEbg&q=Key+Maker+%26+Locksmith&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Images":
+      - /url: /search?num=10&sca_esv=fe67424cf497eb5a&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1SzE3TDOzSE61SDW2MqgwTTVITTIwS002tzRNtUwxWsQq6p1aqeCbmJ1apKCm4JOfnF2cm1mSAQC9RKw-QQAAAA&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn--wavS8TcVVggSf-u7aBQohRTVIyuhFYHUAcG-lXQ1_3Ck2_i1gFMl-3O_4t7gg-7bxUFiVMmyqZMfIVlJyoZu8dpaNZFp6dHcc4RAAiySxxAZ7ZFc-ajc5RcWf2Luzg-XHf5jobu9uxDIQxbbmqHF_CEbg&q=Key+Maker+%26+Locksmith&sa=X&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQtKgLegQIFRAB
+      - generic: Images
+    - link "Maps":
+      - /url: https://maps.google.com/maps?num=10&sca_esv=fe67424cf497eb5a&hl=en&authuser=0&output=search&q=Key+Maker+%26+Locksmith&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1SzE3TDOzSE61SDW2MqgwTTVITTIwS002tzRNtUwxWsQq6p1aqeCbmJ1apKCm4JOfnF2cm1mSAQC9RKw-QQAAAA&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn--wavS8TcVVggSf-u7aBQohRTVIyuhFYHUAcG-lXQ1_3Ck2_i1gFMl-3O_4t7gg-7bxUFiVMmyqZMfIVlJyoZu8dpaNZFp6dHcc4RAAiySxxAZ7ZFc-ajc5RcWf2Luzg-XHf5jobu9uxDIQxbbmqHF_CEbg&entry=mc&ved=1t:200715&ictx=111
+      - generic: Maps
+    - link "Videos":
+      - /url: /search?num=10&sca_esv=fe67424cf497eb5a&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1SzE3TDOzSE61SDW2MqgwTTVITTIwS002tzRNtUwxWsQq6p1aqeCbmJ1apKCm4JOfnF2cm1mSAQC9RKw-QQAAAA&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn--wavS8TcVVggSf-u7aBQohRTVIyuhFYHUAcG-lXQ1_3Ck2_i1gFMl-3O_4t7gg-7bxUFiVMmyqZMfIVlJyoZu8dpaNZFp6dHcc4RAAiySxxAZ7ZFc-ajc5RcWf2Luzg-XHf5jobu9uxDIQxbbmqHF_CEbg&q=Key+Maker+%26+Locksmith&sa=X&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQtKgLegQIEhAB
+      - generic: Videos
+    - link "Forums":
+      - /url: /search?num=10&sca_esv=fe67424cf497eb5a&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1SzE3TDOzSE61SDW2MqgwTTVITTIwS002tzRNtUwxWsQq6p1aqeCbmJ1apKCm4JOfnF2cm1mSAQC9RKw-QQAAAA&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn--wavS8TcVVggSf-u7aBQohRTVIyuhFYHUAcG-lXQ1_3Ck2_i1gFMl-3O_4t7gg-7bxUFiVMmyqZMfIVlJyoZu8dpaNZFp6dHcc4RAAiySxxAZ7ZFc-ajc5RcWf2Luzg-XHf5jobu9uxDIQxbbmqHF_CEbg&q=Key+Maker+%26+Locksmith&sa=X&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQs6gLegQIERAB
+      - generic: Forums
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - region "Your business on Google":
+    - heading "Your business on Google" [level=2]
+    - link "32 customer interactions":
+      - /url: "#mpd=promote/performance"
+      - text: 32 customer interactions
+    - generic: Profile strength
+    - generic: Looks good!
+    - button "See Business Profile settings and support":
+    - region "Business Profile actions":
+      - list "Business Profile actions":
+        - button "Edit profile":
+          - generic: Edit profile
+        - button "Read reviews":
+          - generic: Read reviews
+        - button "Photos":
+          - generic: Photos
+        - button "Posts":
+          - generic: Posts
+        - button "Performance":
+          - generic: Performance
+        - link "Advertise (opens in new window)":
+          - /url: https://ads.google.com/aw/campaigns/new/express?ocid=542121984&euid=1010568427&__u=3316829523&cbdbId=u-2906704350774959423&sf=AWX_GMB&authuser=0&utm_campaign=IN-en-xs-ip-gmb_aw_serp_ia2_ca-sf-dw-uao-s500g500%7Cib%3A1091745641%7Cib%3A8778663188%7Cib%3A7465580735%7C-ahpm-0000000217-0000000002%7C-unqsi-CPWVwOD_1JcDFZhTzgAdpjUcEw-unqsi-uao-agembe-acce&subid=IN-en-xs-ip-gmb_aw_serp_ia2_ca-sf-dw-uao-s500g500%7Cib%3A1091745641%7Cib%3A8778663188%7Cib%3A7465580735%7C-ahpm-0000000217-0000000002%7C-unqsi-CPWVwOD_1JcDFZhTzgAdpjUcEw-unqsi-uao-agembe-acce&utm_medium=et&utm_source=gmb
+          - generic: Advertise
+        - button "Get Google QR":
+          - generic: Get Google QR
+        - button "Edit services":
+          - generic: Edit services
+        - button "Bookings":
+          - generic: Bookings
+        - button "Ask for reviews":
+          - generic: Ask for reviews
+        - button "Profiles":
+          - generic: Profiles
+    - heading "You've caught up with everything" [level=3]
+    - generic: There's no new information to show about your business
+    - link "Only managers of this profile can see this":
+      - /url: https://support.google.com/business?p=business_on_search&hl=en-IN&sa=X&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQybwEegQIIBAe
+    - button
+  - 'generic "Your Google Ads summary: Your campaigns in Google Ads"':
+    - heading "Your Google Ads summary" [level=1]
+    - heading "Only you can see this summary" [level=2]
+    - button "Options menu":
+      - generic "Options menu":
+    - button "Smart campaign High-Quality Duplicate key ELIGIBLE Your ads can show for this search" [expanded]:
+      - table:
+        - rowgroup:
+          - row "Smart campaign High-Quality Duplicate key":
+            - cell "Smart campaign High-Quality Duplicate key":
+              - img "Smart campaign"
+              - generic: High-Quality Duplicate key
+            - cell
+          - row "ELIGIBLE Your ads can show for this search":
+            - cell "ELIGIBLE Your ads can show for this search":
+              - generic: ELIGIBLE
+              - generic: Your ads can show for this search
+    - generic "Smart campaign High-Quality Duplicate key ELIGIBLE Your ads can show for this search":
+      - generic: Your account balance is getting low
+      - button "Fix it":
+        - generic: Fix it
+      - generic: Sponsored
+      - generic: business.google.com
+      - generic: https://business.google.com/expert-key-shop
+      - link "Key Duplication Service - Need a Key Duplicated? - Stop by Our Key Shop Today":
+        - /url: https://business.google.com/v/expert-key-shop/04339166149811735694/d4cd/_?
+      - generic: Make Use of Our Key Replacement and Duplication Service in Bengaluru. Our Machines Duplicate Special Keys, Auto Keys, and More. Visit and Bring Your Keys!
+      - button "Edit ad":
+        - generic: Edit ad
+      - text: Only one variation of your ad is displayed as an example. Your budget, ad quality and competing ads influence when your ads show. Ad previews shown may not reflect actual campaign or account targeting settings.
+      - link "Learn more about when ads show":
+        - /url: https://support.google.com/google-ads/answer/13458870
+        - text: Learn more
+      - generic: Recommendations
+      - generic: Create a Performance Max campaign
+      - button "Get started":
+        - generic: Get started
+      - generic: Maximise performance for online sales, lead generation, shop goals or multiple objectives by unlocking all of Google's ad inventory
+      - paragraph: Get more conversions
+      - paragraph: Show ads across more inventory
+      - paragraph: Use the best of Google's Search automation
+      - generic: Create a Performance Max campaign
+      - button "The Opti score of the corresponding recommendation":
+        - generic: +<0.1%
+      - button "Recommendations card menu":
+      - generic: Maximise performance for online sales, lead generation, shop goals or multiple objectives by unlocking all of Google's ad inventory
+      - button "Get started":
+        - generic: Get started
+      - generic: Optimise your performance
+      - generic: You may have more recommendations available in Google Ads.
+      - generic: View in Google Ads
+      - link "View in Google Ads":
+        - /url: https://ads.google.com/aw/recommendations?ocid=1362212390&campaignId=20790956633&src=ads_onebox&subid=ww-ww-xs-ip_OB_View_recomm
+      - link "View more in Google Ads . Opens in new tab":
+        - /url: https://ads.google.com/aw/express/dashboard?src=ads_onebox&campaignId=20790956633&ocid=1362212390&__u=3316829523&__c=4477269110&authuser=0&subid=ww-ww-xs-ip_OB_View_campaign
+        - separator
+        - generic: View more in Google Ads
+        - generic: .
+        - generic: Opens in new tab
+  - tabpanel:
+    - button
+    - link "Add photos":
+      - /url: "#"
+      - generic: Add photos
+    - link "Add photos":
+      - /url: "#"
+      - generic: Add photos
+    - link "Map of Key Maker & Locksmith — Electronic City":
+      - /url: /maps/place/Key+Maker+%26+Locksmith+%E2%80%94+Electronic+City/data=!4m2!3m1!1s0x0:0x5e0eb06ec795e9d2?sa=X&ved=1t:2428&hl=en&ictx=111
+      - img "Map of Key Maker & Locksmith — Electronic City"
+    - link "Map of Key Maker & Locksmith — Electronic City":
+      - /url: /maps/place/Key+Maker+%26+Locksmith+%E2%80%94+Electronic+City/data=!4m2!3m1!1s0x0:0x5e0eb06ec795e9d2?sa=X&ved=1t:2428&hl=en&ictx=111
+      - img "Map of Key Maker & Locksmith — Electronic City"
+    - link "See outside":
+      - /url: https://business.google.com/n/15540039722934592193/photos?sa=X&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQpx96BAgfEBc
+      - generic: See outside
+    - heading "Key Maker & Locksmith — Electronic City" [level=2]
+    - text: "5.0"
+    - img "Rated 5.0 out of 5,"
+    - button "28 Google reviews"
+    - text: Locksmith in Maragondanahalli, Karnataka
+    - generic "You manage this Business Profile":
+      - generic: You manage this Business Profile
+    - button "More options for Key Maker & Locksmith — Electronic City":
+      - img "More options for Key Maker & Locksmith — Electronic City":
+    - link "Website":
+      - /url: https://keymaker-ecity.alishanaver72.workers.dev/
+      - generic: Website
+    - link "Directions":
+      - generic: Directions
+    - button "+2":
+      - generic: "+2"
+    - separator
+    - link "Address":
+      - /url: /search?num=10&sca_esv=fe67424cf497eb5a&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&q=key+maker+and+locksmith+%E2%80%94+electronic+city+bengaluru+address&ludocid=6777548479080557010&sa=X&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ6BN6BAgsEAI
+    - text: ":"
+    - text: Gollahalli Main Rd, Siraj Layout, Electronic City Phase I, Electronic City, Bengaluru, Maragondanahalli, Karnataka 560100
+    - link "Hours":
+      - /url: /search?num=10&sca_esv=fe67424cf497eb5a&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&q=key+maker+and+locksmith+%E2%80%94+electronic+city+bengaluru+hours&ludocid=6777548479080557010&sa=X&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ6BN6BAgvEAI
+    - text: ":"
+    - button "Open 24 hours":
+      - generic: Open 24 hours
+    - link "Edit your business information":
+      - /url: "#"
+    - generic: Add missing information
+    - link "Add place's phone number": Add place's phone number
+    - heading "Google Ads can help your business grow" [level=3]
+    - text: Get ₹20,000 in Google Ads credit when you spend ₹20,000. Offer for new advertisers only.
+    - link "Terms and Conditions apply":
+      - /url: https://ads.google.com/intl/en_in/home/terms-and-conditions/incentives/?bc=IN&bid=s500g500%7Cib:1091745641%7C
+    - generic: Start advertising
+    - link "Start advertising":
+      - /url: https://ads.google.com/aw/campaigns/new/express?ocid=542121984&euid=1010568427&__u=3316829523&cbdbId=u-2906704350774959423&sf=AWX_GMB&authuser=0&utm_campaign=en-xs-ip-gmb_aw_serp_kp-sf-dw-uao-s500g500%7Cib:1091745641%7Cib:8778663188%7Cib:7465580735%7C-ahpm-0000000217-0000000002%7C-unqsi-CJP74dj_1JcDFS-ORgQdjwMcFA-unqsi-acce&subid=en-xs-ip-gmb_aw_serp_kp-sf-dw-uao-s500g500%7Cib:1091745641%7Cib:8778663188%7Cib:7465580735%7C-ahpm-0000000217-0000000002%7C-unqsi-CJP74dj_1JcDFS-ORgQdjwMcFA-unqsi-acce&utm_medium=et&utm_source=gmb
+    - link:
+      - /url: https://ads.google.com/aw/campaigns/new/express?ocid=542121984&euid=1010568427&__u=3316829523&cbdbId=u-2906704350774959423&sf=AWX_GMB&authuser=0&utm_campaign=en-xs-ip-gmb_aw_serp_kp-sf-dw-uao-s500g500%7Cib:1091745641%7Cib:8778663188%7Cib:7465580735%7C-ahpm-0000000217-0000000002%7C-unqsi-CJP74dj_1JcDFS-ORgQdjwMcFA-unqsi-acce&subid=en-xs-ip-gmb_aw_serp_kp-sf-dw-uao-s500g500%7Cib:1091745641%7Cib:8778663188%7Cib:7465580735%7C-ahpm-0000000217-0000000002%7C-unqsi-CJP74dj_1JcDFS-ORgQdjwMcFA-unqsi-acce&utm_medium=et&utm_source=gmb
+    - separator
+    - heading "Google reviews" [level=3]
+    - button "More info":
+    - button "Get more reviews"
+    - link "Add a photo":
+      - /url: "#"
+    - link "Sayub hasmi":
+      - /url: https://www.google.com/maps/contrib/113164180013058446637?hl=en-IN&ved=1t:31296&ictx=111
+      - img "Sayub hasmi"
+    - link "\"Excellent Service - Key and Locksmith Service They do a fantastic job!\"":
+      - /url: https://www.google.com/maps/reviews/data=!4m5!14m4!1m3!1m2!1s113164180013058446637!2s0x3bae6d71f68ce8e3:0x5e0eb06ec795e9d2?ved=1t:31295&ictx=111
+    - img "Rated 5.0 out of 5,"
+    - link "Sharik Max":
+      - /url: https://www.google.com/maps/contrib/113161943658850992861?hl=en-IN&ved=1t:31296&ictx=111
+      - img "Sharik Max"
+    - link "\"The work was done quickly and perfectly at a reasonable price.\"":
+      - /url: https://www.google.com/maps/reviews/data=!4m5!14m4!1m3!1m2!1s113161943658850992861!2s0x3bae6d71f68ce8e3:0x5e0eb06ec795e9d2?ved=1t:31295&ictx=111
+    - img "Rated 5.0 out of 5,"
+    - link "Javed Ahmed":
+      - /url: https://www.google.com/maps/contrib/116436695726661614661?hl=en-IN&ved=1t:31296&ictx=111
+      - img "Javed Ahmed"
+    - link "\"Service was fast and worth the money !\"":
+      - /url: https://www.google.com/maps/reviews/data=!4m5!14m4!1m3!1m2!1s116436695726661614661!2s0x3bae6d71f68ce8e3:0x5e0eb06ec795e9d2?ved=1t:31295&ictx=111
+    - img "Rated 5.0 out of 5,"
+    - link "Katabathuni Bose":
+      - /url: https://www.google.com/maps/contrib/107820539067001330299?hl=en-IN&ved=1t:31293&ictx=111
+      - img "Katabathuni Bose"
+    - link "Katabathuni Bose":
+      - /url: https://www.google.com/maps/contrib/107820539067001330299?hl=en-IN&ved=1t:31294&ictx=111
+    - text: "-"
+    - button "Edit":
+      - generic: Edit
+    - img "Rated 5.0 out of 5,"
+    - text: a day ago
+    - button "View all Google reviews"
+    - separator
+    - img "Key Maker & Locksmith — Electronic City"
+    - generic: Key Maker & Locksmith — Electronic City
+    - generic: on Google
+    - button "Add update":
+      - generic: Add update
+    - list:
+      - list "Latest from the owner":
+        - button "Moving in or changing access to your property? If a key is missing or access needs to change, ask whether your existing lock can be rekeyed. For suitable locks, rekeying changes the key that operates the lock. Where rekeying is unsuitable, we can assess compatible replacement… 12 mins ago":
+          - generic: Moving in or changing access to your property? If a key is missing or access needs to change, ask whether your existing lock can be rekeyed. For suitable locks, rekeying changes the key that operates the lock. Where rekeying is unsuitable, we can assess compatible replacement…
+          - generic: 12 mins ago
+        - link "Learn more":
+          - /url: https://keymaker-ecity.alishanaver72.workers.dev/#rekeying-window-locks
+        - button "Make a spare key before you need it A working spare can make everyday access easier at home, at work or on the road. Bring your original house, cupboard or padlock key to our Electronic City Phase 1 shop so we can check the profile and suitable blank. For a car or bike key, share the make,… 12 mins ago":
+          - generic: Make a spare key before you need it A working spare can make everyday access easier at home, at work or on the road. Bring your original house, cupboard or padlock key to our Electronic City Phase 1 shop so we can check the profile and suitable blank. For a car or bike key, share the make,…
+          - generic: 12 mins ago
+        - link "Learn more":
+          - /url: https://keymaker-ecity.alishanaver72.workers.dev/#key-duplication
+        - button "Our new website is live Explore key duplication and locksmith services from Key… 12 mins ago":
+          - generic: Our new website is live Explore key duplication and locksmith services from Key…
+          - generic: 12 mins ago
+        - link "Learn more":
+          - /url: https://keymaker-ecity.alishanaver72.workers.dev/
+        - button "Key Maker & Locksmith opened on 1 October 2026 on Gollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru. We provide key duplication, keys for compatible cars and bikes, lock repair and replacement, and lockout assistance. The shop is open 24 hours, with on-site service across our listed areas. Visit … 4 days ago":
+          - generic: Key Maker & Locksmith opened on 1 October 2026 on Gollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru. We provide key duplication, keys for compatible cars and bikes, lock repair and replacement, and lockout assistance. The shop is open 24 hours, with on-site service across our listed areas. Visit …
+          - generic: 4 days ago
+        - button "10% off standard house-key duplication 22 Oct - 31 Oct Save 10% on eligible standard house-key duplication at our Electronic City Phase 1 shop, with a maximum discount of ₹100 per order. Bring a compatible original key and show this Google offer or mention SPARE10 before… 4 days ago":
+          - generic: 10% off standard house-key duplication
+          - generic: 22 Oct - 31 Oct
+          - generic: Save 10% on eligible standard house-key duplication at our Electronic City Phase 1 shop, with a maximum discount of ₹100 per order. Bring a compatible original key and show this Google offer or mention SPARE10 before…
+          - generic: 4 days ago
+        - button "View offer"
+        - button "Sticking key or faulty door lock? If your key is difficult to turn, avoid forcing it. We assess compatible door locks, cylinders, handles and bolts, and offer repair, replacement and installation for homes, offices and shops. Shop visits and on-site service are available around Electronic City and our listed areas. We… 4 days ago":
+          - generic: Sticking key or faulty door lock? If your key is difficult to turn, avoid forcing it. We assess compatible door locks, cylinders, handles and bolts, and offer repair, replacement and installation for homes, offices and shops. Shop visits and on-site service are available around Electronic City and our listed areas. We…
+          - generic: 4 days ago
+        - button "Car remote shell or a new key? A cracked casing may need a replacement shell. We replace compatible car remote bodies and make or program keys and fobs for supported vehicles. Share the make, model, year and issue so we can confirm compatibility and a quote. Visit our shop on Gollahalli Main Road, Electronic City Phase 1. 4 days ago":
+          - generic: Car remote shell or a new key? A cracked casing may need a replacement shell. We replace compatible car remote bodies and make or program keys and fobs for supported vehicles. Share the make, model, year and issue so we can confirm compatibility and a quote. Visit our shop on Gollahalli Main Road, Electronic City Phase 1.
+          - generic: 4 days ago
+        - button "Frequently asked questions Where are you? Gollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru 560100. Are you open at night? Yes. We are available 24 hours, seven days a week. Do you visit customers? Yes. On-site service is available across our 20 listed areas,… 4 days ago":
+          - generic: Frequently asked questions Where are you? Gollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru 560100. Are you open at night? Yes. We are available 24 hours, seven days a week. Do you visit customers? Yes. On-site service is available across our 20 listed areas,…
+          - generic: 4 days ago
+        - link "Learn more":
+          - /url: https://keymaker-ecity.alishanaver72.workers.dev/
+        - button "Need a spare key or help with a lock? Key Maker & Locksmith on Gollahalli Main Road, Electronic City Phase 1, Bengaluru is available 24 hours for key making, door lock repair and replacement, and lockout assistance. We also make keys for supported cars and bikes and replace… 4 days ago":
+          - generic: Need a spare key or help with a lock? Key Maker & Locksmith on Gollahalli Main Road, Electronic City Phase 1, Bengaluru is available 24 hours for key making, door lock repair and replacement, and lockout assistance. We also make keys for supported cars and bikes and replace…
+          - generic: 4 days ago
+        - link "Learn more":
+          - /url: https://keymaker-ecity.alishanaver72.workers.dev/
+        - button "Europa four side cutting Oct 15, 2026":
+          - generic: Europa four side cutting
+          - generic: Oct 15, 2026
+        - button "Add a post Tell customers about a special event, deal or product Visible only to you":
+          - generic: Add a post
+          - text: Tell customers about a special event, deal or product
+          - text: Visible only to you
+        - button "View all":
+          - generic: View all
+    - button:
+    - separator
+    - heading "From Key Maker & Locksmith — Electronic City" [level=3]
+    - button "Report description":
+    - text: "\"Key Maker & Locksmith provides 24-hour key making and locksmith services on Gollahalli Main Road, Electronic City Phase 1, Bengaluru. We duplicate keys for homes, offices and shops, make car and bike keys, repair and replace door locks, and help with..."
+    - button "Show more": More
+    - separator
+    - heading "Products" [level=3]
+    - list:
+      - button "Add":
+        - generic: Add
+      - button "Brass house key Keys and key blanks":
+        - generic: Brass house key
+        - generic: Keys and key blanks
+      - button "Cupboard and almirah key Keys and key blanks":
+        - generic: Cupboard and almirah key
+        - generic: Keys and key blanks
+      - button "Car remote key unit ₹1,500.00":
+        - generic: Car remote key unit
+        - generic: ₹1,500.00
+      - button "Mechanical bike spare key Car keys and remotes":
+        - generic: Mechanical bike spare key
+        - generic: Car keys and remotes
+      - button "Main door lock ₹2,300.00":
+        - generic: Main door lock
+        - generic: ₹2,300.00
+      - button "Push-button cupboard lock Door locks":
+        - generic: Push-button cupboard lock
+        - generic: Door locks
+      - button "Cylinder lock handle ₹700.00":
+        - generic: Cylinder lock handle
+        - generic: ₹700.00
+      - button "Door lock cylinder ₹950.00":
+        - generic: Door lock cylinder
+        - generic: ₹950.00
+      - button "Car remote key body and shell ₹650.00":
+        - generic: Car remote key body and shell
+        - generic: ₹650.00
+      - button "Computerised key ₹250.00":
+        - generic: Computerised key
+        - generic: ₹250.00
+      - button "View all":
+        - generic: View all
+    - button:
+    - button "View all":
+      - generic: View all
+    - separator
+    - heading "Contact" [level=3]
+    - text: "Appointments:"
+    - link "wa.me":
+      - /url: https://wa.me/919762306303?text=%F0%9F%94%91%20Hey%20Locksmith%2C%20I%E2%80%99d%20like%20to%20book%20a%20key%20duplication%2Flocksmith%20service.%0A%F0%9F%93%9E%20Please%20confirm%20your%20availability%20and%20call%20me%20back%20to%20discuss%20my%20requirements%20and%20provide%20a%20quote.%0A%F0%9F%9A%97%20For%20urgent%20assistance%2C%20call%20%2B91%2097623%2006303%20and%20to%20confirm%20arrival%20within%2010%20minutes!!!%0A%F0%9F%93%8D%20https%3A%2F%2Fshare.google%2FN2udTvjtpkRkwCRYy%0A%F0%9F%95%92%2024x7%20Available%2C%20Thank%20you!%20%F0%9F%99%8F
+    - button "About these providers":
+      - text: Providers
+    - link "BLR Key Makers and Lock Repair | Key Maker & Locksmith ... blrkeymakers.com https://blrkeymakers.com":
+      - /url: https://blrkeymakers.com/
+      - heading "BLR Key Makers and Lock Repair | Key Maker & Locksmith ..." [level=3]
+      - generic: blrkeymakers.com
+      - generic: https://blrkeymakers.com
+    - button "About this result":
+    - emphasis: "Bengaluru's #1 Locksmith Key Maker & Locksmith Service"
+    - text: in Bengaluru 24/7 professional locksmith solutions — key duplication, lock repair, car keys & emergency ...
+    - link "Duplicate Key Makers in Bangalore - Car, Home & Locker ... Justdial https://www.justdial.com › ... › 1185+ Listings":
+      - /url: https://www.justdial.com/Bangalore/Duplicate-Key-Makers/nct-10174780
+      - heading "Duplicate Key Makers in Bangalore - Car, Home & Locker ..." [level=3]
+      - generic: Justdial
+      - generic: https://www.justdial.com › ... › 1185+ Listings
+    - button "About this result":
+    - emphasis: Find duplicate key makers in Bangalore
+    - text: for car keys, home keys, bike keys, locker keys and digital lock key cutting. Check timings, service details, ...
+    - heading "People also ask" [level=2]
+    - button "What is the cost of making a key?":
+      - generic: What is the cost of making a key?
+    - button "Can we make a duplicate key without an original key?":
+      - generic: Can we make a duplicate key without an original key?
+    - button "How much is key duplication cost?":
+      - generic: How much is key duplication cost?
+    - button "How much does it cost to make a duplicate key in Bangalore?":
+      - generic: How much does it cost to make a duplicate key in Bangalore?
+    - link "Key Maker and Locksmith Service in Marenahalli keymakerslocksmith.com https://www.keymakerslocksmith.com":
+      - /url: https://www.keymakerslocksmith.com/
+      - heading "Key Maker and Locksmith Service in Marenahalli" [level=3]
+      - generic: keymakerslocksmith.com
+      - generic: https://www.keymakerslocksmith.com
+    - button "About this result":
+    - text: offering 24 hours lock repair, duplicate
+    - emphasis: keys
+    - text: ", car unlocking and security solutions&nbsp;... ADDRESS 9th Cross Rd, Bengaluru, Karnataka 560078"
+    - link:
+      - /url: https://www.keymakerslocksmith.com/
+    - link "Key Maker & 24 Hrs Door Step Emergency Locksmith Services sskeymaker.in https://sskeymaker.in › services":
+      - /url: https://sskeymaker.in/services.html
+      - heading "Key Maker & 24 Hrs Door Step Emergency Locksmith Services" [level=3]
+      - generic: sskeymaker.in
+      - generic: https://sskeymaker.in › services
+    - button "About this result":
+    - text: SS Key Maker in Horamavu Banaswadi, Bengaluru
+    - emphasis: provides duplicate keys for house, office, car, bike
+    - text: "& 24 hrs door step lock opening service."
+    - link "Key Makers, Locksmith Services in Bangalore Sulekha https://www.sulekha.com › key-makers-locksmiths › ban...":
+      - /url: https://www.sulekha.com/key-makers-locksmiths/bangalore
+      - heading "Key Makers, Locksmith Services in Bangalore" [level=3]
+      - generic: Sulekha
+      - generic: https://www.sulekha.com › key-makers-locksmiths › ban...
+    - button "About this result":
+    - text: Find the
+    - emphasis: best duplicate key makers, locksmith services in Bangalore
+    - text: and get residential key makers contact addresses,&nbsp;... best quality and optimum cost. ...
+    - img "Rated 4.6 out of 5, (15) user reviews":
+      - text: "4.6"
+      - text: (15)
+    - link "Expert Key Cutting and Lock Solutions in Bengaluru | All Key ... allkeymakers.in https://allkeymakers.in":
+      - /url: https://allkeymakers.in/
+      - heading "Expert Key Cutting and Lock Solutions in Bengaluru | All Key ..." [level=3]
+      - generic: allkeymakers.in
+      - generic: https://allkeymakers.in
+    - button "About this result":
+    - text: At All Key Makers, we specialize in
+    - emphasis: key cutting, duplication, and lock solutions
+    - text: ", offering 24/7 emergency services in Kudlu, Bengaluru."
+    - link "Key Makers and Locksmith in Dollar Scheme Colony-BTM ... Justdial https://www.justdial.com › Bangalore › Key-Makers-and...":
+      - /url: https://www.justdial.com/Bangalore/Key-Makers-and-Locksmith-Canara-Bank-Dollar-Scheme-Colony-Btm-1St-Stage/080PXX80-XX80-231106081523-Z4W9_BZDET
+      - heading "Key Makers and Locksmith in Dollar Scheme Colony-BTM ..." [level=3]
+      - generic: Justdial
+      - generic: https://www.justdial.com › Bangalore › Key-Makers-and...
+    - button "About this result":
+    - text: Key Makers and Locksmith are
+    - emphasis: experts in making new and replacement keys
+    - text: . The company is rated based on 478 reviews from satisfied customers. smith is rated 5.0 ...
+    - img "Rated 5.0 out of 5, (478) user reviews":
+      - text: "5.0"
+      - text: (478)
+    - link "Key Maker & Lock Smith अब Banglore में Direct Distributor से ... Instagram · b2b_gadgets 40+ likes · 7 months ago":
+      - /url: https://www.instagram.com/reel/DVaYnLbEk6X/?hl=en
+      - heading "Key Maker & Lock Smith अब Banglore में Direct Distributor से ..." [level=3]
+      - generic: Instagram · b2b_gadgets
+      - generic: 40+ likes · 7 months ago
+    - button "About this result":
+    - link "Key Maker & Lock Smith अब Banglore में Direct Distributor से ... by B2B Gadgets on Instagram. Play on Instagram. 1:05":
+      - /url: https://www.instagram.com/reel/DVaYnLbEk6X/?hl=en
+      - generic: 1:05
+    - generic: A.M Key Maker in Bangalore offers smart lock services including door lock repairs, key making, and programming for car keys and remotes.
+    - 'link "SS Key Maker: Duplicate Key Maker & 24Hr Locksmith ... sskeymaker.in https://www.sskeymaker.in"':
+      - /url: https://www.sskeymaker.in/
+      - 'heading "SS Key Maker: Duplicate Key Maker & 24Hr Locksmith ..." [level=3]'
+      - generic: sskeymaker.in
+      - generic: https://www.sskeymaker.in
+    - button "About this result":
+    - text: SS Key Maker in Horamavu Banaswadi, Bengaluru
+    - emphasis: provides duplicate keys for house, office, car, bike
+    - text: "& 24 hrs door step lock opening service."
+    - link "Key Makers Facebook · Key Makers 1 follower":
+      - /url: https://www.facebook.com/p/Key-Makers-61558923502524/
+      - heading "Key Makers" [level=3]
+      - generic: Facebook · Key Makers
+      - generic: 1 follower
+    - button "About this result":
+    - text: Hey,, Guys We Are
+    - emphasis: Locksmith Company in Bengaluru
+    - text: We Are Provide All Types Of Key Making Services And Lock Repair New Lock Installation Lock Replacment Car ...
+    - link "Read more":
+      - /url: https://www.facebook.com/p/Key-Makers-61558923502524/#:~:text=Hey%2C%2C%20Guys%20We%20Are%20Locksmith,Keys%20All%20Types%20Keys%20Available
+    - heading "People also search for" [level=2]
+    - link "Key maker & locksmith near me":
+      - /url: /search?num=10&sca_esv=fe67424cf497eb5a&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&q=Key+maker+%26+locksmith+near+me&sa=X&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ1QJ6BQiAARAB
+      - generic: Key maker & locksmith near me
+    - link "Key makers locksmith Bengaluru":
+      - /url: /search?num=10&sca_esv=fe67424cf497eb5a&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&q=Key+makers+locksmith+Bengaluru&sa=X&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ1QJ6BQiVARAB
+      - generic: Key makers locksmith Bengaluru
+    - link "Key maker & locksmith online":
+      - /url: /search?num=10&sca_esv=fe67424cf497eb5a&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&q=Key+maker+%26+locksmith+online&sa=X&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ1QJ6BQiZARAB
+      - generic: Key maker & locksmith online
+    - link "Key maker & locksmith price":
+      - /url: /search?num=10&sca_esv=fe67424cf497eb5a&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&q=Key+maker+%26+locksmith+price&sa=X&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ1QJ6BQiTARAB
+      - generic: Key maker & locksmith price
+    - link "Key maker & locksmith cost":
+      - /url: /search?num=10&sca_esv=fe67424cf497eb5a&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&q=Key+maker+%26+locksmith+cost&sa=X&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ1QJ6BQiQARAB
+      - generic: Key maker & locksmith cost
+    - link "Key maker & locksmith reviews":
+      - /url: /search?num=10&sca_esv=fe67424cf497eb5a&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&q=Key+maker+%26+locksmith+reviews&sa=X&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ1QJ6BQiPARAB
+      - generic: Key maker & locksmith reviews
+    - link "Key maker & locksmith app":
+      - /url: /search?num=10&sca_esv=fe67424cf497eb5a&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&q=Key+maker+%26+locksmith+app&sa=X&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ1QJ6BQiHARAB
+      - generic: Key maker & locksmith app
+    - link "Key Makers near me within 1 mi":
+      - /url: /search?num=10&sca_esv=fe67424cf497eb5a&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&q=Key+Makers+near+me+within+1+mi&sa=X&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ1QJ6BQiDARAB
+      - generic: Key Makers near me within 1 mi
+  - navigation:
+    - heading "Page navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=Key+Maker+%26+Locksmith&num=10&sca_esv=fe67424cf497eb5a&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1SzE3TDOzSE61SDW2MqgwTTVITTIwS002tzRNtUwxWsQq6p1aqeCbmJ1apKCm4JOfnF2cm1mSAQC9RKw-QQAAAA&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&ei=8d7davioEr2mhvcPhsaSwQU&start=10&sa=N&sstk=AS6-VmKbgm1QGQwDBsav0JLTO2YJl-OB1q9TmEdMbmA-HtHHQlZpg6EkmrN6xBBXdt6ltqzWsjIxF-QdaAgerFLOjjM0Hver1KRnaA&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ8tMDegQIZRAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=Key+Maker+%26+Locksmith&num=10&sca_esv=fe67424cf497eb5a&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1SzE3TDOzSE61SDW2MqgwTTVITTIwS002tzRNtUwxWsQq6p1aqeCbmJ1apKCm4JOfnF2cm1mSAQC9RKw-QQAAAA&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&ei=8d7davioEr2mhvcPhsaSwQU&start=20&sa=N&sstk=AS6-VmKbgm1QGQwDBsav0JLTO2YJl-OB1q9TmEdMbmA-HtHHQlZpg6EkmrN6xBBXdt6ltqzWsjIxF-QdaAgerFLOjjM0Hver1KRnaA&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ8tMDegQIZRAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=Key+Maker+%26+Locksmith&num=10&sca_esv=fe67424cf497eb5a&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1SzE3TDOzSE61SDW2MqgwTTVITTIwS002tzRNtUwxWsQq6p1aqeCbmJ1apKCm4JOfnF2cm1mSAQC9RKw-QQAAAA&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&ei=8d7davioEr2mhvcPhsaSwQU&start=30&sa=N&sstk=AS6-VmKbgm1QGQwDBsav0JLTO2YJl-OB1q9TmEdMbmA-HtHHQlZpg6EkmrN6xBBXdt6ltqzWsjIxF-QdaAgerFLOjjM0Hver1KRnaA&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ8tMDegQIZRAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=Key+Maker+%26+Locksmith&num=10&sca_esv=fe67424cf497eb5a&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1SzE3TDOzSE61SDW2MqgwTTVITTIwS002tzRNtUwxWsQq6p1aqeCbmJ1apKCm4JOfnF2cm1mSAQC9RKw-QQAAAA&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&ei=8d7davioEr2mhvcPhsaSwQU&start=40&sa=N&sstk=AS6-VmKbgm1QGQwDBsav0JLTO2YJl-OB1q9TmEdMbmA-HtHHQlZpg6EkmrN6xBBXdt6ltqzWsjIxF-QdaAgerFLOjjM0Hver1KRnaA&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ8tMDegQIZRAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=Key+Maker+%26+Locksmith&num=10&sca_esv=fe67424cf497eb5a&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1SzE3TDOzSE61SDW2MqgwTTVITTIwS002tzRNtUwxWsQq6p1aqeCbmJ1apKCm4JOfnF2cm1mSAQC9RKw-QQAAAA&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&ei=8d7davioEr2mhvcPhsaSwQU&start=50&sa=N&sstk=AS6-VmKbgm1QGQwDBsav0JLTO2YJl-OB1q9TmEdMbmA-HtHHQlZpg6EkmrN6xBBXdt6ltqzWsjIxF-QdaAgerFLOjjM0Hver1KRnaA&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ8tMDegQIZRAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=Key+Maker+%26+Locksmith&num=10&sca_esv=fe67424cf497eb5a&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1SzE3TDOzSE61SDW2MqgwTTVITTIwS002tzRNtUwxWsQq6p1aqeCbmJ1apKCm4JOfnF2cm1mSAQC9RKw-QQAAAA&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&ei=8d7davioEr2mhvcPhsaSwQU&start=60&sa=N&sstk=AS6-VmKbgm1QGQwDBsav0JLTO2YJl-OB1q9TmEdMbmA-HtHHQlZpg6EkmrN6xBBXdt6ltqzWsjIxF-QdaAgerFLOjjM0Hver1KRnaA&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ8tMDegQIZRAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=Key+Maker+%26+Locksmith&num=10&sca_esv=fe67424cf497eb5a&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1SzE3TDOzSE61SDW2MqgwTTVITTIwS002tzRNtUwxWsQq6p1aqeCbmJ1apKCm4JOfnF2cm1mSAQC9RKw-QQAAAA&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&ei=8d7davioEr2mhvcPhsaSwQU&start=70&sa=N&sstk=AS6-VmKbgm1QGQwDBsav0JLTO2YJl-OB1q9TmEdMbmA-HtHHQlZpg6EkmrN6xBBXdt6ltqzWsjIxF-QdaAgerFLOjjM0Hver1KRnaA&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ8tMDegQIZRAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=Key+Maker+%26+Locksmith&num=10&sca_esv=fe67424cf497eb5a&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1SzE3TDOzSE61SDW2MqgwTTVITTIwS002tzRNtUwxWsQq6p1aqeCbmJ1apKCm4JOfnF2cm1mSAQC9RKw-QQAAAA&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&ei=8d7davioEr2mhvcPhsaSwQU&start=80&sa=N&sstk=AS6-VmKbgm1QGQwDBsav0JLTO2YJl-OB1q9TmEdMbmA-HtHHQlZpg6EkmrN6xBBXdt6ltqzWsjIxF-QdaAgerFLOjjM0Hver1KRnaA&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ8tMDegQIZRAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=Key+Maker+%26+Locksmith&num=10&sca_esv=fe67424cf497eb5a&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1SzE3TDOzSE61SDW2MqgwTTVITTIwS002tzRNtUwxWsQq6p1aqeCbmJ1apKCm4JOfnF2cm1mSAQC9RKw-QQAAAA&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&ei=8d7davioEr2mhvcPhsaSwQU&start=90&sa=N&sstk=AS6-VmKbgm1QGQwDBsav0JLTO2YJl-OB1q9TmEdMbmA-HtHHQlZpg6EkmrN6xBBXdt6ltqzWsjIxF-QdaAgerFLOjjM0Hver1KRnaA&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ8tMDegQIZRAU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=Key+Maker+%26+Locksmith&num=10&sca_esv=fe67424cf497eb5a&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1SzE3TDOzSE61SDW2MqgwTTVITTIwS002tzRNtUwxWsQq6p1aqeCbmJ1apKCm4JOfnF2cm1mSAQC9RKw-QQAAAA&hl=en&authuser=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307&ei=8d7davioEr2mhvcPhsaSwQU&start=10&sa=N&sstk=AS6-VmKbgm1QGQwDBsav0JLTO2YJl-OB1q9TmEdMbmA-HtHHQlZpg6EkmrN6xBBXdt6ltqzWsjIxF-QdaAgerFLOjjM0Hver1KRnaA&ved=2ahUKEwi45dXY_9SXAxU9k-EIHQajJFgQ8NMDegQIZRAW
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer links" [level=1]
+  - generic: Results are personalised
+  - generic: "-"
+  - link "Try without personalisation":
+    - /url: https://www.google.com/search?q=Key+Maker+%26+Locksmith&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1SzE3TDOzSE61SDW2MqgwTTVITTIwS002tzRNtUwxWsQq6p1aqeCbmJ1apKCm4JOfnF2cm1mSAQC9RKw-QQAAAA&hl=en&mat=CcHi-RjLT6nXElcBzAmVZj885wKDQ5ws6SXjIjS-HOhLY6czO0SxLfLKbeIJ6fAUvmkZTwAwaE4w8_48UAeVSNME3E_VMhi4tWDgm29mC2tLyV6YE6ef6RvDfhPJcNUNNBg&authuser=0&ved=1t:350944&peek_pws=0&sxsrf=APpeQntOqffRbGTgxwZn3zal8IQHDpz90A:1792925425307
+    - generic: Try without personalisation
+  - text: India
+  - button "560066, Bengaluru, Karnataka - Based on your past activity":
+    - generic: 560066, Bengaluru, Karnataka
+    - text: "-"
+    - generic: Based on your past activity
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en-IN&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en-IN&fg=1

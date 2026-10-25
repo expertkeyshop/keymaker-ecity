@@ -43,44 +43,44 @@ Safe opening, lock installation and repair for authorised owners. Share the safe
 
 Electronic City Phase I, Electronic City Phase II, Neeladri Nagar, Doddathoguru, Shikaripalya, Konappana Agrahara, Bommasandra, Hebbagodi, Jigani, Hulimangala, Huskur, Begur, Basapura, Rayasandra, Chandapura, Bettadasanapura, Sarjapura, Kudlu Gate, Hosa Road, Ananth Nagar Phase 2, Veerasandra 2nd Stage.
 
-Call-outs are available 10 km or more from the shop. Call with the exact location to confirm availability, arrival time and applicable travel charges.
+Call with the exact location to confirm availability, arrival time and applicable travel charges.
 
 ## Frequently asked questions
 
-### Where is your key making shop?
+### Where is your key maker and locksmith shop?
 
-Find Key Maker & Locksmith | Electronic City on Gollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru, Karnataka 560100. Use our Google Maps directions to find the shop.
+Find us on Gollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru, Karnataka 560100. Look for the red Key Maker & Locksmith signboards and blue shutters in our shop photo.
 
 ### Are you open at night and on weekends?
 
-Yes. We are open 24 hours every day, including weekends. Call or WhatsApp with your requirements and location to confirm the work and applicable charges.
+Yes. The shop and locksmith assistance are available 24 hours, Monday to Sunday. For urgent help, call to confirm availability and an arrival estimate for your location.
 
-### Can you make keys for my car or bike?
+### Do you provide doorstep locksmith service?
 
-We make and duplicate keys for supported vehicles. Share the make, model, year and existing key or remote details so we can check compatibility, cutting and programming requirements.
+Yes. We serve the 20 listed areas around Electronic City and accept call-outs 10 km or more from our shop. Share your exact address to confirm availability, arrival time and any travel charges.
 
-### Does a replacement remote shell include programming?
+### Can you make a key for my car or bike?
 
-A replacement shell is the outer casing, not a complete programmed key. We also supply and program compatible electronic keys and fobs. Tell us whether the problem is the casing, buttons, electronics or a missing key.
+We make keys for supported cars, bikes and scooters. Send the make, model, year and existing key details so we can check the required blank, cutting and any chip or remote programming.
+
+### Does a car remote shell include programming?
+
+A shell is the outer casing, not automatically a complete programmed key. We check which components can be reused and quote separately for a blade, electronics, cutting or programming where needed.
 
 ### What should I bring for duplicate keys?
 
-Bring the original key where available. We will check the key profile and suitable blank before confirming cutting and pricing. For vehicle keys, also provide the vehicle make, model and year.
+Bring a working original key if you have one. For specialist keys or locks, contact us with the key or lock type before travelling. Restricted or incompatible key systems may require a different solution.
 
-### Do you provide on-site locksmith service?
+### What will a key or locksmith job cost?
 
-Yes. We visit customers across our 20 listed service areas, including locations 10 km or more from the shop. Share your exact address to confirm availability, arrival time and any travel or call-out charges.
-
-### How much will the key or locksmith service cost?
-
-The quote depends on the key or lock type, compatible parts, cutting or programming, installation and location. Contact us with the details to confirm the price before proceeding.
+We confirm the quote for your specific key, lock, parts and work. Cutting, programming, fitting, emergency attendance and travel can affect the final price. Ask what is included before work begins.
 
 ### Which payment methods do you accept?
 
-We accept cash, UPI and bank transfers through IMPS or NEFT.
+Cash, UPI and bank transfers through IMPS or NEFT. Cards are not currently accepted.
 
 ## Quotes and compatibility
 
-Contact the shop before ordering or travelling for a specific key, vehicle model or part. Prices depend on the key or lock, parts, programming, installation and travel. Vehicle and lock compatibility must be checked. No blanket arrival time is guaranteed.
+Contact the shop before ordering or travelling for a specific key, vehicle model or part. Prices depend on the key or lock, parts, programming, installation and travel. Vehicle and lock compatibility must be checked. Confirm arrival time by phone for your location.
 
-Business information reviewed: 2026-10-24.
+Business information reviewed: 2026-10-25.
