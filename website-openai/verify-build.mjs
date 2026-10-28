@@ -15,6 +15,8 @@ assert(!headers.includes("__SCRIPT_HASH__") && !headers.includes("__STYLE_HASHES
 const sha = text => "sha256-" + createHash("sha256").update(text).digest("base64");
 const scriptHash = sha(await read("script.js"));
 assert(headers.includes(scriptHash));
+const analyticsHash = sha(await read("analytics.js"));
+assert(headers.includes(analyticsHash));
 const catalog = JSON.parse(await read(".well-known/ai-catalog.json"));
 assert.equal(catalog.specVersion, "1.0");
 for (const alias of ["ai-catalog.json", ".well-known/ard.json"]) {
@@ -39,6 +41,11 @@ for (const name of ["index.html", "privacy.html", "404.html"]) {
   assert(!page.includes("alishanaver72.workers.dev"), `${name}: stale backup origin`);
   assert(!page.includes('rel="stylesheet"'), `${name}: render-blocking stylesheet`);
   if (page.includes('src="script.js')) assert(page.includes(`integrity="${scriptHash}"`));
+  if (name !== "404.html") {
+    assert(page.includes(`integrity="${analyticsHash}"`), `${name}: analytics integrity missing`);
+    assert(page.includes('name="gtm-container-id" content="GTM-PKCWS4Z8"'));
+    assert(!page.includes("googletagmanager.com/ns.html"), "Unconditional iframe would bypass consent");
+  }
   for (const match of page.matchAll(/<style[^>]*>([\s\S]*?)<\/style>/g)) assert(headers.includes(sha(match[1])), `${name}: CSS hash mismatch`);
   for (const match of page.matchAll(/(?:src|href)="(assets\/[^"?#]+)[^\"]*"/g)) await readFile(path.join(dist, match[1]));
   for (const match of page.matchAll(/srcset="([^"]+)"/g)) {

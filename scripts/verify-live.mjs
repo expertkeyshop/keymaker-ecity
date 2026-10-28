@@ -27,6 +27,12 @@ const scriptSource = scriptTag.match(/src="([^"]+)"/)[1];
 const expectedHash = scriptTag.match(/integrity="([^"]+)"/)[1];
 assert.equal(sha((await read(scriptSource, "javascript")).body), expectedHash, "Live script integrity mismatch");
 assert(policy.includes(expectedHash), "Live CSP script hash mismatch");
+const analyticsTag = home.match(/<script\b[^>]*src="analytics\.js[^\"]*"[^>]*>/)?.[0];
+assert(analyticsTag, "Analytics module missing");
+const analyticsSource = analyticsTag.match(/src="([^"]+)"/)[1];
+const analyticsHash = analyticsTag.match(/integrity="([^"]+)"/)[1];
+assert.equal(sha((await read(analyticsSource, "javascript")).body), analyticsHash, "Live analytics integrity mismatch");
+assert(policy.includes(analyticsHash), "Live analytics CSP hash mismatch");
 for (const style of home.matchAll(/<style[^>]*>([\s\S]*?)<\/style>/g)) assert(policy.includes(sha(style[1])), "Live CSS hash mismatch");
 for (const endpoint of ["/.well-known/ai-catalog.json", "/.well-known/ard.json", "/ai-catalog.json"]) {
   const catalog = JSON.parse((await read(endpoint, "application/ai-catalog+json")).body);

@@ -14,8 +14,8 @@ export async function buildTarget(target) {
   if (path.dirname(output) !== targetRoot || path.basename(output) !== "dist") {
     throw new Error("Generated output must stay inside its deployment folder");
   }
-  for (const script of ["build.mjs", "verify-build.mjs"]) {
-    const result = spawnSync(process.execPath, [path.join(repo, "website-openai", script)], { stdio: "inherit" });
+  for (const script of ["scripts/test-analytics.mjs", "website-openai/build.mjs", "website-openai/verify-build.mjs"]) {
+    const result = spawnSync(process.execPath, [path.join(repo, script)], { stdio: "inherit" });
     if (result.status !== 0) throw new Error(`${script} failed`);
   }
   await rm(output, { recursive: true, force: true });

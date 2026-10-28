@@ -170,45 +170,8 @@
       }
     }
 
-    // Google Analytics loads only after explicit consent. No cookies or
-    // analytics requests are made when a visitor declines or has not chosen.
-    const measurementId = document.querySelector('meta[name="ga-measurement-id"]')?.content;
-    const disableKey = measurementId ? `ga-disable-${measurementId}` : null;
-    let analyticsLoaded = false;
-    const clearAnalyticsCookies = () => {
-      const host = window.location.hostname;
-      const parent = host.split(".").slice(-2).join(".");
-      const domains = ["", host, `.${host}`];
-      if (parent && parent !== host) domains.push(`.${parent}`);
-      document.cookie.split(";").forEach(part => {
-        const name = part.split("=")[0].trim();
-        if (!/^_(ga|gid|gat|gcl)/.test(name)) return;
-        domains.forEach(domain => {
-          const suffix = domain ? `; domain=${domain}` : "";
-          document.cookie = `${name}=; Max-Age=0; path=/${suffix}; SameSite=Lax`;
-        });
-      });
-    };
-    const setAnalyticsEnabled = enabled => {
-      if (!disableKey) return;
-      window[disableKey] = !enabled;
-      if (typeof window.gtag === "function") {
-        window.gtag("consent", "update", { analytics_storage: enabled ? "granted" : "denied" });
-      }
-    };
-    const loadAnalytics = () => {
-      if (!measurementId || analyticsLoaded) return;
-      analyticsLoaded = true;
-      window.dataLayer = window.dataLayer || [];
-      window.gtag = function () { window.dataLayer.push(arguments); };
-      window.gtag("js", new Date());
-      window.gtag("config", measurementId, { anonymize_ip: true });
-      const script = document.createElement("script");
-      script.async = true;
-      script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(measurementId)}`;
-      document.head.appendChild(script);
-    };
-
+    // The consent-gated GTM module owns Analytics. The UI never loads gtag.js.
+    const setAnalyticsEnabled = enabled => window.keymakerAnalytics?.setConsent(enabled ? "granted" : "denied");
     const banner = document.querySelector(".cookie-banner");
     const consent = readConsent();
     let settingsTrigger = null;
@@ -221,11 +184,9 @@
     };
     if (consent === "granted") {
       setAnalyticsEnabled(true);
-      loadAnalytics();
       root.dataset.analyticsConsent = "granted";
     } else if (consent === "denied") {
       setAnalyticsEnabled(false);
-      clearAnalyticsCookies();
       root.dataset.analyticsConsent = "denied";
     }
     if (banner) {
@@ -237,10 +198,8 @@
           root.dataset.analyticsConsent = choice;
           if (choice === "granted") {
             setAnalyticsEnabled(true);
-            loadAnalytics();
           } else {
             setAnalyticsEnabled(false);
-            clearAnalyticsCookies();
           }
           if (settingsTrigger) {
             settingsTrigger.focus({ preventScroll: true });
@@ -296,8 +255,30 @@
       reveal();
     });
 
-    // GA4 contact events only. Add Ads conversions after a real destination ID is supplied.
-    const eventNames = { call: "click_call", whatsapp: "click_whatsapp", directions: "click_directions" };
+    // Authored content labels only; never track customer message text or link URLs.
+    document.querySelectorAll("#faq .faq-list > details").forEach((detail, index) => {
+      detail.addEventListener("toggle", () => {
+        if (detail.open) window.keymakerAnalytics?.track("faq_open", { section: "faq", question_id: `faq_${index + 1}` });
+      });
+    });
+    if ("IntersectionObserver" in window) {
+      const measuredSections = new Set();
+      const sectionObserver = new IntersectionObserver(entries => {
+        if (!window.keymakerAnalytics?.isEnabled()) return;
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          const section = entry.target.closest("section")?.id;
+          if (!section || measuredSections.has(section)) return;
+          if (window.keymakerAnalytics.track("view_section", { section })) {
+            measuredSections.add(section);
+            sectionObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+      document.querySelectorAll("#services h2, #products h2, #visit h2").forEach(heading => sectionObserver.observe(heading));
+    }
+
+    const eventNames = { call: "click_call", whatsapp: "click_whatsapp", directions: "click_directions", review: "click_review" };
     document.addEventListener("click", event => {
       if (event.defaultPrevented) return;
       const link = event.target.closest ? event.target.closest("a") : null;
@@ -314,12 +295,12 @@
         } catch (_) { /* Non-URL actions retain their native behavior. */ }
       }
       const eventName = eventNames[link.dataset.track];
-      if (!eventName || typeof window.gtag !== "function") return;
+      if (!eventName) return;
       const section = /^[a-z][a-z0-9_-]{0,31}$/.test(link.dataset.section || "") ? link.dataset.section : "unknown";
-      const parameters = { section, transport_type: "beacon" };
+      const parameters = { section, contact_method: link.dataset.track };
       // Only use static markup labels; never send form fields, phone numbers or URLs.
       if (link.dataset.item) parameters.item_name = link.dataset.item.replace(/[\u0000-\u001f\u007f]/g, "").trim().slice(0, 80);
-      try { window.gtag("event", eventName, parameters); } catch (_) { /* Navigation stays native. */ }
+      try { window.keymakerAnalytics?.track(eventName, parameters); } catch (_) { /* Navigation stays native. */ }
     });
   };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init, { once: true });

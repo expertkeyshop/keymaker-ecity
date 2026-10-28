@@ -34,6 +34,8 @@ const forOrigin = text => text.replaceAll(sourceOrigin.slice(0, -1), origin.slic
 const script = await readFile(path.join(root, "script.js"), "utf8");
 const digest = text => `sha256-${createHash("sha256").update(text).digest("base64")}`;
 const scriptHash = digest(script);
+const analyticsScript = await readFile(path.join(root, "analytics.js"), "utf8");
+const analyticsHash = digest(analyticsScript);
 const styleHashes = new Set();
 // A small static site: embed the existing CSS in cascade order to remove
 // render-blocking round trips without a flash of unstyled content or a JS loader.
@@ -49,6 +51,8 @@ async function prepareHtml(source) {
   }
   output = output.replace(/<script\b[^>]*src="script\.js[^\"]*"[^>]*><\/script>/g,
     `<script src="script.js?v=${scriptHash.slice(7, 19).replace(/[^a-zA-Z0-9]/g, "")}" integrity="${scriptHash}" defer></script>`);
+  output = output.replace(/<script\b[^>]*src="analytics\.js[^\"]*"[^>]*><\/script>/g,
+    `<script src="analytics.js?v=${analyticsHash.slice(7, 19).replace(/[^a-zA-Z0-9]/g, "")}" integrity="${analyticsHash}" defer></script>`);
   // Include authored inline styles too, including the no-JavaScript fallback.
   for (const match of output.matchAll(/<style[^>]*>([\s\S]*?)<\/style>/g)) styleHashes.add(digest(match[1]));
   return output;
@@ -72,11 +76,11 @@ await mkdir(dist, { recursive: true });
 await writeFile(path.join(dist, "index.html"), html);
 await writeFile(path.join(dist, "privacy.html"), await prepareHtml(await readFile(path.join(root, "privacy.html"), "utf8")));
 await writeFile(path.join(dist, "404.html"), await prepareHtml(await readFile(path.join(root, "404.html"), "utf8")));
-for (const filename of ["styles.css", "mobile-focus.css", "desktop-focus.css", "script.js"]) {
+for (const filename of ["styles.css", "mobile-focus.css", "desktop-focus.css", "script.js", "analytics.js"]) {
   await copyFile(path.join(root, filename), path.join(dist, filename));
 }
 const headers = forOrigin(await readFile(path.join(root, "_headers"), "utf8"))
-  .replaceAll("__SCRIPT_HASH__", `'${scriptHash}'`)
+  .replaceAll("__SCRIPT_HASH__", `'${scriptHash}' '${analyticsHash}'`)
   .replaceAll("__STYLE_HASHES__", [...styleHashes].map(hash => `'${hash}'`).join(" "));
 await writeFile(path.join(dist, "_headers"), headers);
 
