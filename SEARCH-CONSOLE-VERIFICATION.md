@@ -1,21 +1,25 @@
-# Search Console verification
+# Search Console verification — 28 October 2026
 
-Property type: URL prefix.
+Property type: **URL prefix**.
 
-Property URL: https://keymaker-ecity.alishanaver72.workers.dev/
+Primary property: **https://keymaker-ecity.pages.dev/**.
 
-The owner supplied `googlea8f5575206e3c038.html`. Its content is `google-site-verification: googlea8f5575206e3c038.html`. Original bytes are preserved in the source and bundle.
+Status: **ownership verified and linked to GA4**. With the owner's explicit approval, the additional HTML verification meta tag was deployed in commit `dd58131`, Google confirmed ownership, and the Pages property was linked to GA4 property `560000241`, stream `16191970685`.
 
-Expected public file URL:
+## Preserve verification
 
-https://keymaker-ecity.alishanaver72.workers.dev/googlea8f5575206e3c038.html
+- Keep the `google-site-verification` meta tag in `website-openai/index.html` and future builds.
+- The pre-existing owner-supplied `googlea8f5575206e3c038.html` is also retained. Its public path is https://keymaker-ecity.pages.dev/googlea8f5575206e3c038.html and the live check confirms its original content: `google-site-verification: googlea8f5575206e3c038.html`.
+- No DNS TXT record is needed for this URL-prefix HTML verification method. Do not replace it with a Domain-property verification attempt for the shared `pages.dev` hostname.
+- Do not remove existing owners or verification resources as part of routine deployment.
 
-Status: prepared locally; the public path returned **404** when checked before this updated bundle was redeployed. Search Console ownership has not been verified by the agent.
+## Sitemap and indexing follow-up
 
-1. Upload `keymaker-ecity-website-bundle.zip` to the existing Cloudflare deployment.
-2. Open the expected file URL and confirm it shows the exact verification content above, not the homepage or a challenge.
-3. Return to the same URL-prefix property's HTML file verification panel and press **Verify**.
-4. Keep the verification file in future deployments. The build now preserves it automatically.
-5. Once ownership is confirmed, submit `https://keymaker-ecity.alishanaver72.workers.dev/sitemap.xml` in Search Console and inspect the homepage for indexing.
+The live sitemap is **https://keymaker-ecity.pages.dev/sitemap.xml**. Its availability and primary URLs were verified. Submission status and homepage indexing have not been freshly confirmed in this setup record.
 
-No DNS TXT record is needed for this HTML file verification method. No Google or Cloudflare account settings were changed by preparing this file.
+1. Open the verified Pages property in Search Console and inspect **Sitemaps**.
+2. If the primary sitemap is absent, submit the URL above. If present, inspect its current status instead of repeatedly submitting it.
+3. Inspect the primary homepage URL and review its indexing result. Verification and a successful sitemap fetch do not guarantee indexing or search ranking.
+4. Use the linked Search Console reports in GA4 after Google has processed the data.
+
+The former `keymaker-ecity.alishanaver72.workers.dev` hostname is retired; do not use it for new properties, links or integrations. The old instructions are preserved only as [historical records](docs/SEARCH-CONSOLE-VERIFICATION-RETIRED-HOST.md). See [Analytics setup](analytics/README.md) for the verified integration and [current pending work](CURRENT-PENDING.md) for remaining checks.
