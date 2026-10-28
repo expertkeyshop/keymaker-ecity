@@ -2,22 +2,4 @@
 User-agent: *
 Allow: /
 
-User-agent: Googlebot
-Allow: /
-
-User-agent: bingbot
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Perplexity-User
-Allow: /
-
-Sitemap: https://keymaker-ecity.alishanaver72.workers.dev/sitemap.xml
+Sitemap: https://keymaker-ecity.pages.dev/sitemap.xml

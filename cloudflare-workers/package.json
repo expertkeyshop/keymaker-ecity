@@ -1,0 +1,11 @@
+{
+  "name": "keymaker-ecity-workers-backup",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node build.mjs",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": { "wrangler": "4.154.0" }
+}

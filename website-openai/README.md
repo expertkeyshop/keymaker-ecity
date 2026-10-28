@@ -21,9 +21,9 @@ The build copies HTML, CSS, JavaScript, the privacy page, static security header
 
 The default canonical origin is the existing owner-supplied website:
 
-**https://keymaker-ecity.alishanaver72.workers.dev/**
+**https://keymaker-ecity.pages.dev/**
 
-Building locally does not deploy to that URL. This folder also remains suitable for a Cloudflare Pages Direct Upload project. A new Pages project receives its own `pages.dev` URL; it does not rename the existing Workers website.
+Building locally does not deploy to that URL. Upload the new ZIP to the existing **keymaker-ecity** Cloudflare Pages project. The Workers hostname `https://keymaker-ecity.alishanaver72.workers.dev/` is a backup. All source canonical URLs and generated discovery files default to Pages.
 
 Once a different final production origin is known, rebuild before uploading:
 
@@ -31,7 +31,7 @@ Once a different final production origin is known, rebuild before uploading:
 node website-openai/build.mjs --origin https://your-final-domain/
 ```
 
-Use the actual assigned Pages URL or connected custom domain. The option requires an HTTPS origin without a path, query or fragment. It updates absolute URLs in the generated HTML, linked business data and discovery files without altering the source homepage. Supply the option again on later builds for that domain, or deliberately update the source canonical and all source absolute URLs. Keep one consistent final canonical URL.
+Use the actual assigned Pages URL or connected custom domain. The option requires an HTTPS origin without a path, query or fragment. It updates absolute URLs in the generated HTML, linked business data and discovery files without altering the source homepage. It applies to the privacy page and discovery headers too. Supply the option again on later builds for that domain, or deliberately update the source canonical and all source absolute URLs. Keep one consistent final canonical URL.
 
 ## Design and contact behavior
 
@@ -64,3 +64,15 @@ Canonical/social metadata, Locksmith/WebSite/WebPage/Service structured data, de
 ## Deployment and final checks
 
 The build output in `website-openai/dist/` is the deployable bundle. Verify the canonical origin, privacy page, consent behavior, responsive layout and security headers on the preview before uploading. A prepared bundle is not evidence of a completed Cloudflare deployment or a live performance score. The legacy `.openai/hosting.json` identifies the earlier Sites project and is not needed for the Cloudflare static upload.
+
+## PageSpeed and agent discovery update — 28 October 2026
+
+The build embeds the existing CSS in order, eliminating render-blocking stylesheet requests while preserving the approved layout. It computes script integrity and CSP hashes (including the no-JavaScript fallback styles). Always upload the generated `_headers`, never its source template with hash placeholders. The preview now serves the same CSP and content types for checking.
+
+Services use compact picture sources; products use 128/192/320px variants. Real storefront and bike-work photos offer AVIF with WebP fallback. The original photos remain available. WhatsApp enquiry labels identify their corresponding service/product and retain the visible button text. Mobile pages skip decorative reveal observers; header shadows use IntersectionObserver instead of synchronous scroll reads.
+
+`discovery.mjs` produces `/.well-known/ai-catalog.json`, `/.well-known/ard.json`, `/ai-catalog.json`, and `/agent-skills/locksmith-enquiry/SKILL.md`. The catalog identifies a real downloadable enquiry guide, not an automated booking endpoint. It uses specVersion 1.0, the fields supported by Lighthouse 13.5, and valid resource MIME types. HTML and HTTP Link headers expose it. A real `404.html` stops Cloudflare's default SPA fallback from returning homepage HTML for missing JSON files.
+
+Run `node website-openai/verify-build.mjs` after the build. This checks primary URLs, discovery aliases, local references, CSP/SRI hashes, the 404 page, sitemap and byte-exact Google ownership verification. Full Lighthouse QA and tooling live outside the public build under `website-previews/qa-2026-10-28/`; do not deploy that directory.
+
+The ready-to-upload release is `keymaker-ecity-pages-2026-10-28.zip` in the parent folder. Upload its contents to the existing Pages project. The live PageSpeed report can only change after deployment and a new analysis.

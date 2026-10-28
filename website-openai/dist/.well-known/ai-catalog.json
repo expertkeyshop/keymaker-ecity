@@ -1,0 +1,31 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Key Maker & Locksmith | Electronic City",
+    "identifier": "https://keymaker-ecity.pages.dev/",
+    "documentationUrl": "https://keymaker-ecity.pages.dev/business.md",
+    "logoUrl": "https://keymaker-ecity.pages.dev/assets/logo-384.webp"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:keymaker-ecity.pages.dev:skills:locksmith-enquiry",
+      "displayName": "Keymaker Ecity service enquiry",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+      "url": "https://keymaker-ecity.pages.dev/agent-skills/locksmith-enquiry/SKILL.md",
+      "description": "Read the shop's services, location and hours, then help a customer prepare an enquiry by phone or WhatsApp. Availability, compatibility and quotes require confirmation from the shop.",
+      "tags": [
+        "locksmith",
+        "key duplication",
+        "Electronic City",
+        "Bengaluru"
+      ],
+      "representativeQueries": [
+        "Where can I get a spare house key in Electronic City Phase 1?",
+        "How do I contact Key Maker & Locksmith for a lock repair quote?",
+        "Does Keymaker Ecity provide 24-hour locksmith assistance?"
+      ],
+      "version": "1.0.0",
+      "updatedAt": "2026-10-28T00:00:00+05:30"
+    }
+  ]
+}

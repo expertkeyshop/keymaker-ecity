@@ -5,9 +5,10 @@
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
-  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   Cross-Origin-Opener-Policy: same-origin
-  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.googletagmanager.com; font-src 'self'; manifest-src 'self'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src __SCRIPT_HASH__ 'strict-dynamic'; script-src-attr 'none'; style-src 'self' __STYLE_HASHES__; style-src-attr 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://www.googletagmanager.com; font-src 'self'; manifest-src 'self'; upgrade-insecure-requests
+  Link: <https://keymaker-ecity.pages.dev/.well-known/ai-catalog.json>; rel="ai-catalog", <https://keymaker-ecity.pages.dev/.well-known/ard.json>; rel="ard"
 
 /robots.txt
   Content-Type: text/plain; charset=utf-8
@@ -23,3 +24,15 @@
 
 /sitemap.xml
   Content-Type: application/xml; charset=utf-8
+
+/.well-known/ai-catalog.json
+  Content-Type: application/ai-catalog+json; charset=utf-8
+
+/.well-known/ard.json
+  Content-Type: application/ai-catalog+json; charset=utf-8
+
+/ai-catalog.json
+  Content-Type: application/ai-catalog+json; charset=utf-8
+
+/agent-skills/locksmith-enquiry/SKILL.md
+  Content-Type: text/markdown; profile="urn:air:agent-skills"; charset=utf-8

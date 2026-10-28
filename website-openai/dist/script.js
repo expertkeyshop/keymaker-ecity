@@ -140,9 +140,15 @@
 
     const header = document.querySelector(".site-header");
     if (header) {
-      const updateHeader = () => header.classList.toggle("is-scrolled", window.scrollY > 16);
-      updateHeader();
-      window.addEventListener("scroll", updateHeader, { passive: true });
+      const topBand = document.querySelector(".availability-bar");
+      // Observing the top band avoids a synchronous layout read immediately
+      // after mobile content has been reordered and folded.
+      if (topBand && "IntersectionObserver" in window) {
+        const headerObserver = new IntersectionObserver(entries => {
+          header.classList.toggle("is-scrolled", !entries[0].isIntersecting);
+        });
+        headerObserver.observe(topBand);
+      }
     }
 
     // The quick-contact bar appears only after the hero, so it never covers
@@ -259,7 +265,7 @@
       reveals.forEach(element => element.classList.add("is-visible"));
     };
     const reveal = () => {
-      if (motion.matches || !("IntersectionObserver" in window)) return showAll();
+      if (compact.matches || motion.matches || !("IntersectionObserver" in window)) return showAll();
       try {
         observer = new IntersectionObserver(entries => {
           entries.forEach(entry => {
@@ -282,6 +288,10 @@
     };
     reveal();
     onChange(motion, () => {
+      if (observer) observer.disconnect();
+      reveal();
+    });
+    onChange(compact, () => {
       if (observer) observer.disconnect();
       reveal();
     });

@@ -1,3 +1,18 @@
+# Deployment targets (28 October 2026)
+
+Repository: https://github.com/expertkeyshop/keymaker-ecity
+
+- **Primary website:** https://keymaker-ecity.pages.dev/ — root `cloudflare-pages/`, build `npm run build`, public output `dist/`, Pages project `keymaker-ecity`.
+- **Backup website:** https://keymaker.electronicity.workers.dev/ — root `cloudflare-workers/`, build `npm run build`, deploy `npm run deploy`, existing Worker `keymaker`.
+- **Shared source:** `website-openai/`. Both targets build the same current website, including the 28 October PageSpeed, image and agent-catalog fixes. Edit this source once to update both deployments.
+- **CI:** independent GitHub Actions workflows validate the affected target on pull requests and pushes. They never deploy production; Cloudflare's native Git integrations handle deployment from `main`.
+- **SEO:** the Pages address is canonical everywhere. The backup serves the same site with an additional `noindex, follow` response header. An outage does not automatically switch customer traffic to the backup.
+
+See [CLOUDFLARE-DEPLOYMENT.md](CLOUDFLARE-DEPLOYMENT.md) for exact dashboard settings, validation commands and deployment status. The root `index.html` is the owner's checklist and must never be configured as the customer homepage.
+
+---
+
+The sections below retain the earlier workspace documentation. The target configuration above supersedes old hostnames, build locations and archive references.
 # Keymaker Ecity
 
 Website and business-profile workspace for **Key Maker & Locksmith | Electronic City**, Bengaluru.

@@ -4,7 +4,7 @@
 
 ## Contact and location
 
-- Website: https://keymaker-ecity.alishanaver72.workers.dev/
+- Website: https://keymaker-ecity.pages.dev/
 - Telephone: +919762306303
 - WhatsApp: https://wa.me/919762306303
 - Address: Gollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru, Karnataka 560100, India.
@@ -83,4 +83,4 @@ Cash, UPI and bank transfers through IMPS or NEFT. Cards are not currently accep
 
 Contact the shop before ordering or travelling for a specific key, vehicle model or part. Prices depend on the key or lock, parts, programming, installation and travel. Vehicle and lock compatibility must be checked. Confirm arrival time by phone for your location.
 
-Business information reviewed: 2026-10-25.
+Business information reviewed: 2026-10-28.

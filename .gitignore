@@ -20,3 +20,7 @@ Thumbs.db
 *.key
 credentials.json
 service-account*.json
+
+# Cloudflare deployment targets regenerate their own output
+/cloudflare-pages/dist/
+/cloudflare-workers/dist/
