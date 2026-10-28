@@ -8,6 +8,8 @@ Primary website: https://keymaker-ecity.pages.dev/
 - Measurement ID: `G-Q2CM2F0JB8`
 - Google Tag Manager: `GTM-PKCWS4Z8` (account `6400619169`, container `284013809`)
 
+The former `keymaker-ecity.alishanaver72.workers.dev` address is retired and must not be used for integrations or measurement. The primary Pages property is the Search Console property linked to this web stream.
+
 `gtm-container-ready.json` is the container configuration for this existing GTM container. Import using **Merge → Overwrite conflicting tags, triggers and variables**, review the changes, then publish. `keymaker-consent.tpl` is the original private sandboxed consent template. Neither file contains credentials. Future GTM edits must also be exported back into this folder.
 
 ## Consent and data
@@ -29,6 +31,8 @@ Page locations keep the pathname and validated campaign parameters only. Referre
 
 Contact clicks measure intent, not completed calls, confirmed bookings or revenue. Do not assign invented revenue to them. Existing GA4 key events are preserved.
 
+All three contact key events use **Don't set a default key event value**. Google's initial USD 1 default was removed during setup; the early QA WhatsApp event was sent before that correction and is test data, not earned revenue.
+
 Event-scoped custom dimensions: **CTA location** (`section`), **Service or product** (`item_name`), **Contact method** (`contact_method`), **FAQ question** (`question_id`). New definitions and events can take 24–48 hours to appear in standard reports. Use Engagement → Events, Acquisition → Traffic acquisition and the key-event reports to compare enquiries by source and device. India timezone and INR are configured; event and user retention are 14 months with activity reset enabled.
 
 For a Business Profile campaign link, use:
@@ -45,3 +49,14 @@ Use short campaign labels, never customer identifiers. No Business Profile links
 - Add `?km_debug=1` to the primary site URL for QA. These visits set `debug_mode=true` and `traffic_type=developer`. Google Tag Manager Preview and GA4 DebugView can inspect them. Normal visits do not enable debug mode.
 - No owner IP filter is guessed. Internal traffic filtering remains in Testing until a stable owner IP is supplied. Ads integrations, remarketing, paid services, purchase/revenue events and customer-data uploads require a separate business need and were not enabled.
 - Publish GTM changes as a named version so they can be rolled back independently of a website deployment.
+
+## Verified setup on 28 October 2026
+
+- GTM version **2 — Consent-based GA4 contact measurement** published with 4 tags, 3 triggers, 9 data-layer variables and 2 built-in variables.
+- Commit `2eee7c826e107c4b46cd59dff0e46036e4471081` deployed the Analytics integration. The Pages deployment, Pages build check and Worker backup workflow all succeeded.
+- Live browser verification: declining consent followed by reload produced no Google scripts; accepting loaded GTM and its Google tag once.
+- GA4 DebugView received `page_view`, `view_section`, `faq_open` and `click_whatsapp`; the WhatsApp event was marked as a key event. Its `page_location` was the clean primary homepage URL, without the debug query or WhatsApp message.
+- Query redaction is enabled for `email`, `phone`, `mobile`, `name`, `address`, `text`, `message` and `token`, in addition to email redaction.
+- Commit `dd58131` deployed the approved additional Search Console verification meta tag. Ownership verification succeeded and the primary Pages Search Console property was linked to stream `16191970685`. The pre-existing HTML verification file is retained.
+- The Reports snapshot uses the Marketing performance template for traffic sources, sessions, engagement and key events. Search Console's Queries and Google organic search traffic reports are visible in the report navigation.
+- The browser's separate Tag Assistant popup did not connect in this session. Collection was verified directly in GA4 DebugView and with live asset/CSP checks; a disconnected Preview window does not mean the published container is inactive.

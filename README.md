@@ -17,7 +17,9 @@ The sections below retain the earlier workspace documentation. The target config
 
 Website and business-profile workspace for **Key Maker & Locksmith | Electronic City**, Bengaluru.
 
-Customer website: [keymaker-ecity.alishanaver72.workers.dev](https://keymaker-ecity.alishanaver72.workers.dev/).
+Customer website: [keymaker-ecity.pages.dev](https://keymaker-ecity.pages.dev/).
+
+The former `keymaker-ecity.alishanaver72.workers.dev` hostname is retired. Do not use it in links, Analytics, Search Console integrations, canonical URLs or deployment targets.
 
 ## Website source and deployment
 
@@ -32,11 +34,11 @@ node website-openai/preview.mjs
 
 The preview serves `http://127.0.0.1:8126/`. Deploy the contents of **`website-openai/dist/`** using the existing Cloudflare static-site workflow. Its image assets are included in this repository. The builder copies HTML, CSS, JavaScript and verification files and generates discovery files; it does not regenerate image assets or ZIP archives.
 
-The approved ready-to-upload archive is **`keymaker-ecity-pages-approved-2026-10-25.zip`** (43 files, with `index.html` at the archive root). It contains the latest source build approved on 25 October 2026, including the compact mobile and desktop layouts, privacy page, consent-gated Analytics, security headers, discovery files and Google verification.
+ZIP archives dated 25 October 2026 are historical snapshots. For the current website, build from `cloudflare-pages/` and deploy its `dist/` output, or push the shared source to `main` for the configured Git deployment.
 
-Other ZIPs and the `keymaker-ecity-website-bundle/` directory are earlier snapshots retained for history; use the approved Pages ZIP above or rebuild `website-openai/dist/` for the current website.
+Other ZIPs and the `keymaker-ecity-website-bundle/` directory are earlier snapshots retained for history.
 
-The current configured production origin remains `https://keymaker-ecity.alishanaver72.workers.dev/`. If deploying under a different final hostname, use the documented `--origin` build option so canonical and discovery URLs match. Building and pushing the repository do not themselves confirm a live deployment, Analytics collection or Google indexing.
+The configured production origin is `https://keymaker-ecity.pages.dev/`. Keep this origin for both deployment targets so the primary site's canonical and discovery URLs remain consistent. Building and pushing the repository do not themselves confirm a live deployment, Analytics collection or Google indexing.
 
 See [`website-openai/README.md`](website-openai/README.md), [`AI-DISCOVERY.md`](AI-DISCOVERY.md) and [`SEARCH-CONSOLE-VERIFICATION.md`](SEARCH-CONSOLE-VERIFICATION.md) for the deployment and discovery checks. The old `.openai/hosting.json` is retained as historical Sites metadata.
 

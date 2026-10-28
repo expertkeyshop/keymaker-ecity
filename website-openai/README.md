@@ -23,7 +23,7 @@ The default canonical origin is the existing owner-supplied website:
 
 **https://keymaker-ecity.pages.dev/**
 
-Building locally does not deploy to that URL. The repository now has two deployment roots: `cloudflare-pages/` for the primary site and `cloudflare-workers/` for the existing backup at `https://keymaker.electronicity.workers.dev/`. Pages deploys from `main` through its native Git integration; the backup deploys from `main` through GitHub Actions with the approved encrypted Worker token. Both build this shared source. See `../CLOUDFLARE-DEPLOYMENT.md` for the exact settings and verified deployment history. The historical `keymaker-ecity.alishanaver72.workers.dev` hostname was absent from the currently signed-in account. All canonical URLs and generated discovery files remain on Pages.
+Building locally does not deploy to that URL. The repository now has two deployment roots: `cloudflare-pages/` for the primary site and `cloudflare-workers/` for the existing backup at `https://keymaker.electronicity.workers.dev/`. Pages deploys from `main` through its native Git integration; the backup deploys from `main` through GitHub Actions with the approved encrypted Worker token. Both build this shared source. See `../CLOUDFLARE-DEPLOYMENT.md` for the exact settings and verified deployment history. The former `keymaker-ecity.alishanaver72.workers.dev` hostname is retired per the owner and must not be used. All canonical URLs and generated discovery files remain on Pages.
 
 Once a different final production origin is known, rebuild before uploading:
 

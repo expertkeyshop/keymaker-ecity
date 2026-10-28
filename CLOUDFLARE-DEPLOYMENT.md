@@ -2,6 +2,8 @@
 
 Repository: https://github.com/expertkeyshop/keymaker-ecity
 
+The former `keymaker-ecity.alishanaver72.workers.dev` hostname is retired per the owner. It is not a deployment target or a website to use for customer links or integrations.
+
 | Setting | Primary Pages site | Backup Worker |
 | --- | --- | --- |
 | Existing application | Pages `keymaker-ecity` | Worker `keymaker` |
