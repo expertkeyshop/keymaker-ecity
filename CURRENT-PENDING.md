@@ -9,14 +9,16 @@ Primary customer website: **https://keymaker-ecity.pages.dev/**. The former `key
 - GA4 DebugView received live page, section, FAQ and WhatsApp test events. Consent decline, acceptance and withdrawal were checked. See [measurement setup](analytics/README.md).
 - Search Console ownership of the primary Pages URL-prefix property was verified and linked to GA4. The Marketing performance Reports snapshot is configured.
 - Integration code and documentation were pushed to `expertkeyshop/keymaker-ecity`. Commit `d6d9d04` passed the Pages deployment and both build checks; the live primary and current backup passed deployment verification.
-- The separate Tag Assistant preview window did not connect. This does not invalidate the direct GA4 DebugView verification. An optional fresh UI check is currently blocked because the browser tool reports local browser use disabled.
+- Browser access resumed. Fresh GA4 readback confirms the primary stream is receiving traffic, page views/scrolls are the only enhanced measurements, and email plus all eight query-redaction keys are enabled. The separate Tag Assistant preview remains optional; actual collection was verified in DebugView.
+- Search Console confirms the homepage is indexed. Its live test fetches successfully and declares the Pages homepage as canonical. Manual actions and Security issues both report no issues. See the [28 October check](SEARCH-CONSOLE-CHECK-2026-10-28.md).
 
 ## Remaining website checks
 
 | Item | Verified state | Next step |
 | --- | --- | --- |
-| Search Console sitemap and indexing | The primary sitemap, canonical URLs and verification resources are served correctly. Ownership and the GA4 link are complete. | Check the primary property's submitted-sitemap status and homepage indexing in Search Console. Do not assume serving a sitemap confirms submission or indexing. |
-| Standard Analytics reports | Event collection was verified; custom dimensions and contact key events are configured. | Review traffic sources and contact clicks after normal visitor data has populated. Clicks do not establish completed calls, jobs or revenue. |
+| Sitemap processing | Submitted `https://keymaker-ecity.pages.dev/sitemap.xml` on 28 October. The Sitemaps report says "Couldn't fetch", although Google's live test says crawl allowed and fetch successful. The public URL returns valid XML with HTTP 200. | Recheck Google's processing result later. Do not treat submission or the live test as successful sitemap processing, and do not repeatedly submit the same unchanged file. |
+| Homepage recrawl | Homepage is indexed, but Google's 26 October stored crawl contains the former declared canonical. The 28 October live test confirms the corrected Pages canonical. A manual recrawl request was rejected with "Quota Exceeded". | Retry after Google's daily request quota resets; Google suggested the following day. Do not claim a new indexing request was accepted. |
+| Ongoing Analytics review | Reports snapshot now shows recorded traffic; the primary stream confirms data collection is active. Earlier report dates include pre-update traffic and may include QA visits. | Compare contact clicks by source/device after the new event setup has accumulated data. Clicks do not establish completed calls, jobs or revenue. |
 | Internal traffic exclusion, optional | No stable owner IP was supplied; the internal filter remains in Testing. | Configure an exclusion only when the owner supplies a suitable stable IP. |
 
 ## Earlier business-profile follow-ups
