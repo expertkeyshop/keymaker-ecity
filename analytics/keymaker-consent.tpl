@@ -5,7 +5,7 @@ ___INFO___
   "id": "cvt_keymaker_consent",
   "version": 1,
   "displayName": "Keymaker consent bridge",
-  "description": "Updates analytics consent from the existing site banner. Advertising consent stays denied. No network or cookie access.",
+  "description": "Updates analytics consent from the existing site banner. Optional ad measurement follows the visitor choice; ad personalisation stays denied. No network or cookie access.",
   "containerContexts": [
     "WEB"
   ],
@@ -26,6 +26,12 @@ ___TEMPLATE_PARAMETERS___
     "name": "analyticsConsent",
     "displayName": "Analytics consent",
     "simpleValueType": true
+  },
+  {
+    "type": "TEXT",
+    "name": "adsMeasurementConsent",
+    "displayName": "Advertising measurement consent",
+    "simpleValueType": true
   }
 ]
 
@@ -36,7 +42,9 @@ const updateConsentState = require('updateConsentState');
 if (data.command === 'default') {
   setDefaultConsentState({analytics_storage:'denied', ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied'});
 }
-updateConsentState({analytics_storage:data.analyticsConsent === 'granted' ? 'granted' : 'denied', ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied'});
+const analytics = data.analyticsConsent === 'granted';
+const ads = analytics && data.adsMeasurementConsent === 'granted';
+updateConsentState({analytics_storage:analytics ? 'granted' : 'denied', ad_storage:ads ? 'granted' : 'denied', ad_user_data:ads ? 'granted' : 'denied', ad_personalization:'denied'});
 data.gtmOnSuccess();
 
 ___WEB_PERMISSIONS___

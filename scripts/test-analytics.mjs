@@ -6,7 +6,7 @@ function setup(host="keymaker-ecity.pages.dev",query="") {
   const scripts = [], deleted = [];
   const window = {location:{hostname:host,href:`https://${host}/${query}`,search:query}};
   const document = {referrer:"https://www.google.com/search?q=customer@example.com",querySelector:selector=>({content:selector.includes("ga-measurement")?"G-Q2CM2F0JB8":"GTM-PKCWS4Z8"}),createElement:()=>({}),head:{appendChild:script=>scripts.push(script)}};
-  Object.defineProperty(document,"cookie",{get:()=>"_ga=123; _ga_Q2CM2F0JB8=456; essential=kept",set:value=>deleted.push(value)});
+  Object.defineProperty(document,"cookie",{get:()=>"_ga=123; _ga_Q2CM2F0JB8=456; _gcl_au=abc; essential=kept",set:value=>deleted.push(value)});
   vm.runInNewContext(source,{window,document,URL,URLSearchParams,Date,Set,Object});
   return {window,analytics:window.keymakerAnalytics,scripts,deleted};
 }
@@ -46,7 +46,37 @@ for (const host of ["localhost","127.0.0.1","keymaker.electronicity.workers.dev"
 const debug=setup("keymaker-ecity.pages.dev","?km_debug=1"); debug.analytics.setConsent("granted");
 assert.equal(debug.window.dataLayer.at(-1).debug_mode,true);
 assert.equal(debug.window.dataLayer.at(-1).traffic_type,"developer");
-console.log("PASS: consent before load, decline, withdrawal/cookie cleanup, regrant, no duplicates, primary-host gate, safe URLs/parameters and developer mode.");
+const clickId = "TestClickId_abcdefghij-0123456789";
+const ads=setup("keymaker-ecity.pages.dev",`?gclid=${clickId}&gbraid=${clickId}&wbraid=${clickId}&email=private@example.com&text=private`);
+ads.analytics.setConsent("granted");
+assert.equal(ads.window.dataLayer.at(-1).ads_measurement_consent,"denied","Legacy acceptance is analytics only");
+assert(!ads.window.dataLayer.at(-1).page_location.includes("gclid"));
+ads.analytics.setConsent("measurement");
+assert.equal(ads.scripts.length,1);
+assert.equal(ads.window.dataLayer.at(-1).ads_measurement_consent,"granted");
+assert.equal(ads.window.dataLayer.at(-1).analytics_consent,"granted");
+assert(ads.analytics.track("click_call",{contact_method:"phone"}));
+const adsUrl = new URL(ads.window.dataLayer.at(-1).page_location);
+for(const key of ["gclid","gbraid","wbraid"]) assert.equal(adsUrl.searchParams.get(key),clickId);
+assert(!adsUrl.searchParams.has("email"));
+assert(!adsUrl.searchParams.has("text"));
+ads.deleted.length=0;
+ads.analytics.setConsent("granted");
+assert.equal(ads.window.dataLayer.at(-1).ads_measurement_consent,"denied");
+assert.equal(ads.window.dataLayer.at(-1).page_location,"https://keymaker-ecity.pages.dev/");
+assert(ads.deleted.some(value=>value.startsWith("_gcl_au=")),"Delete ad cookies on measurement withdrawal");
+assert(!ads.deleted.some(value=>value.startsWith("_ga=")),"Keep analytics cookies if analytics remains accepted");
+ads.analytics.setConsent("denied");
+assert(!ads.analytics.track("click_call"));
+assert(ads.deleted.some(value=>value.startsWith("_ga=")));
+const malformed=setup("keymaker-ecity.pages.dev","?gclid=customer@example.com&wbraid=short&gbraid="+"x".repeat(513));
+malformed.analytics.setConsent("measurement");
+assert.equal(malformed.window.dataLayer.at(-1).page_location,"https://keymaker-ecity.pages.dev/");
+for(const choice of [undefined,"invalid",{analytics:"granted"}]) {
+  const invalid=setup(); invalid.analytics.setConsent(choice);
+  assert.equal(invalid.scripts.length,0,"Unknown choices fail closed");
+}
+console.log("PASS: consent before load, legacy analytics only, explicit ad opt-in, ad-only/full withdrawal, primary-host gate, click-ID validation/redaction and developer mode.");
 const container = JSON.parse(await readFile(new URL("../analytics/gtm-container-ready.json", import.meta.url), "utf8")).containerVersion;
 const variables = new Set([...container.variable, ...container.builtInVariable].map(variable => variable.name));
 for (const match of JSON.stringify(container).matchAll(/\{\{([^}]+)\}\}/g)) {
@@ -61,17 +91,31 @@ const template = await readFile(new URL("../analytics/keymaker-consent.tpl", imp
 const consentSource = template.split("___SANDBOXED_JS_FOR_WEB_TEMPLATE___")[1].split("___WEB_PERMISSIONS___")[0];
 for (const command of ["default", "update"]) {
   for (const analyticsConsent of ["granted", "denied"]) {
+   for (const adsMeasurementConsent of ["granted", "denied", undefined]) {
     const calls = [];
     vm.runInNewContext(consentSource, {
-      data: { command, analyticsConsent, gtmOnSuccess: () => calls.push("success") },
+      data: { command, analyticsConsent, adsMeasurementConsent, gtmOnSuccess: () => calls.push("success") },
       require: name => state => calls.push({ name, state })
     });
     assert.equal(calls.at(-1), "success");
     const updates = calls.filter(call => call.name === "updateConsentState");
     assert.equal(updates.length, 1);
     assert.equal(updates[0].state.analytics_storage, analyticsConsent);
-    for (const key of ["ad_storage", "ad_user_data", "ad_personalization"]) assert.equal(updates[0].state[key], "denied");
+    for (const key of ["ad_storage", "ad_user_data"]) assert.equal(updates[0].state[key], analyticsConsent === "granted" && adsMeasurementConsent === "granted" ? "granted" : "denied");
+    assert.equal(updates[0].state.ad_personalization,"denied");
     assert.equal(calls.some(call => call.name === "setDefaultConsentState"), command === "default");
+    if(command==="default") for(const value of Object.values(calls[0].state)) assert.equal(value,"denied","Defaults precede user updates");
+   }
   }
 }
-console.log("PASS: GTM variable references, primary-host gates and sandboxed consent state transitions.");
+assert.equal(container.customTemplate.find(template=>template.name==="Keymaker consent bridge").templateData,template);
+const adsVariable=container.variable.find(variable=>variable.name==="DLV - Ads measurement consent");
+assert(adsVariable.parameter.some(parameter=>parameter.key==="name" && parameter.value==="ads_measurement_consent"));
+for(const tag of container.tag.filter(tag=>tag.name.startsWith("Consent -"))) {
+  assert(tag.parameter.some(parameter=>parameter.key==="adsMeasurementConsent" && parameter.value==="{{DLV - Ads measurement consent}}"));
+}
+for(const file of ["index.html","privacy.html"]) {
+  const html=await readFile(new URL(`../website-openai/${file}`,import.meta.url),"utf8");
+  for(const choice of ["denied","granted","measurement"]) assert.equal((html.match(new RegExp(`data-consent="${choice}"`,"g"))||[]).length,1,`${file} exposes each visitor choice once`);
+}
+console.log("PASS: GTM variable references, primary-host gates, all consent combinations, template/export consistency and banner choices.");
