@@ -108,7 +108,7 @@ for (const command of ["default", "update"]) {
    }
   }
 }
-assert.equal(container.customTemplate.find(template=>template.name==="Keymaker consent bridge").templateData,template);
+assert.equal(container.customTemplate.find(template=>template.name==="Keymaker consent bridge").templateData.trimEnd(),template.trimEnd());
 const adsVariable=container.variable.find(variable=>variable.name==="DLV - Ads measurement consent");
 assert(adsVariable.parameter.some(parameter=>parameter.key==="name" && parameter.value==="ads_measurement_consent"));
 for(const tag of container.tag.filter(tag=>tag.name.startsWith("Consent -"))) {

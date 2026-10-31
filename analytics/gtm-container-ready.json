@@ -1,11 +1,13 @@
 {
   "exportFormatVersion": 2,
-  "exportTime": "2026-10-28 08:49:25",
+  "exportTime": "2026-10-31 11:22:43",
   "containerVersion": {
-    "path": "accounts/6400619169/containers/284013809/versions/0",
+    "path": "accounts/6400619169/containers/284013809/versions/3",
     "accountId": "6400619169",
     "containerId": "284013809",
-    "containerVersionId": "0",
+    "containerVersionId": "3",
+    "name": "Visitor-choice ad measurement consent",
+    "description": "Honor analytics-only and explicit Analytics + ads choices. Default all consent denied; grant ad_storage and ad_user_data only for explicit advertising measurement opt-in. Personalization remains denied. Preserve legacy consent and existing GA4 event tags.",
     "container": {
       "path": "accounts/6400619169/containers/284013809",
       "accountId": "6400619169",
@@ -371,11 +373,6 @@
         "parameter": [
           {
             "type": "TEMPLATE",
-            "key": "command",
-            "value": "default"
-          },
-          {
-            "type": "TEMPLATE",
             "key": "analyticsConsent",
             "value": "{{DLV - Analytics consent}}"
           },
@@ -383,8 +380,14 @@
             "type": "TEMPLATE",
             "key": "adsMeasurementConsent",
             "value": "{{DLV - Ads measurement consent}}"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "command",
+            "value": "default"
           }
         ],
+        "fingerprint": "1793445325198",
         "firingTriggerId": [
           "2147479572"
         ],
@@ -402,11 +405,6 @@
         "parameter": [
           {
             "type": "TEMPLATE",
-            "key": "command",
-            "value": "update"
-          },
-          {
-            "type": "TEMPLATE",
             "key": "analyticsConsent",
             "value": "{{DLV - Analytics consent}}"
           },
@@ -414,8 +412,14 @@
             "type": "TEMPLATE",
             "key": "adsMeasurementConsent",
             "value": "{{DLV - Ads measurement consent}}"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "command",
+            "value": "update"
           }
         ],
+        "fingerprint": "1793445325199",
         "firingTriggerId": [
           "16"
         ],
@@ -481,7 +485,7 @@
             ]
           }
         ],
-        "fingerprint": "1793177052942"
+        "fingerprint": "1793178084632"
       },
       {
         "accountId": "6400619169",
@@ -538,7 +542,7 @@
             ]
           }
         ],
-        "fingerprint": "1793177052942"
+        "fingerprint": "1793178084632"
       },
       {
         "accountId": "6400619169",
@@ -580,7 +584,7 @@
             ]
           }
         ],
-        "fingerprint": "1793177052943"
+        "fingerprint": "1793178084632"
       }
     ],
     "variable": [
@@ -812,7 +816,7 @@
       {
         "accountId": "6400619169",
         "containerId": "284013809",
-        "variableId": "13",
+        "variableId": "21",
         "name": "DLV - Ads measurement consent",
         "type": "v",
         "parameter": [
@@ -832,7 +836,7 @@
             "value": "ads_measurement_consent"
           }
         ],
-        "path": "accounts/6400619169/containers/284013809/versions/0/variables/13"
+        "fingerprint": "1793445325097"
       }
     ],
     "builtInVariable": [
@@ -849,16 +853,16 @@
         "name": "Event"
       }
     ],
-    "fingerprint": "1793177365280",
-    "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6400619169/containers/284013809/versions/0?apiLink=version",
+    "fingerprint": "1793445369475",
+    "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6400619169/containers/284013809/versions/3?apiLink=version",
     "customTemplate": [
       {
         "accountId": "6400619169",
         "containerId": "284013809",
         "templateId": "17",
         "name": "Keymaker consent bridge",
-        "fingerprint": "1793177135066",
-        "templateData": "___INFO___\n\n{\n  \"type\": \"TAG\",\n  \"id\": \"cvt_keymaker_consent\",\n  \"version\": 1,\n  \"displayName\": \"Keymaker consent bridge\",\n  \"description\": \"Updates analytics consent from the existing site banner. Optional ad measurement follows the visitor choice; ad personalisation stays denied. No network or cookie access.\",\n  \"containerContexts\": [\n    \"WEB\"\n  ],\n  \"securityGroups\": []\n}\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"command\",\n    \"displayName\": \"Command (default or update)\",\n    \"simpleValueType\": true\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"analyticsConsent\",\n    \"displayName\": \"Analytics consent\",\n    \"simpleValueType\": true\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"adsMeasurementConsent\",\n    \"displayName\": \"Advertising measurement consent\",\n    \"simpleValueType\": true\n  }\n]\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nconst setDefaultConsentState = require('setDefaultConsentState');\nconst updateConsentState = require('updateConsentState');\nif (data.command === 'default') {\n  setDefaultConsentState({analytics_storage:'denied', ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied'});\n}\nconst analytics = data.analyticsConsent === 'granted';\nconst ads = analytics && data.adsMeasurementConsent === 'granted';\nupdateConsentState({analytics_storage:analytics ? 'granted' : 'denied', ad_storage:ads ? 'granted' : 'denied', ad_user_data:ads ? 'granted' : 'denied', ad_personalization:'denied'});\ndata.gtmOnSuccess();\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_consent\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"consentTypes\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"analytics_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_user_data\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_personalization\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n___TESTS___\n\nscenarios: []\n\n___NOTES___\n\nFirst-party consent bridge for the Keymaker website; does not load scripts, send requests, read cookies or use eval.\n\n"
+        "fingerprint": "1793445325197",
+        "templateData": "___INFO___\n\n{\n  \"type\": \"TAG\",\n  \"id\": \"cvt_keymaker_consent\",\n  \"version\": 1,\n  \"displayName\": \"Keymaker consent bridge\",\n  \"description\": \"Updates analytics consent from the existing site banner. Optional ad measurement follows the visitor choice; ad personalisation stays denied. No network or cookie access.\",\n  \"containerContexts\": [\n    \"WEB\"\n  ],\n  \"securityGroups\": []\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"command\",\n    \"displayName\": \"Command (default or update)\",\n    \"simpleValueType\": true\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"analyticsConsent\",\n    \"displayName\": \"Analytics consent\",\n    \"simpleValueType\": true\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"adsMeasurementConsent\",\n    \"displayName\": \"Advertising measurement consent\",\n    \"simpleValueType\": true\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nconst setDefaultConsentState = require('setDefaultConsentState');\nconst updateConsentState = require('updateConsentState');\nif (data.command === 'default') {\n  setDefaultConsentState({analytics_storage:'denied', ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied'});\n}\nconst analytics = data.analyticsConsent === 'granted';\nconst ads = analytics && data.adsMeasurementConsent === 'granted';\nupdateConsentState({analytics_storage:analytics ? 'granted' : 'denied', ad_storage:ads ? 'granted' : 'denied', ad_user_data:ads ? 'granted' : 'denied', ad_personalization:'denied'});\ndata.gtmOnSuccess();\n\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_consent\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"consentTypes\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"analytics_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_user_data\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_personalization\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\nFirst-party consent bridge for the Keymaker website; does not load scripts, send requests, read cookies or use eval.\n\n\n"
       }
     ]
   }

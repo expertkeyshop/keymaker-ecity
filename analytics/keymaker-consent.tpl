@@ -12,6 +12,7 @@ ___INFO___
   "securityGroups": []
 }
 
+
 ___TEMPLATE_PARAMETERS___
 
 [
@@ -35,6 +36,7 @@ ___TEMPLATE_PARAMETERS___
   }
 ]
 
+
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
 const setDefaultConsentState = require('setDefaultConsentState');
@@ -46,6 +48,7 @@ const analytics = data.analyticsConsent === 'granted';
 const ads = analytics && data.adsMeasurementConsent === 'granted';
 updateConsentState({analytics_storage:analytics ? 'granted' : 'denied', ad_storage:ads ? 'granted' : 'denied', ad_user_data:ads ? 'granted' : 'denied', ad_personalization:'denied'});
 data.gtmOnSuccess();
+
 
 ___WEB_PERMISSIONS___
 
@@ -198,11 +201,12 @@ ___WEB_PERMISSIONS___
   }
 ]
 
+
 ___TESTS___
 
 scenarios: []
 
+
 ___NOTES___
 
 First-party consent bridge for the Keymaker website; does not load scripts, send requests, read cookies or use eval.
-
