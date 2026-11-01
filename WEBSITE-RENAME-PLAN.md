@@ -1,4 +1,26 @@
-# Website rename — 24 October 2026
+# Website rename — completed 2 November 2026
+
+## Current result
+
+The Sites account now owns the existing project, and its requested `keymaker-ecity` slug is live. The native tool returned **https://keymaker-ecity.alishanaver72.chatgpt.site/**. The account suffix is supplied by Sites; it is not a literal `xxxxxxxx` placeholder.
+
+The primary business website remains **https://keymaker-ecity.pages.dev/**. Sites version 3, source commit `efb1cf79011ddf0dfbfdd2685509c80493953cb2`, now serves a permanent HTTP 301 redirect to that primary website. The former public page is preserved in the Sites Git history rather than remaining a second, outdated business website.
+
+Live anonymous checks verified:
+
+1. `keymaker-electronic-city.violetflame16.chatgpt.site/` responds with a platform-controlled **307** to the newly named ChatGPT address.
+2. `keymaker-ecity.alishanaver72.chatgpt.site/` responds with our **301** to `https://keymaker-ecity.pages.dev/`.
+3. The primary Pages website returns **200**. A browser following the legacy address reaches the current approved website.
+
+The platform's first redirect status is outside the Site Worker's control; it has not been described as a direct old-host 301. Paths and query strings are preserved, `/index.html` maps to `/`, and unknown paths remain unknown on Pages. Eight local checks passed, including fixed-origin handling for double-slash paths. Public audience is preserved; no new Site was created.
+
+Evidence: `proof/2026-11-02/migration/redirect-chain.json` and `primary-after-legacy-redirect.png`. Restorable redirect source is in `legacy-sites-migration/` locally and `legacy-chatgpt-redirect/` in the main GitHub repository. Native deployment ID: `appgdep_6ae792a45a8c8191ae273c733567c3c3` (Succeeded).
+
+Google must recrawl and process the redirects before its search result changes. Do not promise immediate renaming of a cached result or guaranteed ranking. See [Google's site-move guidance](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes).
+
+## Archived 24 October plan — superseded
+
+The historical instructions below are retained for context only. Do not restore the retired Worker URL, change GBP back to ChatGPT hosting, or repeat the former access-blocked steps.
 
 **Cloudflare update:** The owner subsequently reported deploying at `https://keymaker-ecity.alishanaver72.workers.dev/`. The latest local bundle now uses this origin for canonical, social, structured-data, robots and sitemap URLs. All five WhatsApp links use the exact English URL requested by the owner. Upload `keymaker-ecity-website-bundle.zip` to the existing Cloudflare deployment. This latest correction has not been deployed by the agent. The Sites-specific plan below is historical and does not block Cloudflare redeployment.
 
