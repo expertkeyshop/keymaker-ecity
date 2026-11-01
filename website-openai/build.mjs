@@ -105,6 +105,8 @@ async function copyAssets(sourceDirectory, outputDirectory) {
   }
 }
 await copyAssets(path.join(root, "assets"), path.join(dist, "assets"));
+// Conventional icon URL for browsers and social crawlers; branded source stays in assets.
+await copyFile(path.join(root, "assets", "favicon.ico"), path.join(dist, "favicon.ico"));
 
 // copyFile preserves the exact owner-supplied Search Console verification bytes.
 const verificationDirectory = path.join(root, "verification");

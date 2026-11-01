@@ -47,6 +47,12 @@ const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
 assert.equal(new Set(ids).size, ids.length, "Duplicate homepage IDs");
 for (const name of ["index.html", "privacy.html", "404.html"]) {
   const page = await read(name);
+  assert(page.includes('href="https://www.google.com/preferences/source?q=keymaker-ecity.pages.dev"'), `${name}: preferred-source destination must be the primary site`);
+  assert(page.includes('href="/favicon.ico"') && page.includes('href="/assets/apple-touch-icon.png"'), `${name}: branded icon links missing`);
+  assert(page.includes('property="og:site_name" content="Key Maker &amp; Locksmith | Electronic City"'), `${name}: consistent site-name signal missing`);
+  assert(page.includes(`property="og:image" content="${origin}assets/social-preview.jpg"`), `${name}: sharing image missing`);
+  assert(page.includes('property="og:image:type" content="image/jpeg"') && page.includes('name="twitter:image:alt"'), `${name}: image type or accessible sharing description missing`);
+  assert(!page.includes("news.google.com/swg"), `${name}: source preference must not load third-party scripts before a visitor follows the link`);
   assert(!page.includes("alishanaver72.workers.dev"), `${name}: stale backup origin`);
   assert(!page.includes('rel="stylesheet"'), `${name}: render-blocking stylesheet`);
   if (page.includes('src="script.js')) assert(page.includes(`integrity="${scriptHash}"`));
@@ -64,6 +70,12 @@ for (const name of ["index.html", "privacy.html", "404.html"]) {
     assert(page.includes(`id="${match[1]}"`), `${name}: missing fragment ${match[1]}`);
   }
 }
+const icon = await readFile(path.join(dist, "favicon.ico"));
+assert.equal(icon.readUInt16LE(0), 0);
+assert.equal(icon.readUInt16LE(2), 1);
+assert(icon.readUInt16LE(4) >= 3, "Favicon must provide multiple browser sizes");
+const social = await readFile(path.join(dist, "assets/social-preview.jpg"));
+assert.equal(social.readUInt16BE(0), 0xffd8, "Sharing image must be a real JPEG");
 async function walk(directory) {
   for (const entry of await readdir(directory, { withFileTypes: true })) {
     assert(![".git", ".openai", "node_modules"].includes(entry.name), "Private files in public output");

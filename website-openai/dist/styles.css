@@ -1455,6 +1455,14 @@ h3{font-size:21px;line-height:1.3;letter-spacing:-.5px}
   .button:hover,.service-card:hover img,.product-card:hover img{transform:none}
 }
 
+.source-preference{display:flex;align-items:center;flex-wrap:wrap;gap:10px 20px;padding-block:16px;border-top:1px solid var(--line)}
+.source-preference p{margin:0;font-size:13px;line-height:1.45;color:var(--muted);max-width:42ch}
+.preferred-source-button{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;max-width:100%;padding:9px 14px;border:1px solid currentColor;border-radius:6px;color:var(--ink);background:var(--cream,#fff);font-size:14px;font-weight:600;line-height:1.35;text-decoration:none}
+.preferred-source-button:hover{background:var(--sage,#e6ebdf)}
+.preferred-source-button:focus-visible{outline:3px solid currentColor;outline-offset:4px}
+.preferred-source-button>span:first-child{font-size:22px;line-height:1}
+@media(max-width:480px){.source-preference{align-items:flex-start;gap:8px}.source-preference p{font-size:12px}.preferred-source-button{font-size:13px}}
+
 @media print{
   .availability-bar,.site-header,.mobile-contact,.cookie-banner,.hero-visual,.button,.final-cta,.site-footer{display:none}
   .shell{width:100%}

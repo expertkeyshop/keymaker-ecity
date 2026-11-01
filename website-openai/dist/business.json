@@ -6,7 +6,10 @@
       "@id": "https://keymaker-ecity.pages.dev/#website",
       "url": "https://keymaker-ecity.pages.dev/",
       "name": "Key Maker & Locksmith | Electronic City",
-      "alternateName": "Keymaker Ecity",
+      "alternateName": [
+        "Keymaker Ecity",
+        "Key Maker & Locksmith"
+      ],
       "inLanguage": "en-IN",
       "publisher": {
         "@id": "https://keymaker-ecity.pages.dev/#business"

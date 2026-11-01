@@ -15,6 +15,13 @@ const read = async (pathname, type) => {
 };
 
 const { response, body: home } = await read("/", "text/html");
+function verifyBranding(page, label) {
+  assert(page.includes('href="/favicon.ico"'), `${label}: branded favicon missing`);
+  assert(page.includes('property="og:site_name" content="Key Maker &amp; Locksmith | Electronic City"'), `${label}: site name missing`);
+  assert(page.includes('property="og:image" content="https://keymaker-ecity.pages.dev/assets/social-preview.jpg"'), `${label}: JPEG sharing image missing`);
+  assert(page.includes('href="https://www.google.com/preferences/source?q=keymaker-ecity.pages.dev"'), `${label}: preferred-source link missing`);
+}
+verifyBranding(home, "homepage");
 assert(home.includes('rel="canonical" href="https://keymaker-ecity.pages.dev/"'), "Primary canonical URL missing");
 const robots = response.headers.get("x-robots-tag") || "";
 assert(backup ? robots.includes("noindex") : robots.includes("index") && !robots.includes("noindex"), "Unexpected indexing header");
@@ -40,7 +47,9 @@ for (const endpoint of ["/.well-known/ai-catalog.json", "/.well-known/ard.json",
   assert(catalog.entries.every(entry => entry.url.startsWith("https://keymaker-ecity.pages.dev/")));
 }
 assert((await read("/agent-skills/locksmith-enquiry/SKILL.md", "text/markdown")).body.includes("name: locksmith-enquiry"));
-assert((await read("/privacy", "text/html")).body.includes("https://keymaker-ecity.pages.dev/privacy"));
+const privacy = (await read("/privacy", "text/html")).body;
+assert(privacy.includes("https://keymaker-ecity.pages.dev/privacy"));
+verifyBranding(privacy, "privacy");
 assert((await read("/robots.txt", "text/plain")).body.includes("https://keymaker-ecity.pages.dev/sitemap.xml"));
 assert((await read("/llms.txt", "text/plain")).body.includes(".well-known/ai-catalog.json"));
 assert((await read("/sitemap.xml", "application/xml")).body.includes("https://keymaker-ecity.pages.dev/privacy"));
@@ -48,4 +57,12 @@ assert((await read("/business.json", "application/ld+json")).body.includes("+919
 assert.equal((await read("/googlea8f5575206e3c038.html", "text/html")).body.trim(), "google-site-verification: googlea8f5575206e3c038.html");
 const missing = await fetch(new URL("/missing-deployment-check.json", origin), { signal: AbortSignal.timeout(30000) });
 assert.equal(missing.status, 404, "Missing JSON must not return the homepage");
+verifyBranding(await missing.text(), "error page");
+for (const pathname of ["/favicon.ico", "/assets/favicon.png", "/assets/apple-touch-icon.png", "/assets/social-preview.jpg"]) {
+  const asset = await fetch(new URL(pathname, origin), { signal: AbortSignal.timeout(30000) });
+  assert.equal(asset.status, 200, `${pathname}: image unavailable`);
+  assert(asset.headers.get("content-type")?.startsWith("image/"), `${pathname}: image MIME type missing`);
+  results.push({ path: pathname, status: asset.status, type: asset.headers.get("content-type") });
+  await asset.body?.cancel();
+}
 console.log(JSON.stringify({ origin: origin.origin, role: backup ? "backup" : "primary", result: "PASS", checks: results, missingFileStatus: missing.status, robots }, null, 2));
