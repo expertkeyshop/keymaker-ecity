@@ -2,6 +2,10 @@
 
 ## Current result
 
+**Latest requested naming, pending:** The user now wants a business-only namespace such as `keymaker.ecity.chatgpt.site`. A possible route is to change the owning ChatGPT account's public username to `ecity` and this Site's label to `keymaker`; exact availability and the resulting native URL must be checked, not assumed. This extends to the account's personal Site addresses. The ChatGPT Sites browser is signed out; client sign-in and confirmation of this account-wide effect have been requested. No account username was changed and this candidate has not been submitted as a new Search Console property. The Pages primary website and the working deployed redirect remain in place. The existing Sites source project must be preserved.
+
+Changing the account namespace is different from the already-completed Site label change below. Older-address redirect behavior must be checked after any account change. A redirect-only ChatGPT hostname normally consolidates indexing at Pages; it does not become a second independently ranked website just by adding a Search Console property. See [Google canonicalization guidance](https://developers.google.com/search/docs/crawling-indexing/canonicalization).
+
 The Sites account now owns the existing project, and its requested `keymaker-ecity` slug is live. The native tool returned **https://keymaker-ecity.alishanaver72.chatgpt.site/**. The account suffix is supplied by Sites; it is not a literal `xxxxxxxx` placeholder.
 
 The primary business website remains **https://keymaker-ecity.pages.dev/**. Sites version 3, source commit `efb1cf79011ddf0dfbfdd2685509c80493953cb2`, now serves a permanent HTTP 301 redirect to that primary website. The former public page is preserved in the Sites Git history rather than remaining a second, outdated business website.
