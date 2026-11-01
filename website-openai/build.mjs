@@ -24,6 +24,9 @@ function normalizeOrigin(value) {
 }
 
 const sourceHtml = await readFile(path.join(root, "index.html"), "utf8");
+const privacySource = await readFile(path.join(root, "privacy.html"), "utf8");
+const privacyModified = privacySource.match(/<time\b[^>]*datetime="(\d{4}-\d{2}-\d{2})"/)?.[1];
+if (!privacyModified) throw new Error("The privacy page must declare its actual review date in a time element.");
 const canonicalTag = sourceHtml.match(/<link\b[^>]*\brel=["']canonical["'][^>]*>/i)?.[0];
 const canonicalHref = canonicalTag?.match(/\bhref=["']([^"']+)["']/i)?.[1];
 if (!canonicalHref) throw new Error("The source homepage must declare its canonical website URL.");
@@ -74,7 +77,7 @@ const map = business.hasMap;
 
 await mkdir(dist, { recursive: true });
 await writeFile(path.join(dist, "index.html"), html);
-await writeFile(path.join(dist, "privacy.html"), await prepareHtml(await readFile(path.join(root, "privacy.html"), "utf8")));
+await writeFile(path.join(dist, "privacy.html"), await prepareHtml(privacySource));
 await writeFile(path.join(dist, "404.html"), await prepareHtml(await readFile(path.join(root, "404.html"), "utf8")));
 for (const filename of ["styles.css", "mobile-focus.css", "desktop-focus.css", "script.js", "analytics.js"]) {
   await copyFile(path.join(root, filename), path.join(dist, filename));
@@ -130,13 +133,15 @@ await writeFile(path.join(dist, "robots.txt"), robots);
 const escapeXml = text => String(text).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll('"', "&quot;");
 const businessImages = [business.image ?? []].flat().map(image => typeof image === "string" ? image : image.url ?? image.contentUrl).filter(Boolean);
 const imageEntries = businessImages.map(image => `<image:image><image:loc>${escapeXml(image)}</image:loc></image:image>`).join("");
-await writeFile(path.join(dist, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"><url><loc>${escapeXml(origin)}</loc><lastmod>${escapeXml(webPage.dateModified)}</lastmod>${imageEntries}</url><url><loc>${escapeXml(origin)}privacy</loc><lastmod>${escapeXml(webPage.dateModified)}</lastmod></url></urlset>\n`);
+await writeFile(path.join(dist, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"><url><loc>${escapeXml(origin)}</loc><lastmod>${escapeXml(webPage.dateModified)}</lastmod>${imageEntries}</url><url><loc>${escapeXml(origin)}privacy</loc><lastmod>${escapeXml(privacyModified)}</lastmod></url></urlset>\n`);
 await writeFile(path.join(dist, "business.json"), JSON.stringify(schema, null, 2) + "\n");
 const markdown = [
   `# ${business.name}`, "", `> ${business.description}`, "", "## Contact and location", "",
   `- Website: ${origin}`, `- Telephone: ${business.telephone}`, "- WhatsApp: https://wa.me/919762306303",
   `- Address: ${business.address.streetAddress}, ${business.address.addressLocality}, ${business.address.addressRegion} ${business.address.postalCode}, India.`,
   `- Google Maps: ${map}`, "- Opening hours: open 24 hours, Monday to Sunday.",
+  `- Shop coordinates: ${business.geo.latitude}, ${business.geo.longitude}.`,
+  `- Customer languages: ${business.contactPoint.availableLanguage.map(code => new Intl.DisplayNames(["en"], { type: "language" }).of(code)).join(", ")}.`,
   `- Payments: ${business.paymentAccepted}.`, `- Shop opened: ${business.foundingDate}.`, "",
   "## Services", "", ...services.flatMap(service => [`### ${service.name}`, "", service.description, ""]),
   "## On-site coverage", "", areas.join(", ") + ".", "", "Call with the exact location to confirm availability, arrival time and applicable travel charges.", "",

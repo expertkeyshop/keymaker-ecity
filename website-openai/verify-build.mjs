@@ -34,6 +34,15 @@ const verification = "googlea8f5575206e3c038.html";
 assert.deepEqual(await readFile(path.join(dist, verification)), await readFile(path.join(root, "verification", verification)));
 const graph = JSON.parse(await read("business.json"));
 assert(graph["@graph"].some(item => item["@type"] === "Locksmith" && item.telephone === "+919762306303"));
+const business = graph["@graph"].find(item => item["@type"] === "Locksmith");
+assert.deepEqual(business.geo, { "@type": "GeoCoordinates", latitude: 12.8322499, longitude: 77.6602081 });
+assert.deepEqual(business.contactPoint.availableLanguage, ["en", "hi", "kn"]);
+assert(html.includes("English · Hindi · Kannada"), "Contact languages must also be visible to customers");
+const sitemapEntries = [...(await read("sitemap.xml")).matchAll(/<url><loc>([^<]+)<\/loc><lastmod>([^<]+)<\/lastmod>/g)];
+assert.equal(sitemapEntries.length, 2);
+const homepageModified = graph["@graph"].find(item => item["@type"] === "WebPage").dateModified;
+const privacyModified = (await read("privacy.html")).match(/<time\b[^>]*datetime="(\d{4}-\d{2}-\d{2})"/)[1];
+assert.deepEqual(sitemapEntries.map(entry => [entry[1], entry[2]]), [[origin, homepageModified], [origin + "privacy", privacyModified]], "Sitemap dates must follow each page's actual content revision");
 const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
 assert.equal(new Set(ids).size, ids.length, "Duplicate homepage IDs");
 for (const name of ["index.html", "privacy.html", "404.html"]) {

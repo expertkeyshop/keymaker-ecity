@@ -7,12 +7,14 @@ on:
       - 'website-openai/**'
       - 'cloudflare-pages/**'
       - 'scripts/**'
+      - 'analytics/**'
       - '.github/workflows/cloudflare-pages.yml'
   pull_request:
     paths:
       - 'website-openai/**'
       - 'cloudflare-pages/**'
       - 'scripts/**'
+      - 'analytics/**'
       - '.github/workflows/cloudflare-pages.yml'
   workflow_dispatch:
 
