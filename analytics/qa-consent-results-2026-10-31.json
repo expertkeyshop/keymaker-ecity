@@ -1,0 +1,81 @@
+{
+  "checkedAt": "2026-10-31T12:24:45.445Z",
+  "measurement": [
+    {
+      "level": "log",
+      "message": "KEYMAKER_CONSENT_SDK analytics_storage=true ad_storage=false ad_user_data=false ad_personalization=false",
+      "timestamp": "2026-10-31T12:24:27.935Z",
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PKCWS4Z8"
+    },
+    {
+      "level": "log",
+      "message": "KEYMAKER_CONSENT_SDK analytics_storage=true ad_storage=false ad_user_data=false ad_personalization=false",
+      "timestamp": "2026-10-31T12:24:27.936Z",
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PKCWS4Z8"
+    },
+    {
+      "level": "log",
+      "message": "KEYMAKER_CONSENT_SDK analytics_storage=true ad_storage=true ad_user_data=true ad_personalization=false",
+      "timestamp": "2026-10-31T12:24:27.981Z",
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PKCWS4Z8"
+    }
+  ],
+  "analyticsOnly": [
+    {
+      "level": "log",
+      "message": "KEYMAKER_CONSENT_SDK analytics_storage=true ad_storage=false ad_user_data=false ad_personalization=false",
+      "timestamp": "2026-10-31T12:24:27.935Z",
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PKCWS4Z8"
+    },
+    {
+      "level": "log",
+      "message": "KEYMAKER_CONSENT_SDK analytics_storage=true ad_storage=false ad_user_data=false ad_personalization=false",
+      "timestamp": "2026-10-31T12:24:27.936Z",
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PKCWS4Z8"
+    },
+    {
+      "level": "log",
+      "message": "KEYMAKER_CONSENT_SDK analytics_storage=true ad_storage=true ad_user_data=true ad_personalization=false",
+      "timestamp": "2026-10-31T12:24:27.981Z",
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PKCWS4Z8"
+    },
+    {
+      "level": "log",
+      "message": "KEYMAKER_CONSENT_SDK analytics_storage=true ad_storage=false ad_user_data=false ad_personalization=false",
+      "timestamp": "2026-10-31T12:24:45.858Z",
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PKCWS4Z8"
+    }
+  ],
+  "declined": [
+    {
+      "level": "log",
+      "message": "KEYMAKER_CONSENT_SDK analytics_storage=true ad_storage=false ad_user_data=false ad_personalization=false",
+      "timestamp": "2026-10-31T12:24:27.935Z",
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PKCWS4Z8"
+    },
+    {
+      "level": "log",
+      "message": "KEYMAKER_CONSENT_SDK analytics_storage=true ad_storage=false ad_user_data=false ad_personalization=false",
+      "timestamp": "2026-10-31T12:24:27.936Z",
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PKCWS4Z8"
+    },
+    {
+      "level": "log",
+      "message": "KEYMAKER_CONSENT_SDK analytics_storage=true ad_storage=true ad_user_data=true ad_personalization=false",
+      "timestamp": "2026-10-31T12:24:27.981Z",
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PKCWS4Z8"
+    },
+    {
+      "level": "log",
+      "message": "KEYMAKER_CONSENT_SDK analytics_storage=true ad_storage=false ad_user_data=false ad_personalization=false",
+      "timestamp": "2026-10-31T12:24:45.858Z",
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PKCWS4Z8"
+    },
+    {
+      "level": "log",
+      "message": "KEYMAKER_CONSENT_SDK analytics_storage=false ad_storage=false ad_user_data=false ad_personalization=false",
+      "timestamp": "2026-10-31T12:24:53.604Z",
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PKCWS4Z8"
+    }
+  ]
+}

@@ -1,869 +1,952 @@
 {
-  "exportFormatVersion": 2,
-  "exportTime": "2026-10-31 11:22:43",
-  "containerVersion": {
-    "path": "accounts/6400619169/containers/284013809/versions/3",
-    "accountId": "6400619169",
-    "containerId": "284013809",
-    "containerVersionId": "3",
-    "name": "Visitor-choice ad measurement consent",
-    "description": "Honor analytics-only and explicit Analytics + ads choices. Default all consent denied; grant ad_storage and ad_user_data only for explicit advertising measurement opt-in. Personalization remains denied. Preserve legacy consent and existing GA4 event tags.",
-    "container": {
-      "path": "accounts/6400619169/containers/284013809",
-      "accountId": "6400619169",
-      "containerId": "284013809",
-      "name": "keymaker-ecity.pages.dev",
-      "publicId": "GTM-PKCWS4Z8",
-      "usageContext": [
-        "WEB"
-      ],
-      "fingerprint": "1793176350518",
-      "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6400619169/containers/284013809/workspaces?apiLink=container",
-      "features": {
-        "supportUserPermissions": true,
-        "supportEnvironments": true,
-        "supportWorkspaces": true,
-        "supportGtagConfigs": false,
-        "supportBuiltInVariables": true,
-        "supportClients": false,
-        "supportFolders": true,
-        "supportTags": true,
-        "supportTemplates": true,
-        "supportTriggers": true,
-        "supportVariables": true,
-        "supportVersions": true,
-        "supportZones": true,
-        "supportTransformations": false
-      },
-      "tagIds": [
-        "GTM-PKCWS4Z8"
-      ]
-    },
-    "tag": [
-      {
+    "exportFormatVersion": 2,
+    "exportTime": "2026-10-31 12:25:11",
+    "containerVersion": {
+        "path": "accounts/6400619169/containers/284013809/versions/5",
         "accountId": "6400619169",
         "containerId": "284013809",
-        "tagId": "13",
-        "name": "GA4 - Customer contact and content events",
-        "type": "gaawe",
-        "parameter": [
-          {
-            "type": "BOOLEAN",
-            "key": "sendEcommerceData",
-            "value": "false"
-          },
-          {
-            "type": "LIST",
-            "key": "eventSettingsTable",
-            "list": [
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "page_location"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "{{DLV - page_location}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "page_referrer"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "{{DLV - page_referrer}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "debug_mode"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "{{DLV - debug_mode}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "traffic_type"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "{{DLV - traffic_type}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "section"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "{{DLV - section}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "item_name"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "{{DLV - item_name}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "contact_method"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "{{DLV - contact_method}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "question_id"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "{{DLV - question_id}}"
-                  }
-                ]
-              }
+        "containerVersionId": "5",
+        "name": "QA consent query-key correction",
+        "description": "Use documented getQueryParameters(km_debug) API. The read-only four-flag verifier remains gated to primary-site developer QA visits. No measurement or consent-setting changes.",
+        "container": {
+            "path": "accounts/6400619169/containers/284013809",
+            "accountId": "6400619169",
+            "containerId": "284013809",
+            "name": "keymaker-ecity.pages.dev",
+            "publicId": "GTM-PKCWS4Z8",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1793176350518",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6400619169/containers/284013809/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-PKCWS4Z8"
             ]
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "eventName",
-            "value": "{{Event}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "measurementIdOverride",
-            "value": "G-Q2CM2F0JB8"
-          }
+        },
+        "tag": [
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "tagId": "13",
+                "name": "GA4 - Customer contact and content events",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "page_location"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{DLV - page_location}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "page_referrer"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{DLV - page_referrer}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "debug_mode"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{DLV - debug_mode}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "traffic_type"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{DLV - traffic_type}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "section"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{DLV - section}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "item_name"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{DLV - item_name}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "contact_method"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{DLV - contact_method}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "question_id"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{DLV - question_id}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "{{Event}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "G-Q2CM2F0JB8"
+                    }
+                ],
+                "fingerprint": "1793177052942",
+                "firingTriggerId": [
+                    "10"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "consentSettings": {
+                    "consentStatus": "NEEDED",
+                    "consentType": {
+                        "type": "LIST",
+                        "list": [
+                            {
+                                "type": "TEMPLATE",
+                                "value": "analytics_storage"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "tagId": "15",
+                "name": "GA4 - Google tag - consented primary site",
+                "type": "googtag",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "tagId",
+                        "value": "G-Q2CM2F0JB8"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "configSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "page_location"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{DLV - page_location}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "page_referrer"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{DLV - page_referrer}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "debug_mode"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{DLV - debug_mode}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "traffic_type"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{DLV - traffic_type}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "allow_google_signals"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "false"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "allow_ad_personalization_signals"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "false"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "send_page_view"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "true"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "cookie_domain"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "keymaker-ecity.pages.dev"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1793177052942",
+                "firingTriggerId": [
+                    "14"
+                ],
+                "tagFiringOption": "ONCE_PER_LOAD",
+                "consentSettings": {
+                    "consentStatus": "NEEDED",
+                    "consentType": {
+                        "type": "LIST",
+                        "list": [
+                            {
+                                "type": "TEMPLATE",
+                                "value": "analytics_storage"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "tagId": "18",
+                "name": "Consent - default",
+                "type": "cvt_284013809_17",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "analyticsConsent",
+                        "value": "{{DLV - Analytics consent}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "adsMeasurementConsent",
+                        "value": "{{DLV - Ads measurement consent}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "command",
+                        "value": "default"
+                    }
+                ],
+                "fingerprint": "1793445325198",
+                "firingTriggerId": [
+                    "2147479572"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "consentSettings": {
+                    "consentStatus": "NOT_NEEDED"
+                }
+            },
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "tagId": "19",
+                "name": "Consent - update",
+                "type": "cvt_284013809_17",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "analyticsConsent",
+                        "value": "{{DLV - Analytics consent}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "adsMeasurementConsent",
+                        "value": "{{DLV - Ads measurement consent}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "command",
+                        "value": "update"
+                    }
+                ],
+                "fingerprint": "1793445325199",
+                "firingTriggerId": [
+                    "16"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "consentSettings": {
+                    "consentStatus": "NOT_NEEDED"
+                }
+            },
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "tagId": "24",
+                "name": "QA - Effective Google consent (debug only)",
+                "type": "cvt_284013809_22",
+                "fingerprint": "1793449202138",
+                "firingTriggerId": [
+                    "23"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
         ],
-        "fingerprint": "1793177052942",
-        "firingTriggerId": [
-          "10"
+        "trigger": [
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "triggerId": "10",
+                "name": "Consented customer actions",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "^(click_call|click_whatsapp|click_directions|click_review|faq_open|view_section)$"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Hostname}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "keymaker-ecity.pages.dev"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DLV - Analytics consent}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "granted"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1793178084632"
+            },
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "triggerId": "14",
+                "name": "Analytics ready on primary site",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "km_analytics_ready"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Hostname}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "keymaker-ecity.pages.dev"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DLV - Analytics consent}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "granted"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1793178084632"
+            },
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "triggerId": "16",
+                "name": "Consent choice changed",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "km_consent_update"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Hostname}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "keymaker-ecity.pages.dev"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1793178084632"
+            },
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "triggerId": "23",
+                "name": "QA consent state on primary site",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "^(km_consent_update|km_analytics_ready)$"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Hostname}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "keymaker-ecity.pages.dev"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DLV - debug_mode}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1793449193237"
+            }
         ],
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "consentSettings": {
-          "consentStatus": "NEEDED",
-          "consentType": {
-            "type": "LIST",
-            "list": [
-              {
-                "type": "TEMPLATE",
-                "value": "analytics_storage"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "tagId": "15",
-        "name": "GA4 - Google tag - consented primary site",
-        "type": "googtag",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "tagId",
-            "value": "G-Q2CM2F0JB8"
-          },
-          {
-            "type": "LIST",
-            "key": "configSettingsTable",
-            "list": [
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "page_location"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "{{DLV - page_location}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "page_referrer"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "{{DLV - page_referrer}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "debug_mode"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "{{DLV - debug_mode}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "traffic_type"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "{{DLV - traffic_type}}"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "allow_google_signals"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "false"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "allow_ad_personalization_signals"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "false"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "send_page_view"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "true"
-                  }
-                ]
-              },
-              {
-                "type": "MAP",
-                "map": [
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameter",
-                    "value": "cookie_domain"
-                  },
-                  {
-                    "type": "TEMPLATE",
-                    "key": "parameterValue",
-                    "value": "keymaker-ecity.pages.dev"
-                  }
-                ]
-              }
-            ]
-          }
+        "variable": [
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "variableId": "3",
+                "name": "DLV - page_referrer",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "page_referrer"
+                    }
+                ],
+                "fingerprint": "1793177052941"
+            },
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "variableId": "4",
+                "name": "DLV - debug_mode",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "debug_mode"
+                    }
+                ],
+                "fingerprint": "1793177052941"
+            },
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "variableId": "5",
+                "name": "DLV - traffic_type",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "traffic_type"
+                    }
+                ],
+                "fingerprint": "1793177052941"
+            },
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "variableId": "6",
+                "name": "DLV - contact_method",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "contact_method"
+                    }
+                ],
+                "fingerprint": "1793177052942"
+            },
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "variableId": "7",
+                "name": "DLV - question_id",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "question_id"
+                    }
+                ],
+                "fingerprint": "1793177052942"
+            },
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "variableId": "8",
+                "name": "DLV - section",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "section"
+                    }
+                ],
+                "fingerprint": "1793177052942"
+            },
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "variableId": "9",
+                "name": "DLV - Analytics consent",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "analytics_consent"
+                    }
+                ],
+                "fingerprint": "1793177052942"
+            },
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "variableId": "11",
+                "name": "DLV - page_location",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "page_location"
+                    }
+                ],
+                "fingerprint": "1793177052942"
+            },
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "variableId": "12",
+                "name": "DLV - item_name",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "item_name"
+                    }
+                ],
+                "fingerprint": "1793177052942"
+            },
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "variableId": "21",
+                "name": "DLV - Ads measurement consent",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ads_measurement_consent"
+                    }
+                ],
+                "fingerprint": "1793445325097"
+            }
         ],
-        "fingerprint": "1793177052942",
-        "firingTriggerId": [
-          "14"
+        "builtInVariable": [
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "type": "EVENT",
+                "name": "Event"
+            }
         ],
-        "tagFiringOption": "ONCE_PER_LOAD",
-        "consentSettings": {
-          "consentStatus": "NEEDED",
-          "consentType": {
-            "type": "LIST",
-            "list": [
-              {
-                "type": "TEMPLATE",
-                "value": "analytics_storage"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "tagId": "18",
-        "name": "Consent - default",
-        "type": "cvt_284013809_17",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "analyticsConsent",
-            "value": "{{DLV - Analytics consent}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "adsMeasurementConsent",
-            "value": "{{DLV - Ads measurement consent}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "command",
-            "value": "default"
-          }
-        ],
-        "fingerprint": "1793445325198",
-        "firingTriggerId": [
-          "2147479572"
-        ],
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "consentSettings": {
-          "consentStatus": "NOT_NEEDED"
-        }
-      },
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "tagId": "19",
-        "name": "Consent - update",
-        "type": "cvt_284013809_17",
-        "parameter": [
-          {
-            "type": "TEMPLATE",
-            "key": "analyticsConsent",
-            "value": "{{DLV - Analytics consent}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "adsMeasurementConsent",
-            "value": "{{DLV - Ads measurement consent}}"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "command",
-            "value": "update"
-          }
-        ],
-        "fingerprint": "1793445325199",
-        "firingTriggerId": [
-          "16"
-        ],
-        "tagFiringOption": "ONCE_PER_EVENT",
-        "consentSettings": {
-          "consentStatus": "NOT_NEEDED"
-        }
-      }
-    ],
-    "trigger": [
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "triggerId": "10",
-        "name": "Consented customer actions",
-        "type": "CUSTOM_EVENT",
-        "customEventFilter": [
-          {
-            "type": "MATCH_REGEX",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{_event}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "^(click_call|click_whatsapp|click_directions|click_review|faq_open|view_section)$"
-              }
-            ]
-          }
-        ],
-        "filter": [
-          {
-            "type": "EQUALS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{Page Hostname}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "keymaker-ecity.pages.dev"
-              }
-            ]
-          },
-          {
-            "type": "EQUALS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{DLV - Analytics consent}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "granted"
-              }
-            ]
-          }
-        ],
-        "fingerprint": "1793178084632"
-      },
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "triggerId": "14",
-        "name": "Analytics ready on primary site",
-        "type": "CUSTOM_EVENT",
-        "customEventFilter": [
-          {
-            "type": "EQUALS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{_event}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "km_analytics_ready"
-              }
-            ]
-          }
-        ],
-        "filter": [
-          {
-            "type": "EQUALS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{Page Hostname}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "keymaker-ecity.pages.dev"
-              }
-            ]
-          },
-          {
-            "type": "EQUALS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{DLV - Analytics consent}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "granted"
-              }
-            ]
-          }
-        ],
-        "fingerprint": "1793178084632"
-      },
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "triggerId": "16",
-        "name": "Consent choice changed",
-        "type": "CUSTOM_EVENT",
-        "customEventFilter": [
-          {
-            "type": "EQUALS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{_event}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "km_consent_update"
-              }
-            ]
-          }
-        ],
-        "filter": [
-          {
-            "type": "EQUALS",
-            "parameter": [
-              {
-                "type": "TEMPLATE",
-                "key": "arg0",
-                "value": "{{Page Hostname}}"
-              },
-              {
-                "type": "TEMPLATE",
-                "key": "arg1",
-                "value": "keymaker-ecity.pages.dev"
-              }
-            ]
-          }
-        ],
-        "fingerprint": "1793178084632"
-      }
-    ],
-    "variable": [
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "variableId": "3",
-        "name": "DLV - page_referrer",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "page_referrer"
-          }
-        ],
-        "fingerprint": "1793177052941"
-      },
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "variableId": "4",
-        "name": "DLV - debug_mode",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "debug_mode"
-          }
-        ],
-        "fingerprint": "1793177052941"
-      },
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "variableId": "5",
-        "name": "DLV - traffic_type",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "traffic_type"
-          }
-        ],
-        "fingerprint": "1793177052941"
-      },
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "variableId": "6",
-        "name": "DLV - contact_method",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "contact_method"
-          }
-        ],
-        "fingerprint": "1793177052942"
-      },
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "variableId": "7",
-        "name": "DLV - question_id",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "question_id"
-          }
-        ],
-        "fingerprint": "1793177052942"
-      },
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "variableId": "8",
-        "name": "DLV - section",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "section"
-          }
-        ],
-        "fingerprint": "1793177052942"
-      },
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "variableId": "9",
-        "name": "DLV - Analytics consent",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "analytics_consent"
-          }
-        ],
-        "fingerprint": "1793177052942"
-      },
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "variableId": "11",
-        "name": "DLV - page_location",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "page_location"
-          }
-        ],
-        "fingerprint": "1793177052942"
-      },
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "variableId": "12",
-        "name": "DLV - item_name",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "item_name"
-          }
-        ],
-        "fingerprint": "1793177052942"
-      },
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "variableId": "21",
-        "name": "DLV - Ads measurement consent",
-        "type": "v",
-        "parameter": [
-          {
-            "type": "INTEGER",
-            "key": "dataLayerVersion",
-            "value": "2"
-          },
-          {
-            "type": "BOOLEAN",
-            "key": "setDefaultValue",
-            "value": "false"
-          },
-          {
-            "type": "TEMPLATE",
-            "key": "name",
-            "value": "ads_measurement_consent"
-          }
-        ],
-        "fingerprint": "1793445325097"
-      }
-    ],
-    "builtInVariable": [
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "type": "PAGE_HOSTNAME",
-        "name": "Page Hostname"
-      },
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "type": "EVENT",
-        "name": "Event"
-      }
-    ],
-    "fingerprint": "1793445369475",
-    "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6400619169/containers/284013809/versions/3?apiLink=version",
-    "customTemplate": [
-      {
-        "accountId": "6400619169",
-        "containerId": "284013809",
-        "templateId": "17",
-        "name": "Keymaker consent bridge",
-        "fingerprint": "1793445325197",
-        "templateData": "___INFO___\n\n{\n  \"type\": \"TAG\",\n  \"id\": \"cvt_keymaker_consent\",\n  \"version\": 1,\n  \"displayName\": \"Keymaker consent bridge\",\n  \"description\": \"Updates analytics consent from the existing site banner. Optional ad measurement follows the visitor choice; ad personalisation stays denied. No network or cookie access.\",\n  \"containerContexts\": [\n    \"WEB\"\n  ],\n  \"securityGroups\": []\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"command\",\n    \"displayName\": \"Command (default or update)\",\n    \"simpleValueType\": true\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"analyticsConsent\",\n    \"displayName\": \"Analytics consent\",\n    \"simpleValueType\": true\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"adsMeasurementConsent\",\n    \"displayName\": \"Advertising measurement consent\",\n    \"simpleValueType\": true\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nconst setDefaultConsentState = require('setDefaultConsentState');\nconst updateConsentState = require('updateConsentState');\nif (data.command === 'default') {\n  setDefaultConsentState({analytics_storage:'denied', ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied'});\n}\nconst analytics = data.analyticsConsent === 'granted';\nconst ads = analytics && data.adsMeasurementConsent === 'granted';\nupdateConsentState({analytics_storage:analytics ? 'granted' : 'denied', ad_storage:ads ? 'granted' : 'denied', ad_user_data:ads ? 'granted' : 'denied', ad_personalization:'denied'});\ndata.gtmOnSuccess();\n\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_consent\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"consentTypes\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"analytics_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_user_data\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_personalization\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\nFirst-party consent bridge for the Keymaker website; does not load scripts, send requests, read cookies or use eval.\n\n\n"
-      }
-    ]
-  }
+        "fingerprint": "1793449460602",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6400619169/containers/284013809/versions/5?apiLink=version",
+        "customTemplate": [
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "templateId": "17",
+                "name": "Keymaker consent bridge",
+                "fingerprint": "1793445325197",
+                "templateData": "___INFO___\n\n{\n  \"type\": \"TAG\",\n  \"id\": \"cvt_keymaker_consent\",\n  \"version\": 1,\n  \"displayName\": \"Keymaker consent bridge\",\n  \"description\": \"Updates analytics consent from the existing site banner. Optional ad measurement follows the visitor choice; ad personalisation stays denied. No network or cookie access.\",\n  \"containerContexts\": [\n    \"WEB\"\n  ],\n  \"securityGroups\": []\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"command\",\n    \"displayName\": \"Command (default or update)\",\n    \"simpleValueType\": true\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"analyticsConsent\",\n    \"displayName\": \"Analytics consent\",\n    \"simpleValueType\": true\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"adsMeasurementConsent\",\n    \"displayName\": \"Advertising measurement consent\",\n    \"simpleValueType\": true\n  }\n]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nconst setDefaultConsentState = require('setDefaultConsentState');\nconst updateConsentState = require('updateConsentState');\nif (data.command === 'default') {\n  setDefaultConsentState({analytics_storage:'denied', ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied'});\n}\nconst analytics = data.analyticsConsent === 'granted';\nconst ads = analytics && data.adsMeasurementConsent === 'granted';\nupdateConsentState({analytics_storage:analytics ? 'granted' : 'denied', ad_storage:ads ? 'granted' : 'denied', ad_user_data:ads ? 'granted' : 'denied', ad_personalization:'denied'});\ndata.gtmOnSuccess();\n\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_consent\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"consentTypes\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"analytics_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_user_data\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_personalization\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\nFirst-party consent bridge for the Keymaker website; does not load scripts, send requests, read cookies or use eval.\n\n\n"
+            },
+            {
+                "accountId": "6400619169",
+                "containerId": "284013809",
+                "templateId": "22",
+                "name": "Keymaker QA consent reader",
+                "fingerprint": "1793449402978",
+                "templateData": "___INFO___\n\n{\n  \"type\": \"TAG\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"Keymaker QA consent reader\",\n  \"brand\": {\n    \"id\": \"brand_dummy\",\n    \"displayName\": \"\"\n  },\n  \"description\": \"Read-only Google consent API check, only for km_debug\\u003d1 QA visits. Logs four consent booleans locally; no network, cookies, personal data or consent writes.\",\n  \"containerContexts\": [\n    \"WEB\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[]\n\n\n___SANDBOXED_JS_FOR_WEB_TEMPLATE___\n\nconst getQueryParameters = require('getQueryParameters');\nconst isConsentGranted = require('isConsentGranted');\nconst callLater = require('callLater');\nconst logToConsole = require('logToConsole');\nif (getQueryParameters('km_debug') === '1') {\n  callLater(function() {\n    logToConsole('KEYMAKER_CONSENT_SDK',\n      'analytics_storage=' + isConsentGranted('analytics_storage'),\n      'ad_storage=' + isConsentGranted('ad_storage'),\n      'ad_user_data=' + isConsentGranted('ad_user_data'),\n      'ad_personalization=' + isConsentGranted('ad_personalization'));\n    data.gtmOnSuccess();\n  });\n} else {\n  data.gtmOnSuccess();\n}\n\n\n___WEB_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"logging\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"environments\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"all\"\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_consent\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"consentTypes\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"analytics_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_storage\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_user_data\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  }\n                ]\n              },\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"consentType\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"read\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"ad_personalization\"\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": true\n                  },\n                  {\n                    \"type\": 8,\n                    \"boolean\": false\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"get_url\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"queriesAllowed\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"specific\"\n          }\n        },\n        {\n          \"key\": \"urlParts\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"specific\"\n          }\n        },\n        {\n          \"key\": \"queryKeys\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 1,\n                \"string\": \"km_debug\"\n              }\n            ]\n          }\n        },\n        {\n          \"key\": \"query\",\n          \"value\": {\n            \"type\": 8,\n            \"boolean\": true\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\n\n\n\n"
+            }
+        ]
+    }
 }

@@ -82,8 +82,8 @@ const variables = new Set([...container.variable, ...container.builtInVariable].
 for (const match of JSON.stringify(container).matchAll(/\{\{([^}]+)\}\}/g)) {
   assert(match[1] === "_event" || variables.has(match[1]), `Unknown GTM variable: ${match[1]}`);
 }
-assert.equal(container.tag.length, 4);
-assert.equal(container.trigger.length, 3);
+assert.equal(container.tag.length, 5);
+assert.equal(container.trigger.length, 4);
 for (const trigger of container.trigger) {
   assert(trigger.filter.some(filter => filter.parameter.some(value => value.value === "{{Page Hostname}}")), `Missing primary-host gate: ${trigger.name}`);
 }
@@ -119,3 +119,60 @@ for(const file of ["index.html","privacy.html"]) {
   for(const choice of ["denied","granted","measurement"]) assert.equal((html.match(new RegExp(`data-consent="${choice}"`,"g"))||[]).length,1,`${file} exposes each visitor choice once`);
 }
 console.log("PASS: GTM variable references, primary-host gates, all consent combinations, template/export consistency and banner choices.");
+const qaTemplate = await readFile(new URL("../analytics/keymaker-consent-debug.tpl", import.meta.url), "utf8");
+const qaSource = qaTemplate.split("___SANDBOXED_JS_FOR_WEB_TEMPLATE___")[1].split("___WEB_PERMISSIONS___")[0];
+const consentTypes = ["analytics_storage", "ad_storage", "ad_user_data", "ad_personalization"];
+for (const queryValue of [undefined, "0", "1"]) {
+  const deferred = [], reads = [], logs = [];
+  let successes = 0;
+  const state = Object.fromEntries(consentTypes.map(type => [type, false]));
+  vm.runInNewContext(qaSource, {
+    data: { gtmOnSuccess: () => successes++ },
+    require: name => {
+      if (name === "getQueryParameters") return (...args) => {
+        assert.deepEqual(args, ["km_debug"], "Use the documented query-key API signature");
+        return queryValue;
+      };
+      if (name === "isConsentGranted") return type => { reads.push(type); return state[type]; };
+      if (name === "callLater") return callback => deferred.push(callback);
+      if (name === "logToConsole") return (...args) => logs.push(args);
+      assert.fail(`QA template requested an unexpected API: ${name}`);
+    }
+  });
+  assert.equal(reads.length, 0, "Do not read consent until queued updates settle");
+  assert.equal(logs.length, 0);
+  if (queryValue === "1") {
+    assert.equal(deferred.length, 1);
+    assert.equal(successes, 0);
+    state.analytics_storage = true;
+    state.ad_storage = true;
+    state.ad_user_data = true;
+    deferred[0]();
+    assert.deepEqual(reads, consentTypes);
+    assert.deepEqual(logs, [["KEYMAKER_CONSENT_SDK", "analytics_storage=true", "ad_storage=true", "ad_user_data=true", "ad_personalization=false"]]);
+  } else {
+    assert.equal(deferred.length, 0, "No console output on normal visits");
+  }
+  assert.equal(successes, 1);
+}
+const qaPermissions = JSON.parse(qaTemplate.split("___WEB_PERMISSIONS___")[1].split("___TESTS___")[0]);
+assert.deepEqual(qaPermissions.map(permission => permission.instance.key.publicId).sort(), ["access_consent", "get_url", "logging"]);
+const readPermission = qaPermissions.find(permission => permission.instance.key.publicId === "access_consent");
+const allowedTypes = readPermission.instance.param.find(param => param.key === "consentTypes").value.listItem;
+assert.equal(allowedTypes.length, 4);
+for (const permission of allowedTypes) {
+  const values = Object.fromEntries(permission.mapKey.map((key, index) => [key.string, permission.mapValue[index]]));
+  assert(consentTypes.includes(values.consentType.string));
+  assert.equal(values.read.boolean, true);
+  assert.equal(values.write.boolean, false, "The QA reader cannot alter consent");
+}
+const queryPermission = qaPermissions.find(permission => permission.instance.key.publicId === "get_url").instance.param;
+assert.equal(queryPermission.find(param => param.key === "queriesAllowed").value.string, "specific");
+assert.deepEqual(queryPermission.find(param => param.key === "queryKeys").value.listItem.map(item => item.string), ["km_debug"]);
+const qaTag = container.tag.find(tag => tag.name === "QA - Effective Google consent (debug only)");
+assert.equal(qaTag.consentSettings.consentStatus, "NOT_SET", "Do not force the consent API to always return granted");
+const qaTrigger = container.trigger.find(trigger => qaTag.firingTriggerId.includes(trigger.triggerId));
+assert(qaTrigger.filter.some(filter => filter.parameter.some(param => param.value === "{{DLV - debug_mode}}")));
+assert.equal(qaTrigger.customEventFilter[0].parameter.find(param => param.key === "arg1").value, "^(km_consent_update|km_analytics_ready)$");
+assert.equal(container.customTemplate.find(template => template.name === "Keymaker QA consent reader").templateData.trimEnd(), qaTemplate.trimEnd());
+console.log("PASS: QA-only deferred SDK consent reads, minimal read-only permissions, no customer data, no consent override and exact published export.");
