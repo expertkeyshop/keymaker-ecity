@@ -24,6 +24,8 @@ The readings were captured on 31 October at approximately 5:54–5:55 PM IST. A 
 
 Machine-readable console evidence is preserved in `analytics/qa-consent-results-2026-10-31.json`. It contains only four consent booleans, timestamps and the public GTM script URL. This proves client-side application of the consent update; it does not establish Google's server-side aggregate consent rate or completed customer enquiries.
 
+The subsequent signed-in **GA4 Admin → Consent settings** check on 2 November reports **Excellent**, **No issues detected in this property**, with both behavioral analytics and advertising consent signals **Active** for the keymaker-ecity stream. The page specifically lists active analytics_storage, ad_storage, ad_user_data and ad_personalization signals. Active means the signal is being communicated, not that a user granted it or that remarketing was enabled. This is Google's received-signal status; the separate GTM aggregate warning remains open. Proof: proof/2026-11-02/completion/analytics-consent-excellent.png.
+
 ## QA verifier and maintenance
 
 The verifier fires only for `km_consent_update` or `km_analytics_ready`, on the primary hostname and with `DLV - debug_mode` equal to true. It independently checks `getQueryParameters('km_debug') === '1'`. Ordinary visits do not produce this diagnostic output.

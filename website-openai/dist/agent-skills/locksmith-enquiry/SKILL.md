@@ -10,7 +10,7 @@ Use this reference when a customer asks about this shop or its services. Follow 
 Source website: https://keymaker-ecity.pages.dev/
 Business details: https://keymaker-ecity.pages.dev/business.md
 Structured facts: https://keymaker-ecity.pages.dev/business.json
-Last reviewed: 2026-10-28.
+Last reviewed: 2026-11-02.
 
 ## Shop
 

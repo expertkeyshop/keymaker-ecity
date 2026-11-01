@@ -75,4 +75,8 @@ Services use compact picture sources; products use 128/192/320px variants. Real 
 
 Run `node website-openai/verify-build.mjs` after the build. This checks primary URLs, discovery aliases, local references, CSP/SRI hashes, the 404 page, sitemap and byte-exact Google ownership verification. Full Lighthouse QA and tooling live outside the public build under `website-previews/qa-2026-10-28/`; do not deploy that directory.
 
-The ready-to-upload release is `keymaker-ecity-pages-2026-10-28.zip` in the parent folder. Upload its contents to the existing Pages project. The live PageSpeed report can only change after deployment and a new analysis.
+The ready-to-upload release is `keymaker-ecity-pages-2026-11-02.zip` in the parent folder. Upload its contents to the existing Pages project. The live PageSpeed report can only change after deployment and a new analysis.
+
+## Content revision dates
+
+After a real homepage content change, update the WebPage dateModified in index.html. The sitemap uses the privacy page’s visible time datetime for its own lastmod, so an unrelated homepage update does not change the privacy review date. The 2 November release includes verified coordinates and customer languages. Both deployment builds validate this data and its visible contact copy.

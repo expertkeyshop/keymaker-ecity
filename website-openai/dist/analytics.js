@@ -10,6 +10,7 @@
   const debug = new URLSearchParams(window.location.search).get("km_debug") === "1";
   const eventNames = new Set(["click_call", "click_whatsapp", "click_directions", "click_review", "faq_open", "view_section"]);
   let granted = false;
+  let adsGranted = false;
   let loaded = false;
   let pageSent = false;
   window[disableKey] = true;
@@ -22,6 +23,14 @@
       const value = url.searchParams.get(name) || "";
       if (/^[a-zA-Z][a-zA-Z0-9_.-]{0,79}$/.test(value) && !/\d{7,}/.test(value)) safe.searchParams.set(name, value);
     }
+    // Click identifiers are optional advertising measurement data, not campaign
+    // labels. Include them only after the visitor explicitly chooses measurement.
+    if (adsGranted) {
+      for (const name of ["gclid", "gbraid", "wbraid"]) {
+        const value = url.searchParams.get(name) || "";
+        if (/^[a-zA-Z0-9_-]{10,512}$/.test(value)) safe.searchParams.set(name, value);
+      }
+    }
     return safe.href;
   };
   const safeReferrer = () => {
@@ -33,25 +42,33 @@
     site_environment: "production", debug_mode: debug,
     traffic_type: debug ? "developer" : "external"
   });
-  const clearCookies = () => {
+  const clearCookies = (adsOnly = false) => {
     const host = window.location.hostname;
     const domains = ["", host, `.${host}`];
     document.cookie.split(";").forEach(part => {
       const name = part.split("=")[0].trim();
       if (!/^_(ga|gid|gat|gcl)(_|$)/.test(name)) return;
+      if (adsOnly && !/^_gcl(_|$)/.test(name)) return;
       domains.forEach(domain => {
         document.cookie = `${name}=; Max-Age=0; path=/; SameSite=Lax${domain ? `; domain=${domain}` : ""}`;
       });
     });
   };
   const setConsent = choice => {
-    granted = enabledHost && validIds && choice === "granted";
+    // "granted" is the existing analytics-only choice; never upgrade old consent.
+    granted = enabledHost && validIds && (choice === "granted" || choice === "measurement");
+    adsGranted = granted && choice === "measurement";
     window[disableKey] = !granted;
     if (!granted) clearCookies();
+    else if (!adsGranted) clearCookies(true);
     if (!enabledHost || !validIds) return;
     // No Google resources load until consent. The sandboxed GTM consent tag
     // processes this state with Google's consent APIs before measurement tags.
-    window.dataLayer.push({ event: "km_consent_update", analytics_consent: granted ? "granted" : "denied", ...context() });
+    const consent = {
+      analytics_consent: granted ? "granted" : "denied",
+      ads_measurement_consent: adsGranted ? "granted" : "denied"
+    };
+    window.dataLayer.push({ event: "km_consent_update", ...consent, ...context() });
     if (!granted) return;
     if (!loaded) {
       loaded = true;
@@ -63,7 +80,7 @@
     }
     if (!pageSent) {
       pageSent = true;
-      window.dataLayer.push({ event: "km_analytics_ready", analytics_consent: "granted", ...context() });
+      window.dataLayer.push({ event: "km_analytics_ready", ...consent, ...context() });
     }
   };
   const track = (name, input = {}) => {

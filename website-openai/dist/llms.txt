@@ -23,4 +23,4 @@
 [Agent resource catalog](https://keymaker-ecity.pages.dev/.well-known/ai-catalog.json): Enquiry guidance for assistants.
 [Enquiry skill](https://keymaker-ecity.pages.dev/agent-skills/locksmith-enquiry/SKILL.md): Choose a service and prepare a customer-approved enquiry.
 
-Information reviewed: 2026-10-28.
+Information reviewed: 2026-11-02.

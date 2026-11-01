@@ -171,7 +171,11 @@
     }
 
     // The consent-gated GTM module owns Analytics. The UI never loads gtag.js.
-    const setAnalyticsEnabled = enabled => window.keymakerAnalytics?.setConsent(enabled ? "granted" : "denied");
+    const setMeasurementChoice = choice => {
+      window.keymakerAnalytics?.setConsent(choice);
+      root.dataset.analyticsConsent = choice === "denied" ? "denied" : "granted";
+      root.dataset.adsMeasurementConsent = choice === "measurement" ? "granted" : "denied";
+    };
     const banner = document.querySelector(".cookie-banner");
     const consent = readConsent();
     let settingsTrigger = null;
@@ -182,32 +186,22 @@
       const first = banner.querySelector("button");
       if (first) first.focus({ preventScroll: true });
     };
-    if (consent === "granted") {
-      setAnalyticsEnabled(true);
-      root.dataset.analyticsConsent = "granted";
-    } else if (consent === "denied") {
-      setAnalyticsEnabled(false);
-      root.dataset.analyticsConsent = "denied";
-    }
+    const validChoices = ["denied", "granted", "measurement"];
+    setMeasurementChoice(validChoices.includes(consent) ? consent : "denied");
     if (banner) {
       banner.querySelectorAll("[data-consent]").forEach(button => {
         button.addEventListener("click", () => {
-          const choice = button.dataset.consent === "granted" ? "granted" : "denied";
+          const choice = validChoices.includes(button.dataset.consent) ? button.dataset.consent : "denied";
           writeConsent(choice);
           banner.hidden = true;
-          root.dataset.analyticsConsent = choice;
-          if (choice === "granted") {
-            setAnalyticsEnabled(true);
-          } else {
-            setAnalyticsEnabled(false);
-          }
+          setMeasurementChoice(choice);
           if (settingsTrigger) {
             settingsTrigger.focus({ preventScroll: true });
             settingsTrigger = null;
           }
         });
       });
-      if (consent !== "granted" && consent !== "denied") banner.hidden = false;
+      if (!validChoices.includes(consent)) banner.hidden = false;
     }
     document.querySelectorAll("[data-cookie-settings]").forEach(settings => {
       settings.addEventListener("click", event => {

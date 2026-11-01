@@ -1,5 +1,7 @@
 # Website measurement
 
+**Latest verification — 2 November 2026:** GTM version 5 is live, with zero unpublished changes. The exact export and QA reader are saved here. Google’s actual consent API confirmed Analytics + ads grants analytics_storage, ad_storage and ad_user_data; analytics-only and withdrawal revoke advertising consent. Personalization remains denied. GA4 Consent settings now reports Excellent / No issues detected, with behavioral and advertising signals Active. The separate GTM aggregate warning is still pending Google evaluation; active signal receipt is not universal consent. See ../CONSENT-VERIFICATION-2026-11-02.md. The current call-lead action uses One conversion and no invented value; its 60-second threshold is retained. Dated sections below preserve the original setup history.
+
 Primary website: https://keymaker-ecity.pages.dev/
 
 - GA4 account: `412825980`
@@ -14,9 +16,9 @@ The former `keymaker-ecity.alishanaver72.workers.dev` address is retired and mus
 
 ## Consent and data
 
-The site loads GTM only after analytics consent and only on the primary hostname. The local preview, Pages preview hostnames and Worker backup do not send Analytics events. No unconditional GTM noscript iframe is used, since it would bypass the site's consent choice. Declining or withdrawing consent disables measurement and removes Analytics cookies. Advertising consent stays denied; Google signals and user-provided data collection are off.
+The site loads GTM only after analytics consent and only on the primary hostname. Local previews, Pages preview hostnames and the Worker backup do not send Analytics events. No unconditional GTM noscript iframe is used. Declining or withdrawing consent disables measurement and removes Analytics cookies. Advertising measurement is granted only by the explicit Analytics + ads choice; analytics-only choices keep it denied. Personalisation, Google signals and customer-data uploads remain off.
 
-Page locations keep the pathname and validated campaign parameters only. Referrers keep the origin only. Customer messages, phone numbers, full WhatsApp links and form values are not event parameters. Enhanced measurement is limited to page loads and scrolls; browser-history pageviews and automatic outbound clicks are disabled.
+Page locations keep the pathname and validated campaign parameters; explicit advertising measurement consent also permits validated Google click IDs. Referrers keep the origin only. Customer messages, phone numbers, full WhatsApp links and form values are not event parameters. Enhanced measurement is limited to page loads and scrolls; browser-history pageviews and automatic outbound clicks are disabled.
 
 ## Events and reporting
 
@@ -47,7 +49,7 @@ Use short campaign labels, never customer identifiers. No Business Profile links
 - `npm run build` in either Cloudflare folder: shared build and integrity/CSP checks.
 - `node scripts/verify-live.mjs https://keymaker-ecity.pages.dev/`: live deployment checks.
 - Add `?km_debug=1` to the primary site URL for QA. These visits set `debug_mode=true` and `traffic_type=developer`. Google Tag Manager Preview and GA4 DebugView can inspect them. Normal visits do not enable debug mode.
-- No owner IP filter is guessed. Internal traffic filtering remains in Testing until a stable owner IP is supplied. Ads integrations, remarketing, paid services, purchase/revenue events and customer-data uploads require a separate business need and were not enabled.
+- No owner IP filter is guessed. Internal traffic filtering remains in Testing until a stable owner IP is supplied. The owner-approved Google Ads links and Secondary contact-click imports were completed on 29 October as recorded below. Remarketing, purchase/revenue events and customer-data uploads remain off; the Ads account was left unfunded at the owner's request.
 - Publish GTM changes as a named version so they can be rolled back independently of a website deployment.
 
 ## Verified setup on 28 October 2026
@@ -62,3 +64,18 @@ Use short campaign labels, never customer identifiers. No Business Profile links
 - The browser's separate Tag Assistant popup did not connect in this session. Collection was verified directly in GA4 DebugView and with live asset/CSP checks; a disconnected Preview window does not mean the published container is inactive.
 - Later fresh UI readback confirmed the primary stream reports data collection active in the past 48 hours, email redaction is enabled and all eight query-redaction keys are saved. The Reports snapshot contains traffic data; historical report dates must not be attributed solely to the new configuration or to genuine customers.
 - The remaining Search Console checks were performed: homepage indexed, current homepage/sitemap live fetches successful, sitemap submitted but processing warning unresolved, and homepage recrawl blocked by Google's daily quota. See `../SEARCH-CONSOLE-CHECK-2026-10-28.md`.
+
+## Google Ads integration verified on 29 October 2026
+
+- Correct Google Ads account: **548-847-0694** (`ocid=8554859915`), Smart campaign **24402045516 — Need a new key fast?**. The saved budget is ₹100 average/day, monthly max ₹3,040, within 10 km of the verified shop plus code RMJ6+V3 Bengaluru.
+- Smart's radius includes people in the area and people searching for the area. No presence-only setting was observed. Full-account Data manager/Conversions links were used without switching to Expert Mode, migrating or creating another campaign.
+- Ads–GA4 link completed for this account and GA4 property `560000241`. Personalized advertising is OFF, Analytics editing by Ads users is OFF, and enable auto-tagging was selected in the completed link flow.
+- Search Console–Ads shows Linked for the primary Pages website. The existing Search Console–GA4 link from 28 October was confirmed for stream `16191970685`. The existing Business Profile–GA4 link from 21 October was also confirmed.
+- The Ads Business Profile association is the correct shop, using phone `097623 06303`; location and call-button options are enabled.
+- `click_call` (Ads conversion action `7880280131`) and `click_whatsapp` (`7880280134`) were imported as **Contact / Secondary**, counting **Only one**, with **no default monetary value**. These remain click proxies, not completed communications or jobs. Directions were not added as a primary Ads lead goal.
+- Saved Ads landing URL: `https://keymaker-ecity.pages.dev/?utm_source=google&utm_medium=cpc&utm_campaign=need_a_new_key_fast&utm_content=local_calls`. These fixed labels pass the existing sanitizer; no Ads click ID or conversion label has been invented.
+- No GTM changes or new publication were needed. Four existing tags remain. Advertising consent stays denied; the 0% advertising-consent warning is expected under that configuration. No extra administrator was added in response to the single-administrator warning.
+- Final Goals readback: the active Smart account goal is **Smart campaign ad clicks to call**, Primary / Every / 30-day. Existing Clicks to call, Smart map clicks to call and Directions actions show Primary but are outside account goals. Both GA4 imports are Secondary / Only one / 90-day and outside account goals. No Smart tracked-calls entry was visible; connected-call measurement remains unverified. No custom 60-second duration threshold, served Google forwarding number or completed test call is claimed.
+- The ad is pending policy review. The balance is exhausted/nearly exhausted, and the owner explicitly instructed that it stay unfunded. No funds were added. The current last-30-days view, 29 September–28 October, shows ₹0 spend and 0 impressions, clicks or calls; this zero-activity baseline provides no acquisition-cost estimate.
+- Search Console on 29 October confirms the homepage is on Google. Request indexing succeeded and the URL was added to the priority crawl queue, resolving the earlier daily-quota blocker. This is not proof of a completed refreshed crawl. Sitemaps still shows Couldn't fetch / 0 discovered pages; the unchanged sitemap was not resubmitted.
+- Ongoing checks are sitemap processing, the refreshed stored crawl, Smart connected-call reporting availability and real paid attribution once the campaign is eligible and the owner chooses to fund it. See [the 29 October implementation record](../GOOGLE-INTEGRATIONS-STATUS-2026-10-29.md); it supersedes the prior browser-access blocker without changing the historical record.

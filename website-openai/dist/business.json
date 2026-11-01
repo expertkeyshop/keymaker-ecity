@@ -299,13 +299,24 @@
         ]
       },
       "sameAs": [
-        "https://www.google.com/maps?cid=6777548479080557010"
+        "https://www.google.com/maps?cid=6777548479080557010",
+        "https://www.justdial.com/Bangalore/Key-Maker---Locksmith---Electronic-City-Electronic-City-Phase-1/080PXX80-XX80-261022141617-S7S5_BZDET"
       ],
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+919762306303",
         "contactType": "customer service",
-        "url": "https://keymaker-ecity.pages.dev/#visit"
+        "url": "https://keymaker-ecity.pages.dev/#visit",
+        "availableLanguage": [
+          "en",
+          "hi",
+          "kn"
+        ]
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 12.8322499,
+        "longitude": 77.6602081
       }
     },
     {
@@ -329,7 +340,7 @@
         "width": 1600,
         "height": 900
       },
-      "dateModified": "2026-10-28"
+      "dateModified": "2026-11-02"
     }
   ]
 }

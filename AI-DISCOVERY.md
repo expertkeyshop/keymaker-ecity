@@ -1,4 +1,20 @@
-# Search and AI discovery — 24 October 2026
+# Search and AI discovery — current guidance, 2 November 2026
+
+The primary website is **https://keymaker-ecity.pages.dev/**. Use the shared website-openai/ source and cloudflare-pages/ build target. Historical Worker hostnames and older ZIPs below are superseded.
+
+Release 93ff01b is deployed and live-verified. Business JSON-LD now includes the verified shop coordinates, customer languages and owner-confirmed Justdial identity reference. The same languages appear in the contact section, and business.md supplies matching facts. The agent-catalog aliases remain valid; they advertise a real enquiry reference, not a fictional booking API.
+
+Build and live checks cover readable HTML, canonical, robots, XML sitemap, business JSON/Markdown, llms.txt, catalog aliases, the enquiry skill, privacy, script integrity, security headers and verification files. Both GitHub workflows passed. Analytics-only file changes now trigger CI validation too. Homepage and privacy sitemap dates follow their own actual revision dates.
+
+Google's exact sitemap live fetch passed again on 2 November. One submission of the updated sitemap was accepted; the report still says Couldn't fetch / 0 pages. Google processing remains open. Submission acceptance must not be described as successful sitemap processing, and valid files should not be repeatedly changed simply to chase the badge.
+
+All 13 Google posts and 11 products had their destinations audited and corrected to Pages in the 29 October finishing pass; the earlier five-retired-post-links item is resolved. Justdial has owner public sign-off. Sulekha's public website/address/About synchronization still requires its support team; the user chose to send the 2 November follow-up from the client account.
+
+See CURRENT-PENDING.md and analytics/README.md for current status. These accessibility and factual-discovery improvements cannot guarantee Google rankings, indexing, or AI recommendations.
+
+---
+
+## Historical record — 24 October 2026
 
 Business: Key Maker & Locksmith | Electronic City.
 
@@ -45,3 +61,11 @@ Browser inspection was unavailable because local browser use was disabled. No Cl
 - Cloudflare static headers: https://developers.cloudflare.com/workers/static-assets/headers/
 
 Ordinary SEO requirements, useful factual content and crawler accessibility remain the foundation. Google does not require a special AI text file or AI-specific schema. Indexing, answer inclusion and recommendations are decisions made by each service, not settings this bundle can force.
+
+## Final access and pricing consistency check — 29 October 2026
+
+The primary website is https://keymaker-ecity.pages.dev/ . A focused live check found quote-based product copy and no numeric product/service price fields in the homepage or business.json. No website pricing change was needed when the remaining Google product example prices were removed.
+
+One normal-client request and one request for each official GPTBot/1.4 and OAI-SearchBot/1.4 identifier returned HTTP 200, the real HTML homepage, an index/follow robots header and no cf-mitigated challenge header. Live robots.txt returns 200, allows User-agent: * at / and names the correct Pages sitemap. No user-agent-level access fault was reproduced; no security configuration was changed. These probes did not originate from verified OpenAI crawler IPs and do not demonstrate actual AI indexing or recommendations.
+
+Google's exact sitemap live test also fetched successfully with crawling allowed. The Sitemaps report still shows Couldn't fetch after one accepted controlled resubmission, so its processing result remains open. The indexed homepage's current Pages canonical is already confirmed. Do not change valid files or repeatedly submit unchanged sitemaps to manufacture a completed status.

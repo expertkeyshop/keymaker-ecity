@@ -10,6 +10,8 @@
 - Address: Gollahalli Main Road, Siraj Layout, Electronic City Phase 1, Bengaluru, Karnataka 560100, India.
 - Google Maps: https://www.google.com/maps?cid=6777548479080557010
 - Opening hours: open 24 hours, Monday to Sunday.
+- Shop coordinates: 12.8322499, 77.6602081.
+- Customer languages: English, Hindi, Kannada.
 - Payments: Cash, UPI, bank transfer (IMPS, NEFT).
 - Shop opened: 2026-10-01.
 
@@ -83,4 +85,4 @@ Cash, UPI and bank transfers through IMPS or NEFT. Cards are not currently accep
 
 Contact the shop before ordering or travelling for a specific key, vehicle model or part. Prices depend on the key or lock, parts, programming, installation and travel. Vehicle and lock compatibility must be checked. Confirm arrival time by phone for your location.
 
-Business information reviewed: 2026-10-28.
+Business information reviewed: 2026-11-02.
