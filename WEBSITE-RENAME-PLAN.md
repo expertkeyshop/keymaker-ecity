@@ -1,4 +1,4 @@
-> Update 7 November: The user approved the ecity public username and keymaker Site label. Availability and correct owner sign-in are still unresolved; approval itself is not pending. Browser automation currently fails before it can inspect the account. The candidate keymaker.ecity.chatgpt.site is not confirmed live.
+> Update 7 November: The user approved the ecity public username and keymaker Site label. The browser was inspected and is signed in to kbose0007@gmail.com, not the owning client account. Native Sites returns project_not_found for the saved project ID. Client sign-in and availability remain unresolved; approval itself is not pending. Browser control subsequently became unavailable. The candidate keymaker.ecity.chatgpt.site is not confirmed live.
 
 # Website rename — completed 2 November 2026
 
