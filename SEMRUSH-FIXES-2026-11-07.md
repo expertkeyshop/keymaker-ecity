@@ -4,9 +4,9 @@ Primary website: https://keymaker-ecity.pages.dev/
 
 ## Release status
 
-The code changes are committed locally as `bae07b5` in `.repo-sync`. Both Cloudflare target builds and their validations passed. These latest changes have **not been pushed or deployed**. The last published branding release is `6f6eddf`; remote main was last verified at documentation commit `fdff5f8`.
+The code changes are committed as `bae07b5` in `.repo-sync`. Both Cloudflare target builds and their validations passed. The user-requested push retry successfully published this commit and documentation commit `0de0eff` to main. **The fixes are now deployed and verified live.** All seven compared primary HTML/JS/CSS files exactly match the release bytes. Both primary and backup pass the 17-endpoint live verifier and expected 404 check.
 
-The attempted push was not executed because automatic approval review hit its usage limit and reported a retry time of 3:09 PM. This was a review-service failure, not a finding that the push was unsafe. No alternate publishing route was used to bypass that check.
+An earlier push attempt was not executed because automatic approval review hit its usage limit. That historical blocker is resolved by the later successful retry. No alternate publishing route was used to bypass the check.
 
 Upload-ready archive: `keymaker-ecity-pages-2026-11-07-semrush-fixes.zip`.
 
@@ -21,11 +21,11 @@ Upload-ready archive: `keymaker-ecity-pages-2026-11-07-semrush-fixes.zip`.
 | --- | --- | --- |
 | One 404 at `https://www.keymaker-ecity.pages.dev/` | This exact hostname returned 404. The actual primary host returned 200. No authored navigation, canonical or discovery file points to the `www` hostname. It is not a configured production alias. Restrict the audit to the actual host and inspect the audit's discovery source for the extra hostname. | Audit-scope correction pending account access; no production-page 404 was found. |
 | Twelve broken WhatsApp links, all HTTP 429 | The supplied destinations are contact links on WhatsApp. Fresh read-only GET checks of all 13 distinct WhatsApp destinations in the site returned 200 after redirects. No messages were sent. HTTP 429 records rate limiting at the time of Semrush's requests. | Keep working contact links. Retry at a lower crawl rate; document an external rate-limit exception only if it persists after manual checking. |
-| Four unminified JS/CSS warnings | The build now compacts all five published JavaScript/CSS assets and embedded CSS using pinned esbuild. Hashes, CSP and SRI are regenerated from the resulting bytes. | Fixed in the local build; publishing and Semrush re-audit pending. |
-| One low text-to-HTML ratio warning | The homepage contains useful service content, structured data and inline CSS. Compaction reduces HTML size while preserving content. No filler text or extra mobile clutter was added just to change the ratio. | Reassess after publishing. A score warning alone is not grounds to remove useful markup or redesign the approved layout. |
-| Two pages with one incoming internal link | The latest supplied table includes the homepage, privacy page and machine-readable `business.md`. The privacy footer now also links to Business details, providing another genuine source page linking to `business.md`. A small site's homepage having few incoming internal source pages is not itself a broken navigation path. | Relevant link added locally; no invented pages or repetitive links. Re-audit pending. |
+| Four unminified JS/CSS warnings | The build now compacts all five published JavaScript/CSS assets and embedded CSS using pinned esbuild. Hashes, CSP and SRI are regenerated from the resulting bytes. | Fixed and verified live; Semrush re-audit pending. |
+| One low text-to-HTML ratio warning | The homepage contains useful service content, structured data and inline CSS. Compaction reduces HTML size while preserving content. No filler text or extra mobile clutter was added just to change the ratio. | Reassess in the next audit. A score warning alone is not grounds to remove useful markup or redesign the approved layout. |
+| Two pages with one incoming internal link | The latest supplied table includes the homepage, privacy page and machine-readable `business.md`. The privacy footer now also links to Business details, providing another genuine source page linking to `business.md`. A small site's homepage having few incoming internal source pages is not itself a broken navigation path. | Relevant link published; no invented pages or repetitive links. Re-audit pending. |
 | One hostname lacks HSTS | The primary host and its privacy page return `Strict-Transport-Security: max-age=63072000; includeSubDomains; preload`. The extra `www` hostname does not. Build/live validation now explicitly checks HSTS. | Production HSTS verified. Exclude the unconfigured host from production audit scope. |
-| `/privacy.html` permanently redirects | It correctly returns 308 to `/privacy`. The privacy footer's internal cookie link was updated to `/privacy#cookies`, removing an unnecessary redirect for that navigation path. | Direct link fixed locally; preserve the legitimate redirect for old URLs. |
+| `/privacy.html` permanently redirects | It correctly returns 308 to `/privacy`. The privacy footer's internal cookie link was updated to `/privacy#cookies`, removing an unnecessary redirect for that navigation path. | Direct link fixed live; preserve the legitimate redirect for old URLs. |
 
 The WhatsApp checks establish that the destinations were accessible during these requests. They do not guarantee that every external crawler or WhatsApp client will always receive the same response. The buttons and their prefilled messages remain intact.
 
@@ -73,12 +73,12 @@ Only whitespace minification is enabled; syntax and identifier transformations a
 - Read-only public checks covered 33 internal URL/asset entries, external destinations, and both the exact primary and extra `www` hostname.
 - No consent defaults were changed and no extra Google tag was introduced.
 
-Local evidence is in `proof/2026-11-07/semrush/`: `internal-live-before.json`, `external-live-before.json`, `hostname-check.json`, `minification-sizes.json` and `package.json`. The `before` filenames explicitly denote checks of the already-published website, before this release is deployed.
+Local evidence is in `proof/2026-11-07/semrush/`: `internal-live-before.json`, `external-live-before.json`, `hostname-check.json`, `minification-sizes.json`, `package.json` and `live-release-comparison.json`. The `before` filenames denote checks made before this release was deployed; the comparison file records the successful new release check.
 
 ## Remaining steps
 
-1. Push the approved local commits when automatic approval review is available, or have the user push them from their own terminal. The existing Pages Git integration should then build the release. The ZIP is an alternative upload artifact for the user if the project's deployment controls allow it; its creation does not publish anything.
-2. Confirm the Pages deployment succeeded, compare live generated assets with this build, and run `node scripts/verify-live.mjs https://keymaker-ecity.pages.dev/` from the checkout. Successful checks alone do not prove this exact new release is live; the generated asset bytes must match too.
+1. Completed: pushed the approved local commits through the existing Git integration. The ZIP remains an alternate artifact; no additional upload is needed for this release.
+2. Completed: Pages live verification and byte-for-byte comparison of the seven main HTML/JS/CSS files. Evidence is `proof/2026-11-07/semrush/live-release-comparison.json`. The business-only backup also passed with noindex intact.
 3. In the existing Semrush project, set the crawl start to `https://keymaker-ecity.pages.dev/`. Clear **Crawl all subdomains** and remove the unconfigured `www` URL from any custom URL list. Review how the crawler discovered that URL before changing settings. Keep the production site's real URLs in scope.
 4. Reduce crawl speed for the retry if WhatsApp continues returning 429. Keep the contact links usable and visible; do not replace them with concealed JavaScript links or redirects to game the audit.
 5. Re-run the audit once the corrected build is live, inspect remaining affected URLs, and record the resulting issue counts. Do not predeclare a new health score or guaranteed clearance of every warning.
@@ -92,7 +92,7 @@ The user can publish the already-reviewed commits from their own terminal with:
 git -C "C:\Users\kbose\OneDrive\Desktop\keymaker\.repo-sync" push origin main
 ```
 
-This command is documented for the user; the agent has not executed it successfully for this release.
+The agent successfully executed this push on the user's requested retry. It is retained here as a reference, not an outstanding user action.
 
 ## Official references
 

@@ -1,0 +1,69 @@
+{
+  "checkedAt": "2026-11-07T05:37:33.163Z",
+  "sourceCommit": "bae07b5",
+  "files": [
+    {
+      "file": "script.js",
+      "status": 200,
+      "bytes": 9468,
+      "localBytes": 9468,
+      "exactMatch": true,
+      "newlineNormalizedMatch": true,
+      "liveSha256": "839f0145be08039ddbc9148bbc9171f03e077263c6f552e10cc4434be5cca65a"
+    },
+    {
+      "file": "analytics.js",
+      "status": 200,
+      "bytes": 3507,
+      "localBytes": 3507,
+      "exactMatch": true,
+      "newlineNormalizedMatch": true,
+      "liveSha256": "06eab2b975f9bc63538a4861a11ff485c06bdb7ee96b9e91be0686d418580f27"
+    },
+    {
+      "file": "styles.css",
+      "status": 200,
+      "bytes": 42839,
+      "localBytes": 42839,
+      "exactMatch": true,
+      "newlineNormalizedMatch": true,
+      "liveSha256": "d8feeb1314e968ad4b8895613e350fdd1cf7c3451d2d6fdc2be214612a6336fc"
+    },
+    {
+      "file": "mobile-focus.css",
+      "status": 200,
+      "bytes": 7629,
+      "localBytes": 7629,
+      "exactMatch": true,
+      "newlineNormalizedMatch": true,
+      "liveSha256": "e570cddef833b56436c65d27a3b7f68fef9968eaefe4b9d870b3b9252a482892"
+    },
+    {
+      "file": "desktop-focus.css",
+      "status": 200,
+      "bytes": 5014,
+      "localBytes": 5014,
+      "exactMatch": true,
+      "newlineNormalizedMatch": true,
+      "liveSha256": "40a6fc9d19e6eb955be1b0347122dc6d764a35a2dc07a52f8458d6d6426c5cc7"
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "bytes": 118698,
+      "localBytes": 118698,
+      "exactMatch": true,
+      "newlineNormalizedMatch": true,
+      "liveSha256": "331a8bd98920e4bb283bc5a76e0d48a238c6766e532cb36d3dbc0ba05f9c7e24"
+    },
+    {
+      "file": "privacy.html",
+      "status": 200,
+      "bytes": 56615,
+      "localBytes": 56615,
+      "exactMatch": true,
+      "newlineNormalizedMatch": true,
+      "liveSha256": "c26e27ca87fae5f1363ea91dabf180cf80e1347baf6a9e705a41d3a9a9f3540d"
+    }
+  ]
+}

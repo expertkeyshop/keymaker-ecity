@@ -1,6 +1,6 @@
 # Semrush interpretation and setup — 7 November 2026
 
-Update: the user has now provided the exact issue destinations and all eight crawled URLs. See `SEMRUSH-FIXES-2026-11-07.md` for the diagnosis, completed local code changes, verification and publication blocker. The earlier missing-details statements below describe the initial report only; they are no longer outstanding requests to the user.
+Update: the user has now provided the exact issue destinations and all eight crawled URLs. See `SEMRUSH-FIXES-2026-11-07.md` for the diagnosis, published code changes and live verification. The earlier missing-details statements below describe the initial report only; they are no longer outstanding requests to the user. The GitHub push and deployment blocker is resolved; the Semrush account re-audit remains open.
 
 Source: user-supplied dashboard text and two keyword-setup screenshots. No signed-in Semrush account was read or changed: browser runtime still fails with “failed to write kernel assets: path not found”. No Semrush connector is currently available.
 
