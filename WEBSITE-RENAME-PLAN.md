@@ -1,3 +1,5 @@
+> Update 7 November: The user approved the ecity public username and keymaker Site label. Availability and correct owner sign-in are still unresolved; approval itself is not pending. Browser automation currently fails before it can inspect the account. The candidate keymaker.ecity.chatgpt.site is not confirmed live.
+
 # Website rename — completed 2 November 2026
 
 ## Current result
