@@ -2,10 +2,24 @@ import { copyFile, mkdir, readFile, writeFile, readdir } from "node:fs/promises"
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { createHash } from "node:crypto";
+import { createRequire } from "node:module";
 import { writeDiscovery } from "./discovery.mjs";
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const dist = path.join(root, "dist");
+// Each deployment root installs its own pinned build dependency in CI.
+// A direct local build uses the Pages toolchain after `npm ci` in that folder.
+const target = process.env.KEYMAKER_BUILD_TARGET || "cloudflare-pages";
+if (!["cloudflare-pages", "cloudflare-workers"].includes(target)) throw new Error("Unknown build toolchain");
+const { transform } = createRequire(path.join(root, "..", target, "package.json"))("esbuild");
+const minify = async (source, loader) => (await transform(source, {
+  loader, minifyWhitespace: true, minifyIdentifiers: false, minifySyntax: false,
+  legalComments: "none", charset: "utf8"
+})).code;
+const compiledAssets = new Map();
+for (const name of ["styles.css", "mobile-focus.css", "desktop-focus.css", "script.js", "analytics.js"]) {
+  compiledAssets.set(name, await minify(await readFile(path.join(root, name), "utf8"), name.endsWith(".css") ? "css" : "js"));
+}
 const args = process.argv.slice(2);
 let requestedOrigin;
 for (let i = 0; i < args.length; i++) {
@@ -34,10 +48,10 @@ const sourceOrigin = normalizeOrigin(canonicalHref);
 const origin = requestedOrigin ? normalizeOrigin(requestedOrigin) : sourceOrigin;
 // Only generated output changes when a new production origin is supplied.
 const forOrigin = text => text.replaceAll(sourceOrigin.slice(0, -1), origin.slice(0, -1));
-const script = await readFile(path.join(root, "script.js"), "utf8");
+const script = compiledAssets.get("script.js");
 const digest = text => `sha256-${createHash("sha256").update(text).digest("base64")}`;
 const scriptHash = digest(script);
-const analyticsScript = await readFile(path.join(root, "analytics.js"), "utf8");
+const analyticsScript = compiledAssets.get("analytics.js");
 const analyticsHash = digest(analyticsScript);
 const styleHashes = new Set();
 // A small static site: embed the existing CSS in cascade order to remove
@@ -48,7 +62,8 @@ async function prepareHtml(source) {
     const filename = match[0].match(/href="([^"?]+)(?:\?[^"\s]*)?"/)?.[1];
     if (!filename || !/^[a-z-]+\.css$/.test(filename)) throw new Error("Unexpected stylesheet path");
     const media = match[0].match(/\bmedia="([^"]+)"/)?.[1];
-    const css = (await readFile(path.join(root, filename), "utf8")).replaceAll("\r\n", "\n");
+    const css = compiledAssets.get(filename);
+    if (!css) throw new Error(`Stylesheet was not compiled: ${filename}`);
     styleHashes.add(digest(css));
     output = output.replace(match[0], `<style${media ? ` media="${media}"` : ""}>${css}</style>`);
   }
@@ -79,8 +94,8 @@ await mkdir(dist, { recursive: true });
 await writeFile(path.join(dist, "index.html"), html);
 await writeFile(path.join(dist, "privacy.html"), await prepareHtml(privacySource));
 await writeFile(path.join(dist, "404.html"), await prepareHtml(await readFile(path.join(root, "404.html"), "utf8")));
-for (const filename of ["styles.css", "mobile-focus.css", "desktop-focus.css", "script.js", "analytics.js"]) {
-  await copyFile(path.join(root, filename), path.join(dist, filename));
+for (const [filename, contents] of compiledAssets) {
+  await writeFile(path.join(dist, filename), contents);
 }
 const headers = forOrigin(await readFile(path.join(root, "_headers"), "utf8"))
   .replaceAll("__SCRIPT_HASH__", `'${scriptHash}' '${analyticsHash}'`)

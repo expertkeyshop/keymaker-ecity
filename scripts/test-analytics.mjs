@@ -1,7 +1,8 @@
 import assert from "node:assert/strict";
 import vm from "node:vm";
 import { readFile } from "node:fs/promises";
-const source = await readFile(new URL("../website-openai/analytics.js",import.meta.url),"utf8");
+const assetPrefix = process.argv.includes("--built") ? "dist/" : "";
+const source = await readFile(new URL(`../website-openai/${assetPrefix}analytics.js`,import.meta.url),"utf8");
 function setup(host="keymaker-ecity.pages.dev",query="") {
   const scripts = [], deleted = [];
   const window = {location:{hostname:host,href:`https://${host}/${query}`,search:query}};
@@ -115,7 +116,7 @@ for(const tag of container.tag.filter(tag=>tag.name.startsWith("Consent -"))) {
   assert(tag.parameter.some(parameter=>parameter.key==="adsMeasurementConsent" && parameter.value==="{{DLV - Ads measurement consent}}"));
 }
 for(const file of ["index.html","privacy.html"]) {
-  const html=await readFile(new URL(`../website-openai/${file}`,import.meta.url),"utf8");
+  const html=await readFile(new URL(`../website-openai/${assetPrefix}${file}`,import.meta.url),"utf8");
   for(const choice of ["denied","granted","measurement"]) assert.equal((html.match(new RegExp(`data-consent="${choice}"`,"g"))||[]).length,1,`${file} exposes each visitor choice once`);
 }
 console.log("PASS: GTM variable references, primary-host gates, all consent combinations, template/export consistency and banner choices.");

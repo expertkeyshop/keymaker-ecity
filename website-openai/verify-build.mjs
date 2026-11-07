@@ -12,6 +12,13 @@ const origin = html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
 assert.equal(origin, "https://keymaker-ecity.pages.dev/", "Primary origin must be Pages");
 const headers = await read("_headers");
 assert(!headers.includes("__SCRIPT_HASH__") && !headers.includes("__STYLE_HASHES__"));
+assert(headers.includes("Strict-Transport-Security: max-age=63072000; includeSubDomains; preload"), "HTTPS policy missing");
+for (const filename of ["script.js", "analytics.js", "styles.css", "mobile-focus.css", "desktop-focus.css"]) {
+  const generated = await read(filename);
+  const source = await readFile(path.join(root, filename), "utf8");
+  assert(Buffer.byteLength(generated) < Buffer.byteLength(source), `${filename}: expected minified output`);
+  assert(generated.trim().split(/\r?\n/).length <= 2, `${filename}: expected compact asset`);
+}
 const sha = text => "sha256-" + createHash("sha256").update(text).digest("base64");
 const scriptHash = sha(await read("script.js"));
 assert(headers.includes(scriptHash));
@@ -54,6 +61,8 @@ for (const name of ["index.html", "privacy.html", "404.html"]) {
   assert(page.includes('property="og:image:type" content="image/jpeg"') && page.includes('name="twitter:image:alt"'), `${name}: image type or accessible sharing description missing`);
   assert(!page.includes("news.google.com/swg"), `${name}: source preference must not load third-party scripts before a visitor follows the link`);
   assert(!page.includes("alishanaver72.workers.dev"), `${name}: stale backup origin`);
+  assert(!page.includes("www.keymaker-ecity.pages.dev"), `${name}: unconfigured www host`);
+  assert(!page.includes('href="privacy.html'), `${name}: avoid the privacy URL redirect`);
   assert(!page.includes('rel="stylesheet"'), `${name}: render-blocking stylesheet`);
   if (page.includes('src="script.js')) assert(page.includes(`integrity="${scriptHash}"`));
   if (name !== "404.html") {

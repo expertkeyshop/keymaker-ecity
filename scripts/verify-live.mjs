@@ -25,6 +25,7 @@ verifyBranding(home, "homepage");
 assert(home.includes('rel="canonical" href="https://keymaker-ecity.pages.dev/"'), "Primary canonical URL missing");
 const robots = response.headers.get("x-robots-tag") || "";
 assert(backup ? robots.includes("noindex") : robots.includes("index") && !robots.includes("noindex"), "Unexpected indexing header");
+assert(/max-age=[1-9]\d*/.test(response.headers.get("strict-transport-security") || ""), "Live HTTPS policy missing");
 const policy = response.headers.get("content-security-policy") || "";
 assert(policy.includes("'strict-dynamic'"), "Current CSP is not deployed");
 const sha = value => "sha256-" + createHash("sha256").update(value).digest("base64");

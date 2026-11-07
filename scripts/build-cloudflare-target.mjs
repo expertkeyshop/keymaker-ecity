@@ -15,9 +15,13 @@ export async function buildTarget(target) {
     throw new Error("Generated output must stay inside its deployment folder");
   }
   for (const script of ["scripts/test-analytics.mjs", "website-openai/build.mjs", "website-openai/verify-build.mjs"]) {
-    const result = spawnSync(process.execPath, [path.join(repo, script)], { stdio: "inherit" });
+    const result = spawnSync(process.execPath, [path.join(repo, script)], {
+      stdio: "inherit", env: { ...process.env, KEYMAKER_BUILD_TARGET: target }
+    });
     if (result.status !== 0) throw new Error(`${script} failed`);
   }
+  const builtAnalytics = spawnSync(process.execPath, [path.join(repo, "scripts/test-analytics.mjs"), "--built"], { stdio: "inherit" });
+  if (builtAnalytics.status !== 0) throw new Error("Minified analytics behavior checks failed");
   await rm(output, { recursive: true, force: true });
   await mkdir(output, { recursive: true });
   await cp(path.join(repo, "website-openai", "dist"), output, { recursive: true });

@@ -4,18 +4,19 @@ Single-page website for **Key Maker &amp; Locksmith | Electronic City**, redesig
 
 ## Source and build
 
-The stack stays HTML, CSS and vanilla JavaScript. The build uses Node's built-in modules; there are no npm dependencies, framework runtime, database, checkout or contact-form backend.
+The stack stays HTML, CSS and vanilla JavaScript. The build uses Node.js and pinned esbuild whitespace minification. The website has no framework runtime, database, checkout or contact-form backend. Both Cloudflare deployment roots declare and lock the same esbuild version.
 
 From the parent `keymaker` folder:
 
 ```powershell
+npm ci --prefix cloudflare-pages
 node website-openai/build.mjs
 node website-openai/preview.mjs
 ```
 
 The preview is served at `http://127.0.0.1:8126/`. Upload or package the **contents of `website-openai/dist/`**, with `index.html` at the archive root. The parent folder's `index.html` is the owner's profile checklist, not this customer website.
 
-The build copies HTML, CSS, JavaScript, the privacy page, static security headers, final image assets and the byte-exact Google verification file. It regenerates `robots.txt`, `sitemap.xml`, `business.json`, `business.md` and `llms.txt` from the homepage's canonical URL, visible FAQs and linked business data. Source `assets/` is the asset source of truth. Working originals named `*-original.png` (or JPG, WebP, AVIF) and `image-manifest*.json` are kept locally and excluded from copying into the public output. Do not place credentials or internal documents in `dist/`.
+The build minifies generated CSS and JavaScript, calculates CSP/SRI hashes from those exact bytes, and copies HTML, the privacy page, static security headers, final image assets and the byte-exact Google verification file. It regenerates `robots.txt`, `sitemap.xml`, `business.json`, `business.md` and `llms.txt` from the homepage's canonical URL, visible FAQs and linked business data. Source `assets/` is the asset source of truth. Working originals named `*-original.png` (or JPG, WebP, AVIF) and `image-manifest*.json` are kept locally and excluded from copying into the public output. Do not place credentials or internal documents in `dist/`.
 
 ## Production URL
 
@@ -80,3 +81,7 @@ The ready-to-upload release is `keymaker-ecity-pages-2026-11-02.zip` in the pare
 ## Content revision dates
 
 After a real homepage content change, update the WebPage dateModified in index.html. The sitemap uses the privacy page’s visible time datetime for its own lastmod, so an unrelated homepage update does not change the privacy review date. The 2 November release includes verified coordinates and customer languages. Both deployment builds validate this data and its visible contact copy.
+
+## Audit maintenance — 7 November 2026
+
+Builds preserve readable source and minify only generated JS/CSS. The target build verifies both source and minified analytics consent behavior. The privacy footer links directly to /privacy#cookies and to the existing business reference. Keep HSTS enabled; do not manufacture a www alias under pages.dev, remove working WhatsApp links after transient 429s, or add filler solely to change a text/HTML ratio.

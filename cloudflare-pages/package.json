@@ -2,10 +2,15 @@
   "name": "keymaker-ecity-pages",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "build": "node build.mjs",
     "deploy": "wrangler pages deploy dist --project-name keymaker-ecity --branch main"
   },
-  "devDependencies": { "wrangler": "4.154.0" }
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "wrangler": "4.154.0"
+  }
 }
