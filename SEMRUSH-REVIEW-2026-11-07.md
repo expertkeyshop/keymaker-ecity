@@ -49,3 +49,13 @@ Keep separate records for: technical issue resolution; tracked organic positions
 - Site health: https://www.semrush.com/kb/540-site-audit-overview
 - Specific issues: https://www.semrush.com/kb/541-site-audit-issues-report
 - Domain/subdomain scope: https://www.semrush.com/kb/254-domain-overview
+
+## Signed-in completion update — 7 November, after the initial report
+
+The initial browser blocker is resolved. The existing Position Tracking target incorrectly tracked `pages.dev` as a root domain. It has now been saved as **keymaker-ecity.pages.dev, Subdomain**, with local-pack business name **Key Maker & Locksmith | Electronic City**. The existing Google / 560100, Karnataka, India / English / Desktop target and weekly email preference were retained; the earlier proposed Mobile setup was not applied to this running target.
+
+Saved keywords (10/10): key maker; key maker near me; key makers near me; locksmith near me; key maker electronic city; duplicate key maker electronic city; car key maker near me; bike key maker near me; lock repair near me; emergency locksmith electronic city. Results need fresh collection; zero/empty initial figures do not establish actual universal rankings.
+
+Site Audit scope was already the correct host with subdomains excluded. The www 404 has zero internal source links. Crawl pacing was changed from Minimum to one URL per two seconds. Rerun was attempted once and blocked by “You've reached your monthly limit for crawled pages”; the popup also displayed 8/100 pages. No trial or upgrade was activated. Therefore the old 93% score was not re-certified after the live code fixes. No audit checks or individual findings were hidden.
+
+The earlier statements about no signed-in access and unchanged settings are historical and superseded by this section. The original proposed keyword files are preparation artifacts; this saved list is authoritative. Google first-party Web and generative-AI performance data is recorded separately in the local client report.
